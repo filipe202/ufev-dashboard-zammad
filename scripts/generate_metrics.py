@@ -28,7 +28,7 @@ AGENT_NAME_OVERRIDES = {
 }
 AGENT_IDS = set(AGENT_NAME_OVERRIDES.keys())
 
-FROM_DATE = "2025-09-30"
+FROM_DATE = "2025-09-01"  # Expandir para início de setembro
 OPEN_STATE_QUERY = "state:new OR state:open OR state:pending reminder OR state:pending close"
 CLOSED_STATES = {"closed"}
 OPEN_STATES = {state.strip().lower() for state in OPEN_STATE_QUERY.replace("state:", "").split("OR")}
@@ -243,7 +243,8 @@ def main():
             raise
     priority_by_id = {p["id"]: p.get("name") or f"priority_{p['id']}" for p in priorities}
 
-    tickets_raw = search_tickets("*")
+    # Usar endpoint direto em vez de search para garantir todos os tickets
+    tickets_raw = paged_get("/tickets")
 
     def is_after_from_date(iso_dt: str):
         try:
