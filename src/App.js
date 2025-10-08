@@ -255,6 +255,7 @@ export default function App() {
   const [sortKey, setSortKey] = useState("tickets"); // "tickets" | "avg"
   const [selectedGroups, setSelectedGroups] = useState(["ALL"]);
   const [error, setError] = useState(null);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const fromDateRef = useRef("");
 
   const setFromDateSynced = useCallback((value) => {
@@ -287,8 +288,19 @@ export default function App() {
   }, [setFromDateSynced]);
 
   useEffect(() => {
-    fetchMetrics();
+    // Verificar autenticação ao carregar
+    const savedAuth = sessionStorage.getItem('ufev_dashboard_auth');
+    if (savedAuth === 'authenticated') {
+      setIsAuthenticated(true);
+      fetchMetrics();
+    }
   }, [fetchMetrics]);
+
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetchMetrics();
+    }
+  }, [isAuthenticated, fetchMetrics]);
 
   useEffect(() => {
     setSelectedGroups(["ALL"]);
@@ -394,6 +406,50 @@ export default function App() {
     states: "Estado",
   }[viewMode] || "Grupo";
 
+  // Tela de login
+  const handleLogin = () => {
+    const password = prompt("Palavra-passe para aceder ao dashboard UFEV:");
+    if (password === "ufev2024") { // Alterar para senha desejada
+      setIsAuthenticated(true);
+      sessionStorage.setItem('ufev_dashboard_auth', 'authenticated');
+    } else if (password !== null) {
+      alert("Palavra-passe incorreta!");
+    }
+  };
+
+  if (!isAuthenticated) {
+    return (
+      <div style={{
+        maxWidth: 400, 
+        margin: "100px auto", 
+        padding: "32px", 
+        fontFamily: "system-ui, Arial",
+        textAlign: "center",
+        border: "1px solid #ddd",
+        borderRadius: "8px",
+        boxShadow: "0 2px 8px rgba(0,0,0,0.1)"
+      }}>
+        <img src="logo.svg" alt="UFEV" style={{height: 64, marginBottom: 24}} />
+        <h2>Dashboard UFEV</h2>
+        <p style={{color: "#666", marginBottom: 24}}>Acesso restrito - necessária autenticação</p>
+        <button 
+          onClick={handleLogin}
+          style={{
+            padding: "12px 24px",
+            backgroundColor: "#007bff",
+            color: "white",
+            border: "none",
+            borderRadius: "4px",
+            cursor: "pointer",
+            fontSize: "16px"
+          }}
+        >
+          Fazer Login
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
 <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
@@ -402,9 +458,26 @@ export default function App() {
     alt="UFEV"
     style={{height:48, objectFit:"contain"}}
   />
-  <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0}}>
+  <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
     Dashboard de Suporte
   </h1>
+  <button 
+    onClick={() => {
+      setIsAuthenticated(false);
+      sessionStorage.removeItem('ufev_dashboard_auth');
+    }}
+    style={{
+      padding: "8px 16px",
+      backgroundColor: "#dc3545",
+      color: "white",
+      border: "none",
+      borderRadius: "4px",
+      cursor: "pointer",
+      fontSize: "14px"
+    }}
+  >
+    Logout
+  </button>
 </div>
       <div style={{display:"flex", gap:8, marginBottom:16}}>
         {[

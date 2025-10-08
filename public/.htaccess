@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "UFEV Dashboard - Acesso Restrito"
+AuthUserFile /path/to/.htpasswd
+Require valid-user
