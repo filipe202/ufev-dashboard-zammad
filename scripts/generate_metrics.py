@@ -14,7 +14,7 @@ TOKEN = os.environ.get("ZAMMAD_TOKEN")
 if not TOKEN:
     raise RuntimeError("Missing ZAMMAD_TOKEN environment variable")
 CA_BUNDLE = os.environ.get("ZAMMAD_CA_BUNDLE")
-VERIFY_SSL = os.environ.get("ZAMMAD_VERIFY_SSL", "true").strip().lower() not in {"0", "false", "no"}
+VERIFY_SSL = os.environ.get("ZAMMAD_VERIFY_SSL", "false").strip().lower() not in {"0", "false", "no"}
 
 AGENT_NAME_OVERRIDES = {
     21: "Rafaela Lapa",
@@ -28,7 +28,7 @@ AGENT_NAME_OVERRIDES = {
 }
 AGENT_IDS = set(AGENT_NAME_OVERRIDES.keys())
 
-FROM_DATE = "2025-09-01"  # Expandir para início de setembro
+FROM_DATE = "2025-09-30"  # Expandir para início de setembro
 OPEN_STATE_QUERY = "state:new OR state:open OR state:pending reminder OR state:pending close"
 CLOSED_STATES = {"closed"}
 OPEN_STATES = {state.strip().lower() for state in OPEN_STATE_QUERY.replace("state:", "").split("OR")}
