@@ -245,6 +245,7 @@ def main():
 
     # Usar endpoint direto em vez de search para garantir todos os tickets
     tickets_raw = paged_get("/tickets")
+    log(f"Total tickets encontrados: {len(tickets_raw)}")
 
     def is_after_from_date(iso_dt: str):
         try:
@@ -257,10 +258,17 @@ def main():
 
     for t in tickets_raw:
         state = (t.get("state") or "").strip().lower()
-        if state in CLOSED_STATES and t.get("created_at") and is_after_from_date(t.get("created_at")):
+        # Incluir TODOS os tickets, só separar por estado
+        if state in CLOSED_STATES:
             tickets_closed.append(t)
-        elif state in OPEN_STATES and t.get("created_at") and is_after_from_date(t.get("created_at")):
+        elif state in OPEN_STATES:
             tickets_open.append(t)
+        else:
+            # Incluir outros estados também
+            tickets_open.append(t)
+    
+    log(f"Tickets fechados filtrados: {len(tickets_closed)}")
+    log(f"Tickets abertos filtrados: {len(tickets_open)}")
 
     per_state = defaultdict(make_holder)
     per_agent = defaultdict(make_holder)
@@ -284,8 +292,9 @@ def main():
             continue
 
         day = dt_closed.date().isoformat()
-        if day < FROM_DATE:
-            continue
+        # Remover filtro de data - incluir todos os tickets
+        # if day < FROM_DATE:
+        #     continue
 
         delta = (dt_closed - dt_created).total_seconds() / 3600.0
         agent = user_by_id.get(owner_id, AGENT_NAME_OVERRIDES.get(owner_id, f"id_{owner_id}"))
@@ -319,8 +328,9 @@ def main():
             day_created = iso_date(created).date().isoformat()
         except Exception:
             continue
-        if day_created < FROM_DATE:
-            continue
+        # Remover filtro de data - incluir todos os tickets abertos
+        # if day_created < FROM_DATE:
+        #     continue
         owner_id = t.get("owner_id")
         # Remover filtro restritivo de agentes para ver todos os tickets
         # if owner_id and AGENT_IDS and owner_id not in AGENT_IDS:
