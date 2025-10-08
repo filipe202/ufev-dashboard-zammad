@@ -205,63 +205,49 @@
         }
       }
     },
-    "id_1": {
+    "Não Atribuído": {
       "overall": {
         "avg_time_hours": 31.81,
-        "tickets_count": 136,
+        "tickets_count": 84,
         "tickets_per_day": {
-          "2025-09-30": 15,
-          "2025-10-01": 6,
-          "2025-10-02": 10,
-          "2025-10-03": 12,
-          "2025-10-06": 13,
-          "2025-10-07": 59,
-          "2025-10-08": 21
+          "2025-09-30": 8,
+          "2025-10-01": 2,
+          "2025-10-03": 5,
+          "2025-10-06": 4,
+          "2025-10-07": 46,
+          "2025-10-08": 19
         }
       },
       "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 4,
-          "tickets_per_day": {
-            "2025-10-06": 2,
-            "2025-10-07": 2
-          }
-        },
         "P2": {
           "avg_time_hours": 0.4,
-          "tickets_count": 58,
+          "tickets_count": 18,
           "tickets_per_day": {
-            "2025-09-30": 8,
-            "2025-10-01": 3,
-            "2025-10-02": 9,
-            "2025-10-03": 8,
-            "2025-10-06": 8,
-            "2025-10-07": 14,
-            "2025-10-08": 8
+            "2025-09-30": 4,
+            "2025-10-03": 1,
+            "2025-10-06": 2,
+            "2025-10-07": 5,
+            "2025-10-08": 6
           }
         },
         "P3": {
           "avg_time_hours": 38.9,
-          "tickets_count": 11,
+          "tickets_count": 4,
           "tickets_per_day": {
-            "2025-09-30": 3,
-            "2025-10-01": 1,
-            "2025-10-02": 1,
             "2025-10-03": 2,
-            "2025-10-06": 2,
-            "2025-10-07": 2
+            "2025-10-06": 1,
+            "2025-10-07": 1
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 45.49,
-          "tickets_count": 63,
+          "tickets_count": 62,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-01": 2,
             "2025-10-03": 2,
             "2025-10-06": 1,
-            "2025-10-07": 41,
+            "2025-10-07": 40,
             "2025-10-08": 13
           }
         }
@@ -308,62 +294,6 @@
                 "2025-10-03": 2,
                 "2025-10-06": 1,
                 "2025-10-07": 29
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 52,
-            "tickets_per_day": {
-              "2025-09-30": 7,
-              "2025-10-01": 4,
-              "2025-10-02": 10,
-              "2025-10-03": 7,
-              "2025-10-06": 9,
-              "2025-10-07": 13,
-              "2025-10-08": 2
-            }
-          },
-          "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 4,
-              "tickets_per_day": {
-                "2025-10-06": 2,
-                "2025-10-07": 2
-              }
-            },
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 40,
-              "tickets_per_day": {
-                "2025-09-30": 4,
-                "2025-10-01": 3,
-                "2025-10-02": 9,
-                "2025-10-03": 7,
-                "2025-10-06": 6,
-                "2025-10-07": 9,
-                "2025-10-08": 2
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 7,
-              "tickets_per_day": {
-                "2025-09-30": 3,
-                "2025-10-01": 1,
-                "2025-10-02": 1,
-                "2025-10-06": 1,
-                "2025-10-07": 1
-              }
-            },
-            "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
               }
             }
           }
@@ -441,14 +371,14 @@
     "Sandra Reis": {
       "overall": {
         "avg_time_hours": 48.03,
-        "tickets_count": 85,
+        "tickets_count": 82,
         "tickets_per_day": {
           "2025-09-30": 12,
           "2025-10-01": 12,
           "2025-10-02": 5,
-          "2025-10-03": 8,
-          "2025-10-06": 19,
-          "2025-10-07": 24,
+          "2025-10-03": 7,
+          "2025-10-06": 18,
+          "2025-10-07": 23,
           "2025-10-08": 5
         }
       },
@@ -488,12 +418,12 @@
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 95.93,
-          "tickets_count": 21,
+          "tickets_count": 18,
           "tickets_per_day": {
             "2025-10-02": 1,
-            "2025-10-03": 4,
-            "2025-10-06": 9,
-            "2025-10-07": 6,
+            "2025-10-03": 3,
+            "2025-10-06": 8,
+            "2025-10-07": 5,
             "2025-10-08": 1
           }
         }
@@ -552,28 +482,6 @@
               "tickets_per_day": {
                 "2025-10-07": 3,
                 "2025-10-08": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 3,
-            "tickets_per_day": {
-              "2025-10-03": 1,
-              "2025-10-06": 1,
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": null,
-              "tickets_count": 3,
-              "tickets_per_day": {
-                "2025-10-03": 1,
-                "2025-10-06": 1,
-                "2025-10-07": 1
               }
             }
           }
@@ -1379,42 +1287,34 @@
     "cliente_22": {
       "overall": {
         "avg_time_hours": 39.84,
-        "tickets_count": 63,
+        "tickets_count": 56,
         "tickets_per_day": {
           "2025-09-30": 3,
           "2025-10-01": 1,
-          "2025-10-02": 6,
+          "2025-10-02": 3,
           "2025-10-03": 6,
-          "2025-10-06": 12,
-          "2025-10-07": 29,
+          "2025-10-06": 11,
+          "2025-10-07": 26,
           "2025-10-08": 6
         }
       },
       "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-07": 1
-          }
-        },
         "P2": {
           "avg_time_hours": 25.38,
-          "tickets_count": 12,
+          "tickets_count": 9,
           "tickets_per_day": {
             "2025-09-30": 1,
-            "2025-10-02": 4,
+            "2025-10-02": 2,
             "2025-10-03": 1,
             "2025-10-06": 1,
-            "2025-10-07": 4,
+            "2025-10-07": 3,
             "2025-10-08": 1
           }
         },
         "P3": {
           "avg_time_hours": 21.15,
-          "tickets_count": 4,
+          "tickets_count": 3,
           "tickets_per_day": {
-            "2025-10-02": 1,
             "2025-10-03": 1,
             "2025-10-06": 1,
             "2025-10-07": 1
@@ -1422,14 +1322,14 @@
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 45.01,
-          "tickets_count": 46,
+          "tickets_count": 44,
           "tickets_per_day": {
             "2025-09-30": 2,
             "2025-10-01": 1,
             "2025-10-02": 1,
             "2025-10-03": 4,
-            "2025-10-06": 10,
-            "2025-10-07": 23,
+            "2025-10-06": 9,
+            "2025-10-07": 22,
             "2025-10-08": 5
           }
         }
@@ -1475,49 +1375,6 @@
                 "2025-10-03": 2,
                 "2025-10-06": 1,
                 "2025-10-07": 18
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 7,
-            "tickets_per_day": {
-              "2025-10-02": 3,
-              "2025-10-06": 1,
-              "2025-10-07": 3
-            }
-          },
-          "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            },
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 3,
-              "tickets_per_day": {
-                "2025-10-02": 2,
-                "2025-10-07": 1
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-02": 1
-              }
-            },
-            "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-06": 1,
-                "2025-10-07": 1
               }
             }
           }
@@ -2216,25 +2073,22 @@
     "cliente_44": {
       "overall": {
         "avg_time_hours": 0.28,
-        "tickets_count": 22,
+        "tickets_count": 19,
         "tickets_per_day": {
           "2025-09-30": 4,
-          "2025-10-01": 1,
-          "2025-10-03": 3,
+          "2025-10-03": 2,
           "2025-10-06": 2,
-          "2025-10-08": 12
+          "2025-10-08": 11
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.28,
-          "tickets_count": 15,
+          "tickets_count": 12,
           "tickets_per_day": {
             "2025-09-30": 4,
-            "2025-10-01": 1,
-            "2025-10-03": 1,
             "2025-10-06": 1,
-            "2025-10-08": 8
+            "2025-10-08": 7
           }
         },
         "P3": {
@@ -2271,28 +2125,6 @@
               "tickets_per_day": {
                 "2025-09-30": 4,
                 "2025-10-08": 5
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 3,
-            "tickets_per_day": {
-              "2025-10-01": 1,
-              "2025-10-03": 1,
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 3,
-              "tickets_per_day": {
-                "2025-10-01": 1,
-                "2025-10-03": 1,
-                "2025-10-08": 1
               }
             }
           }
@@ -2466,11 +2298,10 @@
     "cliente_50": {
       "overall": {
         "avg_time_hours": 13.44,
-        "tickets_count": 7,
+        "tickets_count": 6,
         "tickets_per_day": {
           "2025-09-30": 1,
           "2025-10-01": 3,
-          "2025-10-06": 1,
           "2025-10-07": 1,
           "2025-10-08": 1
         }
@@ -2478,11 +2309,10 @@
       "priorities": {
         "P2": {
           "avg_time_hours": 17.42,
-          "tickets_count": 5,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-01": 2,
-            "2025-10-06": 1,
             "2025-10-07": 1
           }
         },
@@ -2519,24 +2349,6 @@
               "tickets_per_day": {
                 "2025-10-01": 1,
                 "2025-10-08": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-06": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
               }
             }
           }
@@ -2582,10 +2394,9 @@
     "cliente_54": {
       "overall": {
         "avg_time_hours": 18.11,
-        "tickets_count": 14,
+        "tickets_count": 12,
         "tickets_per_day": {
           "2025-09-30": 4,
-          "2025-10-02": 2,
           "2025-10-06": 2,
           "2025-10-07": 6
         }
@@ -2601,10 +2412,9 @@
         },
         "P2": {
           "avg_time_hours": 29.48,
-          "tickets_count": 5,
+          "tickets_count": 3,
           "tickets_per_day": {
             "2025-09-30": 2,
-            "2025-10-02": 2,
             "2025-10-06": 1
           }
         },
@@ -2654,24 +2464,6 @@
             }
           }
         },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-02": 2
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-02": 2
-              }
-            }
-          }
-        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -2695,12 +2487,10 @@
     "cliente_57": {
       "overall": {
         "avg_time_hours": 73.99,
-        "tickets_count": 16,
+        "tickets_count": 12,
         "tickets_per_day": {
-          "2025-09-30": 2,
           "2025-10-01": 3,
-          "2025-10-02": 2,
-          "2025-10-03": 1,
+          "2025-10-02": 1,
           "2025-10-06": 3,
           "2025-10-07": 5
         }
@@ -2715,21 +2505,17 @@
         },
         "P2": {
           "avg_time_hours": 83.25,
-          "tickets_count": 11,
+          "tickets_count": 8,
           "tickets_per_day": {
-            "2025-09-30": 1,
             "2025-10-01": 1,
-            "2025-10-02": 1,
-            "2025-10-03": 1,
             "2025-10-06": 3,
             "2025-10-07": 4
           }
         },
         "P3": {
           "avg_time_hours": 92.4,
-          "tickets_count": 3,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-09-30": 1,
             "2025-10-02": 1,
             "2025-10-07": 1
           }
@@ -2769,35 +2555,6 @@
               "tickets_per_day": {
                 "2025-10-02": 1,
                 "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 4,
-            "tickets_per_day": {
-              "2025-09-30": 2,
-              "2025-10-02": 1,
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 3,
-              "tickets_per_day": {
-                "2025-09-30": 1,
-                "2025-10-02": 1,
-                "2025-10-03": 1
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-09-30": 1
               }
             }
           }
@@ -2983,21 +2740,19 @@
     "cliente_62": {
       "overall": {
         "avg_time_hours": 0.27,
-        "tickets_count": 6,
+        "tickets_count": 5,
         "tickets_per_day": {
           "2025-09-30": 3,
-          "2025-10-03": 2,
-          "2025-10-07": 1
+          "2025-10-03": 2
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.27,
-          "tickets_count": 4,
+          "tickets_count": 3,
           "tickets_per_day": {
             "2025-09-30": 2,
-            "2025-10-03": 1,
-            "2025-10-07": 1
+            "2025-10-03": 1
           }
         },
         "P3": {
@@ -3024,24 +2779,6 @@
               "tickets_count": 2,
               "tickets_per_day": {
                 "2025-09-30": 2
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
               }
             }
           }
@@ -3241,9 +2978,8 @@
     "cliente_47": {
       "overall": {
         "avg_time_hours": 138.76,
-        "tickets_count": 3,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-09-30": 1,
           "2025-10-03": 1,
           "2025-10-06": 1
         }
@@ -3251,9 +2987,8 @@
       "priorities": {
         "P3": {
           "avg_time_hours": 138.76,
-          "tickets_count": 3,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-09-30": 1,
             "2025-10-03": 1,
             "2025-10-06": 1
           }
@@ -3274,24 +3009,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-06": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-09-30": 1
-            }
-          },
-          "priorities": {
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-09-30": 1
               }
             }
           }
@@ -3357,10 +3074,9 @@
     "cliente_81": {
       "overall": {
         "avg_time_hours": 62.01,
-        "tickets_count": 6,
+        "tickets_count": 5,
         "tickets_per_day": {
           "2025-10-01": 1,
-          "2025-10-02": 1,
           "2025-10-03": 1,
           "2025-10-07": 3
         }
@@ -3371,13 +3087,6 @@
           "tickets_count": 1,
           "tickets_per_day": {
             "2025-10-07": 1
-          }
-        },
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-02": 1
           }
         },
         "P3": {
@@ -3425,24 +3134,6 @@
             }
           }
         },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-02": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-02": 1
-              }
-            }
-          }
-        },
         "Open": {
           "overall": {
             "avg_time_hours": null,
@@ -3466,12 +3157,12 @@
     "cliente_40": {
       "overall": {
         "avg_time_hours": 44.25,
-        "tickets_count": 19,
+        "tickets_count": 17,
         "tickets_per_day": {
           "2025-09-30": 1,
           "2025-10-03": 1,
-          "2025-10-06": 7,
-          "2025-10-07": 9,
+          "2025-10-06": 6,
+          "2025-10-07": 8,
           "2025-10-08": 1
         }
       },
@@ -3486,21 +3177,20 @@
         },
         "P2": {
           "avg_time_hours": 24.79,
-          "tickets_count": 10,
+          "tickets_count": 9,
           "tickets_per_day": {
-            "2025-10-06": 4,
+            "2025-10-06": 3,
             "2025-10-07": 5,
             "2025-10-08": 1
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 5,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-03": 1,
-            "2025-10-06": 2,
-            "2025-10-07": 1
+            "2025-10-06": 2
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -3539,32 +3229,6 @@
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": 24.84,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-06": 1,
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-07": 1
@@ -4019,9 +3683,9 @@
     "cliente_102": {
       "overall": {
         "avg_time_hours": 68.05,
-        "tickets_count": 5,
+        "tickets_count": 4,
         "tickets_per_day": {
-          "2025-10-03": 2,
+          "2025-10-03": 1,
           "2025-10-07": 1,
           "2025-10-08": 2
         }
@@ -4036,9 +3700,8 @@
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 96.31,
-          "tickets_count": 4,
+          "tickets_count": 3,
           "tickets_per_day": {
-            "2025-10-03": 1,
             "2025-10-07": 1,
             "2025-10-08": 2
           }
@@ -4067,24 +3730,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-03": 1
               }
             }
           }
@@ -4300,19 +3945,17 @@
     "cliente_116": {
       "overall": {
         "avg_time_hours": 0.6,
-        "tickets_count": 2,
+        "tickets_count": 1,
         "tickets_per_day": {
-          "2025-10-02": 1,
-          "2025-10-03": 1
+          "2025-10-02": 1
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.6,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-02": 1,
-            "2025-10-03": 1
+            "2025-10-02": 1
           }
         }
       },
@@ -4331,24 +3974,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-02": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-03": 1
               }
             }
           }
@@ -4704,9 +4329,8 @@
     "cliente_136": {
       "overall": {
         "avg_time_hours": 35.68,
-        "tickets_count": 3,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-10-03": 1,
           "2025-10-06": 1,
           "2025-10-07": 1
         }
@@ -4714,9 +4338,8 @@
       "priorities": {
         "P2": {
           "avg_time_hours": 35.68,
-          "tickets_count": 3,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-10-03": 1,
             "2025-10-06": 1,
             "2025-10-07": 1
           }
@@ -4739,24 +4362,6 @@
               "tickets_per_day": {
                 "2025-10-06": 1,
                 "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-03": 1
               }
             }
           }
@@ -4842,19 +4447,19 @@
     "cliente_145": {
       "overall": {
         "avg_time_hours": 25.58,
-        "tickets_count": 4,
+        "tickets_count": 3,
         "tickets_per_day": {
           "2025-10-06": 1,
-          "2025-10-07": 3
+          "2025-10-07": 2
         }
       },
       "priorities": {
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 25.58,
-          "tickets_count": 4,
+          "tickets_count": 3,
           "tickets_per_day": {
             "2025-10-06": 1,
-            "2025-10-07": 3
+            "2025-10-07": 2
           }
         }
       },
@@ -4873,24 +4478,6 @@
               "tickets_count": 2,
               "tickets_per_day": {
                 "2025-10-07": 2
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
               }
             }
           }
@@ -4918,9 +4505,8 @@
     "cliente_147": {
       "overall": {
         "avg_time_hours": 21.85,
-        "tickets_count": 5,
+        "tickets_count": 3,
         "tickets_per_day": {
-          "2025-10-06": 2,
           "2025-10-07": 3
         }
       },
@@ -4932,18 +4518,10 @@
             "2025-10-07": 2
           }
         },
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-06": 1
-          }
-        },
         "P3": {
           "avg_time_hours": 32.18,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-06": 1,
             "2025-10-07": 1
           }
         }
@@ -4970,31 +4548,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-06": 2
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
               }
             }
           }
@@ -5042,17 +4595,17 @@
     "cliente_146": {
       "overall": {
         "avg_time_hours": 0.98,
-        "tickets_count": 3,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-10-06": 3
+          "2025-10-06": 2
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.98,
-          "tickets_count": 3,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-10-06": 3
+            "2025-10-06": 2
           }
         }
       },
@@ -5068,24 +4621,6 @@
           "priorities": {
             "P2": {
               "avg_time_hours": 0.98,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-06": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-06": 1
@@ -5335,17 +4870,17 @@
     "cliente_171": {
       "overall": {
         "avg_time_hours": 0.16,
-        "tickets_count": 3,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-10-07": 3
+          "2025-10-07": 2
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.16,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-07": 2
+            "2025-10-07": 1
           }
         },
         "P3": {
@@ -5368,24 +4903,6 @@
           "priorities": {
             "P2": {
               "avg_time_hours": 0.16,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-07": 1
@@ -5530,17 +5047,17 @@
     "cliente_182": {
       "overall": {
         "avg_time_hours": 0.36,
-        "tickets_count": 2,
+        "tickets_count": 1,
         "tickets_per_day": {
-          "2025-10-07": 2
+          "2025-10-07": 1
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.36,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-07": 2
+            "2025-10-07": 1
           }
         }
       },
@@ -5556,24 +5073,6 @@
           "priorities": {
             "P2": {
               "avg_time_hours": 0.36,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-07": 1
@@ -5873,131 +5372,6 @@
         }
       }
     },
-    "cliente_32": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 3,
-        "tickets_per_day": {
-          "2025-09-30": 1,
-          "2025-10-06": 2
-        }
-      },
-      "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-06": 1
-          }
-        },
-        "P3": {
-          "avg_time_hours": null,
-          "tickets_count": 2,
-          "tickets_per_day": {
-            "2025-09-30": 1,
-            "2025-10-06": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-09-30": 1
-            }
-          },
-          "priorities": {
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-09-30": 1
-              }
-            }
-          }
-        },
-        "Pendente Gestão": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-06": 1
-            }
-          },
-          "priorities": {
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
-              }
-            }
-          }
-        },
-        "Pendente Operador": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-06": 1
-            }
-          },
-          "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_38": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 2,
-        "tickets_per_day": {
-          "2025-09-30": 1,
-          "2025-10-07": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 2,
-          "tickets_per_day": {
-            "2025-09-30": 1,
-            "2025-10-07": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-09-30": 1,
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-09-30": 1,
-                "2025-10-07": 1
-              }
-            }
-          }
-        }
-      }
-    },
     "cliente_39": {
       "overall": {
         "avg_time_hours": null,
@@ -6112,44 +5486,6 @@
         }
       }
     },
-    "cliente_61": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-09-30": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-09-30": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-09-30": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-09-30": 1
-              }
-            }
-          }
-        }
-      }
-    },
     "cliente_65": {
       "overall": {
         "avg_time_hours": null,
@@ -6226,13 +5562,13 @@
         }
       }
     },
-    "cliente_68": {
+    "cliente_70": {
       "overall": {
         "avg_time_hours": null,
         "tickets_count": 2,
         "tickets_per_day": {
           "2025-09-30": 1,
-          "2025-10-01": 1
+          "2025-10-08": 1
         }
       },
       "priorities": {
@@ -6241,73 +5577,11 @@
           "tickets_count": 2,
           "tickets_per_day": {
             "2025-09-30": 1,
-            "2025-10-01": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-09-30": 1,
-              "2025-10-01": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-09-30": 1,
-                "2025-10-01": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_70": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 3,
-        "tickets_per_day": {
-          "2025-09-30": 1,
-          "2025-10-07": 1,
-          "2025-10-08": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 3,
-          "tickets_per_day": {
-            "2025-09-30": 1,
-            "2025-10-07": 1,
             "2025-10-08": 1
           }
         }
       },
       "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -6333,41 +5607,21 @@
     "cliente_74": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 2,
+        "tickets_count": 1,
         "tickets_per_day": {
-          "2025-09-30": 1,
-          "2025-10-03": 1
+          "2025-09-30": 1
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-09-30": 1,
-            "2025-10-03": 1
+            "2025-09-30": 1
           }
         }
       },
       "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-03": 1
-              }
-            }
-          }
-        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -6382,44 +5636,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-09-30": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_79": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-01": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-01": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-01": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-01": 1
               }
             }
           }
@@ -6496,70 +5712,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-01": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_87": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 2,
-        "tickets_per_day": {
-          "2025-10-01": 1,
-          "2025-10-07": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-07": 1
-          }
-        },
-        "P3": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-01": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-01": 1
-            }
-          },
-          "priorities": {
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-01": 1
-              }
-            }
-          }
-        },
-        "Pendente Consultor": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
               }
             }
           }
@@ -6818,86 +5970,6 @@
         }
       }
     },
-    "cliente_107": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-02": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-02": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-02": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-02": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_115": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 2,
-        "tickets_per_day": {
-          "2025-10-02": 1,
-          "2025-10-03": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 2,
-          "tickets_per_day": {
-            "2025-10-02": 1,
-            "2025-10-03": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-02": 1,
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-02": 1,
-                "2025-10-03": 1
-              }
-            }
-          }
-        }
-      }
-    },
     "cliente_120": {
       "overall": {
         "avg_time_hours": null,
@@ -6930,82 +6002,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-02": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_122": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-02": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-02": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-02": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-02": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_85": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-03": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-03": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-03": 1
               }
             }
           }
@@ -7120,44 +6116,6 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-03": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_142": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-06": 1
-        }
-      },
-      "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-06": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-06": 1
-            }
-          },
-          "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
               }
             }
           }
@@ -7281,43 +6239,21 @@
     "cliente_153": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 3,
+        "tickets_count": 1,
         "tickets_per_day": {
-          "2025-10-06": 2,
-          "2025-10-07": 1
+          "2025-10-06": 1
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 3,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-06": 2,
-            "2025-10-07": 1
+            "2025-10-06": 1
           }
         }
       },
       "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-06": 1,
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-06": 1,
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
         "Pendente Legal": {
           "overall": {
             "avg_time_hours": null,
@@ -7338,16 +6274,23 @@
         }
       }
     },
-    "cliente_156": {
+    "cliente_32": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 1,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-10-06": 1
+          "2025-10-06": 2
         }
       },
       "priorities": {
-        "P2": {
+        "P1": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        },
+        "P3": {
           "avg_time_hours": null,
           "tickets_count": 1,
           "tickets_per_day": {
@@ -7356,7 +6299,7 @@
         }
       },
       "states": {
-        "Merged": {
+        "Pendente Gestão": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7365,7 +6308,25 @@
             }
           },
           "priorities": {
-            "P2": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P1": {
               "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
@@ -7550,45 +6511,7 @@
         }
       }
     },
-    "cliente_163": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-06": 1
-        }
-      },
-      "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-06": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-06": 1
-            }
-          },
-          "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_176": {
+    "cliente_179": {
       "overall": {
         "avg_time_hours": null,
         "tickets_count": 1,
@@ -7606,7 +6529,7 @@
         }
       },
       "states": {
-        "Merged": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7626,43 +6549,25 @@
         }
       }
     },
-    "cliente_179": {
+    "cliente_87": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 2,
+        "tickets_count": 1,
         "tickets_per_day": {
-          "2025-10-07": 2
+          "2025-10-07": 1
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-07": 2
+            "2025-10-07": 1
           }
         }
       },
       "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Open": {
+        "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7910,44 +6815,6 @@
         }
       }
     },
-    "cliente_192": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-07": 1
-        }
-      },
-      "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-07": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        }
-      }
-    },
     "cliente_193": {
       "overall": {
         "avg_time_hours": null,
@@ -8005,44 +6872,6 @@
       },
       "states": {
         "Pendente Consultor": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_184": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-08": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-08": 1
-          }
-        }
-      },
-      "states": {
-        "Merged": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -8180,31 +7009,31 @@
   "daily_summary": {
     "2025-09-30": {
       "closed": 31,
-      "open": 21
+      "open": 14
     },
     "2025-10-01": {
       "closed": 15,
-      "open": 16
+      "open": 12
     },
     "2025-10-02": {
       "closed": 6,
-      "open": 16
+      "open": 6
     },
     "2025-10-03": {
       "closed": 10,
-      "open": 19
+      "open": 11
     },
     "2025-10-06": {
       "closed": 18,
-      "open": 41
+      "open": 31
     },
     "2025-10-07": {
       "closed": 67,
-      "open": 50
+      "open": 36
     },
     "2025-10-08": {
       "closed": 15,
-      "open": 25
+      "open": 23
     }
   },
   "states": {
@@ -8383,64 +7212,6 @@
           "tickets_count": 1,
           "tickets_per_day": {
             "2025-09-30": 1
-          }
-        }
-      }
-    },
-    "Merged": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 55,
-        "tickets_per_day": {
-          "2025-09-30": 7,
-          "2025-10-01": 4,
-          "2025-10-02": 10,
-          "2025-10-03": 8,
-          "2025-10-06": 10,
-          "2025-10-07": 14,
-          "2025-10-08": 2
-        }
-      },
-      "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 4,
-          "tickets_per_day": {
-            "2025-10-06": 2,
-            "2025-10-07": 2
-          }
-        },
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 40,
-          "tickets_per_day": {
-            "2025-09-30": 4,
-            "2025-10-01": 3,
-            "2025-10-02": 9,
-            "2025-10-03": 7,
-            "2025-10-06": 6,
-            "2025-10-07": 9,
-            "2025-10-08": 2
-          }
-        },
-        "P3": {
-          "avg_time_hours": null,
-          "tickets_count": 7,
-          "tickets_per_day": {
-            "2025-09-30": 3,
-            "2025-10-01": 1,
-            "2025-10-02": 1,
-            "2025-10-06": 1,
-            "2025-10-07": 1
-          }
-        },
-        "Reservas sem Formulário / sem pedido RGPD e CVO": {
-          "avg_time_hours": null,
-          "tickets_count": 4,
-          "tickets_per_day": {
-            "2025-10-03": 1,
-            "2025-10-06": 1,
-            "2025-10-07": 2
           }
         }
       }

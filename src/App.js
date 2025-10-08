@@ -398,7 +398,7 @@ export default function App() {
     <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
 <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
   <img
-    src="/logo.svg"
+    src="logo.svg"
     alt="UFEV"
     style={{height:48, objectFit:"contain"}}
   />
@@ -409,8 +409,6 @@ export default function App() {
       <div style={{display:"flex", gap:8, marginBottom:16}}>
         {[
           { value: "agents", label: "Por agentes" },
-          { value: "customers", label: "Por clientes" },
-          { value: "operators", label: "Por operadores" },
           { value: "states", label: "Por estados" },
         ].map(option => (
           <button
