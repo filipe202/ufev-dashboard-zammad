@@ -424,8 +424,13 @@ def main():
         
         try:
             dt_created = iso_date(created_at)
-            # Converter para timezone Portugal (UTC+1) - adicionar 1 hora
-            local_dt = dt_created.replace(tzinfo=timezone.utc) + timedelta(hours=1)
+            # Garantir que está em UTC e converter para Portugal (UTC+1)
+            if dt_created.tzinfo is None:
+                dt_created = dt_created.replace(tzinfo=timezone.utc)
+            
+            # Converter para timezone Portugal
+            portugal_tz = timezone(timedelta(hours=1))  # UTC+1
+            local_dt = dt_created.astimezone(portugal_tz)
             
             weekday = local_dt.weekday()  # 0=Segunda, 6=Domingo
             hour = local_dt.hour
@@ -445,8 +450,13 @@ def main():
         
         try:
             dt_closed = iso_date(closed_at)
-            # Converter para timezone Portugal (UTC+1) - adicionar 1 hora
-            local_dt = dt_closed.replace(tzinfo=timezone.utc) + timedelta(hours=1)
+            # Garantir que está em UTC e converter para Portugal (UTC+1)
+            if dt_closed.tzinfo is None:
+                dt_closed = dt_closed.replace(tzinfo=timezone.utc)
+            
+            # Converter para timezone Portugal
+            portugal_tz = timezone(timedelta(hours=1))  # UTC+1
+            local_dt = dt_closed.astimezone(portugal_tz)
             
             weekday = local_dt.weekday()  # 0=Segunda, 6=Domingo
             hour = local_dt.hour

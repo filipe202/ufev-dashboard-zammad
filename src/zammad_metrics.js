@@ -201,14 +201,14 @@ export const ZAMMAD_METRICS = {
     "Não Atribuído": {
       "overall": {
         "avg_time_hours": 31.15,
-        "tickets_count": 95,
+        "tickets_count": 96,
         "tickets_per_day": {
           "2025-09-30": 8,
           "2025-10-01": 2,
           "2025-10-03": 5,
           "2025-10-06": 4,
           "2025-10-07": 39,
-          "2025-10-08": 37
+          "2025-10-08": 38
         }
       },
       "priorities": {
@@ -235,14 +235,14 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 44.93,
-          "tickets_count": 68,
+          "tickets_count": 69,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-01": 2,
             "2025-10-03": 2,
             "2025-10-06": 1,
             "2025-10-07": 34,
-            "2025-10-08": 25
+            "2025-10-08": 26
           }
         }
       },
@@ -321,19 +321,19 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 24,
+            "tickets_count": 25,
             "tickets_per_day": {
               "2025-10-07": 5,
-              "2025-10-08": 19
+              "2025-10-08": 20
             }
           },
           "priorities": {
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 24,
+              "tickets_count": 25,
               "tickets_per_day": {
                 "2025-10-07": 5,
-                "2025-10-08": 19
+                "2025-10-08": 20
               }
             }
           }
@@ -1308,7 +1308,7 @@ export const ZAMMAD_METRICS = {
     "cliente_22": {
       "overall": {
         "avg_time_hours": 41.08,
-        "tickets_count": 57,
+        "tickets_count": 58,
         "tickets_per_day": {
           "2025-09-30": 3,
           "2025-10-01": 1,
@@ -1316,7 +1316,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-03": 6,
           "2025-10-06": 11,
           "2025-10-07": 25,
-          "2025-10-08": 8
+          "2025-10-08": 9
         }
       },
       "priorities": {
@@ -1344,7 +1344,7 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 45.01,
-          "tickets_count": 46,
+          "tickets_count": 47,
           "tickets_per_day": {
             "2025-09-30": 2,
             "2025-10-01": 1,
@@ -1352,7 +1352,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-03": 4,
             "2025-10-06": 9,
             "2025-10-07": 22,
-            "2025-10-08": 7
+            "2025-10-08": 8
           }
         }
       },
@@ -1429,19 +1429,19 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 6,
             "tickets_per_day": {
               "2025-10-07": 1,
-              "2025-10-08": 4
+              "2025-10-08": 5
             }
           },
           "priorities": {
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 5,
+              "tickets_count": 6,
               "tickets_per_day": {
                 "2025-10-07": 1,
-                "2025-10-08": 4
+                "2025-10-08": 5
               }
             }
           }
@@ -7496,7 +7496,7 @@ export const ZAMMAD_METRICS = {
     },
     "2025-10-08": {
       "closed": 24,
-      "open": 47
+      "open": 48
     }
   },
   "states": {
@@ -7752,13 +7752,13 @@ export const ZAMMAD_METRICS = {
     "Open": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 40,
+        "tickets_count": 41,
         "tickets_per_day": {
           "2025-10-01": 2,
           "2025-10-02": 1,
           "2025-10-06": 4,
           "2025-10-07": 6,
-          "2025-10-08": 27
+          "2025-10-08": 28
         }
       },
       "priorities": {
@@ -7782,10 +7782,10 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
-          "tickets_count": 24,
+          "tickets_count": 25,
           "tickets_per_day": {
             "2025-10-07": 5,
-            "2025-10-08": 19
+            "2025-10-08": 20
           }
         }
       }
@@ -7841,7 +7841,7 @@ export const ZAMMAD_METRICS = {
       "by_weekday": {
         "Segunda": 72,
         "Terça": 106,
-        "Quarta": 96,
+        "Quarta": 97,
         "Quinta": 20,
         "Sexta": 27,
         "Sábado": 0,
@@ -7870,7 +7870,7 @@ export const ZAMMAD_METRICS = {
         "19h": 12,
         "20h": 9,
         "21h": 13,
-        "22h": 14,
+        "22h": 15,
         "23h": 5
       },
       "heatmap": [
@@ -8227,7 +8227,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quarta",
           "hour": "22h",
-          "tickets": 1
+          "tickets": 2
         },
         {
           "weekday": "Quarta",
@@ -8715,7 +8715,7 @@ export const ZAMMAD_METRICS = {
           "tickets": 0
         }
       ],
-      "total_tickets": 321
+      "total_tickets": 322
     },
     "closed": {
       "by_weekday": {
