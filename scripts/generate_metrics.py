@@ -259,15 +259,17 @@ def main():
     tickets_open = []
 
     for t in tickets_raw:
-        state = (t.get("state") or "").strip().lower()
-        # Incluir TODOS os tickets, só separar por estado
-        if state in CLOSED_STATES:
-            tickets_closed.append(t)
-        elif state in OPEN_STATES:
-            tickets_open.append(t)
-        else:
-            # Incluir outros estados também
-            tickets_open.append(t)
+        created_at = t.get("created_at")
+        if created_at and is_after_from_date(created_at):
+            state = (t.get("state") or "").strip().lower()
+            # Incluir TODOS os tickets, só separar por estado
+            if state in CLOSED_STATES:
+                tickets_closed.append(t)
+            elif state in OPEN_STATES:
+                tickets_open.append(t)
+            else:
+                # Incluir outros estados também
+                tickets_open.append(t)
     
     log(f"Tickets fechados filtrados: {len(tickets_closed)}")
     log(f"Tickets abertos filtrados: {len(tickets_open)}")
@@ -294,9 +296,8 @@ def main():
             continue
 
         day = dt_closed.date().isoformat()
-        # Remover filtro de data - incluir todos os tickets
-        # if day < FROM_DATE:
-        #     continue
+        if day < FROM_DATE:
+            continue
 
         delta = (dt_closed - dt_created).total_seconds() / 3600.0
         agent = user_by_id.get(owner_id, AGENT_NAME_OVERRIDES.get(owner_id, f"id_{owner_id}"))
@@ -330,9 +331,8 @@ def main():
             day_created = iso_date(created).date().isoformat()
         except Exception:
             continue
-        # Remover filtro de data - incluir todos os tickets abertos
-        # if day_created < FROM_DATE:
-        #     continue
+        if day_created < FROM_DATE:
+            continue
         owner_id = t.get("owner_id")
         # Remover filtro restritivo de agentes para ver todos os tickets
         # if owner_id and AGENT_IDS and owner_id not in AGENT_IDS:
