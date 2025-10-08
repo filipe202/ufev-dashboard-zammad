@@ -1277,8 +1277,8 @@ export default function App() {
           <div style={{width:8, height:24, background:"#0096D6", borderRadius:4}}/>
           <h2 style={{margin:0, fontSize:16, color:"#005A8D"}}>Tickets por dia</h2>
         </div>
-        <div style={{width:"100%", height:380, overflowX: "auto", overflowY: "hidden"}}>
-          <div style={{display: "flex", alignItems: "end", height: "100%", gap: 4, minWidth: series.length * 60}}>
+        <div style={{width:"100%", height:420, overflowX: "auto", overflowY: "hidden", paddingBottom: 20}}>
+          <div style={{display: "flex", alignItems: "end", height: "calc(100% - 40px)", gap: 4, minWidth: series.length * 60}}>
             {series.map((dayData, index) => {
               const totalTickets = Object.values(dayData).reduce((sum, val) => 
                 typeof val === 'number' ? sum + val : sum, 0
@@ -1335,10 +1335,14 @@ export default function App() {
                     fontSize: 10,
                     fontWeight: 500,
                     color: "#6b7280",
-                    marginTop: 4,
+                    marginTop: 8,
                     transform: "rotate(-45deg)",
                     transformOrigin: "center",
-                    whiteSpace: "nowrap"
+                    whiteSpace: "nowrap",
+                    height: 20,
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}>
                     {dayData.day}
                   </div>
