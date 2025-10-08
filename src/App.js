@@ -978,6 +978,109 @@ export default function App() {
           </div>
         </div>
 
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
+            Heatmap: Dia da Semana x Hora ({modeLabel} de Tickets)
+          </h3>
+          <div style={{overflowX: "auto"}}>
+            <div style={{minWidth: 800}}>
+              {/* Header com horas */}
+              <div style={{display: "flex", marginBottom: 4}}>
+                <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280"}}>
+                  Dia / Hora
+                </div>
+                {Array.from({length: 24}, (_, hour) => (
+                  <div key={hour} style={{
+                    width: 28,
+                    fontSize: 10,
+                    textAlign: "center",
+                    color: "#6b7280",
+                    fontWeight: 500
+                  }}>
+                    {hour.toString().padStart(2, '0')}h
+                  </div>
+                ))}
+              </div>
+              
+              {/* Heatmap grid */}
+              {["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"].map(weekday => {
+                const dayData = workload.heatmap?.filter(item => item.weekday === weekday) || [];
+                const maxTickets = Math.max(...(workload.heatmap?.map(item => item.tickets) || [1]));
+                
+                return (
+                  <div key={weekday} style={{display: "flex", marginBottom: 2}}>
+                    <div style={{
+                      width: 80,
+                      fontSize: 12,
+                      fontWeight: 500,
+                      color: "#374151",
+                      display: "flex",
+                      alignItems: "center",
+                      paddingRight: 8
+                    }}>
+                      {weekday}
+                    </div>
+                    {Array.from({length: 24}, (_, hour) => {
+                      const hourData = dayData.find(item => item.hour === `${hour.toString().padStart(2, '0')}h`);
+                      const tickets = hourData?.tickets || 0;
+                      const intensity = maxTickets > 0 ? tickets / maxTickets : 0;
+                      
+                      // Escala de cores: branco -> azul escuro
+                      const getColor = (intensity) => {
+                        if (intensity === 0) return "#f8fafc";
+                        if (intensity <= 0.2) return "#e0f2fe";
+                        if (intensity <= 0.4) return "#b3e5fc";
+                        if (intensity <= 0.6) return "#4fc3f7";
+                        if (intensity <= 0.8) return "#29b6f6";
+                        return "#0277bd";
+                      };
+                      
+                      const textColor = intensity > 0.5 ? "white" : "#374151";
+                      
+                      return (
+                        <div
+                          key={hour}
+                          style={{
+                            width: 28,
+                            height: 28,
+                            backgroundColor: getColor(intensity),
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: 9,
+                            fontWeight: 600,
+                            color: textColor,
+                            border: "1px solid #e2e8f0",
+                            cursor: tickets > 0 ? "pointer" : "default"
+                          }}
+                          title={`${weekday} ${hour.toString().padStart(2, '0')}h: ${tickets} tickets`}
+                        >
+                          {tickets > 0 ? tickets : ""}
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+              
+              {/* Legenda */}
+              <div style={{marginTop: 16, display: "flex", alignItems: "center", gap: 8}}>
+                <span style={{fontSize: 12, color: "#6b7280"}}>Intensidade:</span>
+                <div style={{display: "flex", alignItems: "center", gap: 2}}>
+                  <div style={{width: 16, height: 16, backgroundColor: "#f8fafc", border: "1px solid #e2e8f0"}} />
+                  <span style={{fontSize: 10, color: "#6b7280", marginRight: 8}}>0</span>
+                  <div style={{width: 16, height: 16, backgroundColor: "#e0f2fe", border: "1px solid #e2e8f0"}} />
+                  <div style={{width: 16, height: 16, backgroundColor: "#b3e5fc", border: "1px solid #e2e8f0"}} />
+                  <div style={{width: 16, height: 16, backgroundColor: "#4fc3f7", border: "1px solid #e2e8f0"}} />
+                  <div style={{width: 16, height: 16, backgroundColor: "#29b6f6", border: "1px solid #e2e8f0"}} />
+                  <div style={{width: 16, height: 16, backgroundColor: "#0277bd", border: "1px solid #e2e8f0"}} />
+                  <span style={{fontSize: 10, color: "#6b7280", marginLeft: 8}}>Máximo</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
           <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
             Resumo da Análise ({workload.total_tickets} tickets analisados)
