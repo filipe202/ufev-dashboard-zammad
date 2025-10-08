@@ -255,11 +255,9 @@ export default function App() {
   const [sortKey, setSortKey] = useState("tickets"); // "tickets" | "avg"
   const [selectedGroups, setSelectedGroups] = useState(["ALL"]);
   const [error, setError] = useState(null);
-  const [fromDate, setFromDate] = useState("");
   const fromDateRef = useRef("");
 
   const setFromDateSynced = useCallback((value) => {
-    setFromDate(value);
     fromDateRef.current = value;
   }, []);
 
