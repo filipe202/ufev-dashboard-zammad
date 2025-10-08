@@ -4,6 +4,7 @@ import json
 import requests
 from datetime import datetime, timezone
 from collections import defaultdict
+import calendar
 
 # === Ajuste principal: escrever em src/ como módulo JS ===
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -317,6 +318,11 @@ def main():
     per_agent = defaultdict(make_holder)
     per_customer = defaultdict(make_holder)
     closed_by_day = defaultdict(int)
+    
+    # Análise temporal - carga de trabalho
+    workload_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
+    workload_by_hour = defaultdict(int)     # 0-23h
+    workload_by_weekday_hour = defaultdict(lambda: defaultdict(int))  # [weekday][hour]
 
     for t in tickets_closed:
         owner_id = t.get("owner_id")
@@ -398,6 +404,28 @@ def main():
 
         record_entity(per_state[state_label], day_created, priority_name, state_label, None)
 
+    # Análise temporal para TODOS os tickets (abertos + fechados)
+    all_tickets = tickets_closed + tickets_open
+    for t in all_tickets:
+        created_at = t.get("created_at")
+        if not created_at:
+            continue
+        
+        try:
+            dt_created = iso_date(created_at)
+            # Converter para timezone local (assumindo Portugal UTC+1)
+            local_dt = dt_created.replace(tzinfo=timezone.utc).astimezone()
+            
+            weekday = local_dt.weekday()  # 0=Segunda, 6=Domingo
+            hour = local_dt.hour
+            
+            workload_by_weekday[weekday] += 1
+            workload_by_hour[hour] += 1
+            workload_by_weekday_hour[weekday][hour] += 1
+            
+        except Exception:
+            continue
+
     def format_bucket(bucket):
         avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
         return {
@@ -447,12 +475,33 @@ def main():
     all_days = sorted(set(closed_by_day.keys()) | set(open_by_day.keys()))
     daily_summary = {day: {"closed": closed_by_day.get(day, 0), "open": open_by_day.get(day, 0)} for day in all_days}
 
+    # Formatar dados temporais
+    weekday_names = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
+    workload_weekdays = {weekday_names[i]: workload_by_weekday[i] for i in range(7)}
+    workload_hours = {f"{h:02d}h": workload_by_hour[h] for h in range(24)}
+    
+    # Heatmap: dia da semana x hora
+    workload_heatmap = []
+    for weekday in range(7):
+        for hour in range(24):
+            workload_heatmap.append({
+                "weekday": weekday_names[weekday],
+                "hour": f"{hour:02d}h",
+                "tickets": workload_by_weekday_hour[weekday][hour]
+            })
+
     output = {
         "filters": {"from_date": FROM_DATE},
         "agents": agents_result,
         "customers": customers_result,
         "daily_summary": daily_summary,
         "states": states_result,
+        "workload_analysis": {
+            "by_weekday": workload_weekdays,
+            "by_hour": workload_hours,
+            "heatmap": workload_heatmap,
+            "total_tickets": len(all_tickets)
+        }
     }
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

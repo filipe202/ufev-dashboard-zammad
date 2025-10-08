@@ -6,8 +6,8 @@ export const ZAMMAD_METRICS = {
   "agents": {
     "Inês Martinho": {
       "overall": {
-        "avg_time_hours": 16.01,
-        "tickets_count": 52,
+        "avg_time_hours": 15.53,
+        "tickets_count": 54,
         "tickets_per_day": {
           "2025-09-30": 12,
           "2025-10-01": 4,
@@ -15,7 +15,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-03": 4,
           "2025-10-06": 6,
           "2025-10-07": 12,
-          "2025-10-08": 11
+          "2025-10-08": 13
         }
       },
       "priorities": {
@@ -29,15 +29,15 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 11.56,
-          "tickets_count": 20,
+          "avg_time_hours": 10.68,
+          "tickets_count": 22,
           "tickets_per_day": {
             "2025-09-30": 2,
             "2025-10-01": 4,
             "2025-10-02": 1,
             "2025-10-06": 2,
             "2025-10-07": 7,
-            "2025-10-08": 4
+            "2025-10-08": 6
           }
         },
         "P3": {
@@ -56,8 +56,8 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 16.01,
-            "tickets_count": 32,
+            "avg_time_hours": 15.53,
+            "tickets_count": 33,
             "tickets_per_day": {
               "2025-09-30": 9,
               "2025-10-01": 3,
@@ -65,7 +65,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-03": 1,
               "2025-10-06": 2,
               "2025-10-07": 8,
-              "2025-10-08": 7
+              "2025-10-08": 8
             }
           },
           "priorities": {
@@ -78,14 +78,15 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 11.56,
-              "tickets_count": 12,
+              "avg_time_hours": 10.68,
+              "tickets_count": 13,
               "tickets_per_day": {
                 "2025-09-30": 2,
                 "2025-10-01": 3,
                 "2025-10-02": 1,
                 "2025-10-06": 1,
-                "2025-10-07": 5
+                "2025-10-07": 5,
+                "2025-10-08": 1
               }
             },
             "P3": {
@@ -105,19 +106,26 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 4,
+            "tickets_count": 7,
             "tickets_per_day": {
               "2025-10-02": 1,
-              "2025-10-07": 1,
-              "2025-10-08": 2
+              "2025-10-07": 2,
+              "2025-10-08": 4
             }
           },
           "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 4,
               "tickets_per_day": {
-                "2025-10-08": 2
+                "2025-10-08": 4
               }
             },
             "P3": {
@@ -133,30 +141,14 @@ export const ZAMMAD_METRICS = {
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 10,
+            "tickets_count": 8,
             "tickets_per_day": {
               "2025-09-30": 3,
               "2025-10-03": 3,
-              "2025-10-06": 2,
-              "2025-10-07": 1,
-              "2025-10-08": 1
+              "2025-10-06": 2
             }
           },
           "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            },
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            },
             "P3": {
               "avg_time_hours": null,
               "tickets_count": 8,
@@ -203,26 +195,26 @@ export const ZAMMAD_METRICS = {
     },
     "Não Atribuído": {
       "overall": {
-        "avg_time_hours": 31.81,
-        "tickets_count": 95,
+        "avg_time_hours": 32.36,
+        "tickets_count": 96,
         "tickets_per_day": {
           "2025-09-30": 8,
           "2025-10-01": 2,
           "2025-10-03": 5,
           "2025-10-06": 4,
-          "2025-10-07": 46,
-          "2025-10-08": 30
+          "2025-10-07": 45,
+          "2025-10-08": 32
         }
       },
       "priorities": {
         "P2": {
-          "avg_time_hours": 0.4,
-          "tickets_count": 29,
+          "avg_time_hours": 0.35,
+          "tickets_count": 28,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 1,
             "2025-10-06": 2,
-            "2025-10-07": 5,
+            "2025-10-07": 4,
             "2025-10-08": 17
           }
         },
@@ -237,40 +229,40 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 45.49,
-          "tickets_count": 62,
+          "tickets_count": 64,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-01": 2,
             "2025-10-03": 2,
             "2025-10-06": 1,
             "2025-10-07": 40,
-            "2025-10-08": 13
+            "2025-10-08": 15
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 31.81,
-            "tickets_count": 57,
+            "avg_time_hours": 32.36,
+            "tickets_count": 56,
             "tickets_per_day": {
               "2025-09-30": 8,
               "2025-10-01": 2,
               "2025-10-03": 5,
               "2025-10-06": 3,
-              "2025-10-07": 34,
+              "2025-10-07": 33,
               "2025-10-08": 5
             }
           },
           "priorities": {
             "P2": {
-              "avg_time_hours": 0.4,
-              "tickets_count": 17,
+              "avg_time_hours": 0.35,
+              "tickets_count": 16,
               "tickets_per_day": {
                 "2025-09-30": 4,
                 "2025-10-03": 1,
                 "2025-10-06": 2,
-                "2025-10-07": 5,
+                "2025-10-07": 4,
                 "2025-10-08": 5
               }
             },
@@ -297,10 +289,10 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 14,
+            "tickets_count": 15,
             "tickets_per_day": {
               "2025-10-07": 1,
-              "2025-10-08": 13
+              "2025-10-08": 14
             }
           },
           "priorities": {
@@ -313,10 +305,10 @@ export const ZAMMAD_METRICS = {
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-07": 1,
-                "2025-10-08": 2
+                "2025-10-08": 3
               }
             }
           }
@@ -324,19 +316,19 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 21,
+            "tickets_count": 22,
             "tickets_per_day": {
               "2025-10-07": 10,
-              "2025-10-08": 11
+              "2025-10-08": 12
             }
           },
           "priorities": {
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 21,
+              "tickets_count": 22,
               "tickets_per_day": {
                 "2025-10-07": 10,
-                "2025-10-08": 11
+                "2025-10-08": 12
               }
             }
           }
@@ -374,7 +366,7 @@ export const ZAMMAD_METRICS = {
     "Sandra Reis": {
       "overall": {
         "avg_time_hours": 48.03,
-        "tickets_count": 82,
+        "tickets_count": 85,
         "tickets_per_day": {
           "2025-09-30": 12,
           "2025-10-01": 12,
@@ -382,7 +374,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-03": 7,
           "2025-10-06": 18,
           "2025-10-07": 23,
-          "2025-10-08": 5
+          "2025-10-08": 8
         }
       },
       "priorities": {
@@ -395,7 +387,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 45.21,
-          "tickets_count": 32,
+          "tickets_count": 35,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-01": 4,
@@ -403,7 +395,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-03": 2,
             "2025-10-06": 6,
             "2025-10-07": 13,
-            "2025-10-08": 3
+            "2025-10-08": 6
           }
         },
         "P3": {
@@ -492,23 +484,25 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 8,
+            "tickets_count": 11,
             "tickets_per_day": {
               "2025-10-01": 1,
               "2025-10-02": 1,
               "2025-10-06": 2,
-              "2025-10-07": 4
+              "2025-10-07": 4,
+              "2025-10-08": 3
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 7,
+              "tickets_count": 10,
               "tickets_per_day": {
                 "2025-10-01": 1,
                 "2025-10-02": 1,
                 "2025-10-06": 1,
-                "2025-10-07": 4
+                "2025-10-07": 4,
+                "2025-10-08": 3
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -664,44 +658,46 @@ export const ZAMMAD_METRICS = {
     "Catarina França": {
       "overall": {
         "avg_time_hours": 60.61,
-        "tickets_count": 25,
+        "tickets_count": 29,
         "tickets_per_day": {
           "2025-09-30": 4,
           "2025-10-01": 3,
           "2025-10-02": 3,
           "2025-10-03": 2,
           "2025-10-06": 3,
-          "2025-10-07": 10
+          "2025-10-07": 11,
+          "2025-10-08": 3
         }
       },
       "priorities": {
         "P1": {
           "avg_time_hours": 0.12,
-          "tickets_count": 3,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-10-01": 2,
-            "2025-10-07": 1
+            "2025-10-01": 2
           }
         },
         "P2": {
           "avg_time_hours": 88.78,
-          "tickets_count": 19,
+          "tickets_count": 23,
           "tickets_per_day": {
             "2025-09-30": 3,
             "2025-10-01": 1,
             "2025-10-02": 3,
             "2025-10-03": 1,
             "2025-10-06": 2,
-            "2025-10-07": 9
+            "2025-10-07": 10,
+            "2025-10-08": 3
           }
         },
         "P3": {
           "avg_time_hours": 20.44,
-          "tickets_count": 3,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-03": 1,
-            "2025-10-06": 1
+            "2025-10-06": 1,
+            "2025-10-07": 1
           }
         }
       },
@@ -747,43 +743,19 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 1,
+            "tickets_count": 5,
             "tickets_per_day": {
-              "2025-10-07": 1
+              "2025-10-06": 3,
+              "2025-10-08": 2
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 1,
+              "tickets_count": 4,
               "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Pendente Consultor": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 10,
-            "tickets_per_day": {
-              "2025-09-30": 3,
-              "2025-10-02": 2,
-              "2025-10-03": 1,
-              "2025-10-06": 2,
-              "2025-10-07": 2
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 9,
-              "tickets_per_day": {
-                "2025-09-30": 3,
-                "2025-10-02": 2,
-                "2025-10-03": 1,
-                "2025-10-06": 1,
-                "2025-10-07": 2
+                "2025-10-06": 2,
+                "2025-10-08": 2
               }
             },
             "P3": {
@@ -795,31 +767,61 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
+        "Pendente Consultor": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 9,
+            "tickets_per_day": {
+              "2025-09-30": 3,
+              "2025-10-02": 2,
+              "2025-10-03": 1,
+              "2025-10-07": 3
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 9,
+              "tickets_per_day": {
+                "2025-09-30": 3,
+                "2025-10-02": 2,
+                "2025-10-03": 1,
+                "2025-10-07": 3
+              }
+            }
+          }
+        },
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 6,
             "tickets_per_day": {
               "2025-10-01": 1,
-              "2025-10-06": 1,
-              "2025-10-07": 3
+              "2025-10-07": 4,
+              "2025-10-08": 1
             }
           },
           "priorities": {
             "P1": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-01": 1,
-                "2025-10-07": 1
+                "2025-10-01": 1
               }
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 4,
               "tickets_per_day": {
-                "2025-10-06": 1,
-                "2025-10-07": 2
+                "2025-10-07": 3,
+                "2025-10-08": 1
+              }
+            },
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
               }
             }
           }
@@ -847,14 +849,14 @@ export const ZAMMAD_METRICS = {
     "Paula Candeias": {
       "overall": {
         "avg_time_hours": 14.14,
-        "tickets_count": 35,
+        "tickets_count": 34,
         "tickets_per_day": {
           "2025-09-30": 9,
           "2025-10-01": 4,
           "2025-10-02": 1,
           "2025-10-03": 1,
           "2025-10-06": 7,
-          "2025-10-07": 11,
+          "2025-10-07": 10,
           "2025-10-08": 2
         }
       },
@@ -868,14 +870,14 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 10.96,
-          "tickets_count": 23,
+          "tickets_count": 22,
           "tickets_per_day": {
             "2025-09-30": 9,
             "2025-10-01": 4,
             "2025-10-02": 1,
             "2025-10-03": 1,
             "2025-10-06": 4,
-            "2025-10-07": 2,
+            "2025-10-07": 1,
             "2025-10-08": 2
           }
         },
@@ -980,21 +982,19 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 4,
             "tickets_per_day": {
               "2025-10-01": 3,
-              "2025-10-03": 1,
-              "2025-10-07": 1
+              "2025-10-03": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 5,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-01": 3,
-                "2025-10-03": 1,
-                "2025-10-07": 1
+                "2025-10-03": 1
               }
             }
           }
@@ -1288,28 +1288,28 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_22": {
       "overall": {
-        "avg_time_hours": 39.84,
-        "tickets_count": 56,
+        "avg_time_hours": 41.08,
+        "tickets_count": 55,
         "tickets_per_day": {
           "2025-09-30": 3,
           "2025-10-01": 1,
           "2025-10-02": 3,
           "2025-10-03": 6,
           "2025-10-06": 11,
-          "2025-10-07": 26,
+          "2025-10-07": 25,
           "2025-10-08": 6
         }
       },
       "priorities": {
         "P2": {
-          "avg_time_hours": 25.38,
-          "tickets_count": 9,
+          "avg_time_hours": 30.2,
+          "tickets_count": 8,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-02": 2,
             "2025-10-03": 1,
             "2025-10-06": 1,
-            "2025-10-07": 3,
+            "2025-10-07": 2,
             "2025-10-08": 1
           }
         },
@@ -1339,25 +1339,25 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 39.84,
-            "tickets_count": 32,
+            "avg_time_hours": 41.08,
+            "tickets_count": 31,
             "tickets_per_day": {
               "2025-09-30": 3,
               "2025-10-01": 1,
               "2025-10-03": 4,
               "2025-10-06": 3,
-              "2025-10-07": 21
+              "2025-10-07": 20
             }
           },
           "priorities": {
             "P2": {
-              "avg_time_hours": 25.38,
-              "tickets_count": 6,
+              "avg_time_hours": 30.2,
+              "tickets_count": 5,
               "tickets_per_day": {
                 "2025-09-30": 1,
                 "2025-10-03": 1,
                 "2025-10-06": 1,
-                "2025-10-07": 3
+                "2025-10-07": 2
               }
             },
             "P3": {
@@ -1709,11 +1709,11 @@ export const ZAMMAD_METRICS = {
     "cliente_35": {
       "overall": {
         "avg_time_hours": 53.19,
-        "tickets_count": 6,
+        "tickets_count": 7,
         "tickets_per_day": {
           "2025-09-30": 1,
           "2025-10-07": 4,
-          "2025-10-08": 1
+          "2025-10-08": 2
         }
       },
       "priorities": {
@@ -1727,10 +1727,10 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 55.71,
-          "tickets_count": 4,
+          "tickets_count": 5,
           "tickets_per_day": {
             "2025-10-07": 3,
-            "2025-10-08": 1
+            "2025-10-08": 2
           }
         }
       },
@@ -1765,17 +1765,17 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 1,
+            "tickets_count": 2,
             "tickets_per_day": {
-              "2025-10-08": 1
+              "2025-10-08": 2
             }
           },
           "priorities": {
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 1,
+              "tickets_count": 2,
               "tickets_per_day": {
-                "2025-10-08": 1
+                "2025-10-08": 2
               }
             }
           }
@@ -1905,14 +1905,22 @@ export const ZAMMAD_METRICS = {
     "cliente_41": {
       "overall": {
         "avg_time_hours": 8.74,
-        "tickets_count": 5,
+        "tickets_count": 6,
         "tickets_per_day": {
           "2025-09-30": 2,
           "2025-10-06": 1,
-          "2025-10-07": 2
+          "2025-10-07": 2,
+          "2025-10-08": 1
         }
       },
       "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        },
         "P3": {
           "avg_time_hours": 1.58,
           "tickets_count": 1,
@@ -1954,6 +1962,24 @@ export const ZAMMAD_METRICS = {
               "tickets_per_day": {
                 "2025-09-30": 1,
                 "2025-10-07": 1
+              }
+            }
+          }
+        },
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
               }
             }
           }
@@ -2484,7 +2510,7 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "Pendente Consultor": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -2584,17 +2610,35 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-08": 3
+              "2025-10-08": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-08": 3
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
               }
             }
           }
@@ -2620,10 +2664,11 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 2,
+            "tickets_count": 3,
             "tickets_per_day": {
               "2025-10-01": 1,
-              "2025-10-07": 1
+              "2025-10-07": 1,
+              "2025-10-08": 1
             }
           },
           "priorities": {
@@ -2636,9 +2681,10 @@ export const ZAMMAD_METRICS = {
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 1,
+              "tickets_count": 2,
               "tickets_per_day": {
-                "2025-10-07": 1
+                "2025-10-07": 1,
+                "2025-10-08": 1
               }
             }
           }
@@ -3113,7 +3159,7 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_81": {
       "overall": {
-        "avg_time_hours": 52.59,
+        "avg_time_hours": 43.84,
         "tickets_count": 6,
         "tickets_per_day": {
           "2025-10-01": 1,
@@ -3131,7 +3177,7 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": null,
+          "avg_time_hours": 0.12,
           "tickets_count": 1,
           "tickets_per_day": {
             "2025-10-08": 1
@@ -3156,18 +3202,25 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 52.59,
-            "tickets_count": 5,
+            "avg_time_hours": 43.84,
+            "tickets_count": 6,
             "tickets_per_day": {
               "2025-10-01": 1,
               "2025-10-03": 1,
               "2025-10-07": 2,
-              "2025-10-08": 1
+              "2025-10-08": 2
             }
           },
           "priorities": {
             "P1": {
               "avg_time_hours": 14.91,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": 0.12,
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-08": 1
@@ -3189,24 +3242,6 @@ export const ZAMMAD_METRICS = {
               }
             }
           }
-        },
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            }
-          }
         }
       }
     },
@@ -3225,10 +3260,9 @@ export const ZAMMAD_METRICS = {
       "priorities": {
         "P1": {
           "avg_time_hours": 122.03,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-06": 1,
-            "2025-10-07": 1
+            "2025-10-06": 1
           }
         },
         "P2": {
@@ -3242,11 +3276,12 @@ export const ZAMMAD_METRICS = {
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 4,
+          "tickets_count": 5,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-03": 1,
-            "2025-10-06": 2
+            "2025-10-06": 2,
+            "2025-10-07": 1
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -3292,39 +3327,21 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            }
-          }
-        },
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 2,
+            "tickets_count": 3,
             "tickets_per_day": {
               "2025-10-06": 1,
-              "2025-10-08": 1
+              "2025-10-08": 2
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 1,
+              "tickets_count": 2,
               "tickets_per_day": {
-                "2025-10-08": 1
+                "2025-10-08": 2
               }
             },
             "P3": {
@@ -3373,13 +3390,6 @@ export const ZAMMAD_METRICS = {
             }
           },
           "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            },
             "P2": {
               "avg_time_hours": null,
               "tickets_count": 4,
@@ -3390,11 +3400,12 @@ export const ZAMMAD_METRICS = {
             },
             "P3": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-09-30": 1,
                 "2025-10-03": 1,
-                "2025-10-06": 1
+                "2025-10-06": 1,
+                "2025-10-07": 1
               }
             }
           }
@@ -4229,12 +4240,20 @@ export const ZAMMAD_METRICS = {
     "cliente_124": {
       "overall": {
         "avg_time_hours": 103.42,
-        "tickets_count": 1,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-10-07": 1
+          "2025-10-07": 1,
+          "2025-10-08": 1
         }
       },
       "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        },
         "P3": {
           "avg_time_hours": 103.42,
           "tickets_count": 1,
@@ -4261,19 +4280,44 @@ export const ZAMMAD_METRICS = {
               }
             }
           }
+        },
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
         }
       }
     },
     "cliente_126": {
       "overall": {
         "avg_time_hours": 55.69,
-        "tickets_count": 4,
+        "tickets_count": 5,
         "tickets_per_day": {
           "2025-10-07": 3,
-          "2025-10-08": 1
+          "2025-10-08": 2
         }
       },
       "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 55.69,
           "tickets_count": 4,
@@ -4298,6 +4342,24 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 2,
               "tickets_per_day": {
                 "2025-10-07": 2
+              }
+            }
+          }
+        },
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
               }
             }
           }
@@ -4702,7 +4764,7 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "Pendente Consultor": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -5656,7 +5718,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "New": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -5889,21 +5951,41 @@ export const ZAMMAD_METRICS = {
     "cliente_99": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 1,
+        "tickets_count": 3,
         "tickets_per_day": {
-          "2025-10-01": 1
+          "2025-10-01": 1,
+          "2025-10-08": 2
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 1,
+          "tickets_count": 3,
           "tickets_per_day": {
-            "2025-10-01": 1
+            "2025-10-01": 1,
+            "2025-10-08": 2
           }
         }
       },
       "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-08": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-08": 2
+              }
+            }
+          }
+        },
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
@@ -6202,7 +6284,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "New": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -6571,7 +6653,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "Pendente Operador": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -6895,7 +6977,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "Pendente Consultor": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -6933,7 +7015,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "Open": {
+        "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7009,7 +7091,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "Pendente Consultor": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7146,6 +7228,107 @@ export const ZAMMAD_METRICS = {
     "cliente_202": {
       "overall": {
         "avg_time_hours": null,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-08": 2
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cliente_203": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-08": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cliente_115": {
+      "overall": {
+        "avg_time_hours": null,
         "tickets_count": 1,
         "tickets_per_day": {
           "2025-10-08": 1
@@ -7181,7 +7364,7 @@ export const ZAMMAD_METRICS = {
         }
       }
     },
-    "cliente_203": {
+    "cliente_77": {
       "overall": {
         "avg_time_hours": null,
         "tickets_count": 1,
@@ -7200,6 +7383,44 @@ export const ZAMMAD_METRICS = {
       },
       "states": {
         "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cliente_205": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-08": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7242,12 +7463,12 @@ export const ZAMMAD_METRICS = {
       "open": 31
     },
     "2025-10-07": {
-      "closed": 67,
+      "closed": 66,
       "open": 35
     },
     "2025-10-08": {
-      "closed": 16,
-      "open": 34
+      "closed": 17,
+      "open": 43
     }
   },
   "states": {
@@ -7261,8 +7482,8 @@ export const ZAMMAD_METRICS = {
           "2025-10-02": 6,
           "2025-10-03": 10,
           "2025-10-06": 18,
-          "2025-10-07": 67,
-          "2025-10-08": 16
+          "2025-10-07": 66,
+          "2025-10-08": 17
         }
       },
       "priorities": {
@@ -7279,7 +7500,7 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 23.85,
+          "avg_time_hours": 23.83,
           "tickets_count": 63,
           "tickets_per_day": {
             "2025-09-30": 13,
@@ -7287,8 +7508,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-02": 4,
             "2025-10-03": 3,
             "2025-10-06": 12,
-            "2025-10-07": 20,
-            "2025-10-08": 7
+            "2025-10-07": 19,
+            "2025-10-08": 8
           }
         },
         "P3": {
@@ -7321,45 +7542,45 @@ export const ZAMMAD_METRICS = {
     "Pendente Consultor": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 49,
+        "tickets_count": 46,
         "tickets_per_day": {
           "2025-09-30": 10,
           "2025-10-01": 1,
           "2025-10-02": 3,
           "2025-10-03": 9,
-          "2025-10-06": 16,
+          "2025-10-06": 14,
           "2025-10-07": 8,
-          "2025-10-08": 2
+          "2025-10-08": 1
         }
       },
       "priorities": {
         "P1": {
           "avg_time_hours": null,
-          "tickets_count": 2,
+          "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-07": 2
+            "2025-10-07": 1
           }
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 18,
+          "tickets_count": 17,
           "tickets_per_day": {
             "2025-09-30": 6,
             "2025-10-01": 1,
             "2025-10-02": 2,
             "2025-10-03": 1,
-            "2025-10-06": 3,
-            "2025-10-07": 3,
-            "2025-10-08": 2
+            "2025-10-06": 2,
+            "2025-10-07": 4,
+            "2025-10-08": 1
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 13,
+          "tickets_count": 12,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 5,
-            "2025-10-06": 3,
+            "2025-10-06": 2,
             "2025-10-07": 1
           }
         },
@@ -7440,19 +7661,18 @@ export const ZAMMAD_METRICS = {
           "2025-10-01": 7,
           "2025-10-02": 1,
           "2025-10-03": 2,
-          "2025-10-06": 7,
+          "2025-10-06": 6,
           "2025-10-07": 8,
-          "2025-10-08": 1
+          "2025-10-08": 2
         }
       },
       "priorities": {
         "P1": {
           "avg_time_hours": null,
-          "tickets_count": 3,
+          "tickets_count": 2,
           "tickets_per_day": {
             "2025-10-01": 1,
-            "2025-10-06": 1,
-            "2025-10-07": 1
+            "2025-10-06": 1
           }
         },
         "P2": {
@@ -7462,19 +7682,20 @@ export const ZAMMAD_METRICS = {
             "2025-10-01": 5,
             "2025-10-02": 1,
             "2025-10-03": 1,
-            "2025-10-06": 4,
+            "2025-10-06": 3,
             "2025-10-07": 7,
-            "2025-10-08": 1
+            "2025-10-08": 2
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 6,
+          "tickets_count": 7,
           "tickets_per_day": {
             "2025-09-30": 2,
             "2025-10-01": 1,
             "2025-10-03": 1,
-            "2025-10-06": 2
+            "2025-10-06": 2,
+            "2025-10-07": 1
           }
         }
       }
@@ -7500,43 +7721,50 @@ export const ZAMMAD_METRICS = {
     "Open": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 44,
+        "tickets_count": 55,
         "tickets_per_day": {
           "2025-10-01": 2,
           "2025-10-02": 2,
-          "2025-10-06": 6,
+          "2025-10-06": 9,
           "2025-10-07": 17,
-          "2025-10-08": 17
+          "2025-10-08": 25
         }
       },
       "priorities": {
+        "P1": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 18,
+          "tickets_count": 26,
           "tickets_per_day": {
             "2025-10-01": 2,
             "2025-10-02": 1,
-            "2025-10-06": 3,
-            "2025-10-07": 6,
-            "2025-10-08": 6
+            "2025-10-06": 5,
+            "2025-10-07": 5,
+            "2025-10-08": 13
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 4,
+          "tickets_count": 5,
           "tickets_per_day": {
             "2025-10-02": 1,
-            "2025-10-06": 2,
+            "2025-10-06": 3,
             "2025-10-07": 1
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
-          "tickets_count": 22,
+          "tickets_count": 23,
           "tickets_per_day": {
             "2025-10-06": 1,
             "2025-10-07": 10,
-            "2025-10-08": 11
+            "2025-10-08": 12
           }
         }
       }
@@ -7562,10 +7790,10 @@ export const ZAMMAD_METRICS = {
     "New": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 14,
+        "tickets_count": 15,
         "tickets_per_day": {
           "2025-10-07": 1,
-          "2025-10-08": 13
+          "2025-10-08": 14
         }
       },
       "priorities": {
@@ -7578,13 +7806,893 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
-          "tickets_count": 3,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-10-07": 1,
-            "2025-10-08": 2
+            "2025-10-08": 3
           }
         }
       }
     }
+  },
+  "workload_analysis": {
+    "by_weekday": {
+      "Segunda": 73,
+      "Terça": 108,
+      "Quarta": 87,
+      "Quinta": 20,
+      "Sexta": 27,
+      "Sábado": 0,
+      "Domingo": 0
+    },
+    "by_hour": {
+      "00h": 0,
+      "01h": 0,
+      "02h": 0,
+      "03h": 0,
+      "04h": 0,
+      "05h": 0,
+      "06h": 0,
+      "07h": 0,
+      "08h": 0,
+      "09h": 74,
+      "10h": 33,
+      "11h": 30,
+      "12h": 22,
+      "13h": 9,
+      "14h": 35,
+      "15h": 19,
+      "16h": 15,
+      "17h": 18,
+      "18h": 9,
+      "19h": 11,
+      "20h": 9,
+      "21h": 12,
+      "22h": 14,
+      "23h": 5
+    },
+    "heatmap": [
+      {
+        "weekday": "Segunda",
+        "hour": "00h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "01h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "02h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "03h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "04h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "05h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "06h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "07h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "08h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "09h",
+        "tickets": 20
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "10h",
+        "tickets": 13
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "11h",
+        "tickets": 5
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "12h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "13h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "14h",
+        "tickets": 6
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "15h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "16h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "17h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "18h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "19h",
+        "tickets": 9
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "20h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "21h",
+        "tickets": 6
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "22h",
+        "tickets": 6
+      },
+      {
+        "weekday": "Segunda",
+        "hour": "23h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "00h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "01h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "02h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "03h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "04h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "05h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "06h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "07h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "08h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Terça",
+        "hour": "09h",
+        "tickets": 23
+      },
+      {
+        "weekday": "Terça",
+        "hour": "10h",
+        "tickets": 4
+      },
+      {
+        "weekday": "Terça",
+        "hour": "11h",
+        "tickets": 8
+      },
+      {
+        "weekday": "Terça",
+        "hour": "12h",
+        "tickets": 11
+      },
+      {
+        "weekday": "Terça",
+        "hour": "13h",
+        "tickets": 5
+      },
+      {
+        "weekday": "Terça",
+        "hour": "14h",
+        "tickets": 8
+      },
+      {
+        "weekday": "Terça",
+        "hour": "15h",
+        "tickets": 5
+      },
+      {
+        "weekday": "Terça",
+        "hour": "16h",
+        "tickets": 4
+      },
+      {
+        "weekday": "Terça",
+        "hour": "17h",
+        "tickets": 13
+      },
+      {
+        "weekday": "Terça",
+        "hour": "18h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Terça",
+        "hour": "19h",
+        "tickets": 2
+      },
+      {
+        "weekday": "Terça",
+        "hour": "20h",
+        "tickets": 7
+      },
+      {
+        "weekday": "Terça",
+        "hour": "21h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Terça",
+        "hour": "22h",
+        "tickets": 7
+      },
+      {
+        "weekday": "Terça",
+        "hour": "23h",
+        "tickets": 5
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "00h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "01h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "02h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "03h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "04h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "05h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "06h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "07h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "08h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "09h",
+        "tickets": 23
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "10h",
+        "tickets": 5
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "11h",
+        "tickets": 10
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "12h",
+        "tickets": 5
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "13h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "14h",
+        "tickets": 20
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "15h",
+        "tickets": 10
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "16h",
+        "tickets": 2
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "17h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "18h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "19h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "20h",
+        "tickets": 2
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "21h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "22h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Quarta",
+        "hour": "23h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "00h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "01h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "02h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "03h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "04h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "05h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "06h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "07h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "08h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "09h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "10h",
+        "tickets": 2
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "11h",
+        "tickets": 4
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "12h",
+        "tickets": 4
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "13h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "14h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "15h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "16h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "17h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "18h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "19h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "20h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "21h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "22h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Quinta",
+        "hour": "23h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "00h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "01h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "02h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "03h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "04h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "05h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "06h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "07h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "08h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "09h",
+        "tickets": 5
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "10h",
+        "tickets": 9
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "11h",
+        "tickets": 3
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "12h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "13h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "14h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "15h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "16h",
+        "tickets": 8
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "17h",
+        "tickets": 1
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "18h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "19h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "20h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "21h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "22h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sexta",
+        "hour": "23h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "00h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "01h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "02h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "03h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "04h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "05h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "06h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "07h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "08h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "09h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "10h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "11h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "12h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "13h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "14h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "15h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "16h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "17h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "18h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "19h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "20h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "21h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "22h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Sábado",
+        "hour": "23h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "00h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "01h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "02h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "03h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "04h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "05h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "06h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "07h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "08h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "09h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "10h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "11h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "12h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "13h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "14h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "15h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "16h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "17h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "18h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "19h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "20h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "21h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "22h",
+        "tickets": 0
+      },
+      {
+        "weekday": "Domingo",
+        "hour": "23h",
+        "tickets": 0
+      }
+    ],
+    "total_tickets": 315
   }
 };
