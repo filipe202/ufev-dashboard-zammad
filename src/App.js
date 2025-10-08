@@ -1388,7 +1388,7 @@ export default function App() {
         {/* Legenda de cores */}
         <div style={{padding: "16px 20px", backgroundColor: "#f8f9fa", borderTop: "1px solid #e2e8f0"}}>
           <h4 style={{margin: "0 0 12px 0", fontSize: 14, fontWeight: 600, color: "#374151"}}>
-            Legenda de Cores:
+            🎨 Legenda de Cores:
           </h4>
           <div style={{display: "flex", flexWrap: "wrap", gap: 16}}>
             {rows.map((row, index) => (
