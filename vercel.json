@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "buildCommand": "npm install --prefix ufev-dashboard && npm run build --prefix ufev-dashboard",
+  "installCommand": "npm install --prefix ufev-dashboard",
+  "outputDirectory": "ufev-dashboard/build",
+  "functions": {
+    "api/fetch-metrics.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
+  "framework": null
+}

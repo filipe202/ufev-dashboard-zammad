@@ -1,0 +1,207 @@
+{
+  "filters": {
+    "from_date": "2025-09-30"
+  },
+  "agents": {
+    "Sandra Reis": {
+      "overall": {
+        "avg_time_hours": 31.46,
+        "tickets_count": 21,
+        "tickets_per_day": {
+          "2025-09-30": 8,
+          "2025-10-01": 8,
+          "2025-10-02": 2,
+          "2025-10-03": 2,
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 328.54,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 27.34,
+          "tickets_count": 6,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-01": 1,
+            "2025-10-02": 1,
+            "2025-10-03": 2,
+            "2025-10-06": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 12.0,
+          "tickets_count": 14,
+          "tickets_per_day": {
+            "2025-09-30": 6,
+            "2025-10-01": 7,
+            "2025-10-02": 1
+          }
+        }
+      }
+    },
+    "Rafaela Lapa": {
+      "overall": {
+        "avg_time_hours": 0.93,
+        "tickets_count": 4,
+        "tickets_per_day": {
+          "2025-10-06": 4
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.93,
+          "tickets_count": 4,
+          "tickets_per_day": {
+            "2025-10-06": 4
+          }
+        }
+      }
+    },
+    "Inês Martinho": {
+      "overall": {
+        "avg_time_hours": 11.9,
+        "tickets_count": 15,
+        "tickets_per_day": {
+          "2025-09-30": 9,
+          "2025-10-01": 3,
+          "2025-10-02": 1,
+          "2025-10-03": 1,
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 2.26,
+          "tickets_count": 4,
+          "tickets_per_day": {
+            "2025-09-30": 4
+          }
+        },
+        "P2": {
+          "avg_time_hours": 17.67,
+          "tickets_count": 7,
+          "tickets_per_day": {
+            "2025-09-30": 2,
+            "2025-10-01": 3,
+            "2025-10-02": 1,
+            "2025-10-06": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 11.43,
+          "tickets_count": 4,
+          "tickets_per_day": {
+            "2025-09-30": 3,
+            "2025-10-03": 1
+          }
+        }
+      }
+    },
+    "Magali Morim": {
+      "overall": {
+        "avg_time_hours": 119.0,
+        "tickets_count": 3,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-01": 1,
+          "2025-10-03": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 119.0,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-01": 1,
+            "2025-10-03": 1
+          }
+        }
+      }
+    },
+    "Catarina França": {
+      "overall": {
+        "avg_time_hours": 10.4,
+        "tickets_count": 4,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-01": 1,
+          "2025-10-02": 1,
+          "2025-10-03": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 0.12,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 0.6,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-02": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 20.44,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-03": 1
+          }
+        }
+      }
+    },
+    "Paula Candeias": {
+      "overall": {
+        "avg_time_hours": 2.38,
+        "tickets_count": 7,
+        "tickets_per_day": {
+          "2025-09-30": 6,
+          "2025-10-02": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 2.38,
+          "tickets_count": 7,
+          "tickets_per_day": {
+            "2025-09-30": 6,
+            "2025-10-02": 1
+          }
+        }
+      }
+    }
+  },
+  "daily_summary": {
+    "2025-09-30": {
+      "closed": 25,
+      "open": 5
+    },
+    "2025-10-01": {
+      "closed": 13,
+      "open": 9
+    },
+    "2025-10-02": {
+      "closed": 5,
+      "open": 4
+    },
+    "2025-10-03": {
+      "closed": 5,
+      "open": 12
+    },
+    "2025-10-06": {
+      "closed": 6,
+      "open": 10
+    }
+  }
+}

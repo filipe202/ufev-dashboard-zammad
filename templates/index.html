@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8" />
+    <title>Dashboard Zammad – Tickets resolvidos por agente/dia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: system-ui, Segoe UI, Roboto, Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.35;
+      }
+      header {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        align-items: flex-end;
+        margin-bottom: 12px;
+      }
+      label {
+        font-size: 12px;
+        color: #555;
+        display: block;
+        margin-bottom: 4px;
+      }
+      input,
+      button {
+        padding: 8px 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+      }
+      input {
+        min-width: 220px;
+      }
+      button {
+        cursor: pointer;
+        background: #0d6efd;
+        color: #fff;
+        border-color: #0d6efd;
+      }
+      button:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+      }
+      .sep {
+        height: 1px;
+        background: #eee;
+        margin: 14px 0;
+      }
+      .status {
+        font-size: 12px;
+        color: #666;
+      }
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 12px;
+        font-size: 14px;
+      }
+      th,
+      td {
+        border: 1px solid #eee;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background: #fafafa;
+      }
+      #chartWrap {
+        position: relative;
+        height: 380px;
+      }
+      .hint {
+        font-size: 12px;
+        color: #888;
+        margin-top: 6px;
+      }
+      .error {
+        color: #c0392b;
+      }
+    </style>
+  </head>
+  <body data-token-required="{{ 'true' if token_required else 'false' }}">
+    <h1>Dashboard – Tickets resolvidos por agente/dia</h1>
+
+    <header>
+      <div>
+        <label for="baseUrl">Base URL do Zammad</label>
+        <input
+          id="baseUrl"
+          value="{{ base_url }}"
+          placeholder="https://ufevsuporte.zammad.com"
+        />
+      </div>
+      <div id="tokenField" style="display: none">
+        <label for="token">Token (Authorization)</label>
+        <input id="token" placeholder="Token pessoal/API" />
+        <div class="hint">O token não sai do servidor.</div>
+      </div>
+      <div>
+        <label for="from">De (YYYY-MM-DD)</label>
+        <input id="from" value="{{ default_from }}" />
+      </div>
+      <div>
+        <label for="to">Até (YYYY-MM-DD, opcional)</label>
+        <input id="to" value="{{ default_to }}" />
+      </div>
+      <div>
+        <button id="runBtn">Atualizar</button>
+      </div>
+    </header>
+
+    <div class="status" id="status">Pronto.</div>
+    <div class="sep"></div>
+
+    <div id="chartWrap">
+      <canvas id="chart"></canvas>
+    </div>
+
+    <div class="sep"></div>
+
+    <div id="tableWrap"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+    <script>
+      const tokenRequired = document.body.dataset.tokenRequired === "true";
+      const tokenField = document.getElementById("tokenField");
+      if (tokenRequired) tokenField.style.display = "block";
+
+      const statusEl = document.getElementById("status");
+      const runBtn = document.getElementById("runBtn");
+      let chart;
+
+      runBtn.addEventListener("click", () => run().catch(handleError));
+
+      async function run() {
+        const base = document
+          .getElementById("baseUrl")
+          .value.trim()
+          .replace(/\/+$/, "");
+        const from = document.getElementById("from").value.trim();
+        const to = document.getElementById("to").value.trim();
+        const token = tokenRequired
+          ? document.getElementById("token").value.trim()
+          : "";
+
+        if (!base) {
+          alert("Indica a Base URL.");
+          return;
+        }
+        if (!from) {
+          alert("Indica a data inicial (from).");
+          return;
+        }
+        if (tokenRequired && !token) {
+          alert("Indica o token.");
+          return;
+        }
+
+        setStatus("A carregar dados…");
+        runBtn.disabled = true;
+
+        const params = new URLSearchParams({ base, from });
+        if (to) params.set("to", to);
+        if (tokenRequired) params.set("token", token);
+
+        const res = await fetch(`/api/tickets?${params.toString()}`);
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.error || `Erro HTTP ${res.status}`);
+        }
+
+        const data = await res.json();
+        updateTable(data);
+        updateChart(data);
+        setStatus(`OK: ${data.total_tickets} tickets fechados no período.`);
+        runBtn.disabled = false;
+      }
+
+      function updateTable(data) {
+        const wrap = document.getElementById("tableWrap");
+        const { table = [], agents = [] } = data;
+        if (!table.length) {
+          wrap.innerHTML = "<p>Sem resultados.</p>";
+          return;
+        }
+        let html = "<table><thead><tr><th>Data</th>";
+        html += agents.map((agent) => `<th>${escapeHtml(agent)}</th>`).join("");
+        html += "</tr></thead><tbody>";
+        for (const row of table) {
+          html += `<tr><td>${row.day}</td>`;
+          for (const agent of agents) {
+            const value = row.values?.[agent] ?? 0;
+            html += `<td>${value}</td>`;
+          }
+          html += "</tr>";
+        }
+        html += "</tbody></table>";
+        wrap.innerHTML = html;
+      }
+
+      function updateChart(data) {
+        const { days = [], agents = [], table = [] } = data;
+        if (!days.length) {
+          if (chart) {
+            chart.destroy();
+            chart = null;
+          }
+          return;
+        }
+        const ctx = document.getElementById("chart").getContext("2d");
+        const counts = Object.fromEntries(
+          table.map((row) => [row.day, row.values])
+        );
+        const datasets = agents.map((agent) => ({
+          label: agent,
+          data: days.map((day) => counts[day]?.[agent] ?? 0),
+          borderWidth: 1,
+          stack: "stack1",
+        }));
+
+        if (chart) chart.destroy();
+        chart = new Chart(ctx, {
+          type: "bar",
+          data: { labels: days, datasets },
+          options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+              legend: { position: "top" },
+              title: { display: true, text: "Tickets fechados por dia" },
+            },
+            scales: {
+              x: { stacked: true },
+              y: { stacked: true, beginAtZero: true, ticks: { precision: 0 } },
+            },
+          },
+        });
+      }
+
+      function handleError(err) {
+        console.error(err);
+        runBtn.disabled = false;
+        const msg = err?.message || err;
+        setStatus(`Erro: ${msg}`);
+        alert(msg);
+      }
+
+      function setStatus(msg) {
+        statusEl.textContent = msg;
+      }
+
+      function escapeHtml(str) {
+        return String(str)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      // auto-run quando token não é exigido (token guardado server-side)
+      if (!tokenRequired) run();
+    </script>
+  </body>
+</html>
