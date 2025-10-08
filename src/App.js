@@ -255,7 +255,6 @@ export default function App() {
   const [sortKey, setSortKey] = useState("tickets"); // "tickets" | "avg"
   const [selectedGroups, setSelectedGroups] = useState(["ALL"]);
   const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
   const [fromDate, setFromDate] = useState("");
   const fromDateRef = useRef("");
 
@@ -265,7 +264,6 @@ export default function App() {
   }, []);
 
   const fetchMetrics = useCallback(async (dateOverride) => {
-    setLoading(true);
     setError(null);
     try {
       const params = new URLSearchParams();
@@ -287,8 +285,6 @@ export default function App() {
       }
     } catch (err) {
       setError(err.message || String(err));
-    } finally {
-      setLoading(false);
     }
   }, [setFromDateSynced]);
 
