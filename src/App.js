@@ -1020,11 +1020,11 @@ export default function App() {
           <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
             Heatmap: Dia da Semana x Hora ({modeLabel} de Tickets)
           </h3>
-          <div style={{overflowX: "auto"}}>
+          <div style={{overflowX: "auto", paddingTop: 8}}>
             <div style={{minWidth: 800}}>
               {/* Header com horas */}
-              <div style={{display: "flex", marginBottom: 4}}>
-                <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280"}}>
+              <div style={{display: "flex", marginBottom: 8, position: "sticky", top: 0, backgroundColor: "white", zIndex: 1, paddingBottom: 4}}>
+                <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280", display: "flex", alignItems: "center"}}>
                   Dia / Hora
                 </div>
                 {Array.from({length: 24}, (_, hour) => (
@@ -1033,7 +1033,11 @@ export default function App() {
                     fontSize: 10,
                     textAlign: "center",
                     color: "#6b7280",
-                    fontWeight: 500
+                    fontWeight: 500,
+                    padding: "4px 0",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center"
                   }}>
                     {hour.toString().padStart(2, '0')}h
                   </div>
@@ -1046,7 +1050,7 @@ export default function App() {
                 const maxTickets = Math.max(...(workload.heatmap?.map(item => item.tickets) || [1]));
                 
                 return (
-                  <div key={weekday} style={{display: "flex", marginBottom: 2}}>
+                  <div key={weekday} style={{display: "flex", marginBottom: 3}}>
                     <div style={{
                       width: 80,
                       fontSize: 12,
@@ -1054,7 +1058,8 @@ export default function App() {
                       color: "#374151",
                       display: "flex",
                       alignItems: "center",
-                      paddingRight: 8
+                      paddingRight: 8,
+                      height: 30
                     }}>
                       {weekday}
                     </div>
