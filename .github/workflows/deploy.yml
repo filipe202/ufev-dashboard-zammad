@@ -5,7 +5,7 @@ on:
     - cron: '0 8 * * *'  # Diário às 8h UTC
   workflow_dispatch:     # Manual trigger
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   deploy:
