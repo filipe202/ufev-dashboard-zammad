@@ -256,6 +256,7 @@ export default function App() {
   const [selectedGroups, setSelectedGroups] = useState(["ALL"]);
   const [error, setError] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [workloadMode, setWorkloadMode] = useState("created"); // "created" ou "closed"
   const fromDateRef = useRef("");
 
   const setFromDateSynced = useCallback((value) => {
@@ -442,7 +443,8 @@ export default function App() {
 
   // Renderizar análise temporal
   if (viewMode === "workload" && data?.workload_analysis) {
-    const workload = data.workload_analysis;
+    const workload = data.workload_analysis[workloadMode]; // "created" ou "closed"
+    const modeLabel = workloadMode === "created" ? "Criação" : "Fechamento";
     
     // Dados para gráfico de barras por dia da semana
     const weekdayData = Object.entries(workload.by_weekday).map(([day, count]) => ({
@@ -461,7 +463,7 @@ export default function App() {
         <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
           <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
           <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
-            Análise Temporal - Carga de Trabalho
+            Análise Temporal - {modeLabel} de Tickets
           </h1>
           <button 
             onClick={() => {
@@ -500,6 +502,31 @@ export default function App() {
                 backgroundColor: viewMode === option.value ? "#005A8D" : "white",
                 color: viewMode === option.value ? "white" : "#64748b",
                 cursor:"pointer"
+              }}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+
+        <div style={{display:"flex", gap:8, marginBottom:16, justifyContent:"center"}}>
+          {[
+            { value: "created", label: "📥 Criação de Tickets" },
+            { value: "closed", label: "✅ Fechamento de Tickets" },
+          ].map(option => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => setWorkloadMode(option.value)}
+              style={{
+                padding:"12px 20px",
+                borderRadius:8,
+                border:"2px solid",
+                borderColor: workloadMode === option.value ? "#28a745" : "#e2e8f0",
+                backgroundColor: workloadMode === option.value ? "#28a745" : "white",
+                color: workloadMode === option.value ? "white" : "#64748b",
+                cursor:"pointer",
+                fontWeight: workloadMode === option.value ? 600 : 400
               }}
             >
               {option.label}

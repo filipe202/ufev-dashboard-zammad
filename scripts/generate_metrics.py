@@ -319,10 +319,15 @@ def main():
     per_customer = defaultdict(make_holder)
     closed_by_day = defaultdict(int)
     
-    # Análise temporal - carga de trabalho
-    workload_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
-    workload_by_hour = defaultdict(int)     # 0-23h
-    workload_by_weekday_hour = defaultdict(lambda: defaultdict(int))  # [weekday][hour]
+    # Análise temporal - carga de trabalho (criação)
+    created_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
+    created_by_hour = defaultdict(int)     # 0-23h
+    created_by_weekday_hour = defaultdict(lambda: defaultdict(int))  # [weekday][hour]
+    
+    # Análise temporal - resolução (fechamento)
+    closed_by_weekday = defaultdict(int)
+    closed_by_hour = defaultdict(int)
+    closed_by_weekday_hour = defaultdict(lambda: defaultdict(int))
 
     for t in tickets_closed:
         owner_id = t.get("owner_id")
@@ -404,7 +409,7 @@ def main():
 
         record_entity(per_state[state_label], day_created, priority_name, state_label, None)
 
-    # Análise temporal para TODOS os tickets (abertos + fechados)
+    # Análise temporal - CRIAÇÃO de tickets (todos)
     all_tickets = tickets_closed + tickets_open
     for t in all_tickets:
         created_at = t.get("created_at")
@@ -419,9 +424,30 @@ def main():
             weekday = local_dt.weekday()  # 0=Segunda, 6=Domingo
             hour = local_dt.hour
             
-            workload_by_weekday[weekday] += 1
-            workload_by_hour[hour] += 1
-            workload_by_weekday_hour[weekday][hour] += 1
+            created_by_weekday[weekday] += 1
+            created_by_hour[hour] += 1
+            created_by_weekday_hour[weekday][hour] += 1
+            
+        except Exception:
+            continue
+    
+    # Análise temporal - FECHAMENTO de tickets (só fechados)
+    for t in tickets_closed:
+        closed_at = t.get("close_at")
+        if not closed_at:
+            continue
+        
+        try:
+            dt_closed = iso_date(closed_at)
+            # Converter para timezone Portugal (UTC+1) - adicionar 1 hora
+            local_dt = dt_closed.replace(tzinfo=timezone.utc) + timedelta(hours=1)
+            
+            weekday = local_dt.weekday()  # 0=Segunda, 6=Domingo
+            hour = local_dt.hour
+            
+            closed_by_weekday[weekday] += 1
+            closed_by_hour[hour] += 1
+            closed_by_weekday_hour[weekday][hour] += 1
             
         except Exception:
             continue
@@ -475,19 +501,33 @@ def main():
     all_days = sorted(set(closed_by_day.keys()) | set(open_by_day.keys()))
     daily_summary = {day: {"closed": closed_by_day.get(day, 0), "open": open_by_day.get(day, 0)} for day in all_days}
 
-    # Formatar dados temporais
+    # Formatar dados temporais - CRIAÇÃO
     weekday_names = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
-    workload_weekdays = {weekday_names[i]: workload_by_weekday[i] for i in range(7)}
-    workload_hours = {f"{h:02d}h": workload_by_hour[h] for h in range(24)}
+    created_weekdays = {weekday_names[i]: created_by_weekday[i] for i in range(7)}
+    created_hours = {f"{h:02d}h": created_by_hour[h] for h in range(24)}
     
-    # Heatmap: dia da semana x hora
-    workload_heatmap = []
+    # Heatmap criação: dia da semana x hora
+    created_heatmap = []
     for weekday in range(7):
         for hour in range(24):
-            workload_heatmap.append({
+            created_heatmap.append({
                 "weekday": weekday_names[weekday],
                 "hour": f"{hour:02d}h",
-                "tickets": workload_by_weekday_hour[weekday][hour]
+                "tickets": created_by_weekday_hour[weekday][hour]
+            })
+    
+    # Formatar dados temporais - FECHAMENTO
+    closed_weekdays = {weekday_names[i]: closed_by_weekday[i] for i in range(7)}
+    closed_hours = {f"{h:02d}h": closed_by_hour[h] for h in range(24)}
+    
+    # Heatmap fechamento: dia da semana x hora
+    closed_heatmap = []
+    for weekday in range(7):
+        for hour in range(24):
+            closed_heatmap.append({
+                "weekday": weekday_names[weekday],
+                "hour": f"{hour:02d}h",
+                "tickets": closed_by_weekday_hour[weekday][hour]
             })
 
     output = {
@@ -497,10 +537,18 @@ def main():
         "daily_summary": daily_summary,
         "states": states_result,
         "workload_analysis": {
-            "by_weekday": workload_weekdays,
-            "by_hour": workload_hours,
-            "heatmap": workload_heatmap,
-            "total_tickets": len(all_tickets)
+            "created": {
+                "by_weekday": created_weekdays,
+                "by_hour": created_hours,
+                "heatmap": created_heatmap,
+                "total_tickets": len(all_tickets)
+            },
+            "closed": {
+                "by_weekday": closed_weekdays,
+                "by_hour": closed_hours,
+                "heatmap": closed_heatmap,
+                "total_tickets": len(tickets_closed)
+            }
         }
     }
 
