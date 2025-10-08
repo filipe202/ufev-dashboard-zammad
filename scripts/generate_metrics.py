@@ -1,0 +1,409 @@
+# scripts/generate_metrics.py
+import os
+import json
+import requests
+from datetime import datetime, timezone
+from collections import defaultdict
+
+# === Ajuste principal: escrever direto em public/ ===
+ROOT = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_PATH = os.path.join(ROOT, "..", "public", "zammad_metrics.json")
+
+BASE_URL = os.environ.get("ZAMMAD_BASE_URL", "https://ufevsuporte.zammad.com").rstrip("/")
+TOKEN = os.environ.get("ZAMMAD_TOKEN")
+if not TOKEN:
+    raise RuntimeError("Missing ZAMMAD_TOKEN environment variable")
+CA_BUNDLE = os.environ.get("ZAMMAD_CA_BUNDLE")
+VERIFY_SSL = os.environ.get("ZAMMAD_VERIFY_SSL", "true").strip().lower() not in {"0", "false", "no"}
+
+AGENT_NAME_OVERRIDES = {
+    21: "Rafaela Lapa",
+    20: "Catarina França",
+    19: "Paula Candeias",
+    18: "Cátia Leal",
+    17: "Inês Martinho",
+    5: "Magali Morim",
+    4: "Sandra Reis",
+    3: "Carolina Ferreirinha",
+}
+AGENT_IDS = set(AGENT_NAME_OVERRIDES.keys())
+
+FROM_DATE = "2025-09-30"
+OPEN_STATE_QUERY = "state:new OR state:open OR state:pending reminder OR state:pending close"
+CLOSED_STATES = {"closed"}
+OPEN_STATES = {state.strip().lower() for state in OPEN_STATE_QUERY.replace("state:", "").split("OR")}
+
+
+def format_state_label(raw_state: str | None) -> str:
+    raw_state = (raw_state or "").strip()
+    if not raw_state:
+        return "Desconhecido"
+    return " ".join(word.capitalize() for word in raw_state.split())
+
+
+def make_bucket():
+    return {
+        "tickets_per_day": defaultdict(int),
+        "total_time": 0.0,
+        "time_count": 0,
+        "count": 0,
+    }
+
+
+def make_state_holder():
+    return {
+        "overall": make_bucket(),
+        "priorities": defaultdict(make_bucket),
+    }
+
+
+def make_holder():
+    return {
+        "overall": make_bucket(),
+        "priorities": defaultdict(make_bucket),
+        "states": defaultdict(make_state_holder),
+    }
+
+
+def update_bucket(bucket, day: str, delta_hours: float | None):
+    bucket["tickets_per_day"][day] += 1
+    bucket["count"] += 1
+    if delta_hours is not None:
+        bucket["total_time"] += delta_hours
+        bucket["time_count"] += 1
+
+
+def record_entity(holder, day: str, priority_name: str, state_label: str, delta_hours: float | None):
+    update_bucket(holder["overall"], day, delta_hours)
+    update_bucket(holder["priorities"][priority_name], day, delta_hours)
+    state_holder = holder["states"][state_label]
+    update_bucket(state_holder["overall"], day, delta_hours)
+    update_bucket(state_holder["priorities"][priority_name], day, delta_hours)
+
+S = requests.Session()
+S.headers.update({"Authorization": f"Token token={TOKEN}"})
+
+if CA_BUNDLE:
+    S.verify = CA_BUNDLE
+elif not VERIFY_SSL:
+    S.verify = False
+    from urllib3.exceptions import InsecureRequestWarning
+
+    requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+
+
+def log(message):
+    timestamp = datetime.now(timezone.utc).isoformat()
+    print(f"[{timestamp}] {message}")
+
+
+def paged_get(path, params=None):
+    out = []
+    page = 1
+    while True:
+        p = dict(params or {})
+        p.update({"per_page": 200, "page": page})
+        url = f"{BASE_URL}/api/v1{path}"
+        log(f"GET {url} params={p}")
+        r = S.get(url, params=p, timeout=60)
+        log(f"<- {r.status_code} {url}")
+        r.raise_for_status()
+        data = r.json()
+        if not data:
+            break
+        out.extend(data)
+        if len(data) < 200:
+            break
+        page += 1
+    return out
+
+
+def fetch_agents(role_ids=None):
+    role_ids = role_ids or [2]
+    out = []
+    page = 1
+    while True:
+        payload = {
+            "force": True,
+            "refresh": False,
+            "sort_by": "created_at, id",
+            "order_by": "DESC, ASC",
+            "page": page,
+            "per_page": 200,
+            "query": "",
+            "role_ids": role_ids,
+            "full": True,
+        }
+        url = f"{BASE_URL}/api/v1/users/search"
+        log(f"POST {url} json={payload}")
+        r = S.post(url, json=payload, timeout=60)
+        log(f"<- {r.status_code} {url}")
+        try:
+            r.raise_for_status()
+        except requests.HTTPError as err:
+            if err.response is not None and err.response.status_code == 403:
+                log("WARN: sem permissão para /users/search, usando fallback /users")
+                return paged_get("/users")
+            raise
+        data = r.json()
+
+        if isinstance(data, list):
+            users_page = data
+        elif isinstance(data, dict):
+            users_page = data.get("users")
+            if users_page is None:
+                ids = data.get("data") or data.get("result")
+                if ids and isinstance(ids, list):
+                    user_assets = data.get("assets", {}).get("User", {})
+                    users_page = [
+                        user_assets[str(uid)]
+                        for uid in ids
+                        if str(uid) in user_assets
+                    ]
+                elif "assets" in data and isinstance(data["assets"], dict):
+                    user_assets = data["assets"].get("User")
+                    users_page = list(user_assets.values()) if isinstance(user_assets, dict) else []
+            if users_page is None:
+                users_page = []
+        else:
+            users_page = []
+
+        if not users_page:
+            break
+
+        out.extend(users_page)
+        if len(users_page) < 200:
+            break
+        page += 1
+
+    return out
+
+
+def search_tickets(query):
+    out = []
+    page = 1
+    while True:
+        params = {"query": query, "expand": "true", "per_page": 200, "page": page}
+        url = f"{BASE_URL}/api/v1/tickets/search"
+        log(f"GET {url} params={params}")
+        r = S.get(url, params=params, timeout=60)
+        log(f"<- {r.status_code} {url}")
+        r.raise_for_status()
+        data = r.json()
+        if isinstance(data, dict):
+            tickets_page = data.get("tickets") or []
+            if tickets_page and isinstance(tickets_page[0], int):
+                ticket_assets = data.get("assets", {}).get("Ticket", {})
+                tickets_page = [
+                    ticket_assets.get(str(ticket_id))
+                    for ticket_id in tickets_page
+                    if str(ticket_id) in ticket_assets
+                ]
+        elif isinstance(data, list):
+            tickets_page = data
+        else:
+            tickets_page = []
+
+        if not tickets_page:
+            break
+
+        out.extend(tickets_page)
+        if len(tickets_page) < 200:
+            break
+        page += 1
+    return out
+
+
+def iso_date(s):
+    return datetime.fromisoformat(s.replace("Z", "+00:00"))
+
+
+def main():
+    try:
+        users = fetch_agents([2])
+    except requests.HTTPError as err:
+        log(f"WARN: falha ao obter agentes dinamicamente ({err}), usando apenas mapeamento fixo")
+        users = []
+
+    user_by_id = {}
+    for u in users:
+        fullname = (u.get("fullname") or "").strip()
+        name = fullname or f"{u.get('firstname','')} {u.get('lastname','')}".strip() or u.get("login") or f"id_{u['id']}"
+        user_by_id[u["id"]] = name
+
+    for agent_id, agent_name in AGENT_NAME_OVERRIDES.items():
+        user_by_id[agent_id] = agent_name
+
+    try:
+        priorities = paged_get("/ticket_priorities")
+    except requests.HTTPError as err:
+        if err.response is not None and err.response.status_code == 403:
+            priorities = []
+        else:
+            raise
+    priority_by_id = {p["id"]: p.get("name") or f"priority_{p['id']}" for p in priorities}
+
+    tickets_raw = search_tickets("*")
+
+    def is_after_from_date(iso_dt: str):
+        try:
+            return iso_date(iso_dt).date().isoformat() >= FROM_DATE
+        except Exception:
+            return False
+
+    tickets_closed = []
+    tickets_open = []
+
+    for t in tickets_raw:
+        state = (t.get("state") or "").strip().lower()
+        if state in CLOSED_STATES and t.get("created_at") and is_after_from_date(t.get("created_at")):
+            tickets_closed.append(t)
+        elif state in OPEN_STATES and t.get("created_at") and is_after_from_date(t.get("created_at")):
+            tickets_open.append(t)
+
+    per_state = defaultdict(make_holder)
+    per_agent = defaultdict(make_holder)
+    per_customer = defaultdict(make_holder)
+    closed_by_day = defaultdict(int)
+
+    for t in tickets_closed:
+        owner_id = t.get("owner_id")
+        created = t.get("created_at")
+        closed = t.get("close_at")
+        if not owner_id or not created or not closed:
+            continue
+        if AGENT_IDS and owner_id not in AGENT_IDS:
+            continue
+
+        try:
+            dt_created = iso_date(created)
+            dt_closed = iso_date(closed)
+        except Exception:
+            continue
+
+        day = dt_closed.date().isoformat()
+        if day < FROM_DATE:
+            continue
+
+        delta = (dt_closed - dt_created).total_seconds() / 3600.0
+        agent = user_by_id.get(owner_id, AGENT_NAME_OVERRIDES.get(owner_id, f"id_{owner_id}"))
+        if agent is None:
+            continue
+        priority_id = t.get("priority_id")
+        priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
+        state_label = format_state_label(t.get("state"))
+
+        agent_bucket = per_agent[agent]
+        record_entity(agent_bucket, day, priority_name, state_label, delta)
+
+        customer_id = t.get("customer_id")
+        customer_label = (t.get("customer") or "").strip()
+        if customer_id:
+            customer_label = user_by_id.get(customer_id, customer_label or f"cliente_{customer_id}")
+        if customer_label:
+            customer_bucket = per_customer[customer_label]
+            record_entity(customer_bucket, day, priority_name, state_label, delta)
+
+        record_entity(per_state[state_label], day, priority_name, state_label, delta)
+
+        closed_by_day[day] += 1
+
+    open_by_day = defaultdict(int)
+    for t in tickets_open:
+        created = t.get("created_at")
+        if not created:
+            continue
+        try:
+            day_created = iso_date(created).date().isoformat()
+        except Exception:
+            continue
+        if day_created < FROM_DATE:
+            continue
+        owner_id = t.get("owner_id")
+        if owner_id and AGENT_IDS and owner_id not in AGENT_IDS:
+            continue
+        open_by_day[day_created] += 1
+
+        priority_id = t.get("priority_id")
+        priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
+        state_label = format_state_label(t.get("state"))
+
+        if owner_id:
+            agent = user_by_id.get(owner_id, AGENT_NAME_OVERRIDES.get(owner_id, f"id_{owner_id}"))
+            if agent:
+                record_entity(per_agent[agent], day_created, priority_name, state_label, None)
+
+        customer_id = t.get("customer_id")
+        customer_label = (t.get("customer") or "").strip()
+        if customer_id:
+            customer_label = user_by_id.get(customer_id, customer_label or f"cliente_{customer_id}")
+        if customer_label:
+            record_entity(per_customer[customer_label], day_created, priority_name, state_label, None)
+
+        record_entity(per_state[state_label], day_created, priority_name, state_label, None)
+
+    def format_bucket(bucket):
+        avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
+        return {
+            "avg_time_hours": round(avg_time, 2) if avg_time is not None else None,
+            "tickets_count": bucket["count"],
+            "tickets_per_day": dict(sorted(bucket["tickets_per_day"].items())),
+        }
+
+    def sort_bucket_map(bucket_map):
+        return {key: format_bucket(b) for key, b in sorted(bucket_map.items())}
+
+    def format_state_map(state_map):
+        formatted = {}
+        for state_label, state_holder in sorted(state_map.items()):
+            formatted[state_label] = {
+                "overall": format_bucket(state_holder["overall"]),
+                "priorities": sort_bucket_map(state_holder["priorities"]),
+            }
+        return formatted
+
+    agents_result = {
+        agent: {
+            "overall": format_bucket(buckets["overall"]),
+            "priorities": sort_bucket_map(buckets["priorities"]),
+            "states": format_state_map(buckets["states"]),
+        }
+        for agent, buckets in per_agent.items()
+    }
+
+    customers_result = {
+        customer: {
+            "overall": format_bucket(buckets["overall"]),
+            "priorities": sort_bucket_map(buckets["priorities"]),
+            "states": format_state_map(buckets["states"]),
+        }
+        for customer, buckets in per_customer.items()
+    }
+
+    states_result = {
+        state_label: {
+            "overall": format_bucket(buckets["overall"]),
+            "priorities": sort_bucket_map(buckets["priorities"]),
+        }
+        for state_label, buckets in per_state.items()
+    }
+
+    all_days = sorted(set(closed_by_day.keys()) | set(open_by_day.keys()))
+    daily_summary = {day: {"closed": closed_by_day.get(day, 0), "open": open_by_day.get(day, 0)} for day in all_days}
+
+    output = {
+        "filters": {"from_date": FROM_DATE},
+        "agents": agents_result,
+        "customers": customers_result,
+        "daily_summary": daily_summary,
+        "states": states_result,
+    }
+
+    os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(output, f, indent=2, ensure_ascii=False)
+    print(f"Resultados gravados em {OUTPUT_PATH}")
+
+
+if __name__ == "__main__":
+    main()

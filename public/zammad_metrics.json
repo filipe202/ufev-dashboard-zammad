@@ -1,0 +1,3831 @@
+{
+  "filters": {
+    "from_date": "2025-09-30"
+  },
+  "agents": {
+    "Inês Martinho": {
+      "overall": {
+        "avg_time_hours": 18.53,
+        "tickets_count": 29,
+        "tickets_per_day": {
+          "2025-09-30": 9,
+          "2025-10-01": 3,
+          "2025-10-02": 2,
+          "2025-10-03": 1,
+          "2025-10-06": 2,
+          "2025-10-07": 12
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 2.26,
+          "tickets_count": 6,
+          "tickets_per_day": {
+            "2025-09-30": 4,
+            "2025-10-07": 2
+          }
+        },
+        "P2": {
+          "avg_time_hours": 11.56,
+          "tickets_count": 12,
+          "tickets_per_day": {
+            "2025-09-30": 2,
+            "2025-10-01": 3,
+            "2025-10-02": 1,
+            "2025-10-06": 1,
+            "2025-10-07": 5
+          }
+        },
+        "P3": {
+          "avg_time_hours": 35.05,
+          "tickets_count": 11,
+          "tickets_per_day": {
+            "2025-09-30": 3,
+            "2025-10-02": 1,
+            "2025-10-03": 1,
+            "2025-10-06": 1,
+            "2025-10-07": 5
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 18.53,
+            "tickets_count": 25,
+            "tickets_per_day": {
+              "2025-09-30": 9,
+              "2025-10-01": 3,
+              "2025-10-02": 2,
+              "2025-10-03": 1,
+              "2025-10-06": 2,
+              "2025-10-07": 8
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 2.26,
+              "tickets_count": 4,
+              "tickets_per_day": {
+                "2025-09-30": 4
+              }
+            },
+            "P2": {
+              "avg_time_hours": 11.56,
+              "tickets_count": 12,
+              "tickets_per_day": {
+                "2025-09-30": 2,
+                "2025-10-01": 3,
+                "2025-10-02": 1,
+                "2025-10-06": 1,
+                "2025-10-07": 5
+              }
+            },
+            "P3": {
+              "avg_time_hours": 35.05,
+              "tickets_count": 9,
+              "tickets_per_day": {
+                "2025-09-30": 3,
+                "2025-10-02": 1,
+                "2025-10-03": 1,
+                "2025-10-06": 1,
+                "2025-10-07": 3
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 4,
+            "tickets_per_day": {
+              "2025-10-07": 4
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-07": 2
+              }
+            },
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-07": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "Catarina França": {
+      "overall": {
+        "avg_time_hours": 60.61,
+        "tickets_count": 9,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-01": 2,
+          "2025-10-02": 1,
+          "2025-10-03": 1,
+          "2025-10-07": 4
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 0.12,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 88.78,
+          "tickets_count": 6,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-02": 1,
+            "2025-10-07": 4
+          }
+        },
+        "P3": {
+          "avg_time_hours": 20.44,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-03": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 60.61,
+            "tickets_count": 8,
+            "tickets_per_day": {
+              "2025-09-30": 1,
+              "2025-10-01": 1,
+              "2025-10-02": 1,
+              "2025-10-03": 1,
+              "2025-10-07": 4
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 0.12,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": 88.78,
+              "tickets_count": 5,
+              "tickets_per_day": {
+                "2025-10-02": 1,
+                "2025-10-07": 4
+              }
+            },
+            "P3": {
+              "avg_time_hours": 20.44,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-09-30": 1,
+                "2025-10-03": 1
+              }
+            }
+          }
+        },
+        "Pending Reminder": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "Sandra Reis": {
+      "overall": {
+        "avg_time_hours": 45.39,
+        "tickets_count": 52,
+        "tickets_per_day": {
+          "2025-09-30": 9,
+          "2025-10-01": 9,
+          "2025-10-02": 3,
+          "2025-10-03": 2,
+          "2025-10-06": 9,
+          "2025-10-07": 20
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 122.03,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-06": 1,
+            "2025-10-07": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 54.86,
+          "tickets_count": 23,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-01": 1,
+            "2025-10-02": 2,
+            "2025-10-03": 2,
+            "2025-10-06": 5,
+            "2025-10-07": 12
+          }
+        },
+        "P3": {
+          "avg_time_hours": 30.19,
+          "tickets_count": 22,
+          "tickets_per_day": {
+            "2025-09-30": 8,
+            "2025-10-01": 7,
+            "2025-10-02": 1,
+            "2025-10-06": 2,
+            "2025-10-07": 4
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": 73.75,
+          "tickets_count": 5,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-06": 1,
+            "2025-10-07": 3
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 45.39,
+            "tickets_count": 39,
+            "tickets_per_day": {
+              "2025-09-30": 7,
+              "2025-10-01": 8,
+              "2025-10-02": 2,
+              "2025-10-03": 2,
+              "2025-10-06": 7,
+              "2025-10-07": 13
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 122.03,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": 54.86,
+              "tickets_count": 15,
+              "tickets_per_day": {
+                "2025-09-30": 1,
+                "2025-10-01": 1,
+                "2025-10-02": 1,
+                "2025-10-03": 2,
+                "2025-10-06": 4,
+                "2025-10-07": 6
+              }
+            },
+            "P3": {
+              "avg_time_hours": 30.19,
+              "tickets_count": 20,
+              "tickets_per_day": {
+                "2025-09-30": 6,
+                "2025-10-01": 7,
+                "2025-10-02": 1,
+                "2025-10-06": 2,
+                "2025-10-07": 4
+              }
+            },
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": 73.75,
+              "tickets_count": 3,
+              "tickets_per_day": {
+                "2025-10-07": 3
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 12,
+            "tickets_per_day": {
+              "2025-09-30": 1,
+              "2025-10-01": 1,
+              "2025-10-02": 1,
+              "2025-10-06": 2,
+              "2025-10-07": 7
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 8,
+              "tickets_per_day": {
+                "2025-10-02": 1,
+                "2025-10-06": 1,
+                "2025-10-07": 6
+              }
+            },
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            },
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-01": 1,
+                "2025-10-06": 1
+              }
+            }
+          }
+        },
+        "Pending Reminder": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "Paula Candeias": {
+      "overall": {
+        "avg_time_hours": 14.14,
+        "tickets_count": 18,
+        "tickets_per_day": {
+          "2025-09-30": 6,
+          "2025-10-01": 1,
+          "2025-10-02": 1,
+          "2025-10-03": 1,
+          "2025-10-06": 1,
+          "2025-10-07": 8
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 17.31,
+          "tickets_count": 8,
+          "tickets_per_day": {
+            "2025-10-07": 8
+          }
+        },
+        "P2": {
+          "avg_time_hours": 10.96,
+          "tickets_count": 10,
+          "tickets_per_day": {
+            "2025-09-30": 6,
+            "2025-10-01": 1,
+            "2025-10-02": 1,
+            "2025-10-03": 1,
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 14.14,
+            "tickets_count": 16,
+            "tickets_per_day": {
+              "2025-09-30": 6,
+              "2025-10-02": 1,
+              "2025-10-06": 1,
+              "2025-10-07": 8
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 17.31,
+              "tickets_count": 8,
+              "tickets_per_day": {
+                "2025-10-07": 8
+              }
+            },
+            "P2": {
+              "avg_time_hours": 10.96,
+              "tickets_count": 8,
+              "tickets_per_day": {
+                "2025-09-30": 6,
+                "2025-10-02": 1,
+                "2025-10-06": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-01": 1,
+              "2025-10-03": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-01": 1,
+                "2025-10-03": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "Rafaela Lapa": {
+      "overall": {
+        "avg_time_hours": 0.93,
+        "tickets_count": 7,
+        "tickets_per_day": {
+          "2025-10-01": 1,
+          "2025-10-06": 6
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.93,
+          "tickets_count": 5,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-06": 4
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-06": 2
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.93,
+            "tickets_count": 4,
+            "tickets_per_day": {
+              "2025-10-06": 4
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.93,
+              "tickets_count": 4,
+              "tickets_per_day": {
+                "2025-10-06": 4
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-06": 2
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-06": 2
+              }
+            }
+          }
+        },
+        "Pending Close": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "Magali Morim": {
+      "overall": {
+        "avg_time_hours": 32.34,
+        "tickets_count": 5,
+        "tickets_per_day": {
+          "2025-10-01": 1,
+          "2025-10-03": 1,
+          "2025-10-06": 3
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 10.35,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-03": 1,
+            "2025-10-06": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 98.31,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 32.34,
+            "tickets_count": 4,
+            "tickets_per_day": {
+              "2025-10-01": 1,
+              "2025-10-03": 1,
+              "2025-10-06": 2
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 10.35,
+              "tickets_count": 3,
+              "tickets_per_day": {
+                "2025-10-01": 1,
+                "2025-10-03": 1,
+                "2025-10-06": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": 98.31,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "Cátia Leal": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "customers": {
+    "support@gbntravel.zohodesk.eu": {
+      "overall": {
+        "avg_time_hours": 73.99,
+        "tickets_count": 8,
+        "tickets_per_day": {
+          "2025-10-01": 2,
+          "2025-10-02": 1,
+          "2025-10-06": 1,
+          "2025-10-07": 4
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 0.12,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 83.25,
+          "tickets_count": 5,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-06": 1,
+            "2025-10-07": 3
+          }
+        },
+        "P3": {
+          "avg_time_hours": 92.4,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-02": 1,
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 73.99,
+            "tickets_count": 7,
+            "tickets_per_day": {
+              "2025-10-01": 1,
+              "2025-10-02": 1,
+              "2025-10-06": 1,
+              "2025-10-07": 4
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 0.12,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": 83.25,
+              "tickets_count": 4,
+              "tickets_per_day": {
+                "2025-10-06": 1,
+                "2025-10-07": 3
+              }
+            },
+            "P3": {
+              "avg_time_hours": 92.4,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-02": 1,
+                "2025-10-07": 1
+              }
+            }
+          }
+        },
+        "Pending Reminder": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "hermesplataforma@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 1.59,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 1.59,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.59,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 1.59,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "invoicing@consolidador.com": {
+      "overall": {
+        "avg_time_hours": 21.85,
+        "tickets_count": 3,
+        "tickets_per_day": {
+          "2025-10-07": 3
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 16.68,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-07": 2
+          }
+        },
+        "P3": {
+          "avg_time_hours": 32.18,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 21.85,
+            "tickets_count": 3,
+            "tickets_per_day": {
+              "2025-10-07": 3
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 16.68,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-07": 2
+              }
+            },
+            "P3": {
+              "avg_time_hours": 32.18,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "circuitos@nortravel.pt": {
+      "overall": {
+        "avg_time_hours": 35.68,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-06": 1,
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 35.68,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-06": 1,
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 35.68,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-06": 1,
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 35.68,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-06": 1,
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "booking@newblue.pt": {
+      "overall": {
+        "avg_time_hours": 127.33,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 127.33,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 127.33,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 127.33,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "peopleneedtotravel@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 64.1,
+        "tickets_count": 4,
+        "tickets_per_day": {
+          "2025-10-02": 1,
+          "2025-10-07": 3
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 86.19,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-07": 3
+          }
+        },
+        "P3": {
+          "avg_time_hours": 19.91,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-02": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 64.1,
+            "tickets_count": 3,
+            "tickets_per_day": {
+              "2025-10-02": 1,
+              "2025-10-07": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 86.19,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-07": 2
+              }
+            },
+            "P3": {
+              "avg_time_hours": 19.91,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-02": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "finance@consolidadorpt.zendesk.com": {
+      "overall": {
+        "avg_time_hours": 31.69,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 31.69,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 31.69,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 31.69,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "b2b@news.ratehawk.com": {
+      "overall": {
+        "avg_time_hours": 103.42,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 103.42,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 103.42,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 103.42,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "aircruiser.portugal@tui.com": {
+      "overall": {
+        "avg_time_hours": 0.36,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.36,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.36,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.36,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "geral@umafamiliaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 56.01,
+        "tickets_count": 9,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-02": 1,
+          "2025-10-03": 2,
+          "2025-10-06": 2,
+          "2025-10-07": 3
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 49.58,
+          "tickets_count": 4,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-02": 1,
+            "2025-10-03": 1,
+            "2025-10-07": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 21.15,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-03": 1,
+            "2025-10-06": 1
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": 100.52,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-06": 1,
+            "2025-10-07": 2
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 56.01,
+            "tickets_count": 7,
+            "tickets_per_day": {
+              "2025-09-30": 1,
+              "2025-10-03": 2,
+              "2025-10-06": 1,
+              "2025-10-07": 3
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 49.58,
+              "tickets_count": 3,
+              "tickets_per_day": {
+                "2025-09-30": 1,
+                "2025-10-03": 1,
+                "2025-10-07": 1
+              }
+            },
+            "P3": {
+              "avg_time_hours": 21.15,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-03": 1,
+                "2025-10-06": 1
+              }
+            },
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": 100.52,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-07": 2
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-02": 1,
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-02": 1
+              }
+            },
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "thinktravel@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 167.66,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 167.66,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 167.66,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 167.66,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "no-reply@soltour.com": {
+      "overall": {
+        "avg_time_hours": 10.9,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 1.58,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": 20.21,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 10.9,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-09-30": 1,
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 1.58,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            },
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": 20.21,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "avisos@civitatis.com": {
+      "overall": {
+        "avg_time_hours": 50.68,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 50.68,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 50.68,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-09-30": 1,
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 50.68,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-09-30": 1,
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "booking@gbntravel.com": {
+      "overall": {
+        "avg_time_hours": 49.1,
+        "tickets_count": 5,
+        "tickets_per_day": {
+          "2025-10-06": 4,
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 122.03,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 24.79,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-06": 2,
+            "2025-10-07": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 49.1,
+            "tickets_count": 4,
+            "tickets_per_day": {
+              "2025-10-06": 3,
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 122.03,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": 24.79,
+              "tickets_count": 3,
+              "tickets_per_day": {
+                "2025-10-06": 2,
+                "2025-10-07": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "essencetravel@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 24.9,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 24.9,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 24.9,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 24.9,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "info@flexibleautos.com": {
+      "overall": {
+        "avg_time_hours": 19.84,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 19.84,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 19.84,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 19.84,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "air@consolidador.com": {
+      "overall": {
+        "avg_time_hours": 18.11,
+        "tickets_count": 11,
+        "tickets_per_day": {
+          "2025-09-30": 4,
+          "2025-10-06": 1,
+          "2025-10-07": 6
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 15.8,
+          "tickets_count": 7,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-07": 6
+          }
+        },
+        "P2": {
+          "avg_time_hours": 29.48,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-09-30": 2,
+            "2025-10-06": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 0.08,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 18.11,
+            "tickets_count": 11,
+            "tickets_per_day": {
+              "2025-09-30": 4,
+              "2025-10-06": 1,
+              "2025-10-07": 6
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 15.8,
+              "tickets_count": 7,
+              "tickets_per_day": {
+                "2025-09-30": 1,
+                "2025-10-07": 6
+              }
+            },
+            "P2": {
+              "avg_time_hours": 29.48,
+              "tickets_count": 3,
+              "tickets_per_day": {
+                "2025-09-30": 2,
+                "2025-10-06": 1
+              }
+            },
+            "P3": {
+              "avg_time_hours": 0.08,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "noreply@viajartours.pt": {
+      "overall": {
+        "avg_time_hours": 0.94,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.94,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.94,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.94,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "grupos@consolidador.com": {
+      "overall": {
+        "avg_time_hours": 2.2,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 2.2,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 2.2,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 2.2,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "emissoes@solferias.com": {
+      "overall": {
+        "avg_time_hours": 11.31,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 11.31,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 11.31,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 11.31,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "euforia.glam@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 0.98,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.98,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.98,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.98,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "tatiana@provocadoradeviagens.com": {
+      "overall": {
+        "avg_time_hours": 74.09,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 74.09,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 74.09,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 74.09,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "libelinha.travel@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 138.76,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 138.76,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 138.76,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 138.76,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "jesikbenitez2506@gmail.com": {
+      "overall": {
+        "avg_time_hours": 2.6,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 2.6,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 2.6,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 2.6,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "luciaduarte81@hotmail.com": {
+      "overall": {
+        "avg_time_hours": 49.28,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-03": 1,
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 0.25,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-03": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": 98.31,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 49.28,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-03": 1,
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 0.25,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-03": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": 98.31,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rgmtravel@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 116.28,
+        "tickets_count": 3,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-06": 2
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 115.84,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 116.73,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 116.28,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-06": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 115.84,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            },
+            "P3": {
+              "avg_time_hours": 116.73,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        },
+        "Pending Reminder": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "calidad@avoris.zendesk.com": {
+      "overall": {
+        "avg_time_hours": 0.96,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-06": 2
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.96,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-06": 2
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.96,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-06": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.96,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-06": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "noreply@tourdiez.com": {
+      "overall": {
+        "avg_time_hours": 42.6,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-01": 1,
+          "2025-10-03": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 42.6,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-03": 1
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 42.6,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-03": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 42.6,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-03": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "accounting@gbntravel.zohodesk.eu": {
+      "overall": {
+        "avg_time_hours": 19.46,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-03": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 19.46,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-03": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 19.46,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-03": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 19.46,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-03": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "vanesa.calderon@tourdiez.com": {
+      "overall": {
+        "avg_time_hours": 1.78,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-02": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 1.78,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-02": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.78,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-02": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 1.78,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-02": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "circuitos.nortravel@nortravel.pt": {
+      "overall": {
+        "avg_time_hours": 0.6,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-02": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.6,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-02": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.6,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-02": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.6,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-02": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "skyway.travel@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 1.85,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-02": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 1.85,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-02": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.85,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-02": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 1.85,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-02": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "ana.hartmann@es.costa.it": {
+      "overall": {
+        "avg_time_hours": 0.14,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-02": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.14,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-02": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.14,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-02": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.14,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-02": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rita.ribeiro@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 1.09,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 1.09,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.09,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 1.09,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "mkrauss@hitchhiker.net": {
+      "overall": {
+        "avg_time_hours": 1.91,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 1.91,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.91,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 1.91,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "oscar.gracia@tourdiez.com": {
+      "overall": {
+        "avg_time_hours": 16.67,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 16.67,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 16.67,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 16.67,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "groups.nextpt@w2m.com": {
+      "overall": {
+        "avg_time_hours": 15.36,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-01": 2
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 15.36,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-01": 2
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 15.36,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-01": 2
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 15.36,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-01": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "hotelberna@viphotels.com": {
+      "overall": {
+        "avg_time_hours": 28.31,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 28.31,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 28.31,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 28.31,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "nelson.marcelino@accor.com": {
+      "overall": {
+        "avg_time_hours": 1.23,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 1.23,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.23,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 1.23,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "beatriz.ferraz@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 6.89,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-09-30": 2
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 6.89,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-09-30": 2
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 6.89,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-09-30": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 6.89,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-09-30": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "appletours@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 12.4,
+        "tickets_count": 5,
+        "tickets_per_day": {
+          "2025-10-01": 3,
+          "2025-10-07": 2
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 17.42,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-01": 2,
+            "2025-10-07": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 2.36,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 12.4,
+            "tickets_count": 3,
+            "tickets_per_day": {
+              "2025-10-01": 3
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 17.42,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-01": 2
+              }
+            },
+            "P3": {
+              "avg_time_hours": 2.36,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-07": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            },
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "patriciateixeiracl98@gmail.com": {
+      "overall": {
+        "avg_time_hours": 28.21,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 28.21,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 28.21,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 28.21,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rumaventura@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 26.99,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 26.99,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 26.99,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 26.99,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "callcenterpt@soltourtp.com": {
+      "overall": {
+        "avg_time_hours": 0.22,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.22,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.22,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.22,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "booking@mg.newblue.pt": {
+      "overall": {
+        "avg_time_hours": 1.22,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-01": 1,
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": 1.22,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.22,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 1.22,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "bruna.margarida25@gmail.com": {
+      "overall": {
+        "avg_time_hours": 7.95,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 7.95,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 7.95,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 7.95,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "benicetravel@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 0.27,
+        "tickets_count": 3,
+        "tickets_per_day": {
+          "2025-09-30": 2,
+          "2025-10-03": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.27,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-09-30": 2,
+            "2025-10-03": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.27,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-09-30": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.27,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-09-30": 2
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-03": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-03": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cotizaciones@tourdiez.com": {
+      "overall": {
+        "avg_time_hours": 1.64,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 1.64,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.64,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 1.64,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "h1668-re@accor.com": {
+      "overall": {
+        "avg_time_hours": 1.33,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 1.33,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.33,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 1.33,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "analuisa.reste@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 1.14,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 1.14,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.14,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 1.14,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "alexandra.leitao@umafamiliaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 0.19,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.19,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.19,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.19,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cristina.neto@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": 4.05,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 4.05,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 4.05,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 4.05,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "travel@insurebroker.pt": {
+      "overall": {
+        "avg_time_hours": 5.25,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": 5.25,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 5.25,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": 5.25,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "reservas@soltropico.pt": {
+      "overall": {
+        "avg_time_hours": 0.43,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.43,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.43,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.43,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "informacionsoltour@soltour.es": {
+      "overall": {
+        "avg_time_hours": 1.22,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-09-30": 2
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 1.22,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-09-30": 2
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.22,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-09-30": 2
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": 1.22,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-09-30": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "rotadossonhos@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-06": 1,
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-06": 1,
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-06": 1,
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-06": 1,
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "patricia.caetano@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "amandafernandesrei@gmail.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "sonia.susano@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "rita.arruda@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-09-30": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-09-30": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-09-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "easytobuyeasytofly@gmail.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 3,
+        "tickets_per_day": {
+          "2025-10-06": 1,
+          "2025-10-07": 2
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        },
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-06": 1,
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 3,
+            "tickets_per_day": {
+              "2025-10-06": 1,
+              "2025-10-07": 2
+            }
+          },
+          "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            },
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-06": 1,
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "2traveleasy@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-07": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-07": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "ritaandrade@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "pass@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      },
+      "states": {
+        "Pending Close": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "teresa.vaz@familiaemviagem.com": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-06": 1
+        }
+      },
+      "priorities": {
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-06": 1
+          }
+        }
+      },
+      "states": {
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "daily_summary": {
+    "2025-09-30": {
+      "closed": 23,
+      "open": 2
+    },
+    "2025-10-01": {
+      "closed": 13,
+      "open": 4
+    },
+    "2025-10-02": {
+      "closed": 6,
+      "open": 1
+    },
+    "2025-10-03": {
+      "closed": 5,
+      "open": 1
+    },
+    "2025-10-06": {
+      "closed": 16,
+      "open": 6
+    },
+    "2025-10-07": {
+      "closed": 33,
+      "open": 11
+    }
+  },
+  "states": {
+    "Closed": {
+      "overall": {
+        "avg_time_hours": 32.06,
+        "tickets_count": 96,
+        "tickets_per_day": {
+          "2025-09-30": 23,
+          "2025-10-01": 13,
+          "2025-10-02": 6,
+          "2025-10-03": 5,
+          "2025-10-06": 16,
+          "2025-10-07": 33
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": 17.69,
+          "tickets_count": 17,
+          "tickets_per_day": {
+            "2025-09-30": 4,
+            "2025-10-01": 2,
+            "2025-10-03": 1,
+            "2025-10-06": 2,
+            "2025-10-07": 8
+          }
+        },
+        "P2": {
+          "avg_time_hours": 35.45,
+          "tickets_count": 45,
+          "tickets_per_day": {
+            "2025-09-30": 9,
+            "2025-10-01": 4,
+            "2025-10-02": 4,
+            "2025-10-03": 2,
+            "2025-10-06": 11,
+            "2025-10-07": 15
+          }
+        },
+        "P3": {
+          "avg_time_hours": 30.97,
+          "tickets_count": 31,
+          "tickets_per_day": {
+            "2025-09-30": 10,
+            "2025-10-01": 7,
+            "2025-10-02": 2,
+            "2025-10-03": 2,
+            "2025-10-06": 3,
+            "2025-10-07": 7
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": 73.75,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-07": 3
+          }
+        }
+      }
+    },
+    "Open": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 22,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-01": 2,
+          "2025-10-02": 1,
+          "2025-10-03": 1,
+          "2025-10-06": 6,
+          "2025-10-07": 11
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": null,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-07": 3
+          }
+        },
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 11,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-02": 1,
+            "2025-10-03": 1,
+            "2025-10-06": 2,
+            "2025-10-07": 6
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 6,
+          "tickets_per_day": {
+            "2025-09-30": 1,
+            "2025-10-06": 3,
+            "2025-10-07": 2
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": null,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-06": 1
+          }
+        }
+      }
+    },
+    "Pending Close": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        }
+      }
+    },
+    "Pending Reminder": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-09-30": 1,
+          "2025-10-01": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-01": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-09-30": 1
+          }
+        }
+      }
+    }
+  }
+}
