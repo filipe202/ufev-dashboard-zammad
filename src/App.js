@@ -1384,6 +1384,29 @@ export default function App() {
             ))}
           </tbody>
         </table>
+        
+        {/* Legenda de cores */}
+        <div style={{padding: "16px 20px", backgroundColor: "#f8f9fa", borderTop: "1px solid #e2e8f0"}}>
+          <h4 style={{margin: "0 0 12px 0", fontSize: 14, fontWeight: 600, color: "#374151"}}>
+            Legenda de Cores:
+          </h4>
+          <div style={{display: "flex", flexWrap: "wrap", gap: 16}}>
+            {rows.map((row, index) => (
+              <div key={row.label} style={{display: "flex", alignItems: "center", gap: 6}}>
+                <div style={{
+                  width: 16,
+                  height: 16,
+                  backgroundColor: COLORS[index % COLORS.length],
+                  borderRadius: 3,
+                  border: "1px solid rgba(0,0,0,0.1)"
+                }} />
+                <span style={{fontSize: 13, color: "#374151", fontWeight: 500}}>
+                  {row.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div style={{fontSize:12, color:"#64748b", marginTop:8}}>
