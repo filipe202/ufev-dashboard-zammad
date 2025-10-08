@@ -21,6 +21,7 @@ AGENT_NAME_OVERRIDES = {
     3: "Carolina Ferreirinha",
 }
 
+
 AGENT_IDS = set(AGENT_NAME_OVERRIDES.keys())
 
 # Intervalo de análise (podes alterar)
