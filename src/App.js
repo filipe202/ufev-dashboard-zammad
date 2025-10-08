@@ -1029,7 +1029,7 @@ export default function App() {
                 </div>
                 {Array.from({length: 24}, (_, hour) => (
                   <div key={hour} style={{
-                    width: 28,
+                    width: 30, // Aumentar para 30px para alinhar com células
                     fontSize: 10,
                     textAlign: "center",
                     color: "#6b7280",
@@ -1059,7 +1059,7 @@ export default function App() {
                       display: "flex",
                       alignItems: "center",
                       paddingRight: 8,
-                      height: 30
+                      height: 32 // Ajustar para alinhar com células de 30px + border
                     }}>
                       {weekday}
                     </div>
@@ -1084,8 +1084,8 @@ export default function App() {
                         <div
                           key={hour}
                           style={{
-                            width: 28,
-                            height: 28,
+                            width: 30, // Aumentar para 30px para alinhar com header
+                            height: 30,
                             backgroundColor: getColor(intensity),
                             display: "flex",
                             alignItems: "center",
