@@ -437,15 +437,6 @@ export default function App() {
       {/* Controles */}
       <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px,1fr))", gap: 12, marginBottom: 12}}>
         <div>
-          <label style={{fontSize: 12, color: "#555"}}>Desde</label>
-          <input
-            type="date"
-            value={fromDate}
-            onChange={e => setFromDateSynced(e.target.value)}
-            style={{width:"100%", padding:8, borderRadius:8, border:"1px solid #cbd5f5"}}
-          />
-        </div>
-        <div>
           <label style={{fontSize: 12, color: "#555"}}>Prioridade</label>
           <MultiSelect
             options={priorities}
