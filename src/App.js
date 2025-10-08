@@ -512,7 +512,7 @@ export default function App() {
         <div style={{display:"flex", gap:8, marginBottom:16, justifyContent:"center"}}>
           {[
             { value: "created", label: "📥 Criação de Tickets" },
-            { value: "closed", label: "✅ Fechamento de Tickets" },
+            { value: "closed", label: "✅ Fecho de Tickets" },
           ].map(option => (
             <button
               key={option.value}
