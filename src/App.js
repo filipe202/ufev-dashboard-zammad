@@ -1,6 +1,19 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import "./index.css";
 import { ZAMMAD_METRICS } from "./zammad_metrics";
+
+// Hook para detectar mobile
+const useIsMobile = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 768);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
+  return isMobile;
+};
 const COLORS = [
   "#82B1FF", // azul lavanda
   "#FFAB91", // pêssego suave
@@ -253,6 +266,7 @@ export default function App() {
   const [error, setError] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const fromDateRef = useRef("");
+  const isMobile = useIsMobile();
 
   // Roteamento baseado na URL
   const getViewModeFromURL = () => {
@@ -486,7 +500,7 @@ export default function App() {
     const totalResponses = Object.values(data.agent_responses).reduce((sum, count) => sum + count, 0);
 
     return (
-      <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
+      <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
         <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
           <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
           <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
@@ -646,7 +660,7 @@ export default function App() {
     }));
 
     return (
-      <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
+      <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
         <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
           <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
           <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
@@ -831,7 +845,7 @@ export default function App() {
     }));
 
     return (
-      <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
+      <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
         <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
           <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
           <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
@@ -908,7 +922,7 @@ export default function App() {
           ))}
         </div>
 
-        <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 24}}>
+        <div style={{display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: isMobile ? 16 : 24, marginBottom: 24}}>
           <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
             <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Tickets por Dia da Semana</h3>
             <div style={{height: 300}}>
@@ -1021,7 +1035,7 @@ export default function App() {
             Heatmap: Dia da Semana x Hora ({modeLabel} de Tickets)
           </h3>
           <div style={{overflowX: "auto", paddingTop: 8}}>
-            <div style={{minWidth: 800}}>
+            <div style={{minWidth: isMobile ? 600 : 800}}>
               {/* Header com horas */}
               <div style={{display: "flex", marginBottom: 8, position: "sticky", top: 0, backgroundColor: "white", zIndex: 1, paddingBottom: 4}}>
                 <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280", display: "flex", alignItems: "center"}}>
@@ -1154,14 +1168,14 @@ export default function App() {
   }
 
   return (
-    <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
-<div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
+    <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
+<div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16, flexWrap: "wrap"}}>
   <img
     src="logo.svg"
     alt="UFEV"
     style={{height:48, objectFit:"contain"}}
   />
-  <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
+  <h1 style={{fontSize: isMobile ? 18 : 24, fontWeight:600, color:"#005A8D", margin:0, flex:1, minWidth: isMobile ? "150px" : "200px"}}>
     Dashboard de Suporte
   </h1>
   <button 
@@ -1357,7 +1371,28 @@ export default function App() {
           </div>
         </div>
       </div>
-
+       {/* Legenda de cores */}
+        <div style={{padding: "16px 20px", backgroundColor: "#f8f9fa", borderTop: "1px solid #e2e8f0"}}>
+          <h4 style={{margin: "0 0 12px 0", fontSize: 14, fontWeight: 600, color: "#374151"}}>
+            🎨 Legenda de Cores:
+          </h4>
+          <div style={{display: "flex", flexWrap: "wrap", gap: 16}}>
+            {rows.map((row, index) => (
+              <div key={row.label} style={{display: "flex", alignItems: "center", gap: 6}}>
+                <div style={{
+                  width: 16,
+                  height: 16,
+                  backgroundColor: COLORS[index % COLORS.length],
+                  borderRadius: 3,
+                  border: "1px solid rgba(0,0,0,0.1)"
+                }} />
+                <span style={{fontSize: 13, color: "#374151", fontWeight: 500}}>
+                  {row.label}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
       {/* Tabela */}
       <div style={{border:"1px solid #eee", borderRadius:10, overflowX:"auto"}}>
         <table style={{width:"100%", borderCollapse:"collapse", fontSize:14}}>
@@ -1385,28 +1420,7 @@ export default function App() {
           </tbody>
         </table>
         
-        {/* Legenda de cores */}
-        <div style={{padding: "16px 20px", backgroundColor: "#f8f9fa", borderTop: "1px solid #e2e8f0"}}>
-          <h4 style={{margin: "0 0 12px 0", fontSize: 14, fontWeight: 600, color: "#374151"}}>
-            🎨 Legenda de Cores:
-          </h4>
-          <div style={{display: "flex", flexWrap: "wrap", gap: 16}}>
-            {rows.map((row, index) => (
-              <div key={row.label} style={{display: "flex", alignItems: "center", gap: 6}}>
-                <div style={{
-                  width: 16,
-                  height: 16,
-                  backgroundColor: COLORS[index % COLORS.length],
-                  borderRadius: 3,
-                  border: "1px solid rgba(0,0,0,0.1)"
-                }} />
-                <span style={{fontSize: 13, color: "#374151", fontWeight: 500}}>
-                  {row.label}
-                </span>
-              </div>
-            ))}
-          </div>
-        </div>
+ 
       </div>
 
       <div style={{fontSize:12, color:"#64748b", marginTop:8}}>
