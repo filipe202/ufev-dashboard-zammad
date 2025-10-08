@@ -245,6 +245,17 @@ def main():
             raise
     priority_by_id = {p["id"]: p.get("name") or f"priority_{p['id']}" for p in priorities}
 
+    # Buscar estados da API
+    try:
+        states = paged_get("/ticket_states")
+    except requests.HTTPError as err:
+        if err.response is not None and err.response.status_code == 403:
+            states = []
+        else:
+            raise
+    state_by_id = {s["id"]: s.get("name") or f"state_{s['id']}" for s in states}
+    log(f"Estados mapeados: {state_by_id}")
+
     # Usar endpoint direto em vez de search para garantir todos os tickets
     tickets_raw = paged_get("/tickets")
     log(f"Total tickets encontrados: {len(tickets_raw)}")
@@ -261,11 +272,13 @@ def main():
     for t in tickets_raw:
         created_at = t.get("created_at")
         if created_at and is_after_from_date(created_at):
-            state = (t.get("state") or "").strip().lower()
+            state_id = t.get("state_id")
+            state_name = state_by_id.get(state_id, "").lower() if state_id else ""
+            
             # Incluir TODOS os tickets, só separar por estado
-            if state in CLOSED_STATES:
+            if state_name in CLOSED_STATES:
                 tickets_closed.append(t)
-            elif state in OPEN_STATES:
+            elif state_name in OPEN_STATES:
                 tickets_open.append(t)
             else:
                 # Incluir outros estados também
@@ -273,6 +286,26 @@ def main():
     
     log(f"Tickets fechados filtrados: {len(tickets_closed)}")
     log(f"Tickets abertos filtrados: {len(tickets_open)}")
+    
+    # Debug: verificar estrutura dos tickets
+    if tickets_raw:
+        sample_ticket = tickets_raw[0]
+        log(f"Campos do primeiro ticket: {list(sample_ticket.keys())}")
+        log(f"State do primeiro ticket: '{sample_ticket.get('state')}' (type: {type(sample_ticket.get('state'))})")
+        log(f"State_id do primeiro ticket: '{sample_ticket.get('state_id')}'")
+        
+    # Verificar estados únicos
+    all_states = set()
+    all_state_ids = set()
+    for t in tickets_raw:
+        state = t.get("state")
+        state_id = t.get("state_id")
+        if state:
+            all_states.add(state)
+        if state_id:
+            all_state_ids.add(state_id)
+    log(f"Estados únicos na API: {sorted(all_states) if all_states else 'NENHUM'}")
+    log(f"State_ids únicos na API: {sorted(all_state_ids) if all_state_ids else 'NENHUM'}")
 
     per_state = defaultdict(make_holder)
     per_agent = defaultdict(make_holder)
@@ -305,7 +338,8 @@ def main():
             continue
         priority_id = t.get("priority_id")
         priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
-        state_label = format_state_label(t.get("state"))
+        state_id = t.get("state_id")
+        state_label = format_state_label(state_by_id.get(state_id) if state_id else None)
 
         agent_bucket = per_agent[agent]
         record_entity(agent_bucket, day, priority_name, state_label, delta)
@@ -341,7 +375,8 @@ def main():
 
         priority_id = t.get("priority_id")
         priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
-        state_label = format_state_label(t.get("state"))
+        state_id = t.get("state_id")
+        state_label = format_state_label(state_by_id.get(state_id) if state_id else None)
 
         if owner_id:
             agent = user_by_id.get(owner_id, AGENT_NAME_OVERRIDES.get(owner_id, f"id_{owner_id}"))
