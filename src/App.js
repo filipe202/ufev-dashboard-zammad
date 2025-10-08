@@ -1,7 +1,4 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import {
-  BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer
-} from "recharts";
 import "./index.css";
 import { ZAMMAD_METRICS } from "./zammad_metrics";
 const COLORS = [
@@ -507,14 +504,56 @@ export default function App() {
           <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
             Número de Respostas por Agente ({totalResponses} respostas analisadas)
           </h3>
-          <ResponsiveContainer width="100%" height={400}>
-            <BarChart data={responsesData} layout="horizontal">
-              <XAxis type="number" />
-              <YAxis dataKey="name" type="category" width={120} />
-              <Tooltip />
-              <Bar dataKey="respostas" fill="#17a2b8" />
-            </BarChart>
-          </ResponsiveContainer>
+          <div style={{height: 400, overflowY: "auto"}}>
+            {responsesData.map((agent, index) => {
+              const maxValue = Math.max(...responsesData.map(a => a.respostas));
+              const percentage = (agent.respostas / maxValue) * 100;
+              return (
+                <div key={agent.name} style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: 12,
+                  gap: 12
+                }}>
+                  <div style={{
+                    minWidth: 120,
+                    textAlign: "right",
+                    fontSize: 14,
+                    fontWeight: 500
+                  }}>
+                    {agent.name}
+                  </div>
+                  <div style={{
+                    flex: 1,
+                    height: 24,
+                    backgroundColor: "#f1f5f9",
+                    borderRadius: 12,
+                    position: "relative",
+                    overflow: "hidden"
+                  }}>
+                    <div style={{
+                      width: `${percentage}%`,
+                      height: "100%",
+                      backgroundColor: "#17a2b8",
+                      borderRadius: 12,
+                      transition: "width 0.5s ease"
+                    }} />
+                    <span style={{
+                      position: "absolute",
+                      right: 8,
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      fontSize: 12,
+                      fontWeight: 600,
+                      color: percentage > 50 ? "white" : "#374151"
+                    }}>
+                      {agent.respostas}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
@@ -625,17 +664,56 @@ export default function App() {
           <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
             Interações Médias por Ticket Fechado (menor = mais eficiente)
           </h3>
-          <ResponsiveContainer width="100%" height={400}>
-            <BarChart data={efficiencyData} layout="horizontal">
-              <XAxis type="number" />
-              <YAxis dataKey="name" type="category" width={120} />
-              <Tooltip formatter={(value, name) => [
-                name === 'interacoes' ? `${value} interações/ticket` : value,
-                name === 'interacoes' ? 'Média' : name
-              ]} />
-              <Bar dataKey="interacoes" fill="#28a745" />
-            </BarChart>
-          </ResponsiveContainer>
+          <div style={{height: 400, overflowY: "auto"}}>
+            {efficiencyData.map((agent, index) => {
+              const maxValue = Math.max(...efficiencyData.map(a => a.interacoes));
+              const percentage = (agent.interacoes / maxValue) * 100;
+              return (
+                <div key={agent.name} style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: 12,
+                  gap: 12
+                }}>
+                  <div style={{
+                    minWidth: 120,
+                    textAlign: "right",
+                    fontSize: 14,
+                    fontWeight: 500
+                  }}>
+                    {agent.name}
+                  </div>
+                  <div style={{
+                    flex: 1,
+                    height: 24,
+                    backgroundColor: "#f1f5f9",
+                    borderRadius: 12,
+                    position: "relative",
+                    overflow: "hidden"
+                  }}>
+                    <div style={{
+                      width: `${percentage}%`,
+                      height: "100%",
+                      backgroundColor: "#28a745",
+                      borderRadius: 12,
+                      transition: "width 0.5s ease"
+                    }} />
+                    <span style={{
+                      position: "absolute",
+                      right: 8,
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      fontSize: 12,
+                      fontWeight: 600,
+                      color: percentage > 50 ? "white" : "#374151"
+                    }}>
+                      {agent.interacoes}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
         <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
@@ -795,26 +873,108 @@ export default function App() {
         <div style={{display: "grid", gridTemplateColumns: "1fr 1fr", gap: 24, marginBottom: 24}}>
           <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
             <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Tickets por Dia da Semana</h3>
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={weekdayData}>
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="tickets" fill="#005A8D" />
-              </BarChart>
-            </ResponsiveContainer>
+            <div style={{height: 300}}>
+              {weekdayData.map((day, index) => {
+                const maxValue = Math.max(...weekdayData.map(d => d.tickets));
+                const percentage = maxValue > 0 ? (day.tickets / maxValue) * 100 : 0;
+                return (
+                  <div key={day.name} style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: 8,
+                    gap: 8
+                  }}>
+                    <div style={{
+                      minWidth: 60,
+                      fontSize: 12,
+                      fontWeight: 500
+                    }}>
+                      {day.name}
+                    </div>
+                    <div style={{
+                      flex: 1,
+                      height: 20,
+                      backgroundColor: "#f1f5f9",
+                      borderRadius: 10,
+                      position: "relative",
+                      overflow: "hidden"
+                    }}>
+                      <div style={{
+                        width: `${percentage}%`,
+                        height: "100%",
+                        backgroundColor: "#005A8D",
+                        borderRadius: 10,
+                        transition: "width 0.5s ease"
+                      }} />
+                      <span style={{
+                        position: "absolute",
+                        right: 4,
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        fontSize: 10,
+                        fontWeight: 600,
+                        color: percentage > 40 ? "white" : "#374151"
+                      }}>
+                        {day.tickets}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
           
           <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
             <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Tickets por Hora do Dia</h3>
-            <ResponsiveContainer width="100%" height={300}>
-              <BarChart data={hourData}>
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Bar dataKey="tickets" fill="#28a745" />
-              </BarChart>
-            </ResponsiveContainer>
+            <div style={{height: 300, overflowY: "auto"}}>
+              {hourData.map((hour, index) => {
+                const maxValue = Math.max(...hourData.map(h => h.tickets));
+                const percentage = maxValue > 0 ? (hour.tickets / maxValue) * 100 : 0;
+                return (
+                  <div key={hour.name} style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: 6,
+                    gap: 8
+                  }}>
+                    <div style={{
+                      minWidth: 35,
+                      fontSize: 11,
+                      fontWeight: 500
+                    }}>
+                      {hour.name}
+                    </div>
+                    <div style={{
+                      flex: 1,
+                      height: 16,
+                      backgroundColor: "#f1f5f9",
+                      borderRadius: 8,
+                      position: "relative",
+                      overflow: "hidden"
+                    }}>
+                      <div style={{
+                        width: `${percentage}%`,
+                        height: "100%",
+                        backgroundColor: "#28a745",
+                        borderRadius: 8,
+                        transition: "width 0.5s ease"
+                      }} />
+                      <span style={{
+                        position: "absolute",
+                        right: 4,
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        fontSize: 9,
+                        fontWeight: 600,
+                        color: percentage > 40 ? "white" : "#374151"
+                      }}>
+                        {hour.tickets}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
 
@@ -976,18 +1136,75 @@ export default function App() {
           <div style={{width:8, height:24, background:"#0096D6", borderRadius:4}}/>
           <h2 style={{margin:0, fontSize:16, color:"#005A8D"}}>Tickets por dia</h2>
         </div>
-        <div style={{width:"100%", height:380}}>
-          <ResponsiveContainer>
-            <BarChart data={series}>
-              <XAxis dataKey="day" tick={{ fontSize: 12 }} />
-              <YAxis allowDecimals={false} tick={{ fontSize: 12 }} />
-              <Tooltip />
-              <Legend />
-              {rows.map((r, i) => (
-                <Bar key={r.label} dataKey={r.label} stackId="a" fill={COLORS[i % COLORS.length]} />
-              ))}
-            </BarChart>
-          </ResponsiveContainer>
+        <div style={{width:"100%", height:380, overflowX: "auto", overflowY: "hidden"}}>
+          <div style={{display: "flex", alignItems: "end", height: "100%", gap: 4, minWidth: series.length * 60}}>
+            {series.map((dayData, index) => {
+              const totalTickets = Object.values(dayData).reduce((sum, val) => 
+                typeof val === 'number' ? sum + val : sum, 0
+              );
+              const maxTotal = Math.max(...series.map(d => 
+                Object.values(d).reduce((sum, val) => typeof val === 'number' ? sum + val : sum, 0)
+              ));
+              const heightPercentage = maxTotal > 0 ? (totalTickets / maxTotal) * 100 : 0;
+              
+              return (
+                <div key={dayData.day} style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  height: "100%",
+                  minWidth: 50
+                }}>
+                  <div style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "end",
+                    height: "90%",
+                    width: 40,
+                    backgroundColor: "#f1f5f9",
+                    borderRadius: "4px 4px 0 0",
+                    position: "relative",
+                    overflow: "hidden"
+                  }}>
+                    {rows.map((row, rowIndex) => {
+                      const value = dayData[row.label] || 0;
+                      const segmentHeight = totalTickets > 0 ? (value / totalTickets) * heightPercentage : 0;
+                      return value > 0 ? (
+                        <div
+                          key={row.label}
+                          style={{
+                            height: `${segmentHeight}%`,
+                            backgroundColor: COLORS[rowIndex % COLORS.length],
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "center",
+                            fontSize: 10,
+                            fontWeight: 600,
+                            color: "white",
+                            textShadow: "0 1px 2px rgba(0,0,0,0.3)"
+                          }}
+                          title={`${row.label}: ${value}`}
+                        >
+                          {value > 0 ? value : ""}
+                        </div>
+                      ) : null;
+                    })}
+                  </div>
+                  <div style={{
+                    fontSize: 10,
+                    fontWeight: 500,
+                    color: "#6b7280",
+                    marginTop: 4,
+                    transform: "rotate(-45deg)",
+                    transformOrigin: "center",
+                    whiteSpace: "nowrap"
+                  }}>
+                    {dayData.day}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
 
