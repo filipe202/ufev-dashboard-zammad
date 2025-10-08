@@ -441,6 +441,123 @@ export default function App() {
     );
   }
 
+  // Renderizar respostas por agente
+  if (viewMode === "responses" && data?.agent_responses) {
+    const responsesData = Object.entries(data.agent_responses).map(([agent, count]) => ({
+      name: agent,
+      respostas: count
+    }));
+
+    const totalResponses = Object.values(data.agent_responses).reduce((sum, count) => sum + count, 0);
+
+    return (
+      <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
+        <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
+          <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
+          <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
+            Respostas por Agente
+          </h1>
+          <button 
+            onClick={() => {
+              setIsAuthenticated(false);
+              sessionStorage.removeItem('ufev_dashboard_auth');
+            }}
+            style={{
+              padding: "8px 16px",
+              backgroundColor: "#dc3545",
+              color: "white",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+              fontSize: "14px"
+            }}
+          >
+            Logout
+          </button>
+        </div>
+        
+        <div style={{display:"flex", gap:8, marginBottom:16}}>
+          {[
+            { value: "agents", label: "Por agentes" },
+            { value: "states", label: "Por estados" },
+            { value: "responses", label: "Respostas por Agente" },
+            { value: "workload", label: "Análise Temporal" },
+          ].map(option => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => setViewMode(option.value)}
+              style={{
+                padding:"8px 16px",
+                borderRadius:999,
+                border:"1px solid",
+                borderColor: viewMode === option.value ? "#005A8D" : "#e2e8f0",
+                backgroundColor: viewMode === option.value ? "#005A8D" : "white",
+                color: viewMode === option.value ? "white" : "#64748b",
+                cursor:"pointer"
+              }}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
+            Número de Respostas por Agente ({totalResponses} respostas analisadas)
+          </h3>
+          <ResponsiveContainer width="100%" height={400}>
+            <BarChart data={responsesData} layout="horizontal">
+              <XAxis type="number" />
+              <YAxis dataKey="name" type="category" width={120} />
+              <Tooltip />
+              <Bar dataKey="respostas" fill="#17a2b8" />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Ranking de Respostas</h3>
+          <div style={{display: "grid", gap: 8}}>
+            {responsesData.map((agent, index) => (
+              <div key={agent.name} style={{
+                display: "flex", 
+                justifyContent: "space-between", 
+                alignItems: "center",
+                padding: "12px 16px",
+                backgroundColor: index < 3 ? "#f8f9fa" : "transparent",
+                borderRadius: 6,
+                border: index < 3 ? "1px solid #e9ecef" : "none"
+              }}>
+                <div style={{display: "flex", alignItems: "center", gap: 8}}>
+                  <span style={{
+                    fontSize: 18,
+                    fontWeight: 600,
+                    color: index === 0 ? "#ffd700" : index === 1 ? "#c0c0c0" : index === 2 ? "#cd7f32" : "#6b7280",
+                    minWidth: 24
+                  }}>
+                    {index + 1}º
+                  </span>
+                  <span style={{fontWeight: 500}}>{agent.name}</span>
+                </div>
+                <span style={{
+                  fontSize: 16,
+                  fontWeight: 600,
+                  color: "#005A8D",
+                  backgroundColor: "#e3f2fd",
+                  padding: "4px 12px",
+                  borderRadius: 12
+                }}>
+                  {agent.respostas} respostas
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // Renderizar análise temporal
   if (viewMode === "workload" && data?.workload_analysis) {
     const workload = data.workload_analysis[workloadMode]; // "created" ou "closed"
@@ -488,6 +605,7 @@ export default function App() {
           {[
             { value: "agents", label: "Por agentes" },
             { value: "states", label: "Por estados" },
+            { value: "responses", label: "Respostas por Agente" },
             { value: "workload", label: "Análise Temporal" },
           ].map(option => (
             <button
@@ -622,6 +740,7 @@ export default function App() {
         {[
           { value: "agents", label: "Por agentes" },
           { value: "states", label: "Por estados" },
+          { value: "responses", label: "Respostas por Agente" },
           { value: "workload", label: "Análise Temporal" },
         ].map(option => (
           <button

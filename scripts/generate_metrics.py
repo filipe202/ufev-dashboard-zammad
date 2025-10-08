@@ -319,6 +319,9 @@ def main():
     per_customer = defaultdict(make_holder)
     closed_by_day = defaultdict(int)
     
+    # Contadores de respostas por agente
+    agent_responses = defaultdict(int)
+    
     # Análise temporal - carga de trabalho (criação)
     created_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
     created_by_hour = defaultdict(int)     # 0-23h
@@ -452,6 +455,32 @@ def main():
         except Exception:
             continue
 
+    # Buscar artigos (respostas) para contar por agente
+    log("Buscando artigos dos tickets para contar respostas por agente...")
+    all_ticket_ids = [t.get("id") for t in all_tickets if t.get("id")]
+    
+    for ticket_id in all_ticket_ids[:50]:  # Limitar a 50 tickets para teste
+        try:
+            articles_url = f"{BASE_URL}/api/v1/ticket_articles/by_ticket/{ticket_id}"
+            articles_response = requests.get(articles_url, headers=headers, verify=VERIFY_SSL)
+            
+            if articles_response.status_code == 200:
+                articles = articles_response.json()
+                log(f"Ticket {ticket_id}: {len(articles)} artigos encontrados")
+                for article in articles:
+                    # Contar apenas artigos de agentes (não de clientes)
+                    created_by_id = article.get("created_by_id")
+                    
+                    # Simplificar: contar todos os artigos de agentes conhecidos
+                    if created_by_id and created_by_id in AGENT_IDS:
+                        agent_name = AGENT_NAME_OVERRIDES.get(created_by_id, f"Agente_{created_by_id}")
+                        agent_responses[agent_name] += 1
+                        log(f"  Resposta de {agent_name} (ID: {created_by_id})")
+                        
+        except Exception as e:
+            log(f"Erro ao buscar artigos do ticket {ticket_id}: {e}")
+            continue
+
     def format_bucket(bucket):
         avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
         return {
@@ -549,7 +578,8 @@ def main():
                 "heatmap": closed_heatmap,
                 "total_tickets": len(tickets_closed)
             }
-        }
+        },
+        "agent_responses": dict(sorted(agent_responses.items(), key=lambda x: x[1], reverse=True))
     }
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

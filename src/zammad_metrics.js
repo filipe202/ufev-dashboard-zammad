@@ -106,22 +106,13 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 4,
+            "tickets_count": 2,
             "tickets_per_day": {
               "2025-10-02": 1,
-              "2025-10-07": 2,
-              "2025-10-08": 1
+              "2025-10-07": 1
             }
           },
           "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-07": 1,
-                "2025-10-08": 1
-              }
-            },
             "P3": {
               "avg_time_hours": null,
               "tickets_count": 2,
@@ -157,15 +148,23 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 7,
+            "tickets_count": 9,
             "tickets_per_day": {
               "2025-10-01": 1,
               "2025-10-06": 2,
-              "2025-10-07": 2,
-              "2025-10-08": 2
+              "2025-10-07": 3,
+              "2025-10-08": 3
             }
           },
           "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-07": 1,
+                "2025-10-08": 1
+              }
+            },
             "P2": {
               "avg_time_hours": null,
               "tickets_count": 6,
@@ -189,75 +188,76 @@ export const ZAMMAD_METRICS = {
     },
     "Não Atribuído": {
       "overall": {
-        "avg_time_hours": 32.36,
-        "tickets_count": 94,
+        "avg_time_hours": 31.82,
+        "tickets_count": 92,
         "tickets_per_day": {
           "2025-09-30": 8,
           "2025-10-01": 2,
           "2025-10-03": 5,
           "2025-10-06": 4,
           "2025-10-07": 45,
-          "2025-10-08": 30
+          "2025-10-08": 28
         }
       },
       "priorities": {
         "P2": {
-          "avg_time_hours": 0.35,
-          "tickets_count": 25,
+          "avg_time_hours": 0.42,
+          "tickets_count": 20,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 1,
             "2025-10-06": 2,
             "2025-10-07": 4,
-            "2025-10-08": 14
+            "2025-10-08": 9
           }
         },
         "P3": {
           "avg_time_hours": 38.9,
-          "tickets_count": 4,
+          "tickets_count": 6,
           "tickets_per_day": {
             "2025-10-03": 2,
             "2025-10-06": 1,
-            "2025-10-07": 1
+            "2025-10-07": 1,
+            "2025-10-08": 2
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 45.49,
-          "tickets_count": 65,
+          "tickets_count": 66,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-01": 2,
             "2025-10-03": 2,
             "2025-10-06": 1,
             "2025-10-07": 40,
-            "2025-10-08": 16
+            "2025-10-08": 17
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 32.36,
-            "tickets_count": 56,
+            "avg_time_hours": 31.82,
+            "tickets_count": 57,
             "tickets_per_day": {
               "2025-09-30": 8,
               "2025-10-01": 2,
               "2025-10-03": 5,
               "2025-10-06": 3,
               "2025-10-07": 33,
-              "2025-10-08": 5
+              "2025-10-08": 6
             }
           },
           "priorities": {
             "P2": {
-              "avg_time_hours": 0.35,
-              "tickets_count": 16,
+              "avg_time_hours": 0.42,
+              "tickets_count": 17,
               "tickets_per_day": {
                 "2025-09-30": 4,
                 "2025-10-03": 1,
                 "2025-10-06": 2,
                 "2025-10-07": 4,
-                "2025-10-08": 5
+                "2025-10-08": 6
               }
             },
             "P3": {
@@ -283,18 +283,18 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 12,
+            "tickets_count": 6,
             "tickets_per_day": {
               "2025-10-07": 1,
-              "2025-10-08": 11
+              "2025-10-08": 5
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 8,
+              "tickets_count": 2,
               "tickets_per_day": {
-                "2025-10-08": 8
+                "2025-10-08": 2
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -310,19 +310,19 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 23,
+            "tickets_count": 24,
             "tickets_per_day": {
               "2025-10-07": 10,
-              "2025-10-08": 13
+              "2025-10-08": 14
             }
           },
           "priorities": {
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 23,
+              "tickets_count": 24,
               "tickets_per_day": {
                 "2025-10-07": 10,
-                "2025-10-08": 13
+                "2025-10-08": 14
               }
             }
           }
@@ -330,11 +330,11 @@ export const ZAMMAD_METRICS = {
         "Pendente Gestão": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 5,
             "tickets_per_day": {
               "2025-10-06": 1,
               "2025-10-07": 1,
-              "2025-10-08": 1
+              "2025-10-08": 3
             }
           },
           "priorities": {
@@ -347,10 +347,11 @@ export const ZAMMAD_METRICS = {
             },
             "P3": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-06": 1,
-                "2025-10-07": 1
+                "2025-10-07": 1,
+                "2025-10-08": 2
               }
             }
           }
@@ -359,8 +360,8 @@ export const ZAMMAD_METRICS = {
     },
     "Sandra Reis": {
       "overall": {
-        "avg_time_hours": 48.03,
-        "tickets_count": 84,
+        "avg_time_hours": 45.93,
+        "tickets_count": 86,
         "tickets_per_day": {
           "2025-09-30": 12,
           "2025-10-01": 12,
@@ -368,7 +369,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-03": 7,
           "2025-10-06": 17,
           "2025-10-07": 23,
-          "2025-10-08": 8
+          "2025-10-08": 10
         }
       },
       "priorities": {
@@ -380,8 +381,8 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 45.21,
-          "tickets_count": 33,
+          "avg_time_hours": 42.65,
+          "tickets_count": 34,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-01": 4,
@@ -389,12 +390,12 @@ export const ZAMMAD_METRICS = {
             "2025-10-03": 2,
             "2025-10-06": 5,
             "2025-10-07": 13,
-            "2025-10-08": 6
+            "2025-10-08": 7
           }
         },
         "P3": {
-          "avg_time_hours": 37.53,
-          "tickets_count": 31,
+          "avg_time_hours": 35.91,
+          "tickets_count": 32,
           "tickets_per_day": {
             "2025-09-30": 11,
             "2025-10-01": 8,
@@ -402,7 +403,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-03": 2,
             "2025-10-06": 2,
             "2025-10-07": 5,
-            "2025-10-08": 1
+            "2025-10-08": 2
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -420,8 +421,8 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 48.03,
-            "tickets_count": 42,
+            "avg_time_hours": 45.93,
+            "tickets_count": 44,
             "tickets_per_day": {
               "2025-09-30": 7,
               "2025-10-01": 8,
@@ -429,7 +430,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-03": 2,
               "2025-10-06": 6,
               "2025-10-07": 13,
-              "2025-10-08": 4
+              "2025-10-08": 6
             }
           },
           "priorities": {
@@ -441,8 +442,8 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 45.21,
-              "tickets_count": 16,
+              "avg_time_hours": 42.65,
+              "tickets_count": 17,
               "tickets_per_day": {
                 "2025-09-30": 1,
                 "2025-10-01": 1,
@@ -450,19 +451,19 @@ export const ZAMMAD_METRICS = {
                 "2025-10-03": 2,
                 "2025-10-06": 3,
                 "2025-10-07": 6,
-                "2025-10-08": 2
+                "2025-10-08": 3
               }
             },
             "P3": {
-              "avg_time_hours": 37.53,
-              "tickets_count": 21,
+              "avg_time_hours": 35.91,
+              "tickets_count": 22,
               "tickets_per_day": {
                 "2025-09-30": 6,
                 "2025-10-01": 7,
                 "2025-10-02": 1,
                 "2025-10-06": 2,
                 "2025-10-07": 4,
-                "2025-10-08": 1
+                "2025-10-08": 2
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -478,27 +479,19 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 7,
+            "tickets_count": 4,
             "tickets_per_day": {
-              "2025-10-06": 1,
-              "2025-10-07": 3,
+              "2025-10-07": 1,
               "2025-10-08": 3
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 6,
+              "tickets_count": 4,
               "tickets_per_day": {
-                "2025-10-07": 3,
+                "2025-10-07": 1,
                 "2025-10-08": 3
-              }
-            },
-            "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-06": 1
               }
             }
           }
@@ -506,24 +499,24 @@ export const ZAMMAD_METRICS = {
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 23,
+            "tickets_count": 25,
             "tickets_per_day": {
               "2025-09-30": 1,
               "2025-10-01": 1,
               "2025-10-02": 2,
               "2025-10-03": 5,
-              "2025-10-06": 7,
-              "2025-10-07": 6,
+              "2025-10-06": 8,
+              "2025-10-07": 7,
               "2025-10-08": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 5,
+              "tickets_count": 6,
               "tickets_per_day": {
                 "2025-10-01": 1,
-                "2025-10-07": 3,
+                "2025-10-07": 4,
                 "2025-10-08": 1
               }
             },
@@ -539,11 +532,11 @@ export const ZAMMAD_METRICS = {
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 13,
+              "tickets_count": 14,
               "tickets_per_day": {
                 "2025-10-02": 1,
                 "2025-10-03": 3,
-                "2025-10-06": 7,
+                "2025-10-06": 8,
                 "2025-10-07": 2
               }
             }
@@ -588,13 +581,13 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 9,
+            "tickets_count": 10,
             "tickets_per_day": {
               "2025-09-30": 2,
               "2025-10-01": 3,
               "2025-10-02": 1,
               "2025-10-06": 2,
-              "2025-10-07": 1
+              "2025-10-07": 2
             }
           },
           "priorities": {
@@ -607,12 +600,12 @@ export const ZAMMAD_METRICS = {
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 5,
+              "tickets_count": 6,
               "tickets_per_day": {
                 "2025-10-01": 2,
                 "2025-10-02": 1,
                 "2025-10-06": 1,
-                "2025-10-07": 1
+                "2025-10-07": 2
               }
             },
             "P3": {
@@ -647,16 +640,16 @@ export const ZAMMAD_METRICS = {
     },
     "Catarina França": {
       "overall": {
-        "avg_time_hours": 60.61,
-        "tickets_count": 30,
+        "avg_time_hours": 54.15,
+        "tickets_count": 26,
         "tickets_per_day": {
           "2025-09-30": 4,
           "2025-10-01": 3,
           "2025-10-02": 3,
           "2025-10-03": 2,
           "2025-10-06": 3,
-          "2025-10-07": 11,
-          "2025-10-08": 4
+          "2025-10-07": 9,
+          "2025-10-08": 2
         }
       },
       "priorities": {
@@ -668,41 +661,40 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 88.78,
-          "tickets_count": 23,
+          "avg_time_hours": 74.39,
+          "tickets_count": 21,
           "tickets_per_day": {
             "2025-09-30": 3,
             "2025-10-01": 1,
             "2025-10-02": 3,
             "2025-10-03": 1,
             "2025-10-06": 2,
-            "2025-10-07": 10,
-            "2025-10-08": 3
+            "2025-10-07": 9,
+            "2025-10-08": 2
           }
         },
         "P3": {
           "avg_time_hours": 20.44,
-          "tickets_count": 5,
+          "tickets_count": 3,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-03": 1,
-            "2025-10-06": 1,
-            "2025-10-07": 1,
-            "2025-10-08": 1
+            "2025-10-06": 1
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 60.61,
-            "tickets_count": 8,
+            "avg_time_hours": 54.15,
+            "tickets_count": 9,
             "tickets_per_day": {
               "2025-09-30": 1,
               "2025-10-01": 1,
               "2025-10-02": 1,
               "2025-10-03": 1,
-              "2025-10-07": 4
+              "2025-10-07": 4,
+              "2025-10-08": 1
             }
           },
           "priorities": {
@@ -714,11 +706,12 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 88.78,
-              "tickets_count": 5,
+              "avg_time_hours": 74.39,
+              "tickets_count": 6,
               "tickets_per_day": {
                 "2025-10-02": 1,
-                "2025-10-07": 4
+                "2025-10-07": 4,
+                "2025-10-08": 1
               }
             },
             "P3": {
@@ -734,10 +727,10 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 4,
             "tickets_per_day": {
               "2025-10-06": 3,
-              "2025-10-08": 2
+              "2025-10-07": 1
             }
           },
           "priorities": {
@@ -746,15 +739,14 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 3,
               "tickets_per_day": {
                 "2025-10-06": 2,
-                "2025-10-08": 1
+                "2025-10-07": 1
               }
             },
             "P3": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-06": 1,
-                "2025-10-08": 1
+                "2025-10-06": 1
               }
             }
           }
@@ -786,11 +778,11 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 8,
+            "tickets_count": 4,
             "tickets_per_day": {
               "2025-10-01": 1,
-              "2025-10-07": 5,
-              "2025-10-08": 2
+              "2025-10-07": 2,
+              "2025-10-08": 1
             }
           },
           "priorities": {
@@ -803,17 +795,10 @@ export const ZAMMAD_METRICS = {
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 6,
+              "tickets_count": 3,
               "tickets_per_day": {
-                "2025-10-07": 4,
-                "2025-10-08": 2
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
+                "2025-10-07": 2,
+                "2025-10-08": 1
               }
             }
           }
@@ -840,7 +825,7 @@ export const ZAMMAD_METRICS = {
     },
     "Paula Candeias": {
       "overall": {
-        "avg_time_hours": 14.14,
+        "avg_time_hours": 13.44,
         "tickets_count": 33,
         "tickets_per_day": {
           "2025-09-30": 9,
@@ -861,7 +846,7 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 10.96,
+          "avg_time_hours": 10.0,
           "tickets_count": 21,
           "tickets_per_day": {
             "2025-09-30": 9,
@@ -884,13 +869,14 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 14.14,
-            "tickets_count": 16,
+            "avg_time_hours": 13.44,
+            "tickets_count": 17,
             "tickets_per_day": {
               "2025-09-30": 6,
               "2025-10-02": 1,
               "2025-10-06": 1,
-              "2025-10-07": 8
+              "2025-10-07": 8,
+              "2025-10-08": 1
             }
           },
           "priorities": {
@@ -902,12 +888,13 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 10.96,
-              "tickets_count": 8,
+              "avg_time_hours": 10.0,
+              "tickets_count": 9,
               "tickets_per_day": {
                 "2025-09-30": 6,
                 "2025-10-02": 1,
-                "2025-10-06": 1
+                "2025-10-06": 1,
+                "2025-10-08": 1
               }
             }
           }
@@ -915,21 +902,19 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 2,
             "tickets_per_day": {
               "2025-10-01": 1,
-              "2025-10-06": 1,
-              "2025-10-08": 1
+              "2025-10-06": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 2,
               "tickets_per_day": {
                 "2025-10-01": 1,
-                "2025-10-06": 1,
-                "2025-10-08": 1
+                "2025-10-06": 1
               }
             }
           }
@@ -1396,9 +1381,8 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 9,
+            "tickets_count": 8,
             "tickets_per_day": {
-              "2025-10-06": 1,
               "2025-10-07": 4,
               "2025-10-08": 4
             }
@@ -1406,9 +1390,8 @@ export const ZAMMAD_METRICS = {
           "priorities": {
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 9,
+              "tickets_count": 8,
               "tickets_per_day": {
-                "2025-10-06": 1,
                 "2025-10-07": 4,
                 "2025-10-08": 4
               }
@@ -1418,11 +1401,11 @@ export const ZAMMAD_METRICS = {
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 12,
+            "tickets_count": 13,
             "tickets_per_day": {
               "2025-10-02": 2,
               "2025-10-03": 2,
-              "2025-10-06": 7,
+              "2025-10-06": 8,
               "2025-10-07": 1
             }
           },
@@ -1437,11 +1420,11 @@ export const ZAMMAD_METRICS = {
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 10,
+              "tickets_count": 11,
               "tickets_per_day": {
                 "2025-10-02": 1,
                 "2025-10-03": 2,
-                "2025-10-06": 7
+                "2025-10-06": 8
               }
             }
           }
@@ -1916,22 +1899,14 @@ export const ZAMMAD_METRICS = {
     "cliente_41": {
       "overall": {
         "avg_time_hours": 8.74,
-        "tickets_count": 6,
+        "tickets_count": 5,
         "tickets_per_day": {
           "2025-09-30": 2,
           "2025-10-06": 1,
-          "2025-10-07": 2,
-          "2025-10-08": 1
+          "2025-10-07": 2
         }
       },
       "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-08": 1
-          }
-        },
         "P3": {
           "avg_time_hours": 1.58,
           "tickets_count": 1,
@@ -1973,24 +1948,6 @@ export const ZAMMAD_METRICS = {
               "tickets_per_day": {
                 "2025-09-30": 1,
                 "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
               }
             }
           }
@@ -2385,24 +2342,6 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -2417,6 +2356,24 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-09-30": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
               }
             }
           }
@@ -2518,14 +2475,14 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_57": {
       "overall": {
-        "avg_time_hours": 73.99,
-        "tickets_count": 15,
+        "avg_time_hours": 65.04,
+        "tickets_count": 13,
         "tickets_per_day": {
           "2025-10-01": 3,
           "2025-10-02": 1,
           "2025-10-06": 3,
           "2025-10-07": 5,
-          "2025-10-08": 3
+          "2025-10-08": 1
         }
       },
       "priorities": {
@@ -2537,35 +2494,35 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 83.25,
-          "tickets_count": 10,
+          "avg_time_hours": 67.08,
+          "tickets_count": 9,
           "tickets_per_day": {
             "2025-10-01": 1,
             "2025-10-06": 3,
             "2025-10-07": 4,
-            "2025-10-08": 2
+            "2025-10-08": 1
           }
         },
         "P3": {
           "avg_time_hours": 92.4,
-          "tickets_count": 3,
+          "tickets_count": 2,
           "tickets_per_day": {
             "2025-10-02": 1,
-            "2025-10-07": 1,
-            "2025-10-08": 1
+            "2025-10-07": 1
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 73.99,
-            "tickets_count": 7,
+            "avg_time_hours": 65.04,
+            "tickets_count": 8,
             "tickets_per_day": {
               "2025-10-01": 1,
               "2025-10-02": 1,
               "2025-10-06": 1,
-              "2025-10-07": 4
+              "2025-10-07": 4,
+              "2025-10-08": 1
             }
           },
           "priorities": {
@@ -2577,11 +2534,12 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 83.25,
-              "tickets_count": 4,
+              "avg_time_hours": 67.08,
+              "tickets_count": 5,
               "tickets_per_day": {
                 "2025-10-06": 1,
-                "2025-10-07": 3
+                "2025-10-07": 3,
+                "2025-10-08": 1
               }
             },
             "P3": {
@@ -2590,31 +2548,6 @@ export const ZAMMAD_METRICS = {
               "tickets_per_day": {
                 "2025-10-02": 1,
                 "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-08": 2
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
               }
             }
           }
@@ -2640,11 +2573,10 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 2,
             "tickets_per_day": {
               "2025-10-01": 1,
-              "2025-10-07": 1,
-              "2025-10-08": 1
+              "2025-10-07": 1
             }
           },
           "priorities": {
@@ -2657,10 +2589,9 @@ export const ZAMMAD_METRICS = {
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-07": 1,
-                "2025-10-08": 1
+                "2025-10-07": 1
               }
             }
           }
@@ -3224,12 +3155,12 @@ export const ZAMMAD_METRICS = {
     "cliente_40": {
       "overall": {
         "avg_time_hours": 44.25,
-        "tickets_count": 17,
+        "tickets_count": 15,
         "tickets_per_day": {
           "2025-09-30": 1,
           "2025-10-03": 1,
           "2025-10-06": 6,
-          "2025-10-07": 8,
+          "2025-10-07": 6,
           "2025-10-08": 1
         }
       },
@@ -3244,20 +3175,19 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 24.79,
-          "tickets_count": 8,
+          "tickets_count": 7,
           "tickets_per_day": {
             "2025-10-06": 3,
-            "2025-10-07": 5
+            "2025-10-07": 4
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 5,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-03": 1,
-            "2025-10-06": 2,
-            "2025-10-07": 1
+            "2025-10-06": 2
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -3306,20 +3236,12 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 2,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-06": 1,
-              "2025-10-08": 1
+              "2025-10-06": 1
             }
           },
           "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            },
             "P3": {
               "avg_time_hours": null,
               "tickets_count": 1,
@@ -3357,31 +3279,38 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 8,
+            "tickets_count": 7,
             "tickets_per_day": {
               "2025-09-30": 1,
               "2025-10-03": 1,
               "2025-10-06": 2,
-              "2025-10-07": 4
+              "2025-10-07": 2,
+              "2025-10-08": 1
             }
           },
           "priorities": {
+            "P1": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 3,
               "tickets_per_day": {
                 "2025-10-06": 1,
-                "2025-10-07": 3
+                "2025-10-07": 2
               }
             },
             "P3": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 3,
               "tickets_per_day": {
                 "2025-09-30": 1,
                 "2025-10-03": 1,
-                "2025-10-06": 1,
-                "2025-10-07": 1
+                "2025-10-06": 1
               }
             }
           }
@@ -3581,34 +3510,23 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "Open": {
+        "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 1,
+            "tickets_count": 2,
             "tickets_per_day": {
-              "2025-10-07": 1
+              "2025-10-07": 2
             }
           },
           "priorities": {
-            "P2": {
+            "P1": {
               "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-07": 1
               }
-            }
-          }
-        },
-        "Pendente Consultor": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P1": {
+            },
+            "P2": {
               "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
@@ -4215,7 +4133,7 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_124": {
       "overall": {
-        "avg_time_hours": 103.42,
+        "avg_time_hours": 52.68,
         "tickets_count": 2,
         "tickets_per_day": {
           "2025-10-07": 1,
@@ -4223,53 +4141,31 @@ export const ZAMMAD_METRICS = {
         }
       },
       "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-08": 1
-          }
-        },
         "P3": {
-          "avg_time_hours": 103.42,
-          "tickets_count": 1,
+          "avg_time_hours": 52.68,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-10-07": 1
+            "2025-10-07": 1,
+            "2025-10-08": 1
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 103.42,
-            "tickets_count": 1,
+            "avg_time_hours": 52.68,
+            "tickets_count": 2,
             "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P3": {
-              "avg_time_hours": 103.42,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
+              "2025-10-07": 1,
               "2025-10-08": 1
             }
           },
           "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
+            "P3": {
+              "avg_time_hours": 52.68,
+              "tickets_count": 2,
               "tickets_per_day": {
+                "2025-10-07": 1,
                 "2025-10-08": 1
               }
             }
@@ -4287,19 +4183,12 @@ export const ZAMMAD_METRICS = {
         }
       },
       "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-08": 1
-          }
-        },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 55.69,
-          "tickets_count": 4,
+          "tickets_count": 5,
           "tickets_per_day": {
             "2025-10-07": 3,
-            "2025-10-08": 1
+            "2025-10-08": 2
           }
         }
       },
@@ -4322,40 +4211,22 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            }
-          }
-        },
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 2,
+            "tickets_count": 3,
             "tickets_per_day": {
               "2025-10-07": 1,
-              "2025-10-08": 1
+              "2025-10-08": 2
             }
           },
           "priorities": {
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 3,
               "tickets_per_day": {
                 "2025-10-07": 1,
-                "2025-10-08": 1
+                "2025-10-08": 2
               }
             }
           }
@@ -5430,6 +5301,185 @@ export const ZAMMAD_METRICS = {
         }
       }
     },
+    "cliente_178": {
+      "overall": {
+        "avg_time_hours": 2.28,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-07": 1,
+          "2025-10-08": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 2.28,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-07": 1,
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 2.28,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 2.28,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-07": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-07": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cliente_99": {
+      "overall": {
+        "avg_time_hours": 1.67,
+        "tickets_count": 3,
+        "tickets_per_day": {
+          "2025-10-01": 1,
+          "2025-10-08": 2
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 1.67,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-08": 1
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.67,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 1.67,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
+        "Pendente Gestão": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P3": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-01": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-01": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cliente_115": {
+      "overall": {
+        "avg_time_hours": 1.71,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-08": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 1.71,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 1.71,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 1.71,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        }
+      }
+    },
     "cliente_24": {
       "overall": {
         "avg_time_hours": null,
@@ -5913,64 +5963,6 @@ export const ZAMMAD_METRICS = {
       },
       "states": {
         "Pendente Consultor": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-01": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-01": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_99": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 3,
-        "tickets_per_day": {
-          "2025-10-01": 1,
-          "2025-10-08": 2
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 3,
-          "tickets_per_day": {
-            "2025-10-01": 1,
-            "2025-10-08": 2
-          }
-        }
-      },
-      "states": {
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-08": 2
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-08": 2
-              }
-            }
-          }
-        },
-        "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -6879,64 +6871,6 @@ export const ZAMMAD_METRICS = {
         }
       }
     },
-    "cliente_178": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 2,
-        "tickets_per_day": {
-          "2025-10-07": 1,
-          "2025-10-08": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 2,
-          "tickets_per_day": {
-            "2025-10-07": 1,
-            "2025-10-08": 1
-          }
-        }
-      },
-      "states": {
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            }
-          }
-        },
-        "Pendente Operador": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-07": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            }
-          }
-        }
-      }
-    },
     "cliente_190": {
       "overall": {
         "avg_time_hours": null,
@@ -6955,7 +6889,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "Open": {
+        "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -6993,7 +6927,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "Pendente Operador": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7259,44 +7193,6 @@ export const ZAMMAD_METRICS = {
         }
       }
     },
-    "cliente_115": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-08": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-08": 1
-          }
-        }
-      },
-      "states": {
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-08": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-08": 1
-              }
-            }
-          }
-        }
-      }
-    },
     "cliente_77": {
       "overall": {
         "avg_time_hours": null,
@@ -7306,7 +7202,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "priorities": {
-        "P2": {
+        "P3": {
           "avg_time_hours": null,
           "tickets_count": 1,
           "tickets_per_day": {
@@ -7315,7 +7211,7 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "New": {
+        "Pendente Gestão": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -7324,7 +7220,7 @@ export const ZAMMAD_METRICS = {
             }
           },
           "priorities": {
-            "P2": {
+            "P3": {
               "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
@@ -7372,6 +7268,44 @@ export const ZAMMAD_METRICS = {
           }
         }
       }
+    },
+    "cliente_198": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-08": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        }
+      }
     }
   },
   "daily_summary": {
@@ -7397,18 +7331,18 @@ export const ZAMMAD_METRICS = {
     },
     "2025-10-07": {
       "closed": 66,
-      "open": 35
+      "open": 33
     },
     "2025-10-08": {
-      "closed": 17,
-      "open": 39
+      "closed": 22,
+      "open": 32
     }
   },
   "states": {
     "Closed": {
       "overall": {
-        "avg_time_hours": 31.82,
-        "tickets_count": 163,
+        "avg_time_hours": 30.93,
+        "tickets_count": 168,
         "tickets_per_day": {
           "2025-09-30": 31,
           "2025-10-01": 15,
@@ -7416,7 +7350,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-03": 10,
           "2025-10-06": 18,
           "2025-10-07": 66,
-          "2025-10-08": 17
+          "2025-10-08": 22
         }
       },
       "priorities": {
@@ -7433,8 +7367,8 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 23.83,
-          "tickets_count": 63,
+          "avg_time_hours": 22.53,
+          "tickets_count": 67,
           "tickets_per_day": {
             "2025-09-30": 13,
             "2025-10-01": 4,
@@ -7442,12 +7376,12 @@ export const ZAMMAD_METRICS = {
             "2025-10-03": 3,
             "2025-10-06": 12,
             "2025-10-07": 19,
-            "2025-10-08": 8
+            "2025-10-08": 12
           }
         },
         "P3": {
-          "avg_time_hours": 31.41,
-          "tickets_count": 40,
+          "avg_time_hours": 30.69,
+          "tickets_count": 41,
           "tickets_per_day": {
             "2025-09-30": 10,
             "2025-10-01": 7,
@@ -7455,7 +7389,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-03": 4,
             "2025-10-06": 3,
             "2025-10-07": 7,
-            "2025-10-08": 7
+            "2025-10-08": 8
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -7475,14 +7409,14 @@ export const ZAMMAD_METRICS = {
     "Pendente Consultor": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 49,
+        "tickets_count": 51,
         "tickets_per_day": {
           "2025-09-30": 10,
           "2025-10-01": 2,
           "2025-10-02": 4,
           "2025-10-03": 9,
-          "2025-10-06": 14,
-          "2025-10-07": 9,
+          "2025-10-06": 15,
+          "2025-10-07": 10,
           "2025-10-08": 1
         }
       },
@@ -7496,14 +7430,14 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 19,
+          "tickets_count": 20,
           "tickets_per_day": {
             "2025-09-30": 6,
             "2025-10-01": 2,
             "2025-10-02": 2,
             "2025-10-03": 1,
             "2025-10-06": 2,
-            "2025-10-07": 5,
+            "2025-10-07": 6,
             "2025-10-08": 1
           }
         },
@@ -7520,11 +7454,11 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
-          "tickets_count": 16,
+          "tickets_count": 17,
           "tickets_per_day": {
             "2025-10-02": 1,
             "2025-10-03": 3,
-            "2025-10-06": 10,
+            "2025-10-06": 11,
             "2025-10-07": 2
           }
         }
@@ -7533,12 +7467,12 @@ export const ZAMMAD_METRICS = {
     "Pendente Gestão": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 4,
+        "tickets_count": 6,
         "tickets_per_day": {
           "2025-09-30": 1,
           "2025-10-06": 1,
           "2025-10-07": 1,
-          "2025-10-08": 1
+          "2025-10-08": 3
         }
       },
       "priorities": {
@@ -7551,11 +7485,12 @@ export const ZAMMAD_METRICS = {
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 3,
+          "tickets_count": 5,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-06": 1,
-            "2025-10-07": 1
+            "2025-10-07": 1,
+            "2025-10-08": 2
           }
         }
       }
@@ -7589,47 +7524,48 @@ export const ZAMMAD_METRICS = {
     "Pendente Operador": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 31,
+        "tickets_count": 30,
         "tickets_per_day": {
           "2025-09-30": 2,
           "2025-10-01": 7,
           "2025-10-02": 1,
           "2025-10-03": 2,
           "2025-10-06": 6,
-          "2025-10-07": 9,
+          "2025-10-07": 8,
           "2025-10-08": 4
         }
       },
       "priorities": {
         "P1": {
           "avg_time_hours": null,
-          "tickets_count": 2,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-10-01": 1,
-            "2025-10-06": 1
+            "2025-10-06": 1,
+            "2025-10-07": 1,
+            "2025-10-08": 1
           }
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 22,
+          "tickets_count": 20,
           "tickets_per_day": {
             "2025-10-01": 5,
             "2025-10-02": 1,
             "2025-10-03": 1,
             "2025-10-06": 3,
-            "2025-10-07": 8,
-            "2025-10-08": 4
+            "2025-10-07": 7,
+            "2025-10-08": 3
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 7,
+          "tickets_count": 6,
           "tickets_per_day": {
             "2025-09-30": 2,
             "2025-10-01": 1,
             "2025-10-03": 1,
-            "2025-10-06": 2,
-            "2025-10-07": 1
+            "2025-10-06": 2
           }
         }
       }
@@ -7655,51 +7591,41 @@ export const ZAMMAD_METRICS = {
     "Open": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 47,
+        "tickets_count": 41,
         "tickets_per_day": {
           "2025-10-01": 1,
           "2025-10-02": 1,
-          "2025-10-06": 8,
-          "2025-10-07": 15,
-          "2025-10-08": 22
+          "2025-10-06": 7,
+          "2025-10-07": 13,
+          "2025-10-08": 19
         }
       },
       "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 2,
-          "tickets_per_day": {
-            "2025-10-07": 1,
-            "2025-10-08": 1
-          }
-        },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 15,
+          "tickets_count": 12,
           "tickets_per_day": {
             "2025-10-01": 1,
             "2025-10-06": 4,
-            "2025-10-07": 3,
-            "2025-10-08": 7
+            "2025-10-07": 2,
+            "2025-10-08": 5
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 6,
+          "tickets_count": 5,
           "tickets_per_day": {
             "2025-10-02": 1,
             "2025-10-06": 3,
-            "2025-10-07": 1,
-            "2025-10-08": 1
+            "2025-10-07": 1
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
           "tickets_count": 24,
           "tickets_per_day": {
-            "2025-10-06": 1,
             "2025-10-07": 10,
-            "2025-10-08": 13
+            "2025-10-08": 14
           }
         }
       }
@@ -7725,18 +7651,18 @@ export const ZAMMAD_METRICS = {
     "New": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 12,
+        "tickets_count": 6,
         "tickets_per_day": {
           "2025-10-07": 1,
-          "2025-10-08": 11
+          "2025-10-08": 5
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 8,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-10-08": 8
+            "2025-10-08": 2
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -7754,8 +7680,8 @@ export const ZAMMAD_METRICS = {
     "created": {
       "by_weekday": {
         "Segunda": 72,
-        "Terça": 108,
-        "Quarta": 83,
+        "Terça": 106,
+        "Quarta": 81,
         "Quinta": 20,
         "Sexta": 27,
         "Sábado": 0,
@@ -7776,13 +7702,13 @@ export const ZAMMAD_METRICS = {
         "11h": 27,
         "12h": 22,
         "13h": 9,
-        "14h": 34,
-        "15h": 19,
-        "16h": 16,
-        "17h": 18,
+        "14h": 32,
+        "15h": 18,
+        "16h": 17,
+        "17h": 17,
         "18h": 8,
         "19h": 11,
-        "20h": 9,
+        "20h": 8,
         "21h": 12,
         "22h": 14,
         "23h": 5
@@ -7996,7 +7922,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Terça",
           "hour": "17h",
-          "tickets": 13
+          "tickets": 12
         },
         {
           "weekday": "Terça",
@@ -8011,7 +7937,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Terça",
           "hour": "20h",
-          "tickets": 7
+          "tickets": 6
         },
         {
           "weekday": "Terça",
@@ -8101,17 +8027,17 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quarta",
           "hour": "14h",
-          "tickets": 19
+          "tickets": 17
         },
         {
           "weekday": "Quarta",
           "hour": "15h",
-          "tickets": 10
+          "tickets": 9
         },
         {
           "weekday": "Quarta",
           "hour": "16h",
-          "tickets": 3
+          "tickets": 4
         },
         {
           "weekday": "Quarta",
@@ -8629,13 +8555,13 @@ export const ZAMMAD_METRICS = {
           "tickets": 0
         }
       ],
-      "total_tickets": 310
+      "total_tickets": 306
     },
     "closed": {
       "by_weekday": {
         "Segunda": 18,
         "Terça": 97,
-        "Quarta": 32,
+        "Quarta": 37,
         "Quinta": 6,
         "Sexta": 10,
         "Sábado": 0,
@@ -8658,7 +8584,7 @@ export const ZAMMAD_METRICS = {
         "13h": 3,
         "14h": 20,
         "15h": 19,
-        "16h": 12,
+        "16h": 17,
         "17h": 11,
         "18h": 4,
         "19h": 0,
@@ -8991,7 +8917,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quarta",
           "hour": "16h",
-          "tickets": 2
+          "tickets": 7
         },
         {
           "weekday": "Quarta",
@@ -9509,7 +9435,8 @@ export const ZAMMAD_METRICS = {
           "tickets": 0
         }
       ],
-      "total_tickets": 163
+      "total_tickets": 168
     }
-  }
+  },
+  "agent_responses": {}
 };
