@@ -2,7 +2,7 @@
 import os
 import json
 import requests
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from collections import defaultdict
 import calendar
 
@@ -413,8 +413,8 @@ def main():
         
         try:
             dt_created = iso_date(created_at)
-            # Converter para timezone local (assumindo Portugal UTC+1)
-            local_dt = dt_created.replace(tzinfo=timezone.utc).astimezone()
+            # Converter para timezone Portugal (UTC+1) - adicionar 1 hora
+            local_dt = dt_created.replace(tzinfo=timezone.utc) + timedelta(hours=1)
             
             weekday = local_dt.weekday()  # 0=Segunda, 6=Domingo
             hour = local_dt.hour
