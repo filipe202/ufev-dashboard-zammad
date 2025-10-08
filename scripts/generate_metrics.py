@@ -322,6 +322,9 @@ def main():
     # Contadores de respostas por agente
     agent_responses = defaultdict(int)
     
+    # Métricas de eficiência: interações por ticket fechado
+    agent_interactions_per_ticket = defaultdict(lambda: {"total_interactions": 0, "tickets_closed": 0})
+    
     # Análise temporal - carga de trabalho (criação)
     created_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
     created_by_hour = defaultdict(int)     # 0-23h
@@ -455,18 +458,50 @@ def main():
         except Exception:
             continue
 
-    # Estimar respostas baseado nos tickets fechados (API de artigos não disponível)
-    log("Estimando respostas por agente baseado nos tickets fechados...")
+    # Estimar respostas e calcular eficiência por agente
+    log("Estimando respostas e calculando interações por ticket...")
     
     for t in tickets_closed:
         owner_id = t.get("owner_id")
         if owner_id and owner_id in AGENT_IDS:
             agent_name = AGENT_NAME_OVERRIDES.get(owner_id, f"Agente_{owner_id}")
-            # Estimar 2-3 respostas por ticket fechado (média realista)
-            estimated_responses = 2 if t.get("priority_id", 3) >= 3 else 3  # P1/P2 = 3, P3+ = 2
-            agent_responses[agent_name] += estimated_responses
+            priority_id = t.get("priority_id", 3)
+            
+            # Estimar interações baseado na prioridade e complexidade
+            if priority_id == 1:  # P1 - Crítico
+                estimated_interactions = 4  # Mais interações para resolver
+            elif priority_id == 2:  # P2 - Alto
+                estimated_interactions = 3
+            elif priority_id == 3:  # P3 - Normal
+                estimated_interactions = 2
+            else:  # P4+ - Baixo
+                estimated_interactions = 1
+            
+            # Adicionar variação baseada no estado final
+            state_name = (t.get("state", {}).get("name", "") if isinstance(t.get("state"), dict) else "").lower()
+            if "merged" in state_name:
+                estimated_interactions = 1  # Tickets merged precisam menos interações
+            
+            agent_responses[agent_name] += estimated_interactions
+            agent_interactions_per_ticket[agent_name]["total_interactions"] += estimated_interactions
+            agent_interactions_per_ticket[agent_name]["tickets_closed"] += 1
+    
+    # Calcular média de interações por ticket para cada agente
+    agent_efficiency = {}
+    for agent_name, data in agent_interactions_per_ticket.items():
+        if data["tickets_closed"] > 0:
+            avg_interactions = data["total_interactions"] / data["tickets_closed"]
+            agent_efficiency[agent_name] = {
+                "avg_interactions_per_ticket": round(avg_interactions, 2),
+                "total_interactions": data["total_interactions"],
+                "tickets_closed": data["tickets_closed"]
+            }
+    
+    # Ordenar por eficiência (menos interações = mais eficiente)
+    agent_efficiency = dict(sorted(agent_efficiency.items(), key=lambda x: x[1]["avg_interactions_per_ticket"]))
     
     log(f"Respostas estimadas: {dict(agent_responses)}")
+    log(f"Eficiência por agente: {agent_efficiency}")
 
     def format_bucket(bucket):
         avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
@@ -566,7 +601,8 @@ def main():
                 "total_tickets": len(tickets_closed)
             }
         },
-        "agent_responses": dict(sorted(agent_responses.items(), key=lambda x: x[1], reverse=True))
+        "agent_responses": dict(sorted(agent_responses.items(), key=lambda x: x[1], reverse=True)),
+        "agent_efficiency": agent_efficiency
     }
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

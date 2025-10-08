@@ -481,6 +481,7 @@ export default function App() {
             { value: "agents", label: "Por agentes" },
             { value: "states", label: "Por estados" },
             { value: "responses", label: "Respostas por Agente" },
+            { value: "efficiency", label: "Eficiência por Agente" },
             { value: "workload", label: "Análise Temporal" },
           ].map(option => (
             <button
@@ -558,6 +559,144 @@ export default function App() {
     );
   }
 
+  // Renderizar eficiência por agente
+  if (viewMode === "efficiency" && data?.agent_efficiency) {
+    const efficiencyData = Object.entries(data.agent_efficiency).map(([agent, data]) => ({
+      name: agent,
+      interacoes: data.avg_interactions_per_ticket,
+      tickets: data.tickets_closed,
+      total_interacoes: data.total_interactions
+    }));
+
+    return (
+      <div style={{maxWidth: 1200, margin: "20px auto", padding: "0 16px", fontFamily: "system-ui, Arial"}}>
+        <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
+          <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
+          <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
+            Eficiência por Agente
+          </h1>
+          <button 
+            onClick={() => {
+              setIsAuthenticated(false);
+              sessionStorage.removeItem('ufev_dashboard_auth');
+            }}
+            style={{
+              padding: "8px 16px",
+              backgroundColor: "#dc3545",
+              color: "white",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+              fontSize: "14px"
+            }}
+          >
+            Logout
+          </button>
+        </div>
+        
+        <div style={{display:"flex", gap:8, marginBottom:16}}>
+          {[
+            { value: "agents", label: "Por agentes" },
+            { value: "states", label: "Por estados" },
+            { value: "responses", label: "Respostas por Agente" },
+            { value: "efficiency", label: "Eficiência por Agente" },
+            { value: "workload", label: "Análise Temporal" },
+          ].map(option => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => setViewMode(option.value)}
+              style={{
+                padding:"8px 16px",
+                borderRadius:999,
+                border:"1px solid",
+                borderColor: viewMode === option.value ? "#005A8D" : "#e2e8f0",
+                backgroundColor: viewMode === option.value ? "#005A8D" : "white",
+                color: viewMode === option.value ? "white" : "#64748b",
+                cursor:"pointer"
+              }}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
+            Interações Médias por Ticket Fechado (menor = mais eficiente)
+          </h3>
+          <ResponsiveContainer width="100%" height={400}>
+            <BarChart data={efficiencyData} layout="horizontal">
+              <XAxis type="number" />
+              <YAxis dataKey="name" type="category" width={120} />
+              <Tooltip formatter={(value, name) => [
+                name === 'interacoes' ? `${value} interações/ticket` : value,
+                name === 'interacoes' ? 'Média' : name
+              ]} />
+              <Bar dataKey="interacoes" fill="#28a745" />
+            </BarChart>
+          </ResponsiveContainer>
+        </div>
+
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Ranking de Eficiência</h3>
+          <div style={{display: "grid", gap: 8}}>
+            {efficiencyData.map((agent, index) => (
+              <div key={agent.name} style={{
+                display: "flex", 
+                justifyContent: "space-between", 
+                alignItems: "center",
+                padding: "12px 16px",
+                backgroundColor: index < 3 ? "#f8f9fa" : "transparent",
+                borderRadius: 6,
+                border: index < 3 ? "1px solid #e9ecef" : "none"
+              }}>
+                <div style={{display: "flex", alignItems: "center", gap: 8}}>
+                  <span style={{
+                    fontSize: 18,
+                    fontWeight: 600,
+                    color: index === 0 ? "#28a745" : index === 1 ? "#17a2b8" : index === 2 ? "#ffc107" : "#6b7280",
+                    minWidth: 24
+                  }}>
+                    {index + 1}º
+                  </span>
+                  <span style={{fontWeight: 500}}>{agent.name}</span>
+                </div>
+                <div style={{display: "flex", gap: 16, alignItems: "center"}}>
+                  <span style={{
+                    fontSize: 16,
+                    fontWeight: 600,
+                    color: "#28a745",
+                    backgroundColor: "#d4edda",
+                    padding: "4px 12px",
+                    borderRadius: 12
+                  }}>
+                    {agent.interacoes} int/ticket
+                  </span>
+                  <span style={{
+                    fontSize: 14,
+                    color: "#6b7280"
+                  }}>
+                    {agent.tickets} tickets • {agent.total_interacoes} interações
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+          
+          <div style={{marginTop: 20, padding: 16, backgroundColor: "#e3f2fd", borderRadius: 8}}>
+            <h4 style={{margin: "0 0 8px 0", color: "#1565c0"}}>💡 Como interpretar:</h4>
+            <ul style={{margin: 0, paddingLeft: 20, color: "#1976d2"}}>
+              <li><strong>Menos interações</strong> = mais eficiente (resolve tickets mais rapidamente)</li>
+              <li><strong>Mais interações</strong> = pode indicar tickets mais complexos ou necessidade de otimização</li>
+              <li>Baseado na prioridade: P1=4, P2=3, P3=2, P4+=1 interação média</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   // Renderizar análise temporal
   if (viewMode === "workload" && data?.workload_analysis) {
     const workload = data.workload_analysis[workloadMode]; // "created" ou "closed"
@@ -606,6 +745,7 @@ export default function App() {
             { value: "agents", label: "Por agentes" },
             { value: "states", label: "Por estados" },
             { value: "responses", label: "Respostas por Agente" },
+            { value: "efficiency", label: "Eficiência por Agente" },
             { value: "workload", label: "Análise Temporal" },
           ].map(option => (
             <button
@@ -741,6 +881,7 @@ export default function App() {
           { value: "agents", label: "Por agentes" },
           { value: "states", label: "Por estados" },
           { value: "responses", label: "Respostas por Agente" },
+          { value: "efficiency", label: "Eficiência por Agente" },
           { value: "workload", label: "Análise Temporal" },
         ].map(option => (
           <button

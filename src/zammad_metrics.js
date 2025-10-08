@@ -9599,13 +9599,55 @@ export const ZAMMAD_METRICS = {
     }
   },
   "agent_responses": {
-    "Não Atribuído": 136,
-    "Sandra Reis": 104,
-    "Inês Martinho": 84,
-    "Paula Candeias": 51,
-    "Catarina França": 22,
-    "Magali Morim": 12,
+    "Sandra Reis": 101,
+    "Não Atribuído": 97,
+    "Inês Martinho": 89,
+    "Paula Candeias": 59,
+    "Catarina França": 23,
+    "Magali Morim": 15,
     "Rafaela Lapa": 12,
     "Cátia Leal": 3
+  },
+  "agent_efficiency": {
+    "Não Atribuído": {
+      "avg_interactions_per_ticket": 1.64,
+      "total_interactions": 97,
+      "tickets_closed": 59
+    },
+    "Sandra Reis": {
+      "avg_interactions_per_ticket": 2.35,
+      "total_interactions": 101,
+      "tickets_closed": 43
+    },
+    "Inês Martinho": {
+      "avg_interactions_per_ticket": 2.7,
+      "total_interactions": 89,
+      "tickets_closed": 33
+    },
+    "Catarina França": {
+      "avg_interactions_per_ticket": 2.88,
+      "total_interactions": 23,
+      "tickets_closed": 8
+    },
+    "Rafaela Lapa": {
+      "avg_interactions_per_ticket": 3.0,
+      "total_interactions": 12,
+      "tickets_closed": 4
+    },
+    "Cátia Leal": {
+      "avg_interactions_per_ticket": 3.0,
+      "total_interactions": 3,
+      "tickets_closed": 1
+    },
+    "Paula Candeias": {
+      "avg_interactions_per_ticket": 3.47,
+      "total_interactions": 59,
+      "tickets_closed": 17
+    },
+    "Magali Morim": {
+      "avg_interactions_per_ticket": 3.75,
+      "total_interactions": 15,
+      "tickets_closed": 4
+    }
   }
 };
