@@ -16,7 +16,7 @@ const COLORS = [
   "#FFCC80", // laranja pastel forte
 ];
 
-const FUNCTION_URL = process.env.REACT_APP_FUNCTION_URL || "/zammad_metrics.json";
+const FUNCTION_URL = process.env.REACT_APP_FUNCTION_URL || "./zammad_metrics.json";
 
 function emptyBucket() {
   return { avg_time_hours: null, tickets_count: 0, tickets_per_day: {} };
