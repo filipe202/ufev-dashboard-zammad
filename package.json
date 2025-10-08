@@ -14,10 +14,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "prestart": "py.exe scripts/generate_metrics.py",
     "start": "react-scripts start",
-    "build": "npm run prebuild && react-scripts build",
-    "prebuild": "py.exe scripts/generate_metrics.py",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
