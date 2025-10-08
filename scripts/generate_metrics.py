@@ -273,8 +273,9 @@ def main():
         closed = t.get("close_at")
         if not owner_id or not created or not closed:
             continue
-        if AGENT_IDS and owner_id not in AGENT_IDS:
-            continue
+        # Remover filtro restritivo de agentes para ver todos os tickets
+        # if AGENT_IDS and owner_id not in AGENT_IDS:
+        #     continue
 
         try:
             dt_created = iso_date(created)
@@ -321,8 +322,9 @@ def main():
         if day_created < FROM_DATE:
             continue
         owner_id = t.get("owner_id")
-        if owner_id and AGENT_IDS and owner_id not in AGENT_IDS:
-            continue
+        # Remover filtro restritivo de agentes para ver todos os tickets
+        # if owner_id and AGENT_IDS and owner_id not in AGENT_IDS:
+        #     continue
         open_by_day[day_created] += 1
 
         priority_id = t.get("priority_id")
