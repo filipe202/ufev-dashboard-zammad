@@ -100,9 +100,10 @@ def log(message):
 def paged_get(path, params=None):
     out = []
     page = 1
+    per_page = 100  # Ajustar para o que a API realmente suporta
     while True:
         p = dict(params or {})
-        p.update({"per_page": 200, "page": page})
+        p.update({"per_page": per_page, "page": page})
         url = f"{BASE_URL}/api/v1{path}"
         log(f"GET {url} params={p}")
         r = S.get(url, params=p, timeout=60)
@@ -112,7 +113,8 @@ def paged_get(path, params=None):
         if not data:
             break
         out.extend(data)
-        if len(data) < 200:
+        log(f"Página {page}: {len(data)} tickets, total acumulado: {len(out)}")
+        if len(data) < per_page:
             break
         page += 1
     return out
