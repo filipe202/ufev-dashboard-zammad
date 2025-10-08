@@ -246,15 +246,44 @@ function MultiSelect({ options, selected, onChange, placeholder }) {
 
 export default function App() {
   const [data, setData] = useState(null);           // estrutura { filters, agents, customers, daily_summary }
-  const [viewMode, setViewMode] = useState("agents");
   const [selectedPriorities, setSelectedPriorities] = useState(["ALL"]);
   const [selectedStates, setSelectedStates] = useState(["ALL"]);
   const [sortKey, setSortKey] = useState("tickets"); // "tickets" | "avg"
   const [selectedGroups, setSelectedGroups] = useState(["ALL"]);
   const [error, setError] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const [workloadMode, setWorkloadMode] = useState("created"); // "created" ou "closed"
   const fromDateRef = useRef("");
+
+  // Roteamento baseado na URL
+  const getViewModeFromURL = () => {
+    const hash = window.location.hash.slice(1); // Remove o #
+    const baseHash = hash.split('?')[0];
+    const validModes = ["agents", "states", "responses", "efficiency", "workload"];
+    return validModes.includes(baseHash) ? baseHash : "agents";
+  };
+
+  const getWorkloadModeFromURL = () => {
+    const hash = window.location.hash.slice(1);
+    const params = new URLSearchParams(hash.split('?')[1] || '');
+    const mode = params.get('mode');
+    return mode === 'closed' ? 'closed' : 'created';
+  };
+
+  const [workloadMode, setWorkloadMode] = useState(getWorkloadModeFromURL());
+
+  const [viewMode, setViewMode] = useState(getViewModeFromURL());
+
+  const updateViewMode = (mode) => {
+    setViewMode(mode);
+    window.location.hash = mode;
+  };
+
+  const updateWorkloadMode = (mode) => {
+    setWorkloadMode(mode);
+    // Adicionar parâmetro de workload mode na URL
+    const baseHash = window.location.hash.split('?')[0];
+    window.location.hash = `${baseHash}?mode=${mode}`;
+  };
 
   const setFromDateSynced = useCallback((value) => {
     fromDateRef.current = value;
@@ -281,6 +310,15 @@ export default function App() {
       setIsAuthenticated(true);
       fetchMetrics();
     }
+
+    // Listener para mudanças na URL (botão voltar/avançar)
+    const handleHashChange = () => {
+      setViewMode(getViewModeFromURL());
+      setWorkloadMode(getWorkloadModeFromURL());
+    };
+
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
   }, [fetchMetrics]);
 
   useEffect(() => {
@@ -484,7 +522,7 @@ export default function App() {
             <button
               key={option.value}
               type="button"
-              onClick={() => setViewMode(option.value)}
+              onClick={() => updateViewMode(option.value)}
               style={{
                 padding:"8px 16px",
                 borderRadius:999,
@@ -644,7 +682,7 @@ export default function App() {
             <button
               key={option.value}
               type="button"
-              onClick={() => setViewMode(option.value)}
+              onClick={() => updateViewMode(option.value)}
               style={{
                 padding:"8px 16px",
                 borderRadius:999,
@@ -829,7 +867,7 @@ export default function App() {
             <button
               key={option.value}
               type="button"
-              onClick={() => setViewMode(option.value)}
+              onClick={() => updateViewMode(option.value)}
               style={{
                 padding:"8px 16px",
                 borderRadius:999,
@@ -853,7 +891,7 @@ export default function App() {
             <button
               key={option.value}
               type="button"
-              onClick={() => setWorkloadMode(option.value)}
+              onClick={() => updateWorkloadMode(option.value)}
               style={{
                 padding:"12px 20px",
                 borderRadius:8,
