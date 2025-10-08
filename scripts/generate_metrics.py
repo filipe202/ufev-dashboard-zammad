@@ -5,9 +5,9 @@ import requests
 from datetime import datetime, timezone
 from collections import defaultdict
 
-# === Ajuste principal: escrever direto em public/ ===
+# === Ajuste principal: escrever em src/ como módulo JS ===
 ROOT = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_PATH = os.path.join(ROOT, "..", "public", "zammad_metrics.json")
+OUTPUT_PATH = os.path.join(ROOT, "..", "src", "zammad_metrics.js")
 
 BASE_URL = os.environ.get("ZAMMAD_BASE_URL", "https://ufevsuporte.zammad.com").rstrip("/")
 TOKEN = os.environ.get("ZAMMAD_TOKEN")
@@ -457,7 +457,10 @@ def main():
 
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        f.write("// Dados gerados automaticamente - não editar\n")
+        f.write("export const ZAMMAD_METRICS = ")
         json.dump(output, f, indent=2, ensure_ascii=False)
+        f.write(";\n")
     print(f"Resultados gravados em {OUTPUT_PATH}")
 
 

@@ -3,6 +3,7 @@ import {
   BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer
 } from "recharts";
 import "./index.css";
+import { ZAMMAD_METRICS } from "./zammad_metrics";
 const COLORS = [
   "#82B1FF", // azul lavanda
   "#FFAB91", // pêssego suave
@@ -16,7 +17,6 @@ const COLORS = [
   "#FFCC80", // laranja pastel forte
 ];
 
-const FUNCTION_URL = process.env.REACT_APP_FUNCTION_URL || "./zammad_metrics.json";
 
 function emptyBucket() {
   return { avg_time_hours: null, tickets_count: 0, tickets_per_day: {} };
@@ -265,19 +265,8 @@ export default function App() {
   const fetchMetrics = useCallback(async (dateOverride) => {
     setError(null);
     try {
-      const params = new URLSearchParams();
-      const effectiveDate = dateOverride ?? fromDateRef.current;
-      if (effectiveDate) {
-        params.set("from", effectiveDate);
-      }
-      const query = params.toString();
-      const url = `${FUNCTION_URL}${query ? `?${query}` : ""}`;
-      const response = await fetch(url, { headers: { "Cache-Control": "no-cache" } });
-      if (!response.ok) {
-        const text = await response.text();
-        throw new Error(`HTTP ${response.status}: ${text}`);
-      }
-      const payload = await response.json();
+      // Usar dados importados em vez de fetch para proteger acesso
+      const payload = ZAMMAD_METRICS;
       setData(payload);
       if (payload?.filters?.from_date) {
         setFromDateSynced(payload.filters.from_date);

@@ -1,11 +1,12 @@
-{
+// Dados gerados automaticamente - não editar
+export const ZAMMAD_METRICS = {
   "filters": {
     "from_date": "2025-09-30"
   },
   "agents": {
     "Inês Martinho": {
       "overall": {
-        "avg_time_hours": 16.04,
+        "avg_time_hours": 16.01,
         "tickets_count": 52,
         "tickets_per_day": {
           "2025-09-30": 12,
@@ -13,17 +14,18 @@
           "2025-10-02": 3,
           "2025-10-03": 4,
           "2025-10-06": 6,
-          "2025-10-07": 13,
-          "2025-10-08": 10
+          "2025-10-07": 12,
+          "2025-10-08": 11
         }
       },
       "priorities": {
         "P1": {
-          "avg_time_hours": 2.26,
+          "avg_time_hours": 4.79,
           "tickets_count": 6,
           "tickets_per_day": {
             "2025-09-30": 4,
-            "2025-10-07": 2
+            "2025-10-07": 1,
+            "2025-10-08": 1
           }
         },
         "P2": {
@@ -54,8 +56,8 @@
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 16.04,
-            "tickets_count": 31,
+            "avg_time_hours": 16.01,
+            "tickets_count": 32,
             "tickets_per_day": {
               "2025-09-30": 9,
               "2025-10-01": 3,
@@ -63,15 +65,16 @@
               "2025-10-03": 1,
               "2025-10-06": 2,
               "2025-10-07": 8,
-              "2025-10-08": 6
+              "2025-10-08": 7
             }
           },
           "priorities": {
             "P1": {
-              "avg_time_hours": 2.26,
-              "tickets_count": 4,
+              "avg_time_hours": 4.79,
+              "tickets_count": 5,
               "tickets_per_day": {
-                "2025-09-30": 4
+                "2025-09-30": 4,
+                "2025-10-08": 1
               }
             },
             "P2": {
@@ -102,21 +105,14 @@
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 4,
             "tickets_per_day": {
               "2025-10-02": 1,
-              "2025-10-07": 2,
+              "2025-10-07": 1,
               "2025-10-08": 2
             }
           },
           "priorities": {
-            "P1": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-07": 1
-              }
-            },
             "P2": {
               "avg_time_hours": null,
               "tickets_count": 2,
@@ -208,26 +204,26 @@
     "Não Atribuído": {
       "overall": {
         "avg_time_hours": 31.81,
-        "tickets_count": 84,
+        "tickets_count": 95,
         "tickets_per_day": {
           "2025-09-30": 8,
           "2025-10-01": 2,
           "2025-10-03": 5,
           "2025-10-06": 4,
           "2025-10-07": 46,
-          "2025-10-08": 19
+          "2025-10-08": 30
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.4,
-          "tickets_count": 18,
+          "tickets_count": 29,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 1,
             "2025-10-06": 2,
             "2025-10-07": 5,
-            "2025-10-08": 6
+            "2025-10-08": 17
           }
         },
         "P3": {
@@ -301,13 +297,20 @@
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 14,
             "tickets_per_day": {
               "2025-10-07": 1,
-              "2025-10-08": 2
+              "2025-10-08": 13
             }
           },
           "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 11,
+              "tickets_per_day": {
+                "2025-10-08": 11
+              }
+            },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
               "tickets_count": 3,
@@ -489,23 +492,23 @@
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 9,
+            "tickets_count": 8,
             "tickets_per_day": {
               "2025-10-01": 1,
               "2025-10-02": 1,
               "2025-10-06": 2,
-              "2025-10-07": 5
+              "2025-10-07": 4
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 8,
+              "tickets_count": 7,
               "tickets_per_day": {
                 "2025-10-01": 1,
                 "2025-10-02": 1,
                 "2025-10-06": 1,
-                "2025-10-07": 5
+                "2025-10-07": 4
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -601,13 +604,13 @@
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 8,
+            "tickets_count": 9,
             "tickets_per_day": {
               "2025-09-30": 2,
               "2025-10-01": 2,
               "2025-10-02": 1,
               "2025-10-06": 2,
-              "2025-10-07": 1
+              "2025-10-07": 2
             }
           },
           "priorities": {
@@ -620,12 +623,12 @@
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 5,
               "tickets_per_day": {
                 "2025-10-01": 1,
                 "2025-10-02": 1,
                 "2025-10-06": 1,
-                "2025-10-07": 1
+                "2025-10-07": 2
               }
             },
             "P3": {
@@ -744,18 +747,16 @@
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 2,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-06": 1,
               "2025-10-07": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-06": 1,
                 "2025-10-07": 1
               }
             }
@@ -764,23 +765,24 @@
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 9,
+            "tickets_count": 10,
             "tickets_per_day": {
               "2025-09-30": 3,
               "2025-10-02": 2,
               "2025-10-03": 1,
-              "2025-10-06": 1,
+              "2025-10-06": 2,
               "2025-10-07": 2
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 8,
+              "tickets_count": 9,
               "tickets_per_day": {
                 "2025-09-30": 3,
                 "2025-10-02": 2,
                 "2025-10-03": 1,
+                "2025-10-06": 1,
                 "2025-10-07": 2
               }
             },
@@ -919,10 +921,9 @@
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 6,
+            "tickets_count": 5,
             "tickets_per_day": {
               "2025-10-01": 1,
-              "2025-10-03": 1,
               "2025-10-06": 1,
               "2025-10-07": 1,
               "2025-10-08": 2
@@ -931,10 +932,9 @@
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 6,
+              "tickets_count": 5,
               "tickets_per_day": {
                 "2025-10-01": 1,
-                "2025-10-03": 1,
                 "2025-10-06": 1,
                 "2025-10-07": 1,
                 "2025-10-08": 2
@@ -980,18 +980,20 @@
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 4,
+            "tickets_count": 5,
             "tickets_per_day": {
               "2025-10-01": 3,
+              "2025-10-03": 1,
               "2025-10-07": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 5,
               "tickets_per_day": {
                 "2025-10-01": 3,
+                "2025-10-03": 1,
                 "2025-10-07": 1
               }
             }
@@ -2073,22 +2075,22 @@
     "cliente_44": {
       "overall": {
         "avg_time_hours": 0.28,
-        "tickets_count": 19,
+        "tickets_count": 20,
         "tickets_per_day": {
           "2025-09-30": 4,
           "2025-10-03": 2,
           "2025-10-06": 2,
-          "2025-10-08": 11
+          "2025-10-08": 12
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 0.28,
-          "tickets_count": 12,
+          "tickets_count": 13,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-06": 1,
-            "2025-10-08": 7
+            "2025-10-08": 8
           }
         },
         "P3": {
@@ -2125,6 +2127,24 @@
               "tickets_per_day": {
                 "2025-09-30": 4,
                 "2025-10-08": 5
+              }
+            }
+          }
+        },
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
               }
             }
           }
@@ -2487,12 +2507,13 @@
     "cliente_57": {
       "overall": {
         "avg_time_hours": 73.99,
-        "tickets_count": 12,
+        "tickets_count": 15,
         "tickets_per_day": {
           "2025-10-01": 3,
           "2025-10-02": 1,
           "2025-10-06": 3,
-          "2025-10-07": 5
+          "2025-10-07": 5,
+          "2025-10-08": 3
         }
       },
       "priorities": {
@@ -2505,11 +2526,12 @@
         },
         "P2": {
           "avg_time_hours": 83.25,
-          "tickets_count": 8,
+          "tickets_count": 11,
           "tickets_per_day": {
             "2025-10-01": 1,
             "2025-10-06": 3,
-            "2025-10-07": 4
+            "2025-10-07": 4,
+            "2025-10-08": 3
           }
         },
         "P3": {
@@ -2555,6 +2577,24 @@
               "tickets_per_day": {
                 "2025-10-02": 1,
                 "2025-10-07": 1
+              }
+            }
+          }
+        },
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 3,
+            "tickets_per_day": {
+              "2025-10-08": 3
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 3,
+              "tickets_per_day": {
+                "2025-10-08": 3
               }
             }
           }
@@ -2783,24 +2823,6 @@
             }
           }
         },
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-03": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-03": 1
-              }
-            }
-          }
-        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -2816,6 +2838,24 @@
               "tickets_count": 2,
               "tickets_per_day": {
                 "2025-09-30": 1,
+                "2025-10-03": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-03": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
                 "2025-10-03": 1
               }
             }
@@ -3073,20 +3113,28 @@
     },
     "cliente_81": {
       "overall": {
-        "avg_time_hours": 62.01,
-        "tickets_count": 5,
+        "avg_time_hours": 52.59,
+        "tickets_count": 6,
         "tickets_per_day": {
           "2025-10-01": 1,
           "2025-10-03": 1,
-          "2025-10-07": 3
+          "2025-10-07": 2,
+          "2025-10-08": 2
         }
       },
       "priorities": {
         "P1": {
+          "avg_time_hours": 14.91,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        },
+        "P2": {
           "avg_time_hours": null,
           "tickets_count": 1,
           "tickets_per_day": {
-            "2025-10-07": 1
+            "2025-10-08": 1
           }
         },
         "P3": {
@@ -3108,15 +3156,23 @@
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 62.01,
-            "tickets_count": 4,
+            "avg_time_hours": 52.59,
+            "tickets_count": 5,
             "tickets_per_day": {
               "2025-10-01": 1,
               "2025-10-03": 1,
-              "2025-10-07": 2
+              "2025-10-07": 2,
+              "2025-10-08": 1
             }
           },
           "priorities": {
+            "P1": {
+              "avg_time_hours": 14.91,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            },
             "P3": {
               "avg_time_hours": 19.62,
               "tickets_count": 2,
@@ -3134,20 +3190,20 @@
             }
           }
         },
-        "Open": {
+        "New": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-07": 1
+              "2025-10-08": 1
             }
           },
           "priorities": {
-            "P1": {
+            "P2": {
               "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-07": 1
+                "2025-10-08": 1
               }
             }
           }
@@ -3157,13 +3213,13 @@
     "cliente_40": {
       "overall": {
         "avg_time_hours": 44.25,
-        "tickets_count": 17,
+        "tickets_count": 18,
         "tickets_per_day": {
           "2025-09-30": 1,
           "2025-10-03": 1,
           "2025-10-06": 6,
           "2025-10-07": 8,
-          "2025-10-08": 1
+          "2025-10-08": 2
         }
       },
       "priorities": {
@@ -3177,11 +3233,11 @@
         },
         "P2": {
           "avg_time_hours": 24.79,
-          "tickets_count": 9,
+          "tickets_count": 10,
           "tickets_per_day": {
             "2025-10-06": 3,
             "2025-10-07": 5,
-            "2025-10-08": 1
+            "2025-10-08": 2
           }
         },
         "P3": {
@@ -3232,6 +3288,24 @@
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-07": 1
+              }
+            }
+          }
+        },
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
               }
             }
           }
@@ -4628,7 +4702,7 @@
             }
           }
         },
-        "Open": {
+        "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -5565,23 +5639,41 @@
     "cliente_70": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 2,
+        "tickets_count": 3,
         "tickets_per_day": {
           "2025-09-30": 1,
-          "2025-10-08": 1
+          "2025-10-08": 2
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 2,
+          "tickets_count": 3,
           "tickets_per_day": {
             "2025-09-30": 1,
-            "2025-10-08": 1
+            "2025-10-08": 2
           }
         }
       },
       "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -5933,9 +6025,27 @@
         "Open": {
           "overall": {
             "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-06": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-06": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
             "tickets_count": 2,
             "tickets_per_day": {
-              "2025-10-06": 1,
+              "2025-10-01": 1,
               "2025-10-07": 1
             }
           },
@@ -5944,26 +6054,8 @@
               "avg_time_hours": null,
               "tickets_count": 2,
               "tickets_per_day": {
-                "2025-10-06": 1,
+                "2025-10-01": 1,
                 "2025-10-07": 1
-              }
-            }
-          }
-        },
-        "Pendente Operador": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-01": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-01": 1
               }
             }
           }
@@ -6087,12 +6179,20 @@
     "cliente_135": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 1,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-10-03": 1
+          "2025-10-03": 1,
+          "2025-10-08": 1
         }
       },
       "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        },
         "P3": {
           "avg_time_hours": null,
           "tickets_count": 1,
@@ -6102,6 +6202,24 @@
         }
       },
       "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -6704,21 +6822,41 @@
     "cliente_178": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 1,
+        "tickets_count": 2,
         "tickets_per_day": {
-          "2025-10-07": 1
+          "2025-10-07": 1,
+          "2025-10-08": 1
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 1,
+          "tickets_count": 2,
           "tickets_per_day": {
-            "2025-10-07": 1
+            "2025-10-07": 1,
+            "2025-10-08": 1
           }
         }
       },
       "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        },
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
@@ -7004,6 +7142,82 @@
           }
         }
       }
+    },
+    "cliente_202": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-08": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        }
+      }
+    },
+    "cliente_203": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-08": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-08": 1
+          }
+        }
+      },
+      "states": {
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-08": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-08": 1
+              }
+            }
+          }
+        }
+      }
     }
   },
   "daily_summary": {
@@ -7029,18 +7243,18 @@
     },
     "2025-10-07": {
       "closed": 67,
-      "open": 36
+      "open": 35
     },
     "2025-10-08": {
-      "closed": 15,
-      "open": 23
+      "closed": 16,
+      "open": 34
     }
   },
   "states": {
     "Closed": {
       "overall": {
-        "avg_time_hours": 31.93,
-        "tickets_count": 162,
+        "avg_time_hours": 31.82,
+        "tickets_count": 163,
         "tickets_per_day": {
           "2025-09-30": 31,
           "2025-10-01": 15,
@@ -7048,19 +7262,20 @@
           "2025-10-03": 10,
           "2025-10-06": 18,
           "2025-10-07": 67,
-          "2025-10-08": 15
+          "2025-10-08": 16
         }
       },
       "priorities": {
         "P1": {
-          "avg_time_hours": 17.69,
-          "tickets_count": 17,
+          "avg_time_hours": 17.54,
+          "tickets_count": 18,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-01": 2,
             "2025-10-03": 1,
             "2025-10-06": 2,
-            "2025-10-07": 8
+            "2025-10-07": 8,
+            "2025-10-08": 1
           }
         },
         "P2": {
@@ -7106,13 +7321,13 @@
     "Pendente Consultor": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 48,
+        "tickets_count": 49,
         "tickets_per_day": {
           "2025-09-30": 10,
           "2025-10-01": 1,
           "2025-10-02": 3,
           "2025-10-03": 9,
-          "2025-10-06": 15,
+          "2025-10-06": 16,
           "2025-10-07": 8,
           "2025-10-08": 2
         }
@@ -7127,13 +7342,13 @@
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 17,
+          "tickets_count": 18,
           "tickets_per_day": {
             "2025-09-30": 6,
             "2025-10-01": 1,
             "2025-10-02": 2,
             "2025-10-03": 1,
-            "2025-10-06": 2,
+            "2025-10-06": 3,
             "2025-10-07": 3,
             "2025-10-08": 2
           }
@@ -7219,14 +7434,14 @@
     "Pendente Operador": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 26,
+        "tickets_count": 28,
         "tickets_per_day": {
           "2025-09-30": 2,
           "2025-10-01": 7,
           "2025-10-02": 1,
-          "2025-10-03": 1,
+          "2025-10-03": 2,
           "2025-10-06": 7,
-          "2025-10-07": 7,
+          "2025-10-07": 8,
           "2025-10-08": 1
         }
       },
@@ -7242,12 +7457,13 @@
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 17,
+          "tickets_count": 19,
           "tickets_per_day": {
             "2025-10-01": 5,
             "2025-10-02": 1,
+            "2025-10-03": 1,
             "2025-10-06": 4,
-            "2025-10-07": 6,
+            "2025-10-07": 7,
             "2025-10-08": 1
           }
         },
@@ -7284,33 +7500,24 @@
     "Open": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 48,
+        "tickets_count": 44,
         "tickets_per_day": {
           "2025-10-01": 2,
           "2025-10-02": 2,
-          "2025-10-03": 1,
-          "2025-10-06": 7,
-          "2025-10-07": 19,
+          "2025-10-06": 6,
+          "2025-10-07": 17,
           "2025-10-08": 17
         }
       },
       "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-07": 1
-          }
-        },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 21,
+          "tickets_count": 18,
           "tickets_per_day": {
             "2025-10-01": 2,
             "2025-10-02": 1,
-            "2025-10-03": 1,
-            "2025-10-06": 4,
-            "2025-10-07": 7,
+            "2025-10-06": 3,
+            "2025-10-07": 6,
             "2025-10-08": 6
           }
         },
@@ -7355,13 +7562,20 @@
     "New": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 3,
+        "tickets_count": 14,
         "tickets_per_day": {
           "2025-10-07": 1,
-          "2025-10-08": 2
+          "2025-10-08": 13
         }
       },
       "priorities": {
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 11,
+          "tickets_per_day": {
+            "2025-10-08": 11
+          }
+        },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
           "tickets_count": 3,
@@ -7373,4 +7587,4 @@
       }
     }
   }
-}
+};
