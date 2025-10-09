@@ -1464,6 +1464,23 @@ export default function App() {
               </tr>
             ))}
           </tbody>
+          <tfoot>
+            <tr style={{background:"#f1f5f9", fontWeight:600, borderTop:"2px solid #e2e8f0"}}>
+              <td style={{padding:10, fontWeight:700, color:"#374151"}}>TOTAL</td>
+              <td style={{padding:10, textAlign:"right", fontWeight:700, color:"#374151"}}>
+                {rows.reduce((sum, r) => sum + (r.tickets_count ?? 0), 0)}
+              </td>
+              <td style={{padding:10, textAlign:"right", color:"#6b7280"}}>—</td>
+              {days.map(d => {
+                const dayTotal = rows.reduce((sum, r) => sum + (r.perDay?.[d] ?? 0), 0);
+                return (
+                  <td key={d} style={{padding:10, textAlign:"center", fontWeight:700, color:"#374151"}}>
+                    {dayTotal}
+                  </td>
+                );
+              })}
+            </tr>
+          </tfoot>
         </table>
         
  
