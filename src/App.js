@@ -148,19 +148,26 @@ function summarize(rows, efficiencyData = null) {
   // Top por tempo (menor tempo médio)
   const topTime = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
   
-  // Top por eficiência (usar dados de agent_efficiency se disponível)
+  // Top por eficiência (tickets fechados / tickets atribuídos)
   let topRatio = null;
   if (efficiencyData) {
     const efficiencyEligible = Object.entries(efficiencyData)
       .filter(([agent, data]) => data.tickets_closed >= 10 && agent !== "Não Atribuído")
-      .map(([agent, data]) => ({
-        label: agent,
-        tickets_closed: data.tickets_closed,
-        avg_interactions: data.avg_interactions_per_ticket,
-        efficiency_score: data.tickets_closed / data.avg_interactions_per_ticket // Mais tickets com menos interações = melhor
-      }));
+      .map(([agent, data]) => {
+        // Encontrar tickets atribuídos nos dados principais
+        const agentData = rows.find(r => r.label === agent);
+        const tickets_assigned = agentData?.tickets_count || 0;
+        
+        return {
+          label: agent,
+          tickets_closed: data.tickets_closed,
+          tickets_assigned: tickets_assigned,
+          efficiency_ratio: tickets_assigned > 0 ? (data.tickets_closed / tickets_assigned) : 0 // % de tickets fechados
+        };
+      })
+      .filter(item => item.tickets_assigned > 0); // Só incluir quem tem tickets atribuídos
     
-    topRatio = efficiencyEligible.sort((a,b) => b.efficiency_score - a.efficiency_score)[0] || null;
+    topRatio = efficiencyEligible.sort((a,b) => b.efficiency_ratio - a.efficiency_ratio)[0] || null;
   } else {
     // Fallback: usar tickets_count como proxy
     topRatio = eligible.sort((a,b)=>b.tickets_count - a.tickets_count)[0] || null;
@@ -1344,8 +1351,8 @@ export default function App() {
           <div style={{fontSize:12, color:"#666"}}>Top eficiência (mín. 10)</div>
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
             {kpis.topRatio ? (
-              kpis.topRatio.efficiency_score ? 
-                `${kpis.topRatio.label} · ${kpis.topRatio.efficiency_score.toFixed(1)} pts` :
+              kpis.topRatio.efficiency_ratio !== undefined ? 
+                `${kpis.topRatio.label} · ${(kpis.topRatio.efficiency_ratio * 100).toFixed(1)}%` :
                 `${kpis.topRatio.label} · ${kpis.topRatio.tickets_count} tickets`
             ) : "—"}
           </div>
