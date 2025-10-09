@@ -562,33 +562,10 @@ def main():
     all_days = sorted(set(closed_by_day.keys()) | set(open_by_day.keys()))
     daily_summary = {day: {"closed": closed_by_day.get(day, 0), "open": open_by_day.get(day, 0)} for day in all_days}
 
-    # Calcular número de dias de cada tipo que já passaram
-    from datetime import datetime, timedelta
-    start_date = datetime.strptime(FROM_DATE, "%Y-%m-%d")
-    end_date = datetime.now()
-    
-    # Contar quantos dias de cada tipo da semana já passaram
-    weekday_counts = [0] * 7  # Segunda=0, Domingo=6
-    current_date = start_date
-    total_days = 0
-    
-    while current_date <= end_date:
-        weekday_counts[current_date.weekday()] += 1
-        total_days += 1
-        current_date += timedelta(days=1)
-    
-    # Formatar dados temporais - CRIAÇÃO (com médias)
+    # Formatar dados temporais - CRIAÇÃO (dados brutos para calcular médias na interface)
     weekday_names = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"]
-    created_weekdays = {}
-    for i in range(7):
-        count = weekday_counts[i]
-        avg = created_by_weekday[i] / count if count > 0 else 0
-        created_weekdays[weekday_names[i]] = round(avg, 1)
-    
-    created_hours = {}
-    for h in range(24):
-        avg = created_by_hour[h] / total_days if total_days > 0 else 0
-        created_hours[f"{h:02d}h"] = round(avg, 1)
+    created_weekdays = {weekday_names[i]: created_by_weekday[i] for i in range(7)}
+    created_hours = {f"{h:02d}h": created_by_hour[h] for h in range(24)}
     
     # Heatmap criação: dia da semana x hora
     created_heatmap = []
@@ -600,17 +577,9 @@ def main():
                 "tickets": created_by_weekday_hour[weekday][hour]
             })
     
-    # Formatar dados temporais - FECHAMENTO (com médias)
-    closed_weekdays = {}
-    for i in range(7):
-        count = weekday_counts[i]
-        avg = closed_by_weekday[i] / count if count > 0 else 0
-        closed_weekdays[weekday_names[i]] = round(avg, 1)
-    
-    closed_hours = {}
-    for h in range(24):
-        avg = closed_by_hour[h] / total_days if total_days > 0 else 0
-        closed_hours[f"{h:02d}h"] = round(avg, 1)
+    # Formatar dados temporais - FECHAMENTO (dados brutos para calcular médias na interface)
+    closed_weekdays = {weekday_names[i]: closed_by_weekday[i] for i in range(7)}
+    closed_hours = {f"{h:02d}h": closed_by_hour[h] for h in range(24)}
     
     # Heatmap fechamento: dia da semana x hora
     closed_heatmap = []
@@ -633,19 +602,26 @@ def main():
                 "by_weekday": created_weekdays,
                 "by_hour": created_hours,
                 "heatmap": created_heatmap,
-                "total_tickets": len(all_tickets)
+                "total_tickets": sum(created_by_weekday),
+                "period_info": {
+                    "from_date": FROM_DATE,
+                    "days_in_period": len(all_days)
+                }
             },
             "closed": {
                 "by_weekday": closed_weekdays,
                 "by_hour": closed_hours,
                 "heatmap": closed_heatmap,
-                "total_tickets": len(tickets_closed)
+                "total_tickets": sum(closed_by_weekday),
+                "period_info": {
+                    "from_date": FROM_DATE,
+                    "days_in_period": len(all_days)
+                }
             }
         },
         "agent_responses": dict(sorted(agent_responses.items(), key=lambda x: x[1], reverse=True)),
         "agent_efficiency": agent_efficiency
     }
-
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
         f.write("// Dados gerados automaticamente - não editar\n")

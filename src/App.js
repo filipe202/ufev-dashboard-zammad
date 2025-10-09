@@ -832,17 +832,49 @@ export default function App() {
     const workload = data.workload_analysis[workloadMode]; // "created" ou "closed"
     const modeLabel = workloadMode === "created" ? "Criação" : "Fechamento";
     
-    // Dados para gráfico de barras por dia da semana
-    const weekdayData = Object.entries(workload.by_weekday).map(([day, count]) => ({
-      name: day,
-      tickets: count
-    }));
+    // Calcular médias baseadas no período real
+    const calculateWeekdayAverages = (weekdayData, fromDate) => {
+      // Calcular quantos dias de cada tipo da semana já passaram desde fromDate
+      const startDate = new Date(fromDate);
+      const endDate = new Date();
+      const weekdayNames = ["Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado", "Domingo"];
+      const weekdayCounts = [0, 0, 0, 0, 0, 0, 0]; // Segunda=0, Domingo=6
+      
+      let currentDate = new Date(startDate);
+      while (currentDate <= endDate) {
+        const weekday = currentDate.getDay();
+        const adjustedWeekday = weekday === 0 ? 6 : weekday - 1; // Domingo=6, Segunda=0
+        weekdayCounts[adjustedWeekday]++;
+        currentDate.setDate(currentDate.getDate() + 1);
+      }
+      
+      return weekdayNames.map((day, index) => ({
+        name: day,
+        tickets: weekdayCounts[index] > 0 ? Math.round((weekdayData[day] / weekdayCounts[index]) * 10) / 10 : 0,
+        total: weekdayData[day],
+        days_count: weekdayCounts[index]
+      }));
+    };
     
-    // Dados para gráfico de barras por hora
-    const hourData = Object.entries(workload.by_hour).map(([hour, count]) => ({
-      name: hour,
-      tickets: count
-    }));
+    const calculateHourlyAverages = (hourData, fromDate) => {
+      // Calcular total de dias no período
+      const startDate = new Date(fromDate);
+      const endDate = new Date();
+      const totalDays = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+      
+      return Object.entries(hourData).map(([hour, count]) => ({
+        name: hour,
+        tickets: totalDays > 0 ? Math.round((count / totalDays) * 10) / 10 : 0,
+        total: count,
+        total_days: totalDays
+      }));
+    };
+    
+    // Dados para gráfico de barras por dia da semana (médias)
+    const weekdayData = calculateWeekdayAverages(workload.by_weekday, workload.period_info?.from_date || "2025-09-30");
+    
+    // Dados para gráfico de barras por hora (médias)
+    const hourData = calculateHourlyAverages(workload.by_hour, workload.period_info?.from_date || "2025-09-30");
 
     return (
       <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
