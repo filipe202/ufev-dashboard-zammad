@@ -154,15 +154,30 @@ function summarize(rows, efficiencyData = null) {
     const efficiencyEligible = Object.entries(efficiencyData)
       .filter(([agent, data]) => data.tickets_closed >= 10 && agent !== "Não Atribuído")
       .map(([agent, data]) => {
-        // Encontrar tickets atribuídos nos dados principais
+        // Encontrar dados do agente nos dados principais
         const agentData = rows.find(r => r.label === agent);
+        
+        // tickets_count nos dados principais = total de tickets atribuídos (abertos + fechados)
+        // tickets_closed no agent_efficiency = tickets efetivamente fechados
         const tickets_assigned = agentData?.tickets_count || 0;
+        const tickets_closed = data.tickets_closed;
+        
+        // Calcular eficiência real, mas limitar a 100%
+        let efficiency_ratio = 0;
+        if (tickets_assigned > 0) {
+          efficiency_ratio = Math.min(tickets_closed / tickets_assigned, 1.0);
+        }
+        
+        // Debug para casos anómalos
+        if (tickets_closed > tickets_assigned) {
+          console.warn(`${agent}: ${tickets_closed} fechados > ${tickets_assigned} atribuídos - limitando a 100%`);
+        }
         
         return {
           label: agent,
-          tickets_closed: data.tickets_closed,
+          tickets_closed: tickets_closed,
           tickets_assigned: tickets_assigned,
-          efficiency_ratio: tickets_assigned > 0 ? (data.tickets_closed / tickets_assigned) : 0 // % de tickets fechados
+          efficiency_ratio: efficiency_ratio
         };
       })
       .filter(item => item.tickets_assigned > 0); // Só incluir quem tem tickets atribuídos
