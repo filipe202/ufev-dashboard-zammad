@@ -55,6 +55,7 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ secrets.CF_PAGES_PROJECT_NAME }} # ex.: "minha-app"
+          projectName: "ufev-dashboard" # Nome simples sem duplicação
           directory: ./build
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
           branch: master

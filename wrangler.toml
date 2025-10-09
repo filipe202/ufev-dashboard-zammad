@@ -1,0 +1,9 @@
+name = "ufev-dashboard"
+compatibility_date = "2023-10-30"
+
+[env.production]
+name = "ufev-dashboard"
+
+[[env.production.routes]]
+pattern = "ufev-dashboard.pages.dev/*"
+zone_name = "pages.dev"
