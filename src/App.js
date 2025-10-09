@@ -142,7 +142,7 @@ function summarize(rows) {
   const totalTickets = rows.reduce((s, r) => s + (r.tickets_count || 0), 0);
   const vals = rows.filter(r => typeof r.avg_time_hours === "number");
   const avgAll = vals.length ? (vals.reduce((s,r)=>s+r.avg_time_hours,0) / vals.length) : 0;
-  const eligible = rows.filter(r => (r.tickets_count||0) >= 5 && typeof r.avg_time_hours === "number");
+  const eligible = rows.filter(r => (r.tickets_count||0) >= 10 && typeof r.avg_time_hours === "number");
   const top = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
   return { totalTickets, avgAll, top };
 }
@@ -1319,7 +1319,7 @@ export default function App() {
           <div style={{fontSize:28, fontWeight:600}}>{kpis.avgAll ? kpis.avgAll.toFixed(2) : "—"}</div>
         </div>
         <div style={{borderTop:"4px solid #005A8D", border:"1px solid #eee", borderRadius:10, padding:16}}>
-          <div style={{fontSize:12, color:"#666"}}>Top performer (mín. 5 tickets)</div>
+          <div style={{fontSize:12, color:"#666"}}>Top performer (mín. 10 tickets)</div>
           <div style={{fontSize:18, fontWeight:600}}>
             {kpis.top ? `${kpis.top.label} · ${kpis.top.avg_time_hours.toFixed(2)}h` : "—"}
           </div>
