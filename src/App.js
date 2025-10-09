@@ -1038,12 +1038,12 @@ export default function App() {
             <div style={{minWidth: isMobile ? 600 : 800}}>
               {/* Header com horas */}
               <div style={{display: "flex", marginBottom: 8, position: "sticky", top: 0, backgroundColor: "white", zIndex: 1, paddingBottom: 4}}>
-                <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280", display: "flex", alignItems: "center"}}>
+                <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280", display: "flex", alignItems: "center", padding-right: "8px"}}>
                   Dia / Hora
                 </div>
                 {Array.from({length: 24}, (_, hour) => (
                   <div key={hour} style={{
-                    width: isMobile ? 24 : 32, // Ajustar baseado no dispositivo
+                    width: isMobile ? 24 : 34, // Ajustar baseado no dispositivo
                     fontSize: 10,
                     textAlign: "center",
                     color: "#6b7280",
