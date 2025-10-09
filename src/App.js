@@ -1469,9 +1469,6 @@ export default function App() {
  
       </div>
 
-      <div style={{fontSize:12, color:"#64748b", marginTop:8}}>
-        Os dados são carregados em tempo-real através da function serverless <code>fetch-metrics</code>.
-      </div>
     </div>
   );
 }
