@@ -1,0 +1,61 @@
+name: Deploy to Cloudflare Pages
+
+on:
+  schedule:
+    - cron: '0 8 * * *'   # Diário às 08:00 UTC
+  workflow_dispatch:
+  push:
+    branches: [ master ]
+
+# (Opcional) evita deploys concorrentes
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install requests
+
+      - name: Generate metrics
+        env:
+          ZAMMAD_TOKEN: ${{ secrets.ZAMMAD_TOKEN }}
+          ZAMMAD_BASE_URL: ${{ secrets.ZAMMAD_BASE_URL }}
+          ZAMMAD_VERIFY_SSL: "false"
+        run: python scripts/generate_metrics.py
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: 'package-lock.json'
+
+      - name: Build React app
+        run: |
+          npm ci
+          npm run build
+
+      # Deploy para Cloudflare Pages
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          projectName: ${{ secrets.CF_PAGES_PROJECT_NAME }} # ex.: "minha-app"
+          directory: ./build
+          branch: master
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }} # para comentários em PRs (opcional)
