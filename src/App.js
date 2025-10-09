@@ -138,13 +138,35 @@ function toStackedSeries(days, rows) {
   });
 }
 
-function summarize(rows) {
+function summarize(rows, efficiencyData = null) {
   const totalTickets = rows.reduce((s, r) => s + (r.tickets_count || 0), 0);
   const vals = rows.filter(r => typeof r.avg_time_hours === "number");
   const avgAll = vals.length ? (vals.reduce((s,r)=>s+r.avg_time_hours,0) / vals.length) : 0;
-  const eligible = rows.filter(r => (r.tickets_count||0) >= 10 && typeof r.avg_time_hours === "number");
-  const top = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
-  return { totalTickets, avgAll, top };
+  
+  const eligible = rows.filter(r => (r.tickets_count||0) >= 10 && typeof r.avg_time_hours === "number" && r.label !== "Não Atribuído");
+  
+  // Top por tempo (menor tempo médio)
+  const topTime = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
+  
+  // Top por eficiência (usar dados de agent_efficiency se disponível)
+  let topRatio = null;
+  if (efficiencyData) {
+    const efficiencyEligible = Object.entries(efficiencyData)
+      .filter(([agent, data]) => data.tickets_closed >= 10 && agent !== "Não Atribuído")
+      .map(([agent, data]) => ({
+        label: agent,
+        tickets_closed: data.tickets_closed,
+        avg_interactions: data.avg_interactions_per_ticket,
+        efficiency_score: data.tickets_closed / data.avg_interactions_per_ticket // Mais tickets com menos interações = melhor
+      }));
+    
+    topRatio = efficiencyEligible.sort((a,b) => b.efficiency_score - a.efficiency_score)[0] || null;
+  } else {
+    // Fallback: usar tickets_count como proxy
+    topRatio = eligible.sort((a,b)=>b.tickets_count - a.tickets_count)[0] || null;
+  }
+  
+  return { totalTickets, avgAll, topTime, topRatio };
 }
 
 function MultiSelect({ options, selected, onChange, placeholder }) {
@@ -436,7 +458,7 @@ export default function App() {
   }, [dataset, selectedPriorities, selectedStates, selectedGroups, sortKey, viewMode]);
 
   const series = useMemo(() => toStackedSeries(days, rows), [days, rows]);
-  const kpis = useMemo(() => summarize(rows), [rows]);
+  const kpis = useMemo(() => summarize(rows, data?.agent_efficiency), [rows, data?.agent_efficiency]);
 
   const groupLabel = {
     agents: "Agente",
@@ -1309,7 +1331,7 @@ export default function App() {
       {error && <div style={{color:"#b91c1c", marginBottom:12}}>Erro a carregar JSON: {error}</div>}
 
       {/* KPIs */}
-      <div style={{display:"grid", gridTemplateColumns:"repeat(3, minmax(0,1fr))", gap:12, margin:"12px 0"}}>
+      <div style={{display:"grid", gridTemplateColumns: isMobile ? "repeat(2, minmax(0,1fr))" : "repeat(4, minmax(0,1fr))", gap:12, margin:"12px 0"}}>
         <div style={{borderTop:"4px solid #0096D6", border:"1px solid #eee", borderRadius:10, padding:16}}>
           <div style={{fontSize:12, color:"#666"}}>Tickets (total)</div>
           <div style={{fontSize:28, fontWeight:600}}>{kpis.totalTickets || 0}</div>
@@ -1318,10 +1340,20 @@ export default function App() {
           <div style={{fontSize:12, color:"#666"}}>Média geral (horas)</div>
           <div style={{fontSize:28, fontWeight:600}}>{kpis.avgAll ? kpis.avgAll.toFixed(2) : "—"}</div>
         </div>
+        <div style={{borderTop:"4px solid #10B981", border:"1px solid #eee", borderRadius:10, padding:16}}>
+          <div style={{fontSize:12, color:"#666"}}>Top eficiência (mín. 10)</div>
+          <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
+            {kpis.topRatio ? (
+              kpis.topRatio.efficiency_score ? 
+                `${kpis.topRatio.label} · ${kpis.topRatio.efficiency_score.toFixed(1)} pts` :
+                `${kpis.topRatio.label} · ${kpis.topRatio.tickets_count} tickets`
+            ) : "—"}
+          </div>
+        </div>
         <div style={{borderTop:"4px solid #005A8D", border:"1px solid #eee", borderRadius:10, padding:16}}>
-          <div style={{fontSize:12, color:"#666"}}>Top performer (mín. 10 tickets)</div>
-          <div style={{fontSize:18, fontWeight:600}}>
-            {kpis.top ? `${kpis.top.label} · ${kpis.top.avg_time_hours.toFixed(2)}h` : "—"}
+          <div style={{fontSize:12, color:"#666"}}>Top tempo (mín. 10)</div>
+          <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
+            {kpis.topTime ? `${kpis.topTime.label} · ${kpis.topTime.avg_time_hours.toFixed(2)}h` : "—"}
           </div>
         </div>
       </div>
