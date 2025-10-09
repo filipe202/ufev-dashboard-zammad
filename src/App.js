@@ -815,12 +815,16 @@ export default function App() {
           </div>
           
           <div style={{marginTop: 20, padding: 16, backgroundColor: "#e3f2fd", borderRadius: 8}}>
-            <h4 style={{margin: "0 0 8px 0", color: "#1565c0"}}>💡 Como interpretar:</h4>
+            <h4 style={{margin: "0 0 8px 0", color: "#1565c0"}}>💡 Como interpretar esta métrica:</h4>
             <ul style={{margin: 0, paddingLeft: 20, color: "#1976d2"}}>
-              <li><strong>Menos interações</strong> = mais eficiente (resolve tickets mais rapidamente)</li>
-              <li><strong>Mais interações</strong> = pode indicar tickets mais complexos ou necessidade de otimização</li>
-              <li>Baseado na prioridade: P1=4, P2=3, P3=2, P4+=1 interação média</li>
+              <li><strong>Interações por ticket</strong> = número médio de trocas de mensagens/ações necessárias para resolver um ticket</li>
+              <li><strong>Menos interações</strong> = agente resolve problemas de forma mais direta e eficiente</li>
+              <li><strong>Mais interações</strong> = pode indicar tickets mais complexos ou processo menos otimizado</li>
+              <li><strong>Estimativa baseada na prioridade</strong>: P1 (crítico) = ~4 interações, P2 (alto) = ~3, P3 (normal) = ~2, P4+ (baixo) = ~1</li>
             </ul>
+            <p style={{margin: "8px 0 0 0", fontSize: 13, color: "#1565c0", fontStyle: "italic"}}>
+              <strong>Exemplo:</strong> Se um agente tem 2.5 interações/ticket, significa que em média precisa de 2-3 trocas para resolver cada problema.
+            </p>
           </div>
         </div>
       </div>
