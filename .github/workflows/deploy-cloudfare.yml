@@ -58,4 +58,3 @@ jobs:
           projectName: ${{ secrets.CF_PAGES_PROJECT_NAME }} # ex.: "minha-app"
           directory: ./build
           branch: master
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }} # para comentários em PRs (opcional)
