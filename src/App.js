@@ -924,7 +924,7 @@ export default function App() {
 
         <div style={{display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: isMobile ? 16 : 24, marginBottom: 24}}>
           <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
-            <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Tickets por Dia da Semana</h3>
+            <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Média de Tickets por Dia da Semana</h3>
             <div style={{height: 300}}>
               {weekdayData.map((day, index) => {
                 const maxValue = Math.max(...weekdayData.map(d => d.tickets));
@@ -977,7 +977,7 @@ export default function App() {
           </div>
           
           <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
-            <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Tickets por Hora do Dia</h3>
+            <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Média de Tickets por Hora do Dia</h3>
             <div style={{height: 300, overflowY: "auto"}}>
               {hourData.map((hour, index) => {
                 const maxValue = Math.max(...hourData.map(h => h.tickets));
@@ -1038,7 +1038,7 @@ export default function App() {
             <div style={{minWidth: isMobile ? 600 : 800}}>
               {/* Header com horas */}
               <div style={{display: "flex", marginBottom: 8, position: "sticky", top: 0, backgroundColor: "white", zIndex: 1, paddingBottom: 4}}>
-                <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280", display: "flex", alignItems: "center", padding-right: "8px"}}>
+                <div style={{width: 80, fontSize: 12, fontWeight: 600, color: "#6b7280", display: "flex", alignItems: "center", paddingRight: "8px"}}>
                   Dia / Hora
                 </div>
                 {Array.from({length: 24}, (_, hour) => (
