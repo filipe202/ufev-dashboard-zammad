@@ -820,7 +820,7 @@ export default function App() {
               <li><strong>Interações por ticket</strong> = número médio de trocas de mensagens/ações necessárias para resolver um ticket</li>
               <li><strong>Menos interações</strong> = agente resolve problemas de forma mais direta e eficiente</li>
               <li><strong>Mais interações</strong> = pode indicar tickets mais complexos ou processo menos otimizado</li>
-              <li><strong>Estimativa baseada na prioridade</strong>: P1 (crítico) = ~4 interações, P2 (alto) = ~3, P3 (normal) = ~2, P4+ (baixo) = ~1</li>
+              <li><strong>Dados reais</strong>: baseado no número real de artigos/mensagens públicas em cada ticket fechado</li>
             </ul>
             <p style={{margin: "8px 0 0 0", fontSize: 13, color: "#1565c0", fontStyle: "italic"}}>
               <strong>Exemplo:</strong> Se um agente tem 2.5 interações/ticket, significa que em média precisa de 2-3 trocas para resolver cada problema.

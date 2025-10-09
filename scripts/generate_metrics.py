@@ -468,33 +468,53 @@ def main():
         except Exception:
             continue
 
-    # Estimar respostas e calcular eficiência por agente
-    log("Estimando respostas e calculando interações por ticket...")
+    # Buscar interações reais dos tickets
+    log("Buscando interações reais dos tickets...")
     
     for t in tickets_closed:
         owner_id = t.get("owner_id")
         if owner_id and owner_id in AGENT_IDS:
             agent_name = AGENT_NAME_OVERRIDES.get(owner_id, f"Agente_{owner_id}")
-            priority_id = t.get("priority_id", 3)
+            ticket_id = t.get("id")
             
-            # Estimar interações baseado na prioridade e complexidade
-            if priority_id == 1:  # P1 - Crítico
-                estimated_interactions = 4  # Mais interações para resolver
-            elif priority_id == 2:  # P2 - Alto
-                estimated_interactions = 3
-            elif priority_id == 3:  # P3 - Normal
-                estimated_interactions = 2
-            else:  # P4+ - Baixo
-                estimated_interactions = 1
-            
-            # Adicionar variação baseada no estado final
-            state_name = (t.get("state", {}).get("name", "") if isinstance(t.get("state"), dict) else "").lower()
-            if "merged" in state_name:
-                estimated_interactions = 1  # Tickets merged precisam menos interações
-            
-            agent_responses[agent_name] += estimated_interactions
-            agent_interactions_per_ticket[agent_name]["total_interactions"] += estimated_interactions
-            agent_interactions_per_ticket[agent_name]["tickets_closed"] += 1
+            if ticket_id:
+                try:
+                    # Buscar artigos (interações) do ticket
+                    articles_url = f"{BASE_URL}/api/v1/ticket_articles/by_ticket/{ticket_id}"
+                    articles_response = requests.get(articles_url, headers=HEADERS, verify=VERIFY_SSL)
+                    
+                    if articles_response.status_code == 200:
+                        articles = articles_response.json()
+                        # Contar apenas artigos públicos (interações com o cliente)
+                        public_articles = [a for a in articles if a.get("internal", False) == False]
+                        interactions_count = len(public_articles)
+                        
+                        # Garantir pelo menos 1 interação (o ticket foi criado)
+                        if interactions_count == 0:
+                            interactions_count = 1
+                            
+                        agent_responses[agent_name] += interactions_count
+                        agent_interactions_per_ticket[agent_name]["total_interactions"] += interactions_count
+                        agent_interactions_per_ticket[agent_name]["tickets_closed"] += 1
+                        
+                        log(f"Ticket {ticket_id}: {interactions_count} interações")
+                    else:
+                        log(f"Erro ao buscar artigos do ticket {ticket_id}: {articles_response.status_code}")
+                        # Fallback para estimativa se não conseguir buscar
+                        priority_id = t.get("priority_id", 3)
+                        estimated_interactions = max(1, 4 - priority_id) if priority_id <= 4 else 1
+                        agent_responses[agent_name] += estimated_interactions
+                        agent_interactions_per_ticket[agent_name]["total_interactions"] += estimated_interactions
+                        agent_interactions_per_ticket[agent_name]["tickets_closed"] += 1
+                        
+                except Exception as e:
+                    log(f"Erro ao processar ticket {ticket_id}: {e}")
+                    # Fallback para estimativa
+                    priority_id = t.get("priority_id", 3)
+                    estimated_interactions = max(1, 4 - priority_id) if priority_id <= 4 else 1
+                    agent_responses[agent_name] += estimated_interactions
+                    agent_interactions_per_ticket[agent_name]["total_interactions"] += estimated_interactions
+                    agent_interactions_per_ticket[agent_name]["tickets_closed"] += 1
     
     # Calcular média de interações por ticket para cada agente
     agent_efficiency = {}

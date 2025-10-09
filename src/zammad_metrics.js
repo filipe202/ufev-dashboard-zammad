@@ -9898,54 +9898,54 @@ export const ZAMMAD_METRICS = {
     }
   },
   "agent_responses": {
-    "Não Atribuído": 103,
-    "Sandra Reis": 101,
-    "Inês Martinho": 89,
-    "Paula Candeias": 59,
-    "Catarina França": 23,
-    "Magali Morim": 15,
-    "Rafaela Lapa": 12,
-    "Cátia Leal": 6
+    "Não Atribuído": 81,
+    "Sandra Reis": 62,
+    "Inês Martinho": 56,
+    "Paula Candeias": 42,
+    "Catarina França": 15,
+    "Magali Morim": 11,
+    "Rafaela Lapa": 8,
+    "Cátia Leal": 4
   },
   "agent_efficiency": {
     "Não Atribuído": {
-      "avg_interactions_per_ticket": 1.66,
-      "total_interactions": 103,
+      "avg_interactions_per_ticket": 1.31,
+      "total_interactions": 81,
       "tickets_closed": 62
     },
     "Sandra Reis": {
-      "avg_interactions_per_ticket": 2.35,
-      "total_interactions": 101,
+      "avg_interactions_per_ticket": 1.44,
+      "total_interactions": 62,
       "tickets_closed": 43
     },
     "Inês Martinho": {
-      "avg_interactions_per_ticket": 2.7,
-      "total_interactions": 89,
+      "avg_interactions_per_ticket": 1.7,
+      "total_interactions": 56,
       "tickets_closed": 33
     },
     "Catarina França": {
-      "avg_interactions_per_ticket": 2.88,
-      "total_interactions": 23,
+      "avg_interactions_per_ticket": 1.88,
+      "total_interactions": 15,
       "tickets_closed": 8
     },
     "Rafaela Lapa": {
-      "avg_interactions_per_ticket": 3.0,
-      "total_interactions": 12,
+      "avg_interactions_per_ticket": 2.0,
+      "total_interactions": 8,
       "tickets_closed": 4
     },
     "Cátia Leal": {
-      "avg_interactions_per_ticket": 3.0,
-      "total_interactions": 6,
+      "avg_interactions_per_ticket": 2.0,
+      "total_interactions": 4,
       "tickets_closed": 2
     },
     "Paula Candeias": {
-      "avg_interactions_per_ticket": 3.47,
-      "total_interactions": 59,
+      "avg_interactions_per_ticket": 2.47,
+      "total_interactions": 42,
       "tickets_closed": 17
     },
     "Magali Morim": {
-      "avg_interactions_per_ticket": 3.75,
-      "total_interactions": 15,
+      "avg_interactions_per_ticket": 2.75,
+      "total_interactions": 11,
       "tickets_closed": 4
     }
   }
