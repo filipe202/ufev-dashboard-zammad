@@ -17,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      pages: write
+      id-token: write
+      deployments: write
 
     steps:
       - name: Checkout
@@ -55,7 +58,5 @@ jobs:
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: "ufev-dashboard-zammad" # Nome simples sem duplicação
+          projectName: "ufev-dashboard-zammad"
           directory: ./build
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          branch: master

@@ -2,7 +2,7 @@
   "name": "ufev-dashboard",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://filipe202.github.io",
+  "homepage": "https://ufev-dashboard-zammad.pages.dev",
   "dependencies": {
     "@testing-library/dom": "^10.4.1",
     "@testing-library/jest-dom": "^6.9.1",
