@@ -478,48 +478,130 @@ def main():
     log("Buscando trocas de estado dos tickets...")
     
     all_tickets_for_history = tickets_closed + tickets_open
+    total_state_changes_found = 0
+    tickets_with_changes = 0
+    
+    # Debug: testar diferentes endpoints de histórico
+    if all_tickets_for_history:
+        first_ticket = all_tickets_for_history[0]
+        test_id = first_ticket.get("id")
+        log(f"DEBUG: Testando histórico do ticket {test_id}")
+        
+        # Tentar endpoint 1: /tickets/{id}/history
+        try:
+            test_url = f"{BASE_URL}/api/v1/tickets/{test_id}/history"
+            test_response = S.get(test_url, timeout=30)
+            log(f"DEBUG: Endpoint 1 (/tickets/{test_id}/history): {test_response.status_code}")
+        except Exception as e:
+            log(f"DEBUG: Erro endpoint 1: {e}")
+        
+        # Tentar endpoint 2: /ticket_history/by_ticket/{id}
+        try:
+            test_url2 = f"{BASE_URL}/api/v1/ticket_history/by_ticket/{test_id}"
+            test_response2 = S.get(test_url2, timeout=30)
+            log(f"DEBUG: Endpoint 2 (/ticket_history/by_ticket/{test_id}): {test_response2.status_code}")
+            if test_response2.status_code == 200:
+                test_history = test_response2.json()
+                log(f"DEBUG: Histórico tem {len(test_history)} entradas")
+                if test_history:
+                    log(f"DEBUG: Primeira entrada: {test_history[0]}")
+                    # Verificar atributos disponíveis
+                    attributes = set()
+                    for h in test_history:
+                        if h.get("attribute"):
+                            attributes.add(h.get("attribute"))
+                    log(f"DEBUG: Atributos encontrados no histórico: {attributes}")
+        except Exception as e:
+            log(f"DEBUG: Erro endpoint 2: {e}")
+        
+        # Tentar endpoint 3: buscar o ticket completo com expand
+        try:
+            test_url3 = f"{BASE_URL}/api/v1/tickets/{test_id}?expand=true"
+            test_response3 = S.get(test_url3, timeout=30)
+            log(f"DEBUG: Endpoint 3 (/tickets/{test_id}?expand=true): {test_response3.status_code}")
+            if test_response3.status_code == 200:
+                ticket_data = test_response3.json()
+                log(f"DEBUG: Campos disponíveis no ticket: {list(ticket_data.keys())}")
+        except Exception as e:
+            log(f"DEBUG: Erro endpoint 3: {e}")
+    
+    # SOLUÇÃO ALTERNATIVA: Usar artigos do ticket para estimar trocas de estado
+    # Como a API de histórico não está disponível, vamos contar artigos internos
+    # que geralmente indicam mudanças de estado
+    log("AVISO: API de histórico não disponível. Usando método alternativo baseado em artigos.")
+    
     for t in all_tickets_for_history:
         ticket_id = t.get("id")
+        owner_id = t.get("owner_id")
         if not ticket_id:
             continue
         
         try:
-            # Buscar histórico do ticket para contar trocas de estado
-            history_url = f"{BASE_URL}/api/v1/tickets/{ticket_id}/history"
-            history_response = S.get(history_url, timeout=30)
+            # Buscar artigos do ticket
+            articles_url = f"{BASE_URL}/api/v1/ticket_articles/by_ticket/{ticket_id}"
+            articles_response = S.get(articles_url, timeout=30)
             
-            if history_response.status_code == 200:
-                history = history_response.json()
+            if articles_response.status_code == 200:
+                articles = articles_response.json()
                 
-                # Contar trocas de estado (mudanças no campo state_id)
-                state_changes = [h for h in history if h.get("attribute") == "state_id"]
+                # Filtrar artigos internos (geralmente indicam mudanças de estado/gestão)
+                internal_articles = [a for a in articles if a.get("internal", False) == True]
                 
-                if state_changes:
+                if internal_articles:
+                    tickets_with_changes += 1
                     priority_id = t.get("priority_id")
                     priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
                     
-                    for change in state_changes:
-                        created_by_id = change.get("created_by_id")
-                        if created_by_id and created_by_id in AGENT_IDS:
-                            agent_name = AGENT_NAME_OVERRIDES.get(created_by_id, f"Agente_{created_by_id}")
+                    # Contar cada artigo interno como uma possível troca de estado
+                    for article in internal_articles:
+                        created_by_id = article.get("created_by_id")
+                        if created_by_id:
+                            # Obter nome do agente
+                            agent_name = AGENT_NAME_OVERRIDES.get(created_by_id) or user_by_id.get(created_by_id, f"Agente_{created_by_id}")
                             
-                            # Obter data da troca
-                            created_at = change.get("created_at")
+                            # Obter data do artigo
+                            created_at = article.get("created_at")
                             if created_at:
                                 try:
                                     dt = iso_date(created_at)
                                     day = dt.date().isoformat()
                                     
                                     if day >= FROM_DATE:
-                                        # Registrar troca de estado
+                                        # Registrar como troca de estado
                                         update_bucket(agent_state_changes[agent_name]["overall"], day, None)
                                         update_bucket(agent_state_changes[agent_name]["priorities"][priority_name], day, None)
-                                except Exception:
-                                    pass
+                                        total_state_changes_found += 1
+                                except Exception as e:
+                                    log(f"DEBUG: Erro ao processar data: {e}")
                     
-                    log(f"Ticket {ticket_id}: {len(state_changes)} trocas de estado")
+                    if len(internal_articles) > 0:
+                        log(f"Ticket {ticket_id}: {len(internal_articles)} artigos internos (trocas estimadas)")
+                        
+                # Se não houver artigos internos mas houver owner, contar pelo menos 1 troca
+                elif owner_id:
+                    agent_name = AGENT_NAME_OVERRIDES.get(owner_id) or user_by_id.get(owner_id, f"Agente_{owner_id}")
+                    priority_id = t.get("priority_id")
+                    priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
+                    
+                    created_at = t.get("created_at")
+                    if created_at:
+                        try:
+                            dt = iso_date(created_at)
+                            day = dt.date().isoformat()
+                            
+                            if day >= FROM_DATE:
+                                update_bucket(agent_state_changes[agent_name]["overall"], day, None)
+                                update_bucket(agent_state_changes[agent_name]["priorities"][priority_name], day, None)
+                                total_state_changes_found += 1
+                                tickets_with_changes += 1
+                        except Exception:
+                            pass
+                            
         except Exception as e:
-            log(f"Erro ao buscar histórico do ticket {ticket_id}: {e}")
+            log(f"Erro ao buscar artigos do ticket {ticket_id}: {e}")
+    
+    log(f"RESUMO: {tickets_with_changes} tickets com trocas, {total_state_changes_found} trocas registradas")
+    log(f"DEBUG: agent_state_changes = {dict(agent_state_changes)}")
     
     # Buscar interações reais dos tickets
     log("Buscando interações reais dos tickets...")
