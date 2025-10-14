@@ -1029,8 +1029,139 @@ export default function App() {
           </div>
         </div>
 
-        {/* Gráfico principal */}
-        {renderStackedBarChart(sortedAgents, aggregated, "Trocas de Estado por Agente e Dia", "#8b5cf6")}
+        {/* Gráfico principal - Trocas por dia */}
+        <div style={{border:"1px solid #eee", borderRadius:10, padding:12, marginBottom:12}}>
+          <div style={{display:"flex", alignItems:"center", gap:8, margin:"4px 0 8px 4px"}}>
+            <div style={{width:8, height:24, background:"#8b5cf6", borderRadius:4}}/>
+            <h2 style={{margin:0, fontSize:16, color:"#7c3aed"}}>Trocas de Estado por Dia</h2>
+          </div>
+          <div style={{width:"100%", height:420, overflowX: "auto", overflowY: "hidden", paddingBottom: 20}}>
+            {(() => {
+              // Preparar séries de dados (dias)
+              const allDays = new Set();
+              sortedAgents.forEach(agent => {
+                Object.keys(aggregated[agent].overall.tickets_per_day || {}).forEach(day => allDays.add(day));
+              });
+              const sortedDays = Array.from(allDays).sort();
+              
+              const series = sortedDays.map(day => {
+                const dayData = { day };
+                sortedAgents.forEach(agent => {
+                  dayData[agent] = aggregated[agent].overall.tickets_per_day[day] || 0;
+                });
+                return dayData;
+              });
+              
+              const rows = sortedAgents.map(agent => ({ label: agent }));
+              
+              return (
+                <div style={{
+                  display: "flex", 
+                  alignItems: "end", 
+                  height: "calc(100% - 40px)", 
+                  gap: isMobile ? 2 : 4, 
+                  minWidth: isMobile ? "100%" : series.length * 60,
+                  width: "100%"
+                }}>
+                  {series.map((dayData, index) => {
+                    const totalTickets = Object.values(dayData).reduce((sum, val) => 
+                      typeof val === 'number' ? sum + val : sum, 0
+                    );
+                    const maxTotal = Math.max(...series.map(d => 
+                      Object.values(d).reduce((sum, val) => typeof val === 'number' ? sum + val : sum, 0)
+                    ));
+                    const heightPercentage = maxTotal > 0 ? (totalTickets / maxTotal) * 100 : 0;
+                    
+                    return (
+                      <div key={dayData.day} style={{
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        height: "100%",
+                        flex: 1,
+                        minWidth: isMobile ? 30 : 50,
+                        maxWidth: isMobile ? 60 : 80
+                      }}>
+                        <div style={{
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "end",
+                          height: "90%",
+                          width: "100%",
+                          maxWidth: isMobile ? 35 : 40,
+                          backgroundColor: "#f1f5f9",
+                          borderRadius: "4px 4px 0 0",
+                          position: "relative",
+                          overflow: "hidden"
+                        }}>
+                          {rows.map((row, rowIndex) => {
+                            const value = dayData[row.label] || 0;
+                            const segmentHeight = totalTickets > 0 ? (value / totalTickets) * heightPercentage : 0;
+                            return value > 0 ? (
+                              <div
+                                key={row.label}
+                                style={{
+                                  height: `${segmentHeight}%`,
+                                  backgroundColor: COLORS[rowIndex % COLORS.length],
+                                  display: "flex",
+                                  alignItems: "center",
+                                  justifyContent: "center",
+                                  fontSize: 10,
+                                  fontWeight: 600,
+                                  color: "white",
+                                  textShadow: "0 1px 2px rgba(0,0,0,0.3)"
+                                }}
+                                title={`${row.label}: ${value}`}
+                              >
+                                {value > 0 ? value : ""}
+                              </div>
+                            ) : null;
+                          })}
+                        </div>
+                        <div style={{
+                          fontSize: isMobile ? 8 : 10,
+                          fontWeight: 500,
+                          color: "#6b7280",
+                          marginTop: 8,
+                          transform: "rotate(-45deg)",
+                          transformOrigin: "center",
+                          whiteSpace: "nowrap",
+                          height: 20,
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center"
+                        }}>
+                          {dayData.day}
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              );
+            })()}
+          </div>
+        </div>
+        
+        {/* Legenda de cores */}
+        <div style={{padding: "16px 20px", backgroundColor: "#f8f9fa", borderTop: "1px solid #e2e8f0", borderRadius: 8}}>
+          <h4 style={{margin: "0 0 12px 0", fontSize: 14, fontWeight: 600, color: "#374151"}}>
+            🎨 Legenda de Cores:
+          </h4>
+          <div style={{display: "flex", flexWrap: "wrap", gap: 16}}>
+            {sortedAgents.map((agent, index) => (
+              <div key={agent} style={{display: "flex", alignItems: "center", gap: 6}}>
+                <div style={{
+                  width: 16,
+                  height: 16,
+                  backgroundColor: COLORS[index % COLORS.length],
+                  borderRadius: 3,
+                  border: "1px solid rgba(0,0,0,0.1)"
+                }}/>
+                <span style={{fontSize: 13, color: "#4b5563"}}>{agent}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     );
   }
