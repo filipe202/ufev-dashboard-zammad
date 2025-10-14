@@ -316,7 +316,7 @@ export default function App() {
   const getViewModeFromURL = () => {
     const hash = window.location.hash.slice(1); // Remove o #
     const baseHash = hash.split('?')[0];
-    const validModes = ["agents", "states", "responses", "efficiency", "workload"];
+    const validModes = ["agents", "states", "responses", "efficiency", "workload", "state_changes"];
     return validModes.includes(baseHash) ? baseHash : "agents";
   };
 
@@ -575,6 +575,7 @@ export default function App() {
             { value: "states", label: "Por estados" },
             { value: "responses", label: "Respostas por Agente" },
             { value: "efficiency", label: "Eficiência por Agente" },
+            { value: "state_changes", label: "Trocas de Estado" },
             { value: "workload", label: "Análise Temporal" },
           ].map(option => (
             <button
@@ -735,6 +736,7 @@ export default function App() {
             { value: "states", label: "Por estados" },
             { value: "responses", label: "Respostas por Agente" },
             { value: "efficiency", label: "Eficiência por Agente" },
+            { value: "state_changes", label: "Trocas de Estado" },
             { value: "workload", label: "Análise Temporal" },
           ].map(option => (
             <button
@@ -875,6 +877,273 @@ export default function App() {
     );
   }
 
+  // Renderizar trocas de estado por agente
+  if (viewMode === "state_changes" && data?.agent_state_changes) {
+    // Filtrar por prioridade
+    const useAllPriorities = !selectedPriorities?.length || selectedPriorities.includes("ALL");
+    
+    const stateChangesData = Object.entries(data.agent_state_changes).map(([agent, agentData]) => {
+      let count = 0;
+      let perDay = {};
+      
+      if (useAllPriorities) {
+        count = agentData.overall?.tickets_count || 0;
+        perDay = agentData.overall?.tickets_per_day || {};
+      } else {
+        // Somar apenas as prioridades selecionadas
+        selectedPriorities.forEach(priority => {
+          const priorityData = agentData.priorities?.[priority];
+          if (priorityData) {
+            count += priorityData.tickets_count || 0;
+            Object.entries(priorityData.tickets_per_day || {}).forEach(([day, dayCount]) => {
+              perDay[day] = (perDay[day] || 0) + dayCount;
+            });
+          }
+        });
+      }
+      
+      return {
+        name: agent,
+        trocas: count,
+        perDay: perDay
+      };
+    }).sort((a, b) => b.trocas - a.trocas);
+
+    const totalChanges = stateChangesData.reduce((sum, agent) => sum + agent.trocas, 0);
+
+    return (
+      <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
+        <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
+          <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
+          <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
+            Trocas de Estado por Agente
+          </h1>
+          <button 
+            onClick={() => {
+              setIsAuthenticated(false);
+              sessionStorage.removeItem('ufev_dashboard_auth');
+            }}
+            style={{
+              padding: "8px 16px",
+              backgroundColor: "#dc3545",
+              color: "white",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+              fontSize: "14px"
+            }}
+          >
+            Logout
+          </button>
+        </div>
+        
+        <div style={{display:"flex", gap:8, marginBottom:16, flexWrap:"wrap"}}>
+          {[
+            { value: "agents", label: "Por agentes" },
+            { value: "states", label: "Por estados" },
+            { value: "responses", label: "Respostas por Agente" },
+            { value: "efficiency", label: "Eficiência por Agente" },
+            { value: "state_changes", label: "Trocas de Estado" },
+            { value: "workload", label: "Análise Temporal" },
+          ].map(option => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => updateViewMode(option.value)}
+              style={{
+                padding:"8px 16px",
+                borderRadius:999,
+                border:"1px solid",
+                borderColor: viewMode === option.value ? "#005A8D" : "#e2e8f0",
+                backgroundColor: viewMode === option.value ? "#005A8D" : "white",
+                color: viewMode === option.value ? "white" : "#64748b",
+                cursor:"pointer"
+              }}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Filtro de prioridade */}
+        <div style={{marginBottom: 16}}>
+          <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Filtrar por Prioridade</label>
+          <MultiSelect
+            options={priorities}
+            selected={selectedPriorities}
+            onChange={setSelectedPriorities}
+            placeholder="Selecione prioridades"
+          />
+        </div>
+
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
+            Número de Trocas de Estado por Agente ({totalChanges} trocas analisadas)
+          </h3>
+          <div style={{height: 400, overflowY: "auto"}}>
+            {stateChangesData.map((agent, index) => {
+              const maxValue = Math.max(...stateChangesData.map(a => a.trocas));
+              const percentage = maxValue > 0 ? (agent.trocas / maxValue) * 100 : 0;
+              return (
+                <div key={agent.name} style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: 12,
+                  gap: 12
+                }}>
+                  <div style={{
+                    minWidth: 120,
+                    textAlign: "right",
+                    fontSize: 14,
+                    fontWeight: 500
+                  }}>
+                    {agent.name}
+                  </div>
+                  <div style={{
+                    flex: 1,
+                    height: 24,
+                    backgroundColor: "#f1f5f9",
+                    borderRadius: 12,
+                    position: "relative",
+                    overflow: "hidden"
+                  }}>
+                    <div style={{
+                      width: `${percentage}%`,
+                      height: "100%",
+                      backgroundColor: "#8b5cf6",
+                      borderRadius: 12,
+                      transition: "width 0.5s ease"
+                    }} />
+                    <span style={{
+                      position: "absolute",
+                      right: 8,
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      fontSize: 12,
+                      fontWeight: 600,
+                      color: percentage > 50 ? "white" : "#374151"
+                    }}>
+                      {agent.trocas}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Ranking de Trocas de Estado</h3>
+          <div style={{display: "grid", gap: 8}}>
+            {stateChangesData.map((agent, index) => (
+              <div key={agent.name} style={{
+                display: "flex", 
+                justifyContent: "space-between", 
+                alignItems: "center",
+                padding: "12px 16px",
+                backgroundColor: index < 3 ? "#f8f9fa" : "transparent",
+                borderRadius: 6,
+                border: index < 3 ? "1px solid #e9ecef" : "none"
+              }}>
+                <div style={{display: "flex", alignItems: "center", gap: 8}}>
+                  <span style={{
+                    fontSize: 18,
+                    fontWeight: 600,
+                    color: index === 0 ? "#8b5cf6" : index === 1 ? "#a78bfa" : index === 2 ? "#c4b5fd" : "#6b7280",
+                    minWidth: 24
+                  }}>
+                    {index + 1}º
+                  </span>
+                  <span style={{fontWeight: 500}}>{agent.name}</span>
+                </div>
+                <span style={{
+                  fontSize: 16,
+                  fontWeight: 600,
+                  color: "#8b5cf6",
+                  backgroundColor: "#f3e8ff",
+                  padding: "4px 12px",
+                  borderRadius: 12
+                }}>
+                  {agent.trocas} trocas
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Gráfico de trocas por dia */}
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>Trocas de Estado por Dia</h3>
+          <div style={{overflowX: "auto"}}>
+            <div style={{minWidth: 600}}>
+              {Object.keys(stateChangesData[0]?.perDay || {}).sort().map(day => {
+                const dayTotal = stateChangesData.reduce((sum, agent) => sum + (agent.perDay[day] || 0), 0);
+                const maxDayTotal = Math.max(...Object.keys(stateChangesData[0]?.perDay || {}).map(d => 
+                  stateChangesData.reduce((sum, agent) => sum + (agent.perDay[d] || 0), 0)
+                ));
+                const percentage = maxDayTotal > 0 ? (dayTotal / maxDayTotal) * 100 : 0;
+                
+                return (
+                  <div key={day} style={{
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: 8,
+                    gap: 12
+                  }}>
+                    <div style={{
+                      minWidth: 80,
+                      fontSize: 12,
+                      fontWeight: 500
+                    }}>
+                      {day}
+                    </div>
+                    <div style={{
+                      flex: 1,
+                      height: 20,
+                      backgroundColor: "#f1f5f9",
+                      borderRadius: 10,
+                      position: "relative",
+                      overflow: "hidden"
+                    }}>
+                      <div style={{
+                        width: `${percentage}%`,
+                        height: "100%",
+                        backgroundColor: "#8b5cf6",
+                        borderRadius: 10,
+                        transition: "width 0.5s ease"
+                      }} />
+                      <span style={{
+                        position: "absolute",
+                        right: 4,
+                        top: "50%",
+                        transform: "translateY(-50%)",
+                        fontSize: 10,
+                        fontWeight: 600,
+                        color: percentage > 40 ? "white" : "#374151"
+                      }}>
+                        {dayTotal}
+                      </span>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+
+        <div style={{marginTop: 20, padding: 16, backgroundColor: "#f3e8ff", borderRadius: 8}}>
+          <h4 style={{margin: "0 0 8px 0", color: "#7c3aed"}}>💡 Como interpretar esta métrica:</h4>
+          <ul style={{margin: 0, paddingLeft: 20, color: "#8b5cf6"}}>
+            <li><strong>Trocas de estado</strong> = número de vezes que cada agente mudou o estado de um ticket</li>
+            <li><strong>Mais trocas</strong> = agente mais ativo na gestão de estados dos tickets</li>
+            <li><strong>Filtro por prioridade</strong> = permite ver trocas apenas em tickets de prioridades específicas</li>
+            <li><strong>Dados reais</strong>: baseado no histórico de mudanças de estado de cada ticket</li>
+          </ul>
+        </div>
+      </div>
+    );
+  }
+
   // Renderizar análise temporal
   if (viewMode === "workload" && data?.workload_analysis) {
     const workload = data.workload_analysis[workloadMode]; // "created" ou "closed"
@@ -956,6 +1225,7 @@ export default function App() {
             { value: "states", label: "Por estados" },
             { value: "responses", label: "Respostas por Agente" },
             { value: "efficiency", label: "Eficiência por Agente" },
+            { value: "state_changes", label: "Trocas de Estado" },
             { value: "workload", label: "Análise Temporal" },
           ].map(option => (
             <button
@@ -1276,18 +1546,19 @@ export default function App() {
     Logout
   </button>
 </div>
-      <div style={{display:"flex", gap:8, marginBottom:16}}>
+      <div style={{display:"flex", gap:8, marginBottom:16, flexWrap:"wrap"}}>
         {[
           { value: "agents", label: "Por agentes" },
           { value: "states", label: "Por estados" },
           { value: "responses", label: "Respostas por Agente" },
           { value: "efficiency", label: "Eficiência por Agente" },
+          { value: "state_changes", label: "Trocas de Estado" },
           { value: "workload", label: "Análise Temporal" },
         ].map(option => (
           <button
             key={option.value}
             type="button"
-            onClick={() => setViewMode(option.value)}
+            onClick={() => updateViewMode(option.value)}
             style={{
               padding:"8px 16px",
               borderRadius:999,

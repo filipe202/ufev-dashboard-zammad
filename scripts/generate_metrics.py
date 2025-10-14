@@ -325,6 +325,12 @@ def main():
     # Métricas de eficiência: interações por ticket fechado
     agent_interactions_per_ticket = defaultdict(lambda: {"total_interactions": 0, "tickets_closed": 0})
     
+    # Trocas de estado por agente
+    agent_state_changes = defaultdict(lambda: {
+        "overall": make_bucket(),
+        "priorities": defaultdict(make_bucket)
+    })
+    
     # Análise temporal - carga de trabalho (criação)
     created_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
     created_by_hour = defaultdict(int)     # 0-23h
@@ -468,6 +474,53 @@ def main():
         except Exception:
             continue
 
+    # Buscar trocas de estado dos tickets
+    log("Buscando trocas de estado dos tickets...")
+    
+    all_tickets_for_history = tickets_closed + tickets_open
+    for t in all_tickets_for_history:
+        ticket_id = t.get("id")
+        if not ticket_id:
+            continue
+        
+        try:
+            # Buscar histórico do ticket para contar trocas de estado
+            history_url = f"{BASE_URL}/api/v1/tickets/{ticket_id}/history"
+            history_response = S.get(history_url, timeout=30)
+            
+            if history_response.status_code == 200:
+                history = history_response.json()
+                
+                # Contar trocas de estado (mudanças no campo state_id)
+                state_changes = [h for h in history if h.get("attribute") == "state_id"]
+                
+                if state_changes:
+                    priority_id = t.get("priority_id")
+                    priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
+                    
+                    for change in state_changes:
+                        created_by_id = change.get("created_by_id")
+                        if created_by_id and created_by_id in AGENT_IDS:
+                            agent_name = AGENT_NAME_OVERRIDES.get(created_by_id, f"Agente_{created_by_id}")
+                            
+                            # Obter data da troca
+                            created_at = change.get("created_at")
+                            if created_at:
+                                try:
+                                    dt = iso_date(created_at)
+                                    day = dt.date().isoformat()
+                                    
+                                    if day >= FROM_DATE:
+                                        # Registrar troca de estado
+                                        update_bucket(agent_state_changes[agent_name]["overall"], day, None)
+                                        update_bucket(agent_state_changes[agent_name]["priorities"][priority_name], day, None)
+                                except Exception:
+                                    pass
+                    
+                    log(f"Ticket {ticket_id}: {len(state_changes)} trocas de estado")
+        except Exception as e:
+            log(f"Erro ao buscar histórico do ticket {ticket_id}: {e}")
+    
     # Buscar interações reais dos tickets
     log("Buscando interações reais dos tickets...")
     
@@ -481,7 +534,7 @@ def main():
                 try:
                     # Buscar artigos (interações) do ticket
                     articles_url = f"{BASE_URL}/api/v1/ticket_articles/by_ticket/{ticket_id}"
-                    articles_response = requests.get(articles_url, headers=HEADERS, verify=VERIFY_SSL)
+                    articles_response = S.get(articles_url, timeout=30)
                     
                     if articles_response.status_code == 200:
                         articles = articles_response.json()
@@ -640,7 +693,14 @@ def main():
             }
         },
         "agent_responses": dict(sorted(agent_responses.items(), key=lambda x: x[1], reverse=True)),
-        "agent_efficiency": agent_efficiency
+        "agent_efficiency": agent_efficiency,
+        "agent_state_changes": {
+            agent: {
+                "overall": format_bucket(data["overall"]),
+                "priorities": sort_bucket_map(data["priorities"])
+            }
+            for agent, data in agent_state_changes.items()
+        }
     }
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
