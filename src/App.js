@@ -1823,10 +1823,66 @@ export default function App() {
   if (viewMode === "sla_compliance" && data?.sla_analysis) {
     const slaAnalysis = data.sla_analysis;
     const agentCompliance = slaAnalysis.agent_sla_compliance || {};
-    const summary = slaAnalysis.summary || {};
+    
+    // Extrair lista de agentes para o filtro
+    const agents = ["ALL", ...Object.keys(agentCompliance).sort()];
+    
+    // Aplicar filtros de data, prioridade e agente aos tickets de SLA
+    const dateCutoff = getDateCutoff(selectedDateFilter);
+    const filteredAgentCompliance = {};
+    
+    Object.entries(agentCompliance).forEach(([agent, agentData]) => {
+      // Filtrar por agente selecionado
+      if (selectedAgents.length > 0 && !selectedAgents.includes("ALL") && !selectedAgents.includes(agent)) {
+        return;
+      }
+      
+      let filteredTickets = agentData.tickets;
+      
+      // Filtrar por data
+      if (selectedDateFilter !== "all") {
+        filteredTickets = filteredTickets.filter(ticket => {
+          return ticket.close_date >= dateCutoff;
+        });
+      }
+      
+      // Filtrar por prioridade
+      if (selectedPriorities.length > 0 && !selectedPriorities.includes("ALL")) {
+        filteredTickets = filteredTickets.filter(ticket => {
+          return selectedPriorities.includes(ticket.priority);
+        });
+      }
+      
+      const slaMet = filteredTickets.filter(t => t.sla_met).length;
+      const slaMissed = filteredTickets.filter(t => !t.sla_met).length;
+      const totalTickets = filteredTickets.length;
+      
+      if (totalTickets > 0) {
+        filteredAgentCompliance[agent] = {
+          total_tickets: totalTickets,
+          sla_met: slaMet,
+          sla_missed: slaMissed,
+          sla_compliance_rate: totalTickets > 0 ? parseFloat(((slaMet / totalTickets) * 100).toFixed(2)) : 0,
+          tickets: filteredTickets
+        };
+      }
+    });
+    
+    // Calcular resumo filtrado
+    const totalTicketsAnalyzed = Object.values(filteredAgentCompliance).reduce((sum, a) => sum + a.total_tickets, 0);
+    const totalSlaMet = Object.values(filteredAgentCompliance).reduce((sum, a) => sum + a.sla_met, 0);
+    const totalSlaMissed = Object.values(filteredAgentCompliance).reduce((sum, a) => sum + a.sla_missed, 0);
+    const overallComplianceRate = totalTicketsAnalyzed > 0 ? parseFloat(((totalSlaMet / totalTicketsAnalyzed) * 100).toFixed(2)) : 0;
+    
+    const summary = {
+      total_tickets_analyzed: totalTicketsAnalyzed,
+      total_sla_met: totalSlaMet,
+      total_sla_missed: totalSlaMissed,
+      overall_compliance_rate: overallComplianceRate
+    };
     
     // Preparar dados para visualização
-    const complianceData = Object.entries(agentCompliance).map(([agent, data]) => ({
+    const complianceData = Object.entries(filteredAgentCompliance).map(([agent, data]) => ({
       name: agent,
       totalTickets: data.total_tickets,
       slaMet: data.sla_met,
@@ -1834,6 +1890,13 @@ export default function App() {
       complianceRate: data.sla_compliance_rate,
       tickets: data.tickets || []
     })).sort((a, b) => b.complianceRate - a.complianceRate);
+    
+    // Calcular limite dinâmico: 10% do total de tickets, com mínimo de 5 e máximo de 50
+    const dynamicMinTickets = Math.max(5, Math.min(50, Math.ceil(totalTicketsAnalyzed * 0.1)));
+    
+    // Filtrar agentes elegíveis para top compliance
+    const eligibleAgents = complianceData.filter(agent => agent.totalTickets >= dynamicMinTickets);
+    const topComplianceAgent = eligibleAgents.length > 0 ? eligibleAgents[0] : null;
 
     return (
       <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
@@ -1890,28 +1953,42 @@ export default function App() {
           ))}
         </div>
 
-        {/* Filtro de período */}
+        {/* Filtros */}
         <div style={{marginBottom: 16}}>
-          <div style={{display: "flex", gap: 12, alignItems: "end"}}>
-            <div style={{minWidth: 200}}>
-              <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Filtrar por Período</label>
+          <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 12}}>
+            <div>
+              <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Período</label>
               <DateFilter
                 selected={selectedDateFilter}
                 onChange={setSelectedDateFilter}
               />
             </div>
-            <div style={{fontSize: 12, color: "#6b7280", padding: "8px 0"}}>
-              {selectedDateFilter !== "all" && (
-                <span>
-                  📅 Mostrando dados desde {getDateCutoff(selectedDateFilter)}
-                </span>
-              )}
+            <div>
+              <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Prioridade</label>
+              <MultiSelect
+                options={priorities}
+                selected={selectedPriorities}
+                onChange={setSelectedPriorities}
+              />
+            </div>
+            <div>
+              <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Agente</label>
+              <MultiSelect
+                options={agents}
+                selected={selectedAgents}
+                onChange={setSelectedAgents}
+              />
             </div>
           </div>
+          {selectedDateFilter !== "all" && (
+            <div style={{fontSize: 12, color: "#6b7280", marginTop: 8}}>
+              📅 Mostrando dados desde {getDateCutoff(selectedDateFilter)}
+            </div>
+          )}
         </div>
 
         {/* KPIs de SLA */}
-        <div style={{display:"grid", gridTemplateColumns: isMobile ? "repeat(2, minmax(0,1fr))" : "repeat(4, minmax(0,1fr))", gap:12, margin:"12px 0"}}>
+        <div style={{display:"grid", gridTemplateColumns: isMobile ? "repeat(2, minmax(0,1fr))" : "repeat(5, minmax(0,1fr))", gap:12, margin:"12px 0"}}>
           <div style={{borderTop:"4px solid #0096D6", border:"1px solid #eee", borderRadius:10, padding:16}}>
             <div style={{fontSize:12, color:"#666"}}>Tickets Analisados</div>
             <div style={{fontSize:28, fontWeight:600}}>{summary.total_tickets_analyzed || 0}</div>
@@ -1927,6 +2004,17 @@ export default function App() {
           <div style={{borderTop:"4px solid #F59E0B", border:"1px solid #eee", borderRadius:10, padding:16}}>
             <div style={{fontSize:12, color:"#666"}}>Taxa Geral de Cumprimento</div>
             <div style={{fontSize:28, fontWeight:600}}>{summary.overall_compliance_rate || 0}%</div>
+          </div>
+          <div style={{borderTop:"4px solid #8B5CF6", border:"1px solid #eee", borderRadius:10, padding:16}}>
+            <div style={{fontSize:12, color:"#666"}}>Top Compliance (mín. {dynamicMinTickets})</div>
+            {topComplianceAgent ? (
+              <>
+                <div style={{fontSize:18, fontWeight:600}}>{topComplianceAgent.name}</div>
+                <div style={{fontSize:14, color:"#10B981"}}>{topComplianceAgent.complianceRate}%</div>
+              </>
+            ) : (
+              <div style={{fontSize:14, color:"#666"}}>N/A</div>
+            )}
           </div>
         </div>
 

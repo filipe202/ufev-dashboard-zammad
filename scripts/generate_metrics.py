@@ -135,31 +135,48 @@ def get_sla_target(priority_name: str, sla_targets: dict) -> dict:
         "update_time_hours": target_hours / 2,    # 50% do tempo para atualização
     }
 
-def check_sla_compliance(ticket: dict, delta_hours: float, priority_name: str, sla_targets: dict) -> dict:
-    """Verifica se o ticket cumpriu o SLA"""
+def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, close_date: str) -> dict:
+    """Verifica se o ticket cumpriu o SLA usando dados do Zammad"""
     sla_target = get_sla_target(priority_name, sla_targets)
     
-    # Para análise de SLA, vamos usar o tempo de solução
-    solution_time_hours = sla_target.get("solution_time_hours", 48)
+    # Usar dados de SLA do Zammad
+    # first_response_in_min: tempo real até primeira resposta (em minutos)
+    # first_response_diff_in_min: diferença em relação ao SLA (negativo = cumprido, positivo = violado)
+    # first_response_escalation_at: quando o SLA expira
     
-    # Se não temos tempo de solução ou delta_hours, não podemos avaliar SLA
-    if solution_time_hours is None or delta_hours is None:
-        sla_met = False
-        sla_breach_hours = None
+    first_response_in_min = ticket.get("first_response_in_min")
+    first_response_diff_in_min = ticket.get("first_response_diff_in_min")
+    
+    # Se temos os dados do Zammad, usar diretamente
+    if first_response_diff_in_min is not None:
+        # Negativo ou zero = SLA cumprido, positivo = SLA violado
+        sla_met = first_response_diff_in_min <= 0
+        sla_breach_minutes = max(0, first_response_diff_in_min) if first_response_diff_in_min else 0
+        sla_breach_hours = round(sla_breach_minutes / 60, 2) if sla_breach_minutes else 0
     else:
-        sla_met = delta_hours <= solution_time_hours
-        sla_breach_hours = round(delta_hours - solution_time_hours, 2) if not sla_met else 0
+        # Fallback: se não temos dados de SLA do Zammad
+        sla_met = None
+        sla_breach_hours = None
+    
+    # Tempo real de primeira resposta
+    actual_time_hours = round(first_response_in_min / 60, 2) if first_response_in_min else None
+    
+    # Tempo alvo do SLA
+    sla_target_hours = sla_target.get("first_response_time_hours") or sla_target.get("solution_time_hours")
     
     return {
         "ticket_id": ticket.get("id"),
         "ticket_number": ticket.get("number"),
         "title": ticket.get("title", "")[:50] + "..." if len(ticket.get("title", "")) > 50 else ticket.get("title", ""),
         "priority": priority_name,
-        "sla_target_hours": solution_time_hours,
-        "actual_time_hours": round(delta_hours, 2) if delta_hours is not None else None,
+        "sla_target_hours": sla_target_hours,
+        "actual_time_hours": actual_time_hours,
         "sla_met": sla_met,
         "sla_breach_hours": sla_breach_hours,
-        "sla_name": sla_target.get("name", "SLA Padrão")
+        "sla_name": sla_target.get("name", "SLA Padrão"),
+        "close_date": close_date,
+        "first_response_at": ticket.get("first_response_at"),
+        "first_response_escalation_at": ticket.get("first_response_escalation_at")
     }
 
 S = requests.Session()
@@ -512,16 +529,19 @@ def main():
 
         record_entity(per_state[state_label], day, priority_name, state_label, delta)
 
-        # Análise de SLA para tickets fechados
-        if agent and delta is not None:
-            sla_compliance = check_sla_compliance(t, delta, priority_name, sla_targets)
-            agent_sla_compliance[agent]["total_tickets"] += 1
-            agent_sla_compliance[agent]["tickets"].append(sla_compliance)
+        # Análise de SLA para tickets fechados (usar dados de SLA do Zammad)
+        if agent:
+            sla_compliance = check_sla_compliance(t, priority_name, sla_targets, day)
             
-            if sla_compliance["sla_met"]:
-                agent_sla_compliance[agent]["sla_met"] += 1
-            else:
-                agent_sla_compliance[agent]["sla_missed"] += 1
+            # Só contar se temos dados de SLA válidos
+            if sla_compliance["sla_met"] is not None:
+                agent_sla_compliance[agent]["total_tickets"] += 1
+                agent_sla_compliance[agent]["tickets"].append(sla_compliance)
+                
+                if sla_compliance["sla_met"]:
+                    agent_sla_compliance[agent]["sla_met"] += 1
+                else:
+                    agent_sla_compliance[agent]["sla_missed"] += 1
 
         closed_by_day[day] += 1
 

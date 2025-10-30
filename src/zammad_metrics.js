@@ -7,7 +7,7 @@ export const ZAMMAD_METRICS = {
     "Inês Martinho": {
       "overall": {
         "avg_time_hours": 64.38,
-        "tickets_count": 140,
+        "tickets_count": 144,
         "tickets_per_day": {
           "2025-09-30": 10,
           "2025-10-01": 3,
@@ -32,7 +32,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 9,
           "2025-10-28": 20,
           "2025-10-29": 6,
-          "2025-10-30": 2
+          "2025-10-30": 6
         }
       },
       "priorities": {
@@ -52,7 +52,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 50.59,
-          "tickets_count": 72,
+          "tickets_count": 76,
           "tickets_per_day": {
             "2025-09-30": 2,
             "2025-10-01": 3,
@@ -71,7 +71,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 7,
             "2025-10-28": 15,
             "2025-10-29": 6,
-            "2025-10-30": 2
+            "2025-10-30": 6
           }
         },
         "P3": {
@@ -214,17 +214,17 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 1,
+            "tickets_count": 3,
             "tickets_per_day": {
-              "2025-10-30": 1
+              "2025-10-30": 3
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 1,
+              "tickets_count": 3,
               "tickets_per_day": {
-                "2025-10-30": 1
+                "2025-10-30": 3
               }
             }
           }
@@ -265,7 +265,7 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 12,
+            "tickets_count": 14,
             "tickets_per_day": {
               "2025-10-06": 2,
               "2025-10-20": 1,
@@ -273,20 +273,22 @@ export const ZAMMAD_METRICS = {
               "2025-10-24": 2,
               "2025-10-27": 2,
               "2025-10-28": 1,
-              "2025-10-29": 2
+              "2025-10-29": 2,
+              "2025-10-30": 2
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 10,
+              "tickets_count": 12,
               "tickets_per_day": {
                 "2025-10-20": 1,
                 "2025-10-22": 2,
                 "2025-10-24": 2,
                 "2025-10-27": 2,
                 "2025-10-28": 1,
-                "2025-10-29": 2
+                "2025-10-29": 2,
+                "2025-10-30": 2
               }
             },
             "P3": {
@@ -303,7 +305,7 @@ export const ZAMMAD_METRICS = {
     "Não Atribuído": {
       "overall": {
         "avg_time_hours": 28.84,
-        "tickets_count": 345,
+        "tickets_count": 341,
         "tickets_per_day": {
           "2025-09-30": 8,
           "2025-10-01": 2,
@@ -327,8 +329,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-26": 1,
           "2025-10-27": 27,
           "2025-10-28": 9,
-          "2025-10-29": 35,
-          "2025-10-30": 4
+          "2025-10-29": 35
         }
       },
       "priorities": {
@@ -341,7 +342,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 3.67,
-          "tickets_count": 110,
+          "tickets_count": 106,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 1,
@@ -362,8 +363,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-26": 1,
             "2025-10-27": 7,
             "2025-10-28": 7,
-            "2025-10-29": 12,
-            "2025-10-30": 4
+            "2025-10-29": 12
           }
         },
         "P3": {
@@ -514,21 +514,13 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 12,
+            "tickets_count": 8,
             "tickets_per_day": {
               "2025-10-27": 2,
-              "2025-10-29": 6,
-              "2025-10-30": 4
+              "2025-10-29": 6
             }
           },
           "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 4,
-              "tickets_per_day": {
-                "2025-10-30": 4
-              }
-            },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
               "tickets_count": 8,
@@ -622,7 +614,7 @@ export const ZAMMAD_METRICS = {
     },
     "Sandra Reis": {
       "overall": {
-        "avg_time_hours": 66.62,
+        "avg_time_hours": 66.47,
         "tickets_count": 236,
         "tickets_per_day": {
           "2025-09-30": 9,
@@ -646,9 +638,9 @@ export const ZAMMAD_METRICS = {
           "2025-10-24": 9,
           "2025-10-26": 1,
           "2025-10-27": 6,
-          "2025-10-28": 11,
+          "2025-10-28": 10,
           "2025-10-29": 23,
-          "2025-10-30": 4
+          "2025-10-30": 5
         }
       },
       "priorities": {
@@ -693,7 +685,7 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P3": {
-          "avg_time_hours": 62.49,
+          "avg_time_hours": 61.95,
           "tickets_count": 53,
           "tickets_per_day": {
             "2025-09-30": 8,
@@ -710,8 +702,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-23": 1,
             "2025-10-24": 4,
             "2025-10-27": 1,
-            "2025-10-28": 2,
-            "2025-10-30": 3
+            "2025-10-28": 1,
+            "2025-10-30": 4
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -736,8 +728,8 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 66.62,
-            "tickets_count": 194,
+            "avg_time_hours": 66.47,
+            "tickets_count": 195,
             "tickets_per_day": {
               "2025-09-30": 7,
               "2025-10-01": 8,
@@ -760,7 +752,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-27": 6,
               "2025-10-28": 4,
               "2025-10-29": 15,
-              "2025-10-30": 4
+              "2025-10-30": 5
             }
           },
           "priorities": {
@@ -802,8 +794,8 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P3": {
-              "avg_time_hours": 62.49,
-              "tickets_count": 43,
+              "avg_time_hours": 61.95,
+              "tickets_count": 44,
               "tickets_per_day": {
                 "2025-09-30": 6,
                 "2025-10-01": 7,
@@ -820,7 +812,7 @@ export const ZAMMAD_METRICS = {
                 "2025-10-24": 2,
                 "2025-10-27": 1,
                 "2025-10-28": 1,
-                "2025-10-30": 3
+                "2025-10-30": 4
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -846,27 +838,17 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-23": 1,
-              "2025-10-28": 1,
-              "2025-10-29": 1
+              "2025-10-23": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-23": 1,
-                "2025-10-29": 1
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-28": 1
+                "2025-10-23": 1
               }
             }
           }
@@ -995,14 +977,15 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 10,
+            "tickets_count": 11,
             "tickets_per_day": {
               "2025-09-30": 1,
               "2025-10-10": 1,
               "2025-10-14": 1,
               "2025-10-23": 3,
               "2025-10-26": 1,
-              "2025-10-28": 3
+              "2025-10-28": 3,
+              "2025-10-29": 1
             }
           },
           "priorities": {
@@ -1015,13 +998,14 @@ export const ZAMMAD_METRICS = {
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 8,
+              "tickets_count": 9,
               "tickets_per_day": {
                 "2025-10-10": 1,
                 "2025-10-14": 1,
                 "2025-10-23": 2,
                 "2025-10-26": 1,
-                "2025-10-28": 3
+                "2025-10-28": 3,
+                "2025-10-29": 1
               }
             },
             "P3": {
@@ -1817,7 +1801,7 @@ export const ZAMMAD_METRICS = {
     "Cátia Leal": {
       "overall": {
         "avg_time_hours": 64.73,
-        "tickets_count": 72,
+        "tickets_count": 73,
         "tickets_per_day": {
           "2025-10-08": 1,
           "2025-10-09": 2,
@@ -1831,7 +1815,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 18,
           "2025-10-28": 15,
           "2025-10-29": 10,
-          "2025-10-30": 4
+          "2025-10-30": 5
         }
       },
       "priorities": {
@@ -1847,7 +1831,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 58.85,
-          "tickets_count": 61,
+          "tickets_count": 62,
           "tickets_per_day": {
             "2025-10-08": 1,
             "2025-10-09": 2,
@@ -1860,7 +1844,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 16,
             "2025-10-28": 14,
             "2025-10-29": 8,
-            "2025-10-30": 2
+            "2025-10-30": 3
           }
         },
         "P3": {
@@ -1929,14 +1913,14 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 14,
+            "tickets_count": 15,
             "tickets_per_day": {
               "2025-10-10": 1,
               "2025-10-26": 1,
               "2025-10-27": 2,
               "2025-10-28": 1,
               "2025-10-29": 5,
-              "2025-10-30": 4
+              "2025-10-30": 5
             }
           },
           "priorities": {
@@ -1951,12 +1935,12 @@ export const ZAMMAD_METRICS = {
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 9,
+              "tickets_count": 10,
               "tickets_per_day": {
                 "2025-10-26": 1,
                 "2025-10-27": 2,
                 "2025-10-29": 4,
-                "2025-10-30": 2
+                "2025-10-30": 3
               }
             },
             "P3": {
@@ -2222,7 +2206,7 @@ export const ZAMMAD_METRICS = {
     "cliente_22": {
       "overall": {
         "avg_time_hours": 67.22,
-        "tickets_count": 201,
+        "tickets_count": 202,
         "tickets_per_day": {
           "2025-09-30": 3,
           "2025-10-01": 1,
@@ -2246,13 +2230,13 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 23,
           "2025-10-28": 4,
           "2025-10-29": 10,
-          "2025-10-30": 2
+          "2025-10-30": 3
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": 30.65,
-          "tickets_count": 31,
+          "tickets_count": 32,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-03": 1,
@@ -2270,7 +2254,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 2,
             "2025-10-28": 3,
             "2025-10-29": 2,
-            "2025-10-30": 2
+            "2025-10-30": 3
           }
         },
         "P3": {
@@ -2415,20 +2399,12 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-29": 1,
-              "2025-10-30": 2
+              "2025-10-29": 1
             }
           },
           "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-30": 2
-              }
-            },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
               "tickets_count": 1,
@@ -2441,19 +2417,21 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 6,
             "tickets_per_day": {
               "2025-10-10": 1,
               "2025-10-23": 1,
-              "2025-10-27": 1
+              "2025-10-27": 1,
+              "2025-10-30": 3
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 1,
+              "tickets_count": 4,
               "tickets_per_day": {
-                "2025-10-23": 1
+                "2025-10-23": 1,
+                "2025-10-30": 3
               }
             },
             "P3": {
@@ -3487,19 +3465,17 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 4,
+            "tickets_count": 3,
             "tickets_per_day": {
               "2025-10-27": 1,
-              "2025-10-29": 1,
               "2025-10-30": 2
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-29": 1,
                 "2025-10-30": 1
               }
             },
@@ -3585,21 +3561,21 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 4,
             "tickets_per_day": {
               "2025-10-27": 1,
               "2025-10-28": 1,
-              "2025-10-29": 1
+              "2025-10-29": 2
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-27": 1,
                 "2025-10-28": 1,
-                "2025-10-29": 1
+                "2025-10-29": 2
               }
             }
           }
@@ -3684,7 +3660,7 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_50": {
       "overall": {
-        "avg_time_hours": 93.08,
+        "avg_time_hours": 89.2,
         "tickets_count": 22,
         "tickets_per_day": {
           "2025-09-30": 1,
@@ -3697,8 +3673,9 @@ export const ZAMMAD_METRICS = {
           "2025-10-23": 3,
           "2025-10-26": 1,
           "2025-10-27": 1,
-          "2025-10-28": 2,
-          "2025-10-29": 3
+          "2025-10-28": 1,
+          "2025-10-29": 3,
+          "2025-10-30": 1
         }
       },
       "priorities": {
@@ -3719,21 +3696,21 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P3": {
-          "avg_time_hours": 61.29,
+          "avg_time_hours": 55.64,
           "tickets_count": 4,
           "tickets_per_day": {
             "2025-10-01": 1,
             "2025-10-08": 1,
             "2025-10-27": 1,
-            "2025-10-28": 1
+            "2025-10-30": 1
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 93.08,
-            "tickets_count": 13,
+            "avg_time_hours": 89.2,
+            "tickets_count": 14,
             "tickets_per_day": {
               "2025-10-01": 3,
               "2025-10-08": 1,
@@ -3742,7 +3719,8 @@ export const ZAMMAD_METRICS = {
               "2025-10-20": 2,
               "2025-10-23": 3,
               "2025-10-27": 1,
-              "2025-10-29": 1
+              "2025-10-29": 1,
+              "2025-10-30": 1
             }
           },
           "priorities": {
@@ -3759,30 +3737,13 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P3": {
-              "avg_time_hours": 61.29,
-              "tickets_count": 3,
+              "avg_time_hours": 55.64,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-01": 1,
                 "2025-10-08": 1,
-                "2025-10-27": 1
-              }
-            }
-          }
-        },
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-28": 1
-            }
-          },
-          "priorities": {
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-28": 1
+                "2025-10-27": 1,
+                "2025-10-30": 1
               }
             }
           }
@@ -5945,7 +5906,7 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "New": {
+        "Open": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -6505,7 +6466,7 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "New": {
+        "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -10913,7 +10874,7 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "Open": {
+        "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -15241,22 +15202,22 @@ export const ZAMMAD_METRICS = {
     },
     "2025-10-28": {
       "closed": 49,
-      "open": 20
+      "open": 19
     },
     "2025-10-29": {
       "closed": 55,
       "open": 34
     },
     "2025-10-30": {
-      "closed": 5,
-      "open": 12
+      "closed": 6,
+      "open": 13
     }
   },
   "states": {
     "Closed": {
       "overall": {
-        "avg_time_hours": 57.38,
-        "tickets_count": 913,
+        "avg_time_hours": 57.36,
+        "tickets_count": 914,
         "tickets_per_day": {
           "2025-09-30": 32,
           "2025-10-01": 15,
@@ -15286,7 +15247,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 69,
           "2025-10-28": 49,
           "2025-10-29": 55,
-          "2025-10-30": 5
+          "2025-10-30": 6
         }
       },
       "priorities": {
@@ -15346,8 +15307,8 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P3": {
-          "avg_time_hours": 88.31,
-          "tickets_count": 118,
+          "avg_time_hours": 87.89,
+          "tickets_count": 119,
           "tickets_per_day": {
             "2025-09-30": 11,
             "2025-10-01": 7,
@@ -15371,7 +15332,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-24": 9,
             "2025-10-27": 3,
             "2025-10-28": 4,
-            "2025-10-30": 3
+            "2025-10-30": 4
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -15522,7 +15483,7 @@ export const ZAMMAD_METRICS = {
     "Pendente Operador": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 45,
+        "tickets_count": 48,
         "tickets_per_day": {
           "2025-09-30": 1,
           "2025-10-01": 1,
@@ -15544,7 +15505,8 @@ export const ZAMMAD_METRICS = {
           "2025-10-26": 1,
           "2025-10-27": 4,
           "2025-10-28": 4,
-          "2025-10-29": 5
+          "2025-10-29": 6,
+          "2025-10-30": 2
         }
       },
       "priorities": {
@@ -15557,7 +15519,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 41,
+          "tickets_count": 44,
           "tickets_per_day": {
             "2025-10-01": 1,
             "2025-10-03": 1,
@@ -15577,7 +15539,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-26": 1,
             "2025-10-27": 4,
             "2025-10-28": 4,
-            "2025-10-29": 5
+            "2025-10-29": 6,
+            "2025-10-30": 2
           }
         },
         "P3": {
@@ -15634,7 +15597,7 @@ export const ZAMMAD_METRICS = {
     "Open": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 36,
+        "tickets_count": 37,
         "tickets_per_day": {
           "2025-10-06": 1,
           "2025-10-08": 2,
@@ -15646,9 +15609,9 @@ export const ZAMMAD_METRICS = {
           "2025-10-25": 1,
           "2025-10-26": 1,
           "2025-10-27": 5,
-          "2025-10-28": 4,
-          "2025-10-29": 8,
-          "2025-10-30": 8
+          "2025-10-28": 3,
+          "2025-10-29": 7,
+          "2025-10-30": 11
         }
       },
       "priorities": {
@@ -15663,7 +15626,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 23,
+          "tickets_count": 25,
           "tickets_per_day": {
             "2025-10-08": 1,
             "2025-10-10": 1,
@@ -15675,18 +15638,17 @@ export const ZAMMAD_METRICS = {
             "2025-10-26": 1,
             "2025-10-27": 2,
             "2025-10-28": 1,
-            "2025-10-29": 7,
-            "2025-10-30": 5
+            "2025-10-29": 6,
+            "2025-10-30": 8
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 5,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-10-06": 1,
             "2025-10-08": 1,
             "2025-10-10": 1,
-            "2025-10-28": 1,
             "2025-10-30": 1
           }
         },
@@ -15744,21 +15706,13 @@ export const ZAMMAD_METRICS = {
     "New": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 12,
+        "tickets_count": 8,
         "tickets_per_day": {
           "2025-10-27": 2,
-          "2025-10-29": 6,
-          "2025-10-30": 4
+          "2025-10-29": 6
         }
       },
       "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 4,
-          "tickets_per_day": {
-            "2025-10-30": 4
-          }
-        },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
           "tickets_count": 8,
@@ -15776,7 +15730,7 @@ export const ZAMMAD_METRICS = {
         "Segunda": 273,
         "Terça": 269,
         "Quarta": 248,
-        "Quinta": 157,
+        "Quinta": 158,
         "Sexta": 160,
         "Sábado": 13,
         "Domingo": 27
@@ -15794,7 +15748,7 @@ export const ZAMMAD_METRICS = {
         "09h": 205,
         "10h": 157,
         "11h": 58,
-        "12h": 93,
+        "12h": 94,
         "13h": 43,
         "14h": 93,
         "15h": 67,
@@ -16231,7 +16185,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quinta",
           "hour": "12h",
-          "tickets": 19
+          "tickets": 20
         },
         {
           "weekday": "Quinta",
@@ -16660,7 +16614,7 @@ export const ZAMMAD_METRICS = {
         "Segunda": 165,
         "Terça": 253,
         "Quarta": 206,
-        "Quinta": 145,
+        "Quinta": 146,
         "Sexta": 121,
         "Sábado": 20,
         "Domingo": 3
@@ -16678,7 +16632,7 @@ export const ZAMMAD_METRICS = {
         "09h": 61,
         "10h": 86,
         "11h": 70,
-        "12h": 54,
+        "12h": 55,
         "13h": 50,
         "14h": 83,
         "15h": 86,
@@ -17115,7 +17069,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quinta",
           "hour": "12h",
-          "tickets": 5
+          "tickets": 6
         },
         {
           "weekday": "Quinta",
@@ -17541,7 +17495,7 @@ export const ZAMMAD_METRICS = {
     }
   },
   "agent_responses": {
-    "Sandra Reis": 891,
+    "Sandra Reis": 904,
     "Inês Martinho": 662,
     "Paula Candeias": 591,
     "Catarina França": 530,
@@ -17566,15 +17520,15 @@ export const ZAMMAD_METRICS = {
       "total_interactions": 201,
       "tickets_closed": 47
     },
-    "Sandra Reis": {
-      "avg_interactions_per_ticket": 4.59,
-      "total_interactions": 891,
-      "tickets_closed": 194
-    },
     "Rafaela Lapa": {
       "avg_interactions_per_ticket": 4.62,
       "total_interactions": 111,
       "tickets_closed": 24
+    },
+    "Sandra Reis": {
+      "avg_interactions_per_ticket": 4.64,
+      "total_interactions": 904,
+      "tickets_closed": 195
     },
     "Catarina França": {
       "avg_interactions_per_ticket": 5.52,
@@ -17596,7 +17550,7 @@ export const ZAMMAD_METRICS = {
     "Inês Martinho": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 176,
+        "tickets_count": 180,
         "tickets_per_day": {
           "2025-09-30": 15,
           "2025-10-01": 3,
@@ -17621,7 +17575,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 17,
           "2025-10-28": 5,
           "2025-10-29": 6,
-          "2025-10-30": 3
+          "2025-10-30": 7
         }
       },
       "priorities": {
@@ -17640,7 +17594,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 80,
+          "tickets_count": 84,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-01": 1,
@@ -17663,7 +17617,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 15,
             "2025-10-28": 4,
             "2025-10-29": 6,
-            "2025-10-30": 3
+            "2025-10-30": 7
           }
         },
         "P3": {
@@ -18090,7 +18044,7 @@ export const ZAMMAD_METRICS = {
     "Não Atribuído": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 325,
+        "tickets_count": 321,
         "tickets_per_day": {
           "2025-09-30": 7,
           "2025-10-01": 3,
@@ -18116,8 +18070,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-26": 2,
           "2025-10-27": 31,
           "2025-10-28": 20,
-          "2025-10-29": 12,
-          "2025-10-30": 4
+          "2025-10-29": 12
         }
       },
       "priorities": {
@@ -18130,7 +18083,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 106,
+          "tickets_count": 102,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 1,
@@ -18151,8 +18104,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-26": 1,
             "2025-10-27": 7,
             "2025-10-28": 14,
-            "2025-10-29": 5,
-            "2025-10-30": 4
+            "2025-10-29": 5
           }
         },
         "P3": {
@@ -18229,7 +18181,7 @@ export const ZAMMAD_METRICS = {
     "Cátia Leal": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 62,
+        "tickets_count": 63,
         "tickets_per_day": {
           "2025-10-01": 1,
           "2025-10-06": 1,
@@ -18248,7 +18200,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 13,
           "2025-10-28": 10,
           "2025-10-29": 7,
-          "2025-10-30": 4
+          "2025-10-30": 5
         }
       },
       "priorities": {
@@ -18263,7 +18215,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 56,
+          "tickets_count": 57,
           "tickets_per_day": {
             "2025-10-01": 1,
             "2025-10-06": 1,
@@ -18282,7 +18234,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 12,
             "2025-10-28": 9,
             "2025-10-29": 5,
-            "2025-10-30": 2
+            "2025-10-30": 3
           }
         },
         "P3": {
@@ -18459,32 +18411,24 @@ export const ZAMMAD_METRICS = {
     },
     "agent_sla_compliance": {
       "Inês Martinho": {
-        "total_tickets": 118,
-        "sla_met": 40,
-        "sla_missed": 78,
-        "sla_compliance_rate": 33.9,
+        "total_tickets": 80,
+        "sla_met": 20,
+        "sla_missed": 60,
+        "sla_compliance_rate": 25.0,
         "tickets": [
-          {
-            "ticket_id": 30,
-            "ticket_number": "35030",
-            "title": "Datos de Pasajeros de la Reserva en el expediente ...",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.21,
-            "sla_met": false,
-            "sla_breach_hours": 0.96,
-            "sla_name": "SLA P1"
-          },
           {
             "ticket_id": 31,
             "ticket_number": "35031",
             "title": "Re: booking for Mr JOSE DIOGO ALVES BARREIRA COELH...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 2.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.32,
+            "sla_met": false,
+            "sla_breach_hours": 23.68,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T08:25:46.843Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 35,
@@ -18492,21 +18436,13 @@ export const ZAMMAD_METRICS = {
             "title": "Dúvida urgente para Insure Broker",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 1.09,
+            "actual_time_hours": 0.18,
             "sla_met": false,
-            "sla_breach_hours": 0.84,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 37,
-            "ticket_number": "35037",
-            "title": "Datos de Pasajeros de la Reserva en el expediente ...",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.24,
-            "sla_met": false,
-            "sla_breach_hours": 0.99,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 0.07,
+            "sla_name": "SLA P1",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T08:17:47.393Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 47,
@@ -18514,10 +18450,13 @@ export const ZAMMAD_METRICS = {
             "title": "CARVALHO MACIEL/DIOGO MIGUEL MR 28JAN2026 OPO ORY",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.91,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.22,
+            "sla_met": false,
+            "sla_breach_hours": 22.78,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T09:40:07.938Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 58,
@@ -18525,10 +18464,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-67038 - Esclarecimento",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 21.89,
+            "actual_time_hours": 0.08,
             "sla_met": false,
-            "sla_breach_hours": 17.89,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.92,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-09-30T10:55:25.574Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 59,
@@ -18536,21 +18478,13 @@ export const ZAMMAD_METRICS = {
             "title": "YRQ924 – Novo prazo de emissão",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 5.52,
+            "actual_time_hours": 0.07,
             "sla_met": false,
-            "sla_breach_hours": 5.27,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 60,
-            "ticket_number": "35060",
-            "title": "Reserva Aérea YRQ924",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 0.08,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 0.18,
+            "sla_name": "SLA P1",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T11:24:17.220Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 64,
@@ -18558,21 +18492,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: reclamaçao localizador 1197609791",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 217.61,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 193.61,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 68,
-            "ticket_number": "35067",
-            "title": "Re: Fwd: Documentação recebida corretamente TTN-11...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 1.14,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 24.0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-09-30T12:55:04.293Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 78,
@@ -18580,10 +18506,13 @@ export const ZAMMAD_METRICS = {
             "title": "Smy - Voo cancelado ryanair",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 210.85,
+            "actual_time_hours": 0.02,
             "sla_met": false,
-            "sla_breach_hours": 186.85,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.98,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-09-30T15:03:07.540Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 84,
@@ -18591,10 +18520,13 @@ export const ZAMMAD_METRICS = {
             "title": "Aéreo - Confirmação de Emissão (GARCIA DA SILVA\\AN...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.11,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.08,
+            "sla_met": false,
+            "sla_breach_hours": 3.92,
+            "sla_name": "SLA P2",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T16:21:17.842Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 85,
@@ -18602,10 +18534,13 @@ export const ZAMMAD_METRICS = {
             "title": "Aéreo - Confirmação de Emissão (ALVES BARREIRA COE...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.11,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.1,
+            "sla_met": false,
+            "sla_breach_hours": 3.9,
+            "sla_name": "SLA P2",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T16:22:08.450Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 94,
@@ -18613,10 +18548,13 @@ export const ZAMMAD_METRICS = {
             "title": "Esclarecimento - seguro",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 12.96,
+            "actual_time_hours": 2.1,
             "sla_met": false,
-            "sla_breach_hours": 8.96,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.9,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-10-01T08:36:36.711Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 103,
@@ -18624,10 +18562,13 @@ export const ZAMMAD_METRICS = {
             "title": "CCP-71279 Reserva SPT002501543712",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.22,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.02,
+            "sla_met": false,
+            "sla_breach_hours": 3.98,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-10-01T10:37:38.040Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 108,
@@ -18635,10 +18576,13 @@ export const ZAMMAD_METRICS = {
             "title": "ENC: Grupo GR-E350FBF43F",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 334.0,
+            "actual_time_hours": 0.03,
             "sla_met": false,
-            "sla_breach_hours": 330.0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-01T11:43:01.785Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 109,
@@ -18646,10 +18590,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 19431 ##] GBN-49195 - Seu pedido foi recebi...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 140.25,
-            "sla_met": false,
-            "sla_breach_hours": 116.25,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 54.47,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T15:52:44.669Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 117,
@@ -18657,10 +18604,13 @@ export const ZAMMAD_METRICS = {
             "title": "Urgente - Excursão GBN",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 19.91,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.03,
+            "sla_met": false,
+            "sla_breach_hours": 23.97,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-02",
+            "first_response_at": "2025-10-01T14:15:30.105Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 118,
@@ -18668,10 +18618,13 @@ export const ZAMMAD_METRICS = {
             "title": "RESERVA REALIZADA PENDENTE DE CONFIRMAÇÃO: 3925065",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 42.6,
+            "actual_time_hours": 22.58,
             "sla_met": false,
-            "sla_breach_hours": 18.6,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 1.42,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-03",
+            "first_response_at": "2025-10-03T09:05:02.363Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 135,
@@ -18679,10 +18632,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: [OUTSIDE EMAIL] esclarecimento idade crianças",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.14,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.13,
+            "sla_met": false,
+            "sla_breach_hours": 3.87,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-02",
+            "first_response_at": "2025-10-02T08:52:49.165Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 153,
@@ -18690,10 +18646,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cotação RimainTours",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 191.24,
+            "actual_time_hours": 1.53,
             "sla_met": false,
-            "sla_breach_hours": 167.24,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.47,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-02T15:08:36.031Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 158,
@@ -18701,10 +18660,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Aérea ZCLZPN",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 88.23,
+            "actual_time_hours": 0.07,
             "sla_met": false,
-            "sla_breach_hours": 84.23,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.93,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-02T16:25:26.231Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 165,
@@ -18712,10 +18674,13 @@ export const ZAMMAD_METRICS = {
             "title": "Orçamento disneyland - leplan",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 272.45,
+            "actual_time_hours": 0.2,
             "sla_met": false,
-            "sla_breach_hours": 248.45,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.8,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-03T08:35:35.717Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 178,
@@ -18723,10 +18688,13 @@ export const ZAMMAD_METRICS = {
             "title": "Mensagem sobre a reserva 34347903 - Civitatis",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 100.67,
+            "actual_time_hours": 21.67,
             "sla_met": false,
-            "sla_breach_hours": 76.67,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 2.33,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T08:54:30.952Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 182,
@@ -18734,21 +18702,13 @@ export const ZAMMAD_METRICS = {
             "title": "pacote dubai",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 142.99,
+            "actual_time_hours": 20.55,
             "sla_met": false,
-            "sla_breach_hours": 118.99,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 199,
-            "ticket_number": "35198",
-            "title": "Confirmation of booking with locatorG0Y20UGS",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 368.51,
-            "sla_met": false,
-            "sla_breach_hours": 344.51,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 3.45,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-06T08:58:05.367Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 217,
@@ -18756,10 +18716,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Information about your booking - GBN-8...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 6.67,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.8,
+            "sla_met": false,
+            "sla_breach_hours": 22.2,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T10:45:17.415Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 242,
@@ -18767,10 +18730,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Confirmação do serviço de transporte//1125356...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 198.06,
+            "actual_time_hours": 0.37,
             "sla_met": false,
-            "sla_breach_hours": 174.06,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.63,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-06T11:14:16.760Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 248,
@@ -18778,10 +18744,13 @@ export const ZAMMAD_METRICS = {
             "title": "\"GBN-81115 - Your request has been received\"",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 93.56,
-            "sla_met": false,
-            "sla_breach_hours": 93.31,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 2.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-06T16:13:01.052Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 277,
@@ -18789,10 +18758,13 @@ export const ZAMMAD_METRICS = {
             "title": "Envio de documentação - FILE 395745",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 11.31,
+            "actual_time_hours": 1.3,
             "sla_met": false,
-            "sla_breach_hours": 7.31,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.7,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-07T09:13:57.058Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 281,
@@ -18800,21 +18772,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Nova Viagem #251000039 - Sónia Susano - GBN-8...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 73.2,
+            "actual_time_hours": 1.8,
             "sla_met": false,
-            "sla_breach_hours": 49.2,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 286,
-            "ticket_number": "35285",
-            "title": "Envio dos nomes para o Grupo GR-0CE002ABEB_GRUPO_A...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 2.2,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.2,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-07T09:55:16.062Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 289,
@@ -18822,43 +18786,13 @@ export const ZAMMAD_METRICS = {
             "title": "VJT: Documentação de Viagem  201833 (Voo Regular)",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.94,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 306,
-            "ticket_number": "35305",
-            "title": "GBN-84913 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.48,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 307,
-            "ticket_number": "35306",
-            "title": "Re:[## 22427 ##] GBN-84913 - Seu pedido foi recebi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 45.84,
+            "actual_time_hours": 0.93,
             "sla_met": false,
-            "sla_breach_hours": 41.84,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 308,
-            "ticket_number": "35307",
-            "title": "Re:[## 22427 ##] GBN-84913 - Seu pedido foi recebi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.01,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.07,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-07T10:27:59.101Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 316,
@@ -18866,10 +18800,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Envio documentos - (Factura-238003284) n. 8004...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.36,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.05,
+            "sla_met": false,
+            "sla_breach_hours": 3.95,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-07T16:06:09.605Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 319,
@@ -18877,10 +18814,13 @@ export const ZAMMAD_METRICS = {
             "title": "Loc: 1208029207 - solicitação cliente",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 16.56,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 5.55,
+            "sla_met": false,
+            "sla_breach_hours": 18.45,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-07T21:54:21.657Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 337,
@@ -18888,10 +18828,13 @@ export const ZAMMAD_METRICS = {
             "title": "Mudança seguro",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 12.4,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 2.38,
+            "sla_met": false,
+            "sla_breach_hours": 21.62,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T10:06:44.832Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 340,
@@ -18899,10 +18842,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85045 - Seu pedido foi recebido",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 237.07,
-            "sla_met": false,
-            "sla_breach_hours": 213.07,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 92.9,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-15T12:54:03.618Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 341,
@@ -18910,10 +18856,13 @@ export const ZAMMAD_METRICS = {
             "title": "Número de informação da reserva: 6119302",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 14.91,
-            "sla_met": false,
-            "sla_breach_hours": 14.66,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 1.0,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T09:00:35.544Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 346,
@@ -18921,10 +18870,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cancelamento de trechos de voo na reserva YCQ94G /...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 49.26,
+            "actual_time_hours": 0.02,
             "sla_met": false,
-            "sla_breach_hours": 45.26,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.98,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-08T08:13:01.713Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 348,
@@ -18932,10 +18884,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informação sobre reserva Flexible PP661699",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 2.68,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.03,
+            "sla_met": false,
+            "sla_breach_hours": 22.97,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T09:28:12.986Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 352,
@@ -18943,10 +18898,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: TUI Portugal: Confirmação de reserva - TCP-51...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 26.71,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 2.71,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 24.0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-08T08:31:00.790Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 354,
@@ -18954,32 +18912,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informação importante sobre a tua reserva 1743831",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.46,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 368,
-            "ticket_number": "35367",
-            "title": "Flexible Autos - Automatic response",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 0.52,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 369,
-            "ticket_number": "35368",
-            "title": "Flexible Autos - Automatic response",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 0.52,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.45,
+            "sla_met": false,
+            "sla_breach_hours": 22.55,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T10:18:15.542Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 386,
@@ -18987,21 +18926,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85056 - Seu pedido foi recebido",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 123.3,
-            "sla_met": false,
-            "sla_breach_hours": 123.05,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 389,
-            "ticket_number": "35388",
-            "title": "Información de reserva número:",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.12,
+            "actual_time_hours": 8.92,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-09T08:08:17.849Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 394,
@@ -19010,9 +18941,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.67,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_met": false,
+            "sla_breach_hours": 22.33,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-20T09:02:40.071Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 427,
@@ -19020,10 +18954,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-84719 - Seu pedido foi recebido",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 5.26,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 5.03,
+            "sla_met": false,
+            "sla_breach_hours": 18.97,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T13:10:12.248Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 452,
@@ -19031,10 +18968,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Informações da reserva TTN-1208029207#8335137...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 16.82,
+            "actual_time_hours": 0.92,
             "sla_met": false,
-            "sla_breach_hours": 12.82,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.08,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-09T16:01:00.052Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 472,
@@ -19042,10 +18982,13 @@ export const ZAMMAD_METRICS = {
             "title": "Orçamento para Bayahibe Jan/26",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 4.48,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.47,
+            "sla_met": false,
+            "sla_breach_hours": 23.53,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T08:34:55.448Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 484,
@@ -19053,21 +18996,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: GBN - 66538",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 250.44,
+            "actual_time_hours": 0.33,
             "sla_met": false,
-            "sla_breach_hours": 246.44,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 490,
-            "ticket_number": "35489",
-            "title": "GBN-85381 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 4.13,
-            "sla_met": false,
-            "sla_breach_hours": 0.13,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.67,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-10T10:09:25.367Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 533,
@@ -19075,10 +19010,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cotação para Excursão Ilha Saona",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 97.66,
+            "actual_time_hours": 14.07,
             "sla_met": false,
-            "sla_breach_hours": 73.66,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 9.93,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T08:59:34.036Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 572,
@@ -19086,10 +19024,13 @@ export const ZAMMAD_METRICS = {
             "title": "Smy  1208975897",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 222.83,
+            "actual_time_hours": 2.25,
             "sla_met": false,
-            "sla_breach_hours": 218.83,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.75,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-13T12:20:43.788Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 592,
@@ -19097,10 +19038,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva - GBN-81115",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 46.52,
+            "actual_time_hours": 17.42,
             "sla_met": false,
-            "sla_breach_hours": 22.52,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 6.58,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-14T16:51:14.643Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 601,
@@ -19108,10 +19052,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: A sua reserva continua CONFIRMADA — tentativa...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 233.79,
-            "sla_met": false,
-            "sla_breach_hours": 209.79,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 123.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T09:03:31.639Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 621,
@@ -19119,32 +19066,13 @@ export const ZAMMAD_METRICS = {
             "title": "| Urgente: reserva Solférias 408524 - emissão de d...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 42.47,
+            "actual_time_hours": 0.35,
             "sla_met": false,
-            "sla_breach_hours": 18.47,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 636,
-            "ticket_number": "35635",
-            "title": "GBN Travel: Informações sobre sua reserva - GBN-85...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 211.28,
-            "sla_met": false,
-            "sla_breach_hours": 207.28,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 699,
-            "ticket_number": "35698",
-            "title": "GBN Travel: Informações sobre sua reserva - GBN-85...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 256.24,
-            "sla_met": false,
-            "sla_breach_hours": 255.99,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 23.65,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T17:54:31.156Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 708,
@@ -19152,10 +19080,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cancelamento de reserva",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 13.79,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 2.15,
+            "sla_met": false,
+            "sla_breach_hours": 21.85,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T08:56:40.784Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 714,
@@ -19163,10 +19094,13 @@ export const ZAMMAD_METRICS = {
             "title": "Información de reserva número: 1756167",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 152.98,
+            "actual_time_hours": 1.4,
             "sla_met": false,
-            "sla_breach_hours": 128.98,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.6,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-15T09:34:15.671Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 730,
@@ -19174,10 +19108,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Re: Documentação Sinistro Processo nº OAP2504...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 225.33,
+            "actual_time_hours": 1.12,
             "sla_met": false,
-            "sla_breach_hours": 201.33,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.88,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-15T10:20:38.363Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 737,
@@ -19185,10 +19122,13 @@ export const ZAMMAD_METRICS = {
             "title": "YD3TTV – Novo prazo de emissão",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.6,
+            "sla_met": false,
+            "sla_breach_hours": 23.4,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T11:49:14.302Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 787,
@@ -19196,10 +19136,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reclamação sobre voo atrasado",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 20.37,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 4.55,
+            "sla_met": false,
+            "sla_breach_hours": 19.45,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-16",
+            "first_response_at": "2025-10-16T08:34:05.848Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 798,
@@ -19207,10 +19150,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva GBN-85830 - Solicitação de alteração da re...",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 162.69,
-            "sla_met": false,
-            "sla_breach_hours": 162.44,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 0.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-16T08:26:16.107Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 810,
@@ -19218,21 +19164,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85634 - Seu pedido foi recebido",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 23.26,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 858,
-            "ticket_number": "35857",
-            "title": "Reserva Aérea ZBALQE",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 5.78,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 13.23,
+            "sla_met": false,
+            "sla_breach_hours": 10.77,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T12:14:52.378Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 860,
@@ -19240,10 +19178,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-75309 - Seu pedido foi recebido",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 94.94,
-            "sla_met": false,
-            "sla_breach_hours": 70.94,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 34.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-20T12:26:10.860Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 862,
@@ -19251,10 +19192,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-83955 - Seu pedido foi recebido",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 172.73,
+            "actual_time_hours": 0.62,
             "sla_met": false,
-            "sla_breach_hours": 148.73,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.38,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-17T12:00:12.629Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 871,
@@ -19262,10 +19206,13 @@ export const ZAMMAD_METRICS = {
             "title": "Comprovativo Iban do Cancelamento GBN-83955",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 139.71,
-            "sla_met": false,
-            "sla_breach_hours": 135.71,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 69.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T09:07:24.596Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 906,
@@ -19273,43 +19220,13 @@ export const ZAMMAD_METRICS = {
             "title": "Icárion - Belek (Antalya) - 27/07/2026 - 6084125 -...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 19.72,
-            "sla_met": false,
-            "sla_breach_hours": 15.72,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 910,
-            "ticket_number": "35909",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121146327...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 40.2,
-            "sla_met": false,
-            "sla_breach_hours": 39.95,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 918,
-            "ticket_number": "35917",
-            "title": "GBN-84757 & GBN-84342",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 24.19,
-            "sla_met": false,
-            "sla_breach_hours": 20.19,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 919,
-            "ticket_number": "35918",
-            "title": "GBN-86637 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 77.84,
-            "sla_met": false,
-            "sla_breach_hours": 77.59,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 4.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T08:47:45.297Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 925,
@@ -19317,10 +19234,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Localizador 1204392277 - Smytravel lhe inform...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 58.43,
+            "actual_time_hours": 2.62,
             "sla_met": false,
-            "sla_breach_hours": 54.43,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.38,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-20T10:58:33.066Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 947,
@@ -19328,21 +19248,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Acompanhamento do procedimento TTN-1191602245...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 96.12,
-            "sla_met": false,
-            "sla_breach_hours": 92.12,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 959,
-            "ticket_number": "35958",
-            "title": "GBN-82484 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 26.11,
-            "sla_met": false,
-            "sla_breach_hours": 22.11,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 56.1,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-27T10:16:26.682Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 969,
@@ -19350,10 +19262,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 23285 ##] GBN-82484 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 24.09,
+            "actual_time_hours": 0.12,
             "sla_met": false,
-            "sla_breach_hours": 20.09,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.88,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-20T17:17:10.814Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 980,
@@ -19361,10 +19276,13 @@ export const ZAMMAD_METRICS = {
             "title": "Solicitação SOLFERIAS",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 164.94,
+            "actual_time_hours": 2.62,
             "sla_met": false,
-            "sla_breach_hours": 140.94,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 21.38,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-21T08:25:33.884Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 988,
@@ -19372,10 +19290,13 @@ export const ZAMMAD_METRICS = {
             "title": "Devolução de dinheiro ",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 59.43,
-            "sla_met": false,
-            "sla_breach_hours": 59.18,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 1.23,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T09:18:23.058Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1027,
@@ -19383,54 +19304,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido Contratação Direta rent-a-car",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 164.25,
-            "sla_met": false,
-            "sla_breach_hours": 160.25,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1056,
-            "ticket_number": "351054",
-            "title": "GBN-84342 - Seu pedido foi recebido",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 12.66,
-            "sla_met": false,
-            "sla_breach_hours": 12.41,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1057,
-            "ticket_number": "351055",
-            "title": "GBN-84757 - Seu pedido foi recebido",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 11.78,
-            "sla_met": false,
-            "sla_breach_hours": 11.53,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1070,
-            "ticket_number": "351068",
-            "title": "GBN-84757 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.48,
+            "actual_time_hours": 15.78,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1072,
-            "ticket_number": "351070",
-            "title": "GBN-84342 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.42,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-22T15:09:53.415Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1073,
@@ -19438,21 +19318,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 23441 ##] GBN-84342 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.6,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1086,
-            "ticket_number": "351084",
-            "title": "70 Years Flying to Portugal: Celebrate This Histor...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 144.36,
+            "actual_time_hours": 0.32,
             "sla_met": false,
-            "sla_breach_hours": 120.36,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 3.68,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-22T09:48:31.351Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1087,
@@ -19460,21 +19332,13 @@ export const ZAMMAD_METRICS = {
             "title": "Atualização: Atribuição de comissões às agências d...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 144.37,
+            "actual_time_hours": 0.88,
             "sla_met": false,
-            "sla_breach_hours": 120.37,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 1111,
-            "ticket_number": "351109",
-            "title": "Fwd: Pedido de Estorno - LOC: GBN-67038 + 11452046...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 13.45,
-            "sla_met": false,
-            "sla_breach_hours": 9.45,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 23.12,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-22T13:00:05.706Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1119,
@@ -19482,10 +19346,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Consulta sobre Localizador: 1204392277 TTN-12...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 19.56,
+            "actual_time_hours": 3.03,
             "sla_met": false,
-            "sla_breach_hours": 15.56,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 0.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T08:07:03.369Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1130,
@@ -19493,10 +19360,13 @@ export const ZAMMAD_METRICS = {
             "title": "Discover how to book your NDC content without any ...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 128.45,
-            "sla_met": false,
-            "sla_breach_hours": 104.45,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 67.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T16:41:38.754Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1133,
@@ -19504,10 +19374,13 @@ export const ZAMMAD_METRICS = {
             "title": "🌍 Comunicação oficial - Ethiopian Airlines anuncia...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 128.2,
-            "sla_met": false,
-            "sla_breach_hours": 124.2,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 67.18,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T16:42:02.171Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1155,
@@ -19515,10 +19388,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva smy 1180706605",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 117.44,
+            "actual_time_hours": 2.78,
             "sla_met": false,
-            "sla_breach_hours": 113.44,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.22,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-23T16:35:11.630Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1185,
@@ -19526,54 +19402,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Caso 04765539 recibido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 100.27,
-            "sla_met": false,
-            "sla_breach_hours": 96.27,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1198,
-            "ticket_number": "351195",
-            "title": "Fwd: Incidente de transfer TTN-1204392277#84152671...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 13.04,
-            "sla_met": false,
-            "sla_breach_hours": 9.04,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1213,
-            "ticket_number": "351210",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 5.98,
+            "actual_time_hours": 49.27,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 1219,
-            "ticket_number": "351216",
-            "title": "MR20260616BCNBCN - BKG 67529122 - CONFIRMAÇÃO DE R...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 5.57,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 1223,
-            "ticket_number": "351220",
-            "title": "Confirmação de reserva para For PT004157 67529122",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 4.07,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T12:19:40.871Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1228,
@@ -19581,10 +19416,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Caso 04765540 recibido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 96.34,
-            "sla_met": false,
-            "sla_breach_hours": 92.34,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 45.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T12:19:07.649Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1236,
@@ -19592,32 +19430,13 @@ export const ZAMMAD_METRICS = {
             "title": "NDC-X Amdeus",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 94.78,
-            "sla_met": false,
-            "sla_breach_hours": 90.78,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1256,
-            "ticket_number": "351253",
-            "title": "Fwd: Encerramento do caso TTN-1191602245#84179883#...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.1,
+            "actual_time_hours": 43.77,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1261,
-            "ticket_number": "351258",
-            "title": "Referencia para pagamento | File:414136/2025",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 87.31,
-            "sla_met": false,
-            "sla_breach_hours": 83.31,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T11:56:33.092Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1263,
@@ -19625,32 +19444,13 @@ export const ZAMMAD_METRICS = {
             "title": "New Blue",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 63.22,
+            "actual_time_hours": 0.05,
             "sla_met": false,
-            "sla_breach_hours": 59.22,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1298,
-            "ticket_number": "351295",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 27.1,
-            "sla_met": false,
-            "sla_breach_hours": 23.1,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1305,
-            "ticket_number": "351302",
-            "title": "Fwd: A sua reserva continua CONFIRMADA — tentativa...",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 3.0,
-            "sla_met": false,
-            "sla_breach_hours": 2.75,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.95,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-24T21:20:44.004Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1315,
@@ -19658,10 +19458,13 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmação de Reserva * File 414136",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 6.97,
+            "actual_time_hours": 0.3,
             "sla_met": false,
-            "sla_breach_hours": 2.97,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.7,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T10:05:11.353Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1321,
@@ -19669,10 +19472,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reservation Request",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 9.17,
+            "actual_time_hours": 1.22,
             "sla_met": false,
-            "sla_breach_hours": 5.17,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.78,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T12:19:07.419Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1334,
@@ -19680,10 +19486,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Pedido de revisão devido a alteração de itine...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.33,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.3,
+            "sla_met": false,
+            "sla_breach_hours": 2.7,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T14:10:54.294Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1347,
@@ -19691,10 +19500,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Caso 04765540 rechazado",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 20.4,
-            "sla_met": false,
-            "sla_breach_hours": 20.15,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 10.4,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T12:48:01.851Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1358,
@@ -19702,43 +19514,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Já faz parte de Vueling Partners",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 17.98,
-            "sla_met": false,
-            "sla_breach_hours": 13.98,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1360,
-            "ticket_number": "351357",
-            "title": "Fwd: Confirmación de reserva — 06122928292 IATA",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.43,
-            "sla_met": false,
-            "sla_breach_hours": 13.43,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1363,
-            "ticket_number": "351360",
-            "title": "Fwd: Conclua o seu registo em Vueling Partners",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.98,
-            "sla_met": false,
-            "sla_breach_hours": 13.98,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1364,
-            "ticket_number": "351361",
-            "title": "Fwd: B2B RESERV@S - Plataforma de Serviços Online",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.41,
-            "sla_met": false,
-            "sla_breach_hours": 13.41,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 7.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T12:00:00.588Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1416,
@@ -19746,3568 +19528,21 @@ export const ZAMMAD_METRICS = {
             "title": "Novidades sobre atribuição de comissões às agência...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.19,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1532,
-            "ticket_number": "351529",
-            "title": "Información de reservas que entran en gastos próxi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.19,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          }
-        ]
-      },
-      "Não Atribuído": {
-        "total_tickets": 321,
-        "sla_met": 94,
-        "sla_missed": 227,
-        "sla_compliance_rate": 29.28,
-        "tickets": [
-          {
-            "ticket_id": 32,
-            "ticket_number": "35032",
-            "title": "GBN-83985 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.07,
-            "sla_met": false,
-            "sla_breach_hours": 23.82,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 53,
-            "ticket_number": "35053",
-            "title": "Re: Pedido de reunião - Parceria com um GDS",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.31,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 54,
-            "ticket_number": "35054",
-            "title": "Informação de reserva - SPT002501543712",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 4.43,
-            "sla_met": false,
-            "sla_breach_hours": 4.18,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 63,
-            "ticket_number": "35063",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 2.97,
-            "sla_met": false,
-            "sla_breach_hours": 2.72,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 67,
-            "ticket_number": "35066",
-            "title": "Fwd: Novo evento: Sofia Costa - 16:00 Seg, 6 de Ou...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.04,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 69,
-            "ticket_number": "35068",
-            "title": "Fwd: Aceito: Alexandra ribeiro and Magali & Alexan...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.03,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 87,
-            "ticket_number": "35086",
-            "title": "Re: Cotação excursões México outubro",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.01,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 92,
-            "ticket_number": "35091",
-            "title": "GBN-84160 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.17,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 93,
-            "ticket_number": "35092",
-            "title": "Document from Costa Crociere",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.16,
-            "sla_met": false,
-            "sla_breach_hours": 0.91,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 107,
-            "ticket_number": "35106",
-            "title": "Confirmação de reserva com localizador: 3924809",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.99,
-            "sla_met": false,
-            "sla_breach_hours": 1.74,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 123,
-            "ticket_number": "35122",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604468591",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 39.8,
-            "sla_met": false,
-            "sla_breach_hours": 15.8,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 125,
-            "ticket_number": "35124",
-            "title": "GBN-84331 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 39.71,
-            "sla_met": false,
-            "sla_breach_hours": 39.46,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 127,
-            "ticket_number": "35126",
-            "title": "Número de informação da reserva: 6119161",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 38.01,
-            "sla_met": false,
-            "sla_breach_hours": 14.01,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 131,
-            "ticket_number": "35130",
-            "title": "GBN-84342 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 37.29,
-            "sla_met": false,
-            "sla_breach_hours": 37.04,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 147,
-            "ticket_number": "35146",
-            "title": "Confirmation of booking with locatorNVMSBL4L",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 117.05,
-            "sla_met": false,
-            "sla_breach_hours": 116.8,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 148,
-            "ticket_number": "35147",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 117.08,
-            "sla_met": false,
-            "sla_breach_hours": 116.83,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 156,
-            "ticket_number": "35155",
-            "title": "Número de informação da reserva: 6119179",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 113.06,
-            "sla_met": false,
-            "sla_breach_hours": 112.81,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 164,
-            "ticket_number": "35163",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604469451",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 96.31,
-            "sla_met": false,
-            "sla_breach_hours": 96.06,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 166,
-            "ticket_number": "35165",
-            "title": "Fwd: Confirmacion de la reserva Transavia: TBHIFP",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 96.03,
-            "sla_met": false,
-            "sla_breach_hours": 95.78,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 172,
-            "ticket_number": "35171",
-            "title": "Número de informação da reserva: 6119184",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 95.73,
-            "sla_met": false,
-            "sla_breach_hours": 95.48,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 173,
-            "ticket_number": "35172",
-            "title": "GBN-84499 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 95.74,
-            "sla_met": false,
-            "sla_breach_hours": 95.49,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 174,
-            "ticket_number": "35173",
-            "title": "Reserva confirmada: Cruzeiro de 3 noites pelo Nilo...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 95.01,
-            "sla_met": false,
-            "sla_breach_hours": 94.76,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 176,
-            "ticket_number": "35175",
-            "title": "GBN-84526 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 95.01,
-            "sla_met": false,
-            "sla_breach_hours": 94.76,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 177,
-            "ticket_number": "35176",
-            "title": "Reserva confirmada: Cruzeiro de 3 noites pelo Nilo...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 95.02,
-            "sla_met": false,
-            "sla_breach_hours": 94.77,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 180,
-            "ticket_number": "35179",
-            "title": "Maldivas / Melhores Ofertas 1 a 8 de Dez",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.02,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 181,
-            "ticket_number": "35180",
-            "title": "GBN-84522 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 94.88,
-            "sla_met": false,
-            "sla_breach_hours": 94.63,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 198,
-            "ticket_number": "35197",
-            "title": "Confirmação de reserva. Localizador:",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.99,
-            "sla_met": false,
-            "sla_breach_hours": 24.74,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 205,
-            "ticket_number": "35204",
-            "title": "GBN-84745 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.4,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 206,
-            "ticket_number": "35205",
-            "title": "GBN-84757 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.41,
-            "sla_met": false,
-            "sla_breach_hours": 25.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 207,
-            "ticket_number": "35206",
-            "title": "A sua reserva n.º 63316063: mantenha-se ligado enq...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.36,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 209,
-            "ticket_number": "35208",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 213,
-            "ticket_number": "35212",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.58,
-            "sla_met": false,
-            "sla_breach_hours": 25.33,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 215,
-            "ticket_number": "35214",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.58,
-            "sla_met": false,
-            "sla_breach_hours": 25.33,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 216,
-            "ticket_number": "35215",
-            "title": "GBN-84669 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.84,
-            "sla_met": false,
-            "sla_breach_hours": 24.59,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 218,
-            "ticket_number": "35217",
-            "title": "GBN-84669 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.84,
-            "sla_met": false,
-            "sla_breach_hours": 24.59,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 219,
-            "ticket_number": "35218",
-            "title": "GBN-84675 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.84,
-            "sla_met": false,
-            "sla_breach_hours": 24.59,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 231,
-            "ticket_number": "35230",
-            "title": "GBN-84767 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.45,
-            "sla_met": false,
-            "sla_breach_hours": 24.2,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 256,
-            "ticket_number": "35255",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 20.94,
-            "sla_met": false,
-            "sla_breach_hours": 20.69,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 257,
-            "ticket_number": "35256",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 20.95,
-            "sla_met": false,
-            "sla_breach_hours": 20.7,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 261,
-            "ticket_number": "35260",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 19.94,
-            "sla_met": false,
-            "sla_breach_hours": 19.69,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 262,
-            "ticket_number": "35261",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 19.95,
-            "sla_met": false,
-            "sla_breach_hours": 19.7,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 264,
-            "ticket_number": "35263",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 20.03,
-            "sla_met": false,
-            "sla_breach_hours": 19.78,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 274,
-            "ticket_number": "35273",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 12.9,
-            "sla_met": false,
-            "sla_breach_hours": 12.65,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 275,
-            "ticket_number": "35274",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 14.41,
-            "sla_met": false,
-            "sla_breach_hours": 14.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 276,
-            "ticket_number": "35275",
-            "title": "Reserva confirmada: Excursão a Santo Domingo - Civ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.38,
-            "sla_met": false,
-            "sla_breach_hours": 16.13,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 278,
-            "ticket_number": "35277",
-            "title": "Reserva confirmada: Excursão a Santo Domingo - Civ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.39,
-            "sla_met": false,
-            "sla_breach_hours": 16.14,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 282,
-            "ticket_number": "35281",
-            "title": "GBN-84890 - RGPD",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.16,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 284,
-            "ticket_number": "35283",
-            "title": "Pedido de pagamento - PT004157",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.13,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 290,
-            "ticket_number": "35289",
-            "title": "Confirmação de reserva com localizador: 3931518",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 82.88,
-            "sla_met": false,
-            "sla_breach_hours": 82.63,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 304,
-            "ticket_number": "35303",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.84,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 323,
-            "ticket_number": "35322",
-            "title": "Confirmação de reserva com localizador: 3932193",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.62,
-            "sla_met": false,
-            "sla_breach_hours": 23.37,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 326,
-            "ticket_number": "35325",
-            "title": "GBN-85029 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 45.54,
-            "sla_met": false,
-            "sla_breach_hours": 45.29,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 335,
-            "ticket_number": "35334",
-            "title": "Confirmação de autenticação na Teldar Travel para ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.12,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 344,
-            "ticket_number": "35343",
-            "title": "Reserva confirmada: Free tour por Sevilha - Civita...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 41.03,
-            "sla_met": false,
-            "sla_breach_hours": 40.78,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 350,
-            "ticket_number": "35349",
-            "title": "Ana Martins- OPTI nº 2412000015",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.54,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 358,
-            "ticket_number": "35357",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120802920...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 34.48,
-            "sla_met": false,
-            "sla_breach_hours": 34.23,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 360,
-            "ticket_number": "35359",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120802920...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 34.48,
-            "sla_met": false,
-            "sla_breach_hours": 34.23,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 362,
-            "ticket_number": "35361",
-            "title": "Fwd: Confirmacion de la reserva Transavia: REY5TW",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.37,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 363,
-            "ticket_number": "35362",
-            "title": "Fwd: Confirmación de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.46,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 366,
-            "ticket_number": "35365",
-            "title": "Fwd: EN846Y | Efetua o check-in online para o teu ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 370,
-            "ticket_number": "35369",
-            "title": "GBN-85066 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 33.64,
-            "sla_met": false,
-            "sla_breach_hours": 33.39,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 375,
-            "ticket_number": "35374",
-            "title": "Reserva confirmada: Excursão às Minas de Sal de Wi...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 125.66,
-            "sla_met": false,
-            "sla_breach_hours": 125.41,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 377,
-            "ticket_number": "35376",
-            "title": "Reserva confirmada: Excursão às Minas de Sal de Wi...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 32.56,
-            "sla_met": false,
-            "sla_breach_hours": 32.31,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 379,
-            "ticket_number": "35378",
-            "title": "Fwd: Confirmacion de la reserva Transavia: KFCJSD",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.37,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 380,
-            "ticket_number": "35379",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604472470",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 32.38,
-            "sla_met": false,
-            "sla_breach_hours": 32.13,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 381,
-            "ticket_number": "35380",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120832427...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 26.04,
-            "sla_met": false,
-            "sla_breach_hours": 25.79,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 392,
-            "ticket_number": "35391",
-            "title": "Criação de processo File 412541/25",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 121.0,
-            "sla_met": false,
-            "sla_breach_hours": 120.75,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 407,
-            "ticket_number": "35406",
-            "title": "Reserva confirmada: Passeio de barco pelo Danúbio ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 120.55,
-            "sla_met": false,
-            "sla_breach_hours": 120.3,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 408,
-            "ticket_number": "35407",
-            "title": "Reserva confirmada: Ingresso do Balneário Szécheny...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 120.53,
-            "sla_met": false,
-            "sla_breach_hours": 120.28,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 410,
-            "ticket_number": "35409",
-            "title": "Re: Resposta reclamação SPT002501520476",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.44,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 421,
-            "ticket_number": "35420",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 115.41,
-            "sla_met": false,
-            "sla_breach_hours": 115.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 423,
-            "ticket_number": "35422",
-            "title": "GBN-85201 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.58,
-            "sla_met": false,
-            "sla_breach_hours": 0.33,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 424,
-            "ticket_number": "35423",
-            "title": "GBN-85201 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 112.58,
-            "sla_met": false,
-            "sla_breach_hours": 112.33,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 430,
-            "ticket_number": "35429",
-            "title": "Adicione novas experiências para sua viagem GBN-70...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.5,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 431,
-            "ticket_number": "35430",
-            "title": "Reserva confirmada: Espectáculo flamenco na Casa d...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 102.29,
-            "sla_met": false,
-            "sla_breach_hours": 102.04,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 432,
-            "ticket_number": "35431",
-            "title": "Confirmación de la reserva con localizador: 393446...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 105.18,
-            "sla_met": false,
-            "sla_breach_hours": 104.93,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 434,
-            "ticket_number": "35433",
-            "title": "Reserva - 412548",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 105.77,
-            "sla_met": false,
-            "sla_breach_hours": 105.52,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 435,
-            "ticket_number": "35434",
-            "title": "Confirmação de Reserva * File 412541",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 101.76,
-            "sla_met": false,
-            "sla_breach_hours": 101.51,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 437,
-            "ticket_number": "35436",
-            "title": "RE: Multibanco - File 411467/25",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 0.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 439,
-            "ticket_number": "35438",
-            "title": "Número de informação da reserva: 6119326",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 10.74,
-            "sla_met": false,
-            "sla_breach_hours": 10.49,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 440,
-            "ticket_number": "35439",
-            "title": "Fwd: Itinerário de Viagem Ryanair",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.52,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 454,
-            "ticket_number": "35453",
-            "title": "GBN-85329 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 94.54,
-            "sla_met": false,
-            "sla_breach_hours": 94.29,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 460,
-            "ticket_number": "35459",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 93.18,
-            "sla_met": false,
-            "sla_breach_hours": 92.93,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 461,
-            "ticket_number": "35460",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 2.16,
-            "sla_met": false,
-            "sla_breach_hours": 1.91,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 462,
-            "ticket_number": "35461",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 468,
-            "ticket_number": "35467",
-            "title": "GBN-85381 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 10.06,
-            "sla_met": false,
-            "sla_breach_hours": 6.06,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 469,
-            "ticket_number": "35468",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120882881...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.28,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 471,
-            "ticket_number": "35470",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120882881...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.28,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 473,
-            "ticket_number": "35472",
-            "title": "Flexible Autos - Reserva com pagamento pendente Re...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.44,
-            "sla_met": false,
-            "sla_breach_hours": 0.19,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 475,
-            "ticket_number": "35474",
-            "title": "Resposta automática W2M:010510266314",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.32,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 485,
-            "ticket_number": "35484",
-            "title": "Envio de documentos de File 412540/25 * VOOS EMITI...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.15,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 496,
-            "ticket_number": "35495",
-            "title": "Reserva confirmada: Transfer entre o aeroporto de ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 78.62,
-            "sla_met": false,
-            "sla_breach_hours": 78.37,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 498,
-            "ticket_number": "35497",
-            "title": "Reserva confirmada: Transfer entre o aeroporto de ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 78.72,
-            "sla_met": false,
-            "sla_breach_hours": 78.47,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 499,
-            "ticket_number": "35498",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 72.64,
-            "sla_met": false,
-            "sla_breach_hours": 72.39,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 505,
-            "ticket_number": "35504",
-            "title": "GBN-85079 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 70.92,
-            "sla_met": false,
-            "sla_breach_hours": 70.67,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 515,
-            "ticket_number": "35514",
-            "title": "GBN-84048 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.93,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 517,
-            "ticket_number": "35516",
-            "title": "GBN-84940 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 91.17,
-            "sla_met": false,
-            "sla_breach_hours": 87.17,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 524,
-            "ticket_number": "35523",
-            "title": "Re:[##   22649   ##] GBN-85079 - Seu pedido foi re...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 69.69,
-            "sla_met": false,
-            "sla_breach_hours": 65.69,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 529,
-            "ticket_number": "35528",
-            "title": "GBN-85533 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 346.57,
-            "sla_met": false,
-            "sla_breach_hours": 346.32,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 530,
-            "ticket_number": "35529",
-            "title": "GBN-85535 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 111.53,
-            "sla_met": false,
-            "sla_breach_hours": 111.28,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 535,
-            "ticket_number": "35534",
-            "title": "Confirmação de autenticação na Teldar Travel para ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.27,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 551,
-            "ticket_number": "35550",
-            "title": "GBN-85634 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 34.46,
-            "sla_met": false,
-            "sla_breach_hours": 34.21,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 553,
-            "ticket_number": "35552",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 38.08,
-            "sla_met": false,
-            "sla_breach_hours": 37.83,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 556,
-            "ticket_number": "35555",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120928028...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 34.41,
-            "sla_met": false,
-            "sla_breach_hours": 34.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 559,
-            "ticket_number": "35558",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120934273...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 6.5,
-            "sla_met": false,
-            "sla_breach_hours": 6.25,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 560,
-            "ticket_number": "35559",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120920990...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 6.44,
-            "sla_met": false,
-            "sla_breach_hours": 6.19,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 568,
-            "ticket_number": "35567",
-            "title": "Envio documentos - (Recibo-231005804)  n. 10043481...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.32,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 585,
-            "ticket_number": "35584",
-            "title": "GBN-85723 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 30.99,
-            "sla_met": false,
-            "sla_breach_hours": 30.74,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 590,
-            "ticket_number": "35589",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 3.01,
-            "sla_met": false,
-            "sla_breach_hours": 2.76,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 594,
-            "ticket_number": "35593",
-            "title": "confirmaao de reserva / fsffvb sdfsav",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 32.48,
-            "sla_met": false,
-            "sla_breach_hours": 32.23,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 599,
-            "ticket_number": "35598",
-            "title": "GBN-84940 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 22.16,
-            "sla_met": false,
-            "sla_breach_hours": 18.16,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 600,
-            "ticket_number": "35599",
-            "title": "Confirmacao 332333",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 27.63,
-            "sla_met": false,
-            "sla_breach_hours": 27.38,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 604,
-            "ticket_number": "35603",
-            "title": "GBN-85762 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 46.2,
-            "sla_met": false,
-            "sla_breach_hours": 45.95,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 613,
-            "ticket_number": "35612",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.96,
-            "sla_met": false,
-            "sla_breach_hours": 1.71,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 614,
-            "ticket_number": "35613",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.95,
-            "sla_met": false,
-            "sla_breach_hours": 1.7,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 616,
-            "ticket_number": "35615",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.8,
-            "sla_met": false,
-            "sla_breach_hours": 1.55,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 617,
-            "ticket_number": "35616",
-            "title": "Reserva confirmada: Ingresso do Balneário Szécheny...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.36,
-            "sla_met": false,
-            "sla_breach_hours": 25.11,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 618,
-            "ticket_number": "35617",
-            "title": "Reserva confirmada: Passeio de barco ao anoitecer ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 44.49,
-            "sla_met": false,
-            "sla_breach_hours": 44.24,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 620,
-            "ticket_number": "35619",
-            "title": "Reserva confirmada: Passeio de barco ao anoitecer ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.41,
-            "sla_met": false,
-            "sla_breach_hours": 25.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 622,
-            "ticket_number": "35621",
-            "title": "Reserva confirmada: Ingresso da Basílica de Santo ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.4,
-            "sla_met": false,
-            "sla_breach_hours": 25.15,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 623,
-            "ticket_number": "35622",
-            "title": "Reserva confirmada: Ingresso do Balneário Szécheny...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 44.11,
-            "sla_met": false,
-            "sla_breach_hours": 43.86,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 627,
-            "ticket_number": "35626",
-            "title": "Reserva confirmada: Ingresso do Balneário Szécheny...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.4,
-            "sla_met": false,
-            "sla_breach_hours": 23.15,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 631,
-            "ticket_number": "35630",
-            "title": "GBN-81440 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 2.11,
-            "sla_met": false,
-            "sla_breach_hours": 1.86,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 632,
-            "ticket_number": "35631",
-            "title": "GBN-84172 e GBN-81440 - Seu pedido foi recebido",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 0.63,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 634,
-            "ticket_number": "35633",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 22.3,
-            "sla_met": false,
-            "sla_breach_hours": 22.05,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 637,
-            "ticket_number": "35636",
-            "title": "Confirmacao 332357",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 10.38,
-            "sla_met": false,
-            "sla_breach_hours": 6.38,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 639,
-            "ticket_number": "35638",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120980011...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 10.99,
-            "sla_met": false,
-            "sla_breach_hours": 10.74,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 640,
-            "ticket_number": "35639",
-            "title": "Envio de ato isolado viagens",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.52,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 644,
-            "ticket_number": "35643",
-            "title": "Document from Costa Crociere",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.99,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 645,
-            "ticket_number": "35644",
-            "title": "Adicione novas experiências para sua viagem GBN-66...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.04,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 646,
-            "ticket_number": "35645",
-            "title": "Reserva Aérea DQ2S9K",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.16,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 647,
-            "ticket_number": "35646",
-            "title": "Document from Costa Crociere",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.19,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 649,
-            "ticket_number": "35648",
-            "title": "GBN-85830 - Su confirmación de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.57,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 650,
-            "ticket_number": "35649",
-            "title": "GBN-85834 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 29.5,
-            "sla_met": false,
-            "sla_breach_hours": 29.25,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 651,
-            "ticket_number": "35650",
-            "title": "Reserva Aérea DQ2S9K",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.66,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 652,
-            "ticket_number": "35651",
-            "title": "Confirmation of booking with locatorRSO3OXSG",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 29.09,
-            "sla_met": false,
-            "sla_breach_hours": 28.84,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 653,
-            "ticket_number": "35652",
-            "title": "GBN-85838 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 29.08,
-            "sla_met": false,
-            "sla_breach_hours": 28.83,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 654,
-            "ticket_number": "35653",
-            "title": "GBN-85844 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 28.27,
-            "sla_met": false,
-            "sla_breach_hours": 28.02,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 669,
-            "ticket_number": "35668",
-            "title": "GBN-85874 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.38,
-            "sla_met": false,
-            "sla_breach_hours": 1.13,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 682,
-            "ticket_number": "35681",
-            "title": "Reserva confirmada: Excursão a Cozumel - Civitatis...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.54,
-            "sla_met": false,
-            "sla_breach_hours": 23.29,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 683,
-            "ticket_number": "35682",
-            "title": "GBN-85896 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.28,
-            "sla_met": false,
-            "sla_breach_hours": 23.03,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 687,
-            "ticket_number": "35686",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.47,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 693,
-            "ticket_number": "35692",
-            "title": "GBN-85908 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.64,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 697,
-            "ticket_number": "35696",
-            "title": "GBN-85959 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 20.74,
-            "sla_met": false,
-            "sla_breach_hours": 20.49,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 706,
-            "ticket_number": "35705",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.02,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 707,
-            "ticket_number": "35706",
-            "title": "GBN-86001 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 17.68,
-            "sla_met": false,
-            "sla_breach_hours": 17.43,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 709,
-            "ticket_number": "35708",
-            "title": "Reserva cancelada – Ref PP621324, Sr. Pedro Perdig...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.05,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 710,
-            "ticket_number": "35709",
-            "title": "ALTERAÇÃO DA RESERVA  - REF PP621324-1, Sr. Jose P...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.96,
-            "sla_met": false,
-            "sla_breach_hours": 16.71,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 712,
-            "ticket_number": "35711",
-            "title": "anulaao de reserva / fsffvb sdfsav",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.04,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 720,
-            "ticket_number": "35719",
-            "title": "Reserva confirmada: Visita guiada por Pompeia - Ci...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.15,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 721,
-            "ticket_number": "35720",
-            "title": "Reserva confirmada: Visita guiada por Pompeia - Ci...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.15,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 727,
-            "ticket_number": "35726",
-            "title": "Orçamento 19520/25/27/45657 Rui Simões_Brasil",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.82,
-            "sla_met": false,
-            "sla_breach_hours": 1.82,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 735,
-            "ticket_number": "35734",
-            "title": "GBN-86003 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.53,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 743,
-            "ticket_number": "35742",
-            "title": "Fwd: Informações da sua reserva TTN-1210276553#838...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 28.82,
-            "sla_met": false,
-            "sla_breach_hours": 28.57,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 745,
-            "ticket_number": "35744",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121027655...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 3.04,
-            "sla_met": false,
-            "sla_breach_hours": 2.79,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 746,
-            "ticket_number": "35745",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121027655...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 3.05,
-            "sla_met": false,
-            "sla_breach_hours": 2.8,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 747,
-            "ticket_number": "35746",
-            "title": "Re:[## 22832 ##] GBN-84172 - Seu pedido foi recebi...",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.83,
-            "sla_met": false,
-            "sla_breach_hours": 1.58,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 748,
-            "ticket_number": "35747",
-            "title": "Re:[## 22832 ##] GBN-84172 - Seu pedido foi recebi...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 1.81,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 749,
-            "ticket_number": "35748",
-            "title": "Confirmacao 332419",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 7.3,
-            "sla_met": false,
-            "sla_breach_hours": 7.05,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 751,
-            "ticket_number": "35750",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604476805",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.74,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 752,
-            "ticket_number": "35751",
-            "title": "RV: Confirmacion de la reserva Transavia: PJ6LSH",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.52,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 755,
-            "ticket_number": "35754",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604474717",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.5,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 759,
-            "ticket_number": "35758",
-            "title": "Reserva alterada: Visita guiada por Pompeia",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.05,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 763,
-            "ticket_number": "35762",
-            "title": "Envio de Documentação Financeira",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.68,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 774,
-            "ticket_number": "35773",
-            "title": "Grupo: GR-439B4FBAE0",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.7,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 786,
-            "ticket_number": "35785",
-            "title": "Confirmacao 332433",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.08,
-            "sla_met": false,
-            "sla_breach_hours": 22.83,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 788,
-            "ticket_number": "35787",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604477059",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.67,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 789,
-            "ticket_number": "35788",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 117.02,
-            "sla_met": false,
-            "sla_breach_hours": 116.77,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 793,
-            "ticket_number": "35792",
-            "title": "Reserva confirmada: Cruzeiro noturno com jantar e ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.3,
-            "sla_met": false,
-            "sla_breach_hours": 0.05,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 794,
-            "ticket_number": "35793",
-            "title": "Dúvida sobre EXECUTIVE na Solférias",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 42.81,
-            "sla_met": false,
-            "sla_breach_hours": 42.56,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 795,
-            "ticket_number": "35794",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121051590...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 42.67,
-            "sla_met": false,
-            "sla_breach_hours": 42.42,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 796,
-            "ticket_number": "35795",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121051593...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 42.67,
-            "sla_met": false,
-            "sla_breach_hours": 42.42,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 797,
-            "ticket_number": "35796",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 42.59,
-            "sla_met": false,
-            "sla_breach_hours": 42.34,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 800,
-            "ticket_number": "35799",
-            "title": "GBN-86198 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 31.77,
-            "sla_met": false,
-            "sla_breach_hours": 31.52,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 801,
-            "ticket_number": "35800",
-            "title": "Reserva confirmada: Tour de 7 dias pelo melhor da ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 105.34,
-            "sla_met": false,
-            "sla_breach_hours": 105.09,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 807,
-            "ticket_number": "35806",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 34.1,
-            "sla_met": false,
-            "sla_breach_hours": 33.85,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 808,
-            "ticket_number": "35807",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 34.32,
-            "sla_met": false,
-            "sla_breach_hours": 34.07,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 809,
-            "ticket_number": "35808",
-            "title": "GBN-86193 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 29.18,
-            "sla_met": false,
-            "sla_breach_hours": 28.93,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 815,
-            "ticket_number": "35814",
-            "title": "GBN-86252 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 32.46,
-            "sla_met": false,
-            "sla_breach_hours": 32.21,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 816,
-            "ticket_number": "35815",
-            "title": "RV: Confirmacion de la reserva Transavia: R9QMTV",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 124.03,
-            "sla_met": false,
-            "sla_breach_hours": 123.78,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 822,
-            "ticket_number": "35821",
-            "title": "Fwd: Informações sobre a sua reserva TTN-117129156...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 26.54,
-            "sla_met": false,
-            "sla_breach_hours": 26.29,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 823,
-            "ticket_number": "35822",
-            "title": "Fwd: easyJet booking reference: K8V2S44",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 173.06,
-            "sla_met": false,
-            "sla_breach_hours": 172.81,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 826,
-            "ticket_number": "35825",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 30.51,
-            "sla_met": false,
-            "sla_breach_hours": 30.26,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 827,
-            "ticket_number": "35826",
-            "title": "GBN-86299 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.52,
-            "sla_met": false,
-            "sla_breach_hours": 25.27,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 829,
-            "ticket_number": "35828",
-            "title": "GBN-86304 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.1,
-            "sla_met": false,
-            "sla_breach_hours": 24.85,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 833,
-            "ticket_number": "35832",
-            "title": "Reserva Aérea DRF22W",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 163.96,
-            "sla_met": false,
-            "sla_breach_hours": 163.71,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 837,
-            "ticket_number": "35836",
-            "title": "Reserva Aérea YYP7N6",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.45,
-            "sla_met": false,
-            "sla_breach_hours": 23.2,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 839,
-            "ticket_number": "35838",
-            "title": "DRF22W – Novo prazo de emissão",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.42,
-            "sla_met": false,
-            "sla_breach_hours": 23.17,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 841,
-            "ticket_number": "35840",
-            "title": "Aéreo - Confirmação - Cancelamento de Reserva (YYP...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.0,
-            "sla_met": false,
-            "sla_breach_hours": 22.75,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 842,
-            "ticket_number": "35841",
-            "title": "DRF891 – Novo prazo de emissão",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 163.5,
-            "sla_met": false,
-            "sla_breach_hours": 163.25,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 843,
-            "ticket_number": "35842",
-            "title": "Reserva Aérea DRF891",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 22.99,
-            "sla_met": false,
-            "sla_breach_hours": 22.74,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 846,
-            "ticket_number": "35845",
-            "title": "Confirmação de reserva com localizador: 3943296",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.69,
-            "sla_met": false,
-            "sla_breach_hours": 24.44,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 847,
-            "ticket_number": "35846",
-            "title": "Referencia para pagamento | File:413248/2025",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 24.6,
-            "sla_met": false,
-            "sla_breach_hours": 24.35,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 850,
-            "ticket_number": "35849",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 92.66,
-            "sla_met": false,
-            "sla_breach_hours": 92.41,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 851,
-            "ticket_number": "35850",
-            "title": "GBN-86362 - Your booking confirmation",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 15.68,
-            "sla_met": false,
-            "sla_breach_hours": 15.43,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 867,
-            "ticket_number": "35866",
-            "title": "Confirmación Transfer Agência: Uma Família Em Viag...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 99.89,
-            "sla_met": false,
-            "sla_breach_hours": 99.64,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 869,
-            "ticket_number": "35868",
-            "title": "GBN-86359 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 76.46,
-            "sla_met": false,
-            "sla_breach_hours": 76.21,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 870,
-            "ticket_number": "35869",
-            "title": "CONTROLO RESERVAS... - 300.00€ - 08/07/2025 300.00...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 873,
-            "ticket_number": "35872",
-            "title": "CONTROLO RESERVAS - PAGAMENTOS - UMA FAMILIA EM VI...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 877,
-            "ticket_number": "35876",
-            "title": "Re: autorização para emissão de bilhetes",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 3.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 881,
-            "ticket_number": "35880",
-            "title": "GBN-86440 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 75.12,
-            "sla_met": false,
-            "sla_breach_hours": 74.87,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 890,
-            "ticket_number": "35889",
-            "title": "Reserva confirmada: Tour completo pela Madeira em ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 121.48,
-            "sla_met": false,
-            "sla_breach_hours": 121.23,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 891,
-            "ticket_number": "35890",
-            "title": "Reserva confirmada: Tour completo pela Madeira em ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 2.41,
-            "sla_met": false,
-            "sla_breach_hours": 2.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 902,
-            "ticket_number": "35901",
-            "title": "Confirmacao 332542",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 56.26,
-            "sla_met": false,
-            "sla_breach_hours": 56.01,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 907,
-            "ticket_number": "35906",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 51.33,
-            "sla_met": false,
-            "sla_breach_hours": 51.08,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 908,
-            "ticket_number": "35907",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 28.63,
-            "sla_met": false,
-            "sla_breach_hours": 28.38,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 913,
-            "ticket_number": "35912",
-            "title": "Informação de reserva - SPT002501546703",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 77.71,
-            "sla_met": false,
-            "sla_breach_hours": 77.46,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 914,
-            "ticket_number": "35913",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121142146...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 25.16,
-            "sla_met": false,
-            "sla_breach_hours": 24.91,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 929,
-            "ticket_number": "35928",
-            "title": "Informação de reserva - SPT002501546715",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 60.59,
-            "sla_met": false,
-            "sla_breach_hours": 60.34,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 938,
-            "ticket_number": "35937",
-            "title": "Fwd: Incidente de voo TTN-1171291568#84139594#T151...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 4.1,
-            "sla_met": false,
-            "sla_breach_hours": 0.1,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 949,
-            "ticket_number": "35948",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121169080...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 4.24,
-            "sla_met": false,
-            "sla_breach_hours": 3.99,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 954,
-            "ticket_number": "35953",
-            "title": "Condições de Sinalização - Alteração",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.11,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 986,
-            "ticket_number": "35985",
-            "title": "GBN-86812 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 19.33,
-            "sla_met": false,
-            "sla_breach_hours": 19.08,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 991,
-            "ticket_number": "35990",
-            "title": "Confirmacao 332628",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.05,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1010,
-            "ticket_number": "351009",
-            "title": "CONTROLO RESERVAS... - 150 - 17/06/2025 150 - 16/0...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.42,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1013,
-            "ticket_number": "351012",
-            "title": "Fwd: Confirmacion de la reserva Transavia: XBRJQC",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 150.22,
-            "sla_met": false,
-            "sla_breach_hours": 149.97,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1025,
-            "ticket_number": "351024",
-            "title": "GBN-86897 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 2.25,
-            "sla_met": false,
-            "sla_breach_hours": 2.0,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1028,
-            "ticket_number": "351026",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604477059",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.88,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1029,
-            "ticket_number": "351027",
-            "title": "GBN-86897 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.57,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1034,
-            "ticket_number": "351032",
-            "title": "RV: Confirmacion de la reserva Transavia: FDIR5T",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.37,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1039,
-            "ticket_number": "351037",
-            "title": "Re:[## 23383 ##] GBN-86897 - Seu pedido foi recebi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.94,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1059,
-            "ticket_number": "351057",
-            "title": "Traslado | Confirmação da reserva #431935701",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 28.72,
-            "sla_met": false,
-            "sla_breach_hours": 28.47,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1068,
-            "ticket_number": "351066",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121221204...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 28.57,
-            "sla_met": false,
-            "sla_breach_hours": 28.32,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1077,
-            "ticket_number": "351075",
-            "title": "GBN-87050 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 26.29,
-            "sla_met": false,
-            "sla_breach_hours": 26.04,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1082,
-            "ticket_number": "351080",
-            "title": "Confirmação de reserva para For PT004157 67390950",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 26.31,
-            "sla_met": false,
-            "sla_breach_hours": 26.06,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1091,
-            "ticket_number": "351089",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121239310...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.81,
-            "sla_met": false,
-            "sla_breach_hours": 23.56,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1098,
-            "ticket_number": "351096",
-            "title": "1756159 W2M:013330007571",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 23.77,
-            "sla_met": false,
-            "sla_breach_hours": 23.52,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1101,
-            "ticket_number": "351099",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 21.56,
-            "sla_met": false,
-            "sla_breach_hours": 21.31,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1108,
-            "ticket_number": "351106",
-            "title": "GBN-87094 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 20.5,
-            "sla_met": false,
-            "sla_breach_hours": 20.25,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1109,
-            "ticket_number": "351107",
-            "title": "GBN-87094 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 20.49,
-            "sla_met": false,
-            "sla_breach_hours": 20.24,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1110,
-            "ticket_number": "351108",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121244679...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 17.71,
-            "sla_met": false,
-            "sla_breach_hours": 17.46,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1114,
-            "ticket_number": "351112",
-            "title": "Fwd: Información reserva. TTN-1212446796#84384311#...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 17.7,
-            "sla_met": false,
-            "sla_breach_hours": 17.45,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1117,
-            "ticket_number": "351115",
-            "title": "Faça o download da sua fatura - Civitatis.com",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 62.88,
-            "sla_met": false,
-            "sla_breach_hours": 62.63,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1118,
-            "ticket_number": "351116",
-            "title": "GBN-87150 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 18.85,
-            "sla_met": false,
-            "sla_breach_hours": 18.6,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1123,
-            "ticket_number": "351121",
-            "title": "Reserva confirmada: Free tour por Florença - Civit...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 18.02,
-            "sla_met": false,
-            "sla_breach_hours": 17.77,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1124,
-            "ticket_number": "351122",
-            "title": "Número de informação da reserva: 6119956",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 2.18,
-            "sla_met": false,
-            "sla_breach_hours": 1.93,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1127,
-            "ticket_number": "351125",
-            "title": "GBN-87175 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 7.11,
-            "sla_met": false,
-            "sla_breach_hours": 6.86,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1128,
-            "ticket_number": "351126",
-            "title": "Adicione novas experiências para sua viagem GBN-85...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.71,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1132,
-            "ticket_number": "351130",
-            "title": "Fwd: Documentação da reserva TTN-1212212049#843483...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.43,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1141,
-            "ticket_number": "351139",
-            "title": "Confirmacao 332766",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 4.2,
-            "sla_met": false,
-            "sla_breach_hours": 3.95,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1145,
-            "ticket_number": "351143",
-            "title": "Confirmacao 332768",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 3.37,
-            "sla_met": false,
-            "sla_breach_hours": 3.12,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1148,
-            "ticket_number": "351146",
-            "title": "Confirmacao 332769",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.51,
-            "sla_met": false,
-            "sla_breach_hours": 1.26,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1160,
-            "ticket_number": "351158",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121269996...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 2.04,
-            "sla_met": false,
-            "sla_breach_hours": 1.79,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1163,
-            "ticket_number": "351161",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.41,
-            "sla_met": false,
-            "sla_breach_hours": 0.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1164,
-            "ticket_number": "351162",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.4,
-            "sla_met": false,
-            "sla_breach_hours": 0.15,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1165,
-            "ticket_number": "351163",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.39,
-            "sla_met": false,
-            "sla_breach_hours": 0.14,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1166,
-            "ticket_number": "351164",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 41.07,
-            "sla_met": false,
-            "sla_breach_hours": 40.82,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1167,
-            "ticket_number": "351165",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.24,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1168,
-            "ticket_number": "351166",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 40.92,
-            "sla_met": false,
-            "sla_breach_hours": 40.67,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1171,
-            "ticket_number": "351169",
-            "title": "| Nova reserva GBN-86805 - envio de doc |",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.81,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1172,
-            "ticket_number": "351170",
-            "title": "GBN-87281 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 95.47,
-            "sla_met": false,
-            "sla_breach_hours": 95.22,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1173,
-            "ticket_number": "351171",
-            "title": "Fwd: Pedro, your flight to Seychelles will be oper...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 112.77,
-            "sla_met": false,
-            "sla_breach_hours": 112.52,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1187,
-            "ticket_number": "351184",
-            "title": "GBN-87288 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.9,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1194,
-            "ticket_number": "351191",
-            "title": "Contacto - Serviço para grupos",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.18,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1196,
-            "ticket_number": "351193",
-            "title": "RV: Confirmacion de la reserva Transavia: UC53RP",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1232,
-            "ticket_number": "351229",
-            "title": "Reserva modificada: Excursão a Santo Domingo",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.9,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1239,
-            "ticket_number": "351236",
-            "title": "In Sure Broker - Pedido de alteração de pessoa seg...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.05,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1241,
-            "ticket_number": "351238",
-            "title": "GBN-87408 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 74.25,
-            "sla_met": false,
-            "sla_breach_hours": 74.0,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1250,
-            "ticket_number": "351247",
-            "title": "Información de reserva número: 1757952",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.7,
-            "sla_met": false,
-            "sla_breach_hours": 16.45,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1252,
-            "ticket_number": "351249",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.11,
-            "sla_met": false,
-            "sla_breach_hours": 15.86,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1253,
-            "ticket_number": "351250",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.13,
-            "sla_met": false,
-            "sla_breach_hours": 15.88,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1254,
-            "ticket_number": "351251",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.12,
-            "sla_met": false,
-            "sla_breach_hours": 15.87,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1267,
-            "ticket_number": "351264",
-            "title": "Eticket - 66890519 - EU  14/11/2025  Barcelona, Es...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.58,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1274,
-            "ticket_number": "351271",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 50.4,
-            "sla_met": false,
-            "sla_breach_hours": 50.15,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1279,
-            "ticket_number": "351276",
-            "title": "GBN-87503 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.64,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1284,
-            "ticket_number": "351281",
-            "title": "Confirmação de reserva para For PT004157 67570291",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 29.34,
-            "sla_met": false,
-            "sla_breach_hours": 29.09,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1288,
-            "ticket_number": "351285",
-            "title": "Fwd: Confirmação de reserva para For AMILCAR MIRAN...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.59,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1293,
-            "ticket_number": "351290",
-            "title": "GBN-87493 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 5.5,
-            "sla_met": false,
-            "sla_breach_hours": 5.25,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1294,
-            "ticket_number": "351291",
-            "title": "GBN-87500 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 5.5,
-            "sla_met": false,
-            "sla_breach_hours": 5.25,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1300,
-            "ticket_number": "351297",
-            "title": "Reserva confirmada: Free tour por Bratislava - Civ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 5.52,
-            "sla_met": false,
-            "sla_breach_hours": 5.27,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1306,
-            "ticket_number": "351303",
-            "title": "Fwd: Confirmacion de la reserva Transavia: CYWMXP",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 8.86,
-            "sla_met": false,
-            "sla_breach_hours": 8.61,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1309,
-            "ticket_number": "351306",
-            "title": "Reserva confirmada: Free tour por Viena - Civitati...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 8.04,
-            "sla_met": false,
-            "sla_breach_hours": 7.79,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1313,
-            "ticket_number": "351310",
-            "title": "Nova Viagem #251000275 - Rota dos Sonhos",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.58,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1322,
-            "ticket_number": "351319",
-            "title": "Confirmação de reserva para For PT004157 67528547",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.33,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1323,
-            "ticket_number": "351320",
-            "title": "Confirmação de reserva para For PT004157 67529346",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1324,
-            "ticket_number": "351321",
-            "title": "Confirmação de reserva para For PT004157 67529122",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.32,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1335,
-            "ticket_number": "351332",
-            "title": "GBN-87605 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 53.11,
-            "sla_met": false,
-            "sla_breach_hours": 52.86,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1336,
-            "ticket_number": "351333",
-            "title": "Número de informação da reserva: 6120100",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 52.69,
-            "sla_met": false,
-            "sla_breach_hours": 52.44,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1337,
-            "ticket_number": "351334",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121372990...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 4.55,
-            "sla_met": false,
-            "sla_breach_hours": 4.3,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1351,
-            "ticket_number": "351348",
-            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.85,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1352,
-            "ticket_number": "351349",
-            "title": "Número de informação da reserva: 6120114",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 49.46,
-            "sla_met": false,
-            "sla_breach_hours": 49.21,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1368,
-            "ticket_number": "351365",
-            "title": "Fwd: Acompanhamento do procedimento TTN-1210584648...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.11,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1369,
-            "ticket_number": "351366",
-            "title": "GBN-87613 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 47.48,
-            "sla_met": false,
-            "sla_breach_hours": 47.23,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1370,
-            "ticket_number": "351367",
-            "title": "GBN-87613 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.72,
-            "sla_met": false,
-            "sla_breach_hours": 0.47,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1372,
-            "ticket_number": "351369",
-            "title": "GBN-87682 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 46.75,
-            "sla_met": false,
-            "sla_breach_hours": 46.5,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1375,
-            "ticket_number": "351372",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.73,
-            "sla_met": false,
-            "sla_breach_hours": 0.48,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1376,
-            "ticket_number": "351373",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.58,
-            "sla_met": false,
-            "sla_breach_hours": 0.33,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1377,
-            "ticket_number": "351374",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.56,
-            "sla_met": false,
-            "sla_breach_hours": 0.31,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1378,
-            "ticket_number": "351375",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.42,
-            "sla_met": false,
-            "sla_breach_hours": 0.17,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1379,
-            "ticket_number": "351376",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.42,
-            "sla_met": false,
-            "sla_breach_hours": 0.17,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1383,
-            "ticket_number": "351380",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 44.82,
-            "sla_met": false,
-            "sla_breach_hours": 44.57,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1384,
-            "ticket_number": "351381",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 44.83,
-            "sla_met": false,
-            "sla_breach_hours": 44.58,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1385,
-            "ticket_number": "351382",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 44.83,
-            "sla_met": false,
-            "sla_breach_hours": 44.58,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1386,
-            "ticket_number": "351383",
-            "title": "Fwd: Ryanair 69664256/Miguel Cena/Miguel Cena",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 45.12,
-            "sla_met": false,
-            "sla_breach_hours": 44.87,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1387,
-            "ticket_number": "351384",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 45.03,
-            "sla_met": false,
-            "sla_breach_hours": 44.78,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1400,
-            "ticket_number": "351397",
-            "title": "Fwd: Portão de embarque atribuído para o seu voo",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.06,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1401,
-            "ticket_number": "351398",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 32.5,
-            "sla_met": false,
-            "sla_breach_hours": 32.25,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1403,
-            "ticket_number": "351400",
-            "title": "GBN-87711 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 36.72,
-            "sla_met": false,
-            "sla_breach_hours": 36.47,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1404,
-            "ticket_number": "351401",
-            "title": "GBN Travel: Informações sobre sua reserva - GBN-87...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 36.56,
-            "sla_met": false,
-            "sla_breach_hours": 36.31,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1419,
-            "ticket_number": "351416",
-            "title": "\"GBN-87699 - Your request has been received\"",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.02,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1428,
-            "ticket_number": "351425",
-            "title": "GBN-87712 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 28.89,
-            "sla_met": false,
-            "sla_breach_hours": 28.64,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1433,
-            "ticket_number": "351430",
-            "title": "Aproveite o Stopover em Angola com a TAAG! ✈️",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.22,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1435,
-            "ticket_number": "351432",
-            "title": " Novidades sobre atribuição de comissões às agênci...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1437,
-            "ticket_number": "351434",
-            "title": "Fwd: Novidades sobre atribuição de comissões às ag...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.32,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1439,
-            "ticket_number": "351436",
-            "title": "GBN-87774 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.32,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1440,
-            "ticket_number": "351437",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121414729...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 26.3,
-            "sla_met": false,
-            "sla_breach_hours": 26.05,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1441,
-            "ticket_number": "351438",
-            "title": "GBN-87769 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1448,
-            "ticket_number": "351445",
-            "title": "Número de informação da reserva: 6120164",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 13.68,
-            "sla_met": false,
-            "sla_breach_hours": 9.68,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1452,
-            "ticket_number": "351449",
-            "title": "Fwd: Verification code",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 13.74,
-            "sla_met": false,
-            "sla_breach_hours": 9.74,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1456,
-            "ticket_number": "351453",
-            "title": "Confirmação de autenticação na Teldar Travel para ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 12.44,
-            "sla_met": false,
-            "sla_breach_hours": 8.44,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1457,
-            "ticket_number": "351454",
-            "title": "Nova Viagem #251000296 - Maria Moreira",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 12.14,
-            "sla_met": false,
-            "sla_breach_hours": 8.14,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1458,
-            "ticket_number": "351455",
-            "title": "RE:  Formação Certificada | Lei das Agências de Vi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 12.5,
-            "sla_met": false,
-            "sla_breach_hours": 8.5,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1459,
-            "ticket_number": "351456",
-            "title": "GBN-87855 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 11.96,
-            "sla_met": false,
-            "sla_breach_hours": 7.96,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1466,
-            "ticket_number": "351463",
-            "title": "GBN-87859 - Sua confirmação de reserva",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 11.73,
-            "sla_met": false,
-            "sla_breach_hours": 7.73,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1474,
-            "ticket_number": "351471",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121420858...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.71,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1476,
-            "ticket_number": "351473",
-            "title": "Confirmação reserva Bedsonline 58-4654758",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 8.82,
-            "sla_met": false,
-            "sla_breach_hours": 8.57,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1478,
-            "ticket_number": "351475",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121420151...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.78,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1479,
-            "ticket_number": "351476",
-            "title": "Icárion - Istambul, Capadócia & Maurícia - 01/07/2...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.79,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1490,
-            "ticket_number": "351487",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 802049929",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.58,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1497,
-            "ticket_number": "351494",
-            "title": "Confirmação reserva Bedsonline 58-4654853",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.14,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1502,
-            "ticket_number": "351499",
-            "title": "Informação de reserva - SPT002501548337",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 3.2,
-            "sla_met": false,
-            "sla_breach_hours": 2.95,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 0.18,
+            "sla_met": false,
+            "sla_breach_hours": 3.82,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T12:01:28.515Z",
+            "first_response_escalation_at": null
           }
         ]
       },
       "Sandra Reis": {
-        "total_tickets": 194,
-        "sla_met": 64,
-        "sla_missed": 130,
-        "sla_compliance_rate": 32.99,
+        "total_tickets": 135,
+        "sla_met": 23,
+        "sla_missed": 112,
+        "sla_compliance_rate": 17.04,
         "tickets": [
           {
             "ticket_id": 33,
@@ -23315,10 +19550,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Reclamação Serviços de Estadia e transferes R...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 318.44,
+            "actual_time_hours": 0.67,
             "sla_met": false,
-            "sla_breach_hours": 294.44,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.33,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-09-30T08:47:00.241Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 34,
@@ -23326,10 +19564,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Reclamação reserva GBN-68391 (pedido de alter...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 26.99,
+            "actual_time_hours": 0.73,
             "sla_met": false,
-            "sla_breach_hours": 2.99,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.27,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-09-30T08:51:24.733Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 44,
@@ -23337,10 +19578,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-83978 - Sua confirmação de reserva",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 169.13,
-            "sla_met": false,
-            "sla_breach_hours": 168.88,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 29.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-02T09:35:33.936Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 45,
@@ -23348,10 +19592,13 @@ export const ZAMMAD_METRICS = {
             "title": "Mensagem sobre a reserva 34120285 - Civitatis",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 0.7,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.68,
+            "sla_met": false,
+            "sla_breach_hours": 23.32,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T09:04:58.918Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 46,
@@ -23359,10 +19606,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: GBN-82207 - Seu pedido foi recebido",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 7.95,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.12,
+            "sla_met": false,
+            "sla_breach_hours": 22.88,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T09:34:03.807Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 49,
@@ -23370,10 +19620,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 19582 ##] GBN-68391 - Seu pedido foi recebi...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 242.43,
+            "actual_time_hours": 0.07,
             "sla_met": false,
-            "sla_breach_hours": 218.43,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.93,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-09-30T08:44:59.073Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 50,
@@ -23381,10 +19634,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informação de reserva - SPT002501543106",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.58,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.57,
+            "sla_met": false,
+            "sla_breach_hours": 22.43,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T10:42:19.920Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 51,
@@ -23392,10 +19648,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Confirmação de reserva 332077 ### TIME LIMIT E...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.43,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.42,
+            "sla_met": false,
+            "sla_breach_hours": 3.58,
+            "sla_name": "SLA P2",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T10:37:21.820Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 52,
@@ -23403,10 +19662,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cotação Funchal",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 4.05,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.83,
+            "sla_met": false,
+            "sla_breach_hours": 23.17,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T11:01:45.446Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 56,
@@ -23414,10 +19676,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: W2M NEXT - Uma Família em Viagem – Daniela Oli...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 28.88,
+            "actual_time_hours": 1.2,
             "sla_met": false,
-            "sla_breach_hours": 4.88,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.8,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-09-30T11:30:37.472Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 57,
@@ -23425,10 +19690,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: Pedido de cotação para grupo de 15 pessoas",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 28.31,
+            "actual_time_hours": 0.7,
             "sla_met": false,
-            "sla_breach_hours": 4.31,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.3,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-09-30T11:32:43.058Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 62,
@@ -23436,10 +19704,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 21163 ##] GBN-65520 - Seu pedido foi recebi...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 44.55,
+            "actual_time_hours": 2.93,
             "sla_met": false,
-            "sla_breach_hours": 20.55,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 21.07,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-02",
+            "first_response_at": "2025-09-30T14:55:44.688Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 70,
@@ -23447,10 +19718,13 @@ export const ZAMMAD_METRICS = {
             "title": "Información de su solicitud de Grupos",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.64,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.98,
+            "sla_met": false,
+            "sla_breach_hours": 23.02,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T14:48:39.556Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 73,
@@ -23458,10 +19732,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: Pedido de cotação para grupo de 15 pessoas",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.33,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.32,
+            "sla_met": false,
+            "sla_breach_hours": 22.68,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T15:23:46.130Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 83,
@@ -23469,10 +19746,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: Nueva solicitud de Grupos---851879---ZURIQUE",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 16.67,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.67,
+            "sla_met": false,
+            "sla_breach_hours": 23.33,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-09-30T16:56:44.308Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 89,
@@ -23480,10 +19760,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Proposta de projeto educativo e lúdico para es...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 184.3,
+            "actual_time_hours": 3.5,
             "sla_met": false,
-            "sla_breach_hours": 160.3,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 20.5,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-01T08:52:19.523Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 90,
@@ -23491,10 +19774,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Fwd: [## 21889 ##] GBN-72699 - Seu pedido foi ...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 138.76,
+            "actual_time_hours": 3.62,
             "sla_met": false,
-            "sla_breach_hours": 114.76,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 20.38,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-01T08:59:49.532Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 99,
@@ -23502,10 +19788,13 @@ export const ZAMMAD_METRICS = {
             "title": "Número de informação da reserva: 6119135",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.22,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.05,
+            "sla_met": false,
+            "sla_breach_hours": 23.95,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-10-01T08:22:43.602Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 100,
@@ -23513,10 +19802,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: Reclamação smy loc. 1115650285 / Acompanhament...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 217.01,
+            "actual_time_hours": 0.42,
             "sla_met": false,
-            "sla_breach_hours": 213.01,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.58,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-01T09:18:01.041Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 102,
@@ -23524,10 +19816,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: \"GBN-73278 - Your request has been received\"",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 122.03,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 121.78,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 0.25,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-01T09:51:51.186Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 104,
@@ -23535,10 +19830,13 @@ export const ZAMMAD_METRICS = {
             "title": "Questão seguros - INSURE  - Urgente PF",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 2.36,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 0.32,
+            "sla_met": false,
+            "sla_breach_hours": 23.68,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-10-01T11:01:50.643Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 106,
@@ -23546,10 +19844,13 @@ export const ZAMMAD_METRICS = {
             "title": "W2M NEXT - Uma Família em Viagem – Daniela Oliveir...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.83,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 1.82,
+            "sla_met": false,
+            "sla_breach_hours": 22.18,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-10-01T13:05:00.968Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 115,
@@ -23557,10 +19858,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Fwd: Re: [## 20898 ##] GBN-80761 - Seu pedido ...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 147.1,
+            "actual_time_hours": 0.65,
             "sla_met": false,
-            "sla_breach_hours": 143.1,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.35,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-01T14:16:18.579Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 116,
@@ -23568,10 +19872,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: Pedido de cotação para grupo de 15 pessoas",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.32,
+            "sla_met": false,
+            "sla_breach_hours": 3.68,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-10-01T13:56:18.910Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 119,
@@ -23579,10 +19886,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Fwd: Pedido de cotação grupo de 15 pessoas",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 115.84,
+            "actual_time_hours": 0.13,
             "sla_met": false,
-            "sla_breach_hours": 91.84,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.87,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-01T14:57:45.169Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 120,
@@ -23590,10 +19900,13 @@ export const ZAMMAD_METRICS = {
             "title": "Dados para reservar Voo de 2 a 15 de novembro -   ...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 116.73,
+            "actual_time_hours": 0.3,
             "sla_met": false,
-            "sla_breach_hours": 92.73,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.7,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-01T15:07:40.065Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 122,
@@ -23601,21 +19914,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: 10587365-Cristina La Salete Santos Ferreira",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 282.98,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 278.98,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 124,
-            "ticket_number": "35123",
-            "title": "Confirmação de reserva com localizador: 3925479",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 162.47,
-            "sla_met": false,
-            "sla_breach_hours": 162.22,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-01T15:59:17.477Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 141,
@@ -23623,21 +19928,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Localizador SPT002501520476",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 25.34,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 21.34,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 149,
-            "ticket_number": "35148",
-            "title": "GBN-84388 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 172.38,
-            "sla_met": false,
-            "sla_breach_hours": 172.13,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-03",
+            "first_response_at": "2025-10-02T10:02:31.975Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 150,
@@ -23645,10 +19942,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: 851058",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.78,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.77,
+            "sla_met": false,
+            "sla_breach_hours": 2.23,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-02",
+            "first_response_at": "2025-10-02T13:18:57.794Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 152,
@@ -23656,10 +19956,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de declaração de causa para cancelamento do...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 123.13,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 119.13,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-02T12:58:03.271Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 154,
@@ -23667,10 +19970,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 21594 ##] GBN-83188 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 19.46,
-            "sla_met": false,
-            "sla_breach_hours": 15.46,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 9.45,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-03",
+            "first_response_at": "2025-10-03T10:25:29.955Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 160,
@@ -23678,21 +19984,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 20192 ##] GBN-75991 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 115.41,
-            "sla_met": false,
-            "sla_breach_hours": 111.41,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 169,
-            "ticket_number": "35168",
-            "title": "GBN-84514 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 151.2,
-            "sla_met": false,
-            "sla_breach_hours": 150.95,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 12.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-03T15:15:51.507Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 170,
@@ -23700,54 +19998,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informações sobre o operador do Pedido Nº 27628088...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 103.42,
+            "actual_time_hours": 5.13,
             "sla_met": false,
-            "sla_breach_hours": 79.42,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 171,
-            "ticket_number": "35170",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120690794...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 151.16,
-            "sla_met": false,
-            "sla_breach_hours": 150.91,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 179,
-            "ticket_number": "35178",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604469673",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 167.35,
-            "sla_met": false,
-            "sla_breach_hours": 167.1,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 185,
-            "ticket_number": "35184",
-            "title": "Re: URGENTE, Nortravel 604299456",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 74.09,
-            "sla_met": false,
-            "sla_breach_hours": 70.09,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 187,
-            "ticket_number": "35186",
-            "title": "GBN-72699 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 71.06,
-            "sla_met": false,
-            "sla_breach_hours": 67.06,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 18.87,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-03T14:21:35.733Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 188,
@@ -23755,21 +20012,13 @@ export const ZAMMAD_METRICS = {
             "title": "joana costa GBN-72699 e GBN-84581",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 164.15,
+            "actual_time_hours": 22.92,
             "sla_met": false,
-            "sla_breach_hours": 140.15,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 190,
-            "ticket_number": "35189",
-            "title": "GBN-84581 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 162.7,
-            "sla_met": false,
-            "sla_breach_hours": 162.45,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 1.08,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-06T15:00:03.550Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 192,
@@ -23777,54 +20026,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Grupo Cabo Verde",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 241.76,
+            "actual_time_hours": 23.52,
             "sla_met": false,
-            "sla_breach_hours": 217.76,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 193,
-            "ticket_number": "35192",
-            "title": "Re:[## 22231 ##] GBN-72699 - Seu pedido foi recebi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 70.83,
-            "sla_met": false,
-            "sla_breach_hours": 66.83,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 201,
-            "ticket_number": "35200",
-            "title": "GBN-84764 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 31.91,
-            "sla_met": false,
-            "sla_breach_hours": 31.66,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 202,
-            "ticket_number": "35201",
-            "title": "GBN-84763 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 169.29,
-            "sla_met": false,
-            "sla_breach_hours": 169.04,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 203,
-            "ticket_number": "35202",
-            "title": "GBN-84762 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 99.42,
-            "sla_met": false,
-            "sla_breach_hours": 99.17,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 0.48,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-06T15:36:14.160Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 208,
@@ -23832,32 +20040,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 76.05,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 75.8,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 210,
-            "ticket_number": "35209",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 221.75,
-            "sla_met": false,
-            "sla_breach_hours": 221.5,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 211,
-            "ticket_number": "35210",
-            "title": "GBN-84719 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 77.19,
-            "sla_met": false,
-            "sla_breach_hours": 76.94,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-06T08:11:05.467Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 220,
@@ -23865,10 +20054,13 @@ export const ZAMMAD_METRICS = {
             "title": "Envio (Recibo-2147810575)",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 32.18,
+            "actual_time_hours": 1.27,
             "sla_met": false,
-            "sla_breach_hours": 8.18,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.73,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T10:15:35.964Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 223,
@@ -23876,32 +20068,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Re: Envio (Factura-2147866156) (#2563022)",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 31.69,
+            "actual_time_hours": 1.32,
             "sla_met": false,
-            "sla_breach_hours": 27.69,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 228,
-            "ticket_number": "35227",
-            "title": "GBN-84750 - Your booking confirmation",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 195.11,
-            "sla_met": false,
-            "sla_breach_hours": 194.86,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 238,
-            "ticket_number": "35237",
-            "title": "GBN-65990 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 410.69,
-            "sla_met": false,
-            "sla_breach_hours": 406.69,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.68,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T10:19:44.277Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 239,
@@ -23909,10 +20082,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Reclamação Transfer GBN-80761",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 25.28,
+            "actual_time_hours": 0.72,
             "sla_met": false,
-            "sla_breach_hours": 21.28,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.28,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T11:12:50.931Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 247,
@@ -23920,32 +20096,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-83305 - RGPD",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 24.9,
+            "actual_time_hours": 2.33,
             "sla_met": false,
-            "sla_breach_hours": 0.9,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 250,
-            "ticket_number": "35249",
-            "title": "Informação de reserva - SPT002501544719",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 20.21,
-            "sla_met": false,
-            "sla_breach_hours": 19.96,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 255,
-            "ticket_number": "35254",
-            "title": "Informação de reserva - SPT002501544760",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 166.33,
-            "sla_met": false,
-            "sla_breach_hours": 166.08,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 21.67,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T15:29:48.252Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 263,
@@ -23953,10 +20110,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 208.42,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 208.17,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-06T18:09:30.162Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 266,
@@ -23964,43 +20124,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pagamento da reserva – Ref PP238250, Sra. Carla Li...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 19.84,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 267,
-            "ticket_number": "35266",
-            "title": "Re: Fwd: [## 21897 ##] GBN-77744 - Seu pedido foi ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 165.93,
+            "actual_time_hours": 5.8,
             "sla_met": false,
-            "sla_breach_hours": 161.93,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 279,
-            "ticket_number": "35278",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 93.39,
-            "sla_met": false,
-            "sla_breach_hours": 93.14,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 297,
-            "ticket_number": "35296",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 147.16,
-            "sla_met": false,
-            "sla_breach_hours": 146.91,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 18.2,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-07T09:58:03.194Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 298,
@@ -24008,32 +20138,13 @@ export const ZAMMAD_METRICS = {
             "title": "INFORMAÇÃO IMPORTANTE NO LOCALIZADOR 604299456",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.3,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 300,
-            "ticket_number": "35299",
-            "title": "Re: GBN-83978 + GBN-82207",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 174.41,
+            "actual_time_hours": 0.28,
             "sla_met": false,
-            "sla_breach_hours": 174.16,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 303,
-            "ticket_number": "35302",
-            "title": "GBN-84892 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 79.55,
-            "sla_met": false,
-            "sla_breach_hours": 79.3,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.72,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-07T11:34:22.342Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 311,
@@ -24041,10 +20152,13 @@ export const ZAMMAD_METRICS = {
             "title": "Loc1192905973 - smy",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 70.26,
+            "actual_time_hours": 2.12,
             "sla_met": false,
-            "sla_breach_hours": 66.26,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.88,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-07T15:39:17.657Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 330,
@@ -24052,10 +20166,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido e cotação - Longa duração",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 20.35,
-            "sla_met": false,
-            "sla_breach_hours": 16.35,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 7.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T13:12:13.224Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 332,
@@ -24063,21 +20180,13 @@ export const ZAMMAD_METRICS = {
             "title": "Comprovativo Ana Catarina Silva",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 15.83,
-            "sla_met": false,
-            "sla_breach_hours": 11.83,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 334,
-            "ticket_number": "35333",
-            "title": "GBN-85037 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 184.72,
-            "sla_met": false,
-            "sla_breach_hours": 184.47,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 5.82,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T11:38:25.666Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 365,
@@ -24085,21 +20194,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Itinerário de Viagem Ryanair",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.41,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 367,
-            "ticket_number": "35366",
-            "title": "GBN-85056 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 320.24,
+            "actual_time_hours": 0.4,
             "sla_met": false,
-            "sla_breach_hours": 319.99,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.6,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T09:23:41.317Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 385,
@@ -24107,21 +20208,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Grupo - Djerba",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 121.71,
-            "sla_met": false,
-            "sla_breach_hours": 117.71,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 393,
-            "ticket_number": "35392",
-            "title": "Cancelamento da reserva",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 1.93,
+            "actual_time_hours": 14.7,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-09T13:55:10.607Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 395,
@@ -24129,10 +20222,13 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmação de Reserva * File 412540",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.71,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.7,
+            "sla_met": false,
+            "sla_breach_hours": 2.3,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T15:29:20.853Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 399,
@@ -24140,10 +20236,13 @@ export const ZAMMAD_METRICS = {
             "title": "fatura",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 25.85,
+            "actual_time_hours": 2.23,
             "sla_met": false,
-            "sla_breach_hours": 21.85,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-08T16:29:14.162Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 441,
@@ -24151,10 +20250,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Jose carlos, tu reserva K8V2S44: cambios impo...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 126.1,
+            "actual_time_hours": 0.25,
             "sla_met": false,
-            "sla_breach_hours": 122.1,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.75,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-09T11:05:10.628Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 442,
@@ -24162,10 +20264,13 @@ export const ZAMMAD_METRICS = {
             "title": "newblue",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 25.01,
+            "actual_time_hours": 0.15,
             "sla_met": false,
-            "sla_breach_hours": 21.01,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.85,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-09T10:58:38.455Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 470,
@@ -24173,10 +20278,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: GBN Travel: Information about your booking - G...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 243.81,
-            "sla_met": false,
-            "sla_breach_hours": 239.81,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 4.82,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-10T12:56:15.571Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 477,
@@ -24184,10 +20292,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informação de reserva - SPT002501543106",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 3.99,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.3,
+            "sla_met": false,
+            "sla_breach_hours": 3.7,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T09:30:20.745Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 478,
@@ -24195,21 +20306,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: Viagem Familiarização Gambia 4 a 9 novembro",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 3.92,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 481,
-            "ticket_number": "35480",
-            "title": "cotação grupo voo_Atenas_Albina",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 97.17,
+            "actual_time_hours": 0.42,
             "sla_met": false,
-            "sla_breach_hours": 93.17,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.58,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T09:37:06.339Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 482,
@@ -24217,21 +20320,13 @@ export const ZAMMAD_METRICS = {
             "title": "Envio de Documentação Financeira",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.04,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 491,
-            "ticket_number": "35490",
-            "title": "Fwd: Documentação recebida corretamente TTN-113338...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 118.01,
+            "actual_time_hours": 1.02,
             "sla_met": false,
-            "sla_breach_hours": 94.01,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 2.98,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T10:29:28.565Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 501,
@@ -24239,10 +20334,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido GBN - urgente -   69230",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 115.54,
-            "sla_met": false,
-            "sla_breach_hours": 91.54,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 37.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T20:05:32.188Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 502,
@@ -24250,21 +20348,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cancelamento de Transfers por parte de operador - ...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 457.06,
-            "sla_met": false,
-            "sla_breach_hours": 453.06,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 521,
-            "ticket_number": "35520",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604474579",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 74.83,
-            "sla_met": false,
-            "sla_breach_hours": 74.58,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 27.35,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-13T09:41:45.934Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 527,
@@ -24272,10 +20362,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 21062 ##] GBN-82207 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 115.41,
-            "sla_met": false,
-            "sla_breach_hours": 111.41,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 22.5,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T10:42:06.469Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 537,
@@ -24283,10 +20376,13 @@ export const ZAMMAD_METRICS = {
             "title": "RV: Confirmacion de la reserva Transavia: OFIKRD",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.38,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.37,
+            "sla_met": false,
+            "sla_breach_hours": 3.63,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T08:29:01.720Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 542,
@@ -24294,10 +20390,13 @@ export const ZAMMAD_METRICS = {
             "title": "Urgente troca de hotel",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 54.33,
-            "sla_met": false,
-            "sla_breach_hours": 54.08,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 2.72,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T10:50:08.338Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 543,
@@ -24305,21 +20404,13 @@ export const ZAMMAD_METRICS = {
             "title": "Grupo: GR-8FB0E357EE",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 4.77,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 554,
-            "ticket_number": "35553",
-            "title": "Confirmação de reserva com localizador: 3937692",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 4.33,
+            "actual_time_hours": 4.75,
             "sla_met": false,
-            "sla_breach_hours": 4.08,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 19.25,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T12:52:27.111Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 555,
@@ -24327,10 +20418,13 @@ export const ZAMMAD_METRICS = {
             "title": "Documentação da viagem - Processo 379589",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 79.83,
+            "actual_time_hours": 0.73,
             "sla_met": false,
-            "sla_breach_hours": 55.83,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 23.27,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-16",
+            "first_response_at": "2025-10-13T08:53:53.644Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 561,
@@ -24338,21 +20432,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: SMYTRAVEL 1125356410 TTN-1125356410#83528832#...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 32.69,
+            "actual_time_hours": 0.68,
             "sla_met": false,
-            "sla_breach_hours": 28.69,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 564,
-            "ticket_number": "35563",
-            "title": "Re: Pedido de Informação – Alojamento para Trabalh...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.98,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.32,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-13T08:55:16.341Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 578,
@@ -24360,10 +20446,13 @@ export const ZAMMAD_METRICS = {
             "title": "SPT002501544719 -    Toalhas de praia incluídas",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 3.48,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.6,
+            "sla_met": false,
+            "sla_breach_hours": 2.4,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T12:22:54.705Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 582,
@@ -24371,10 +20460,13 @@ export const ZAMMAD_METRICS = {
             "title": "Envio de Documentação Financeira",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 50.56,
+            "actual_time_hours": 1.2,
             "sla_met": false,
-            "sla_breach_hours": 46.56,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.8,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T12:50:09.257Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 583,
@@ -24382,10 +20474,13 @@ export const ZAMMAD_METRICS = {
             "title": "Envio de Documentação Financeira",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 50.57,
+            "actual_time_hours": 1.27,
             "sla_met": false,
-            "sla_breach_hours": 26.57,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.73,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T12:54:30.296Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 584,
@@ -24394,9 +20489,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.32,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_met": false,
+            "sla_breach_hours": 22.68,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T12:57:04.067Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 586,
@@ -24404,10 +20502,13 @@ export const ZAMMAD_METRICS = {
             "title": "Envio de Documentação Financeira",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 50.59,
+            "actual_time_hours": 1.33,
             "sla_met": false,
-            "sla_breach_hours": 26.59,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.67,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T12:58:16.440Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 642,
@@ -24415,10 +20516,13 @@ export const ZAMMAD_METRICS = {
             "title": "CANCELAMENTO RESERVAS",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.49,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 2.48,
+            "sla_met": false,
+            "sla_breach_hours": 1.52,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T10:46:51.320Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 658,
@@ -24426,10 +20530,13 @@ export const ZAMMAD_METRICS = {
             "title": "Grupo: GR-624BFC69FC",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 53.99,
+            "actual_time_hours": 2.12,
             "sla_met": false,
-            "sla_breach_hours": 49.99,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.88,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-16",
+            "first_response_at": "2025-10-14T12:07:03.423Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 659,
@@ -24437,10 +20544,13 @@ export const ZAMMAD_METRICS = {
             "title": "Grupo: GR-17DFF0BC81",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 53.72,
+            "actual_time_hours": 2.15,
             "sla_met": false,
-            "sla_breach_hours": 49.72,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.85,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-16",
+            "first_response_at": "2025-10-14T12:08:14.515Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 662,
@@ -24448,54 +20558,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cotaçao Disneland Paris",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 24.07,
-            "sla_met": false,
-            "sla_breach_hours": 20.07,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 663,
-            "ticket_number": "35662",
-            "title": "Fwd: Informações da reserva TTN-1209888480#8375120...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.74,
-            "sla_met": false,
-            "sla_breach_hours": 1.74,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 664,
-            "ticket_number": "35663",
-            "title": "Fwd: Informações da reserva TTN-1209889678#8375078...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.74,
-            "sla_met": false,
-            "sla_breach_hours": 1.74,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 665,
-            "ticket_number": "35664",
-            "title": "Fwd: A sua reserva continua CONFIRMADA — tentativa...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.75,
-            "sla_met": false,
-            "sla_breach_hours": 1.75,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 666,
-            "ticket_number": "35665",
-            "title": "Fwd: A sua reserva continua CONFIRMADA — tentativa...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.75,
-            "sla_met": false,
-            "sla_breach_hours": 1.75,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 5.65,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-14T16:28:11.508Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 672,
@@ -24503,10 +20572,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 22844 ##] GBN-81247 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.34,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.33,
+            "sla_met": false,
+            "sla_breach_hours": 3.67,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T12:10:20.020Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 673,
@@ -24514,10 +20586,13 @@ export const ZAMMAD_METRICS = {
             "title": "AC Sandra Reis - Tour de 7 dias pelo melhor da Tur...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 4.86,
-            "sla_met": false,
-            "sla_breach_hours": 0.86,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 4.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T16:47:53.367Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 675,
@@ -24525,10 +20600,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: 1125356410 TTN-1125356410#83528832#T14997406¬...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 4.72,
-            "sla_met": false,
-            "sla_breach_hours": 0.72,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 4.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T16:54:45.686Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 704,
@@ -24536,10 +20614,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-82727 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 16.34,
-            "sla_met": false,
-            "sla_breach_hours": 12.34,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 6.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T10:17:45.088Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 715,
@@ -24547,10 +20628,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Informação importante sobre a documentação da...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.24,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.23,
+            "sla_met": false,
+            "sla_breach_hours": 3.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T08:24:35.197Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 718,
@@ -24558,10 +20642,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informações sobre o operador do Pedido Nº 27628088...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.4,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.38,
+            "sla_met": false,
+            "sla_breach_hours": 3.62,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T08:34:50.973Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 729,
@@ -24569,10 +20656,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-72699 - Seu pedido foi recebido",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 199.2,
+            "actual_time_hours": 7.8,
             "sla_met": false,
-            "sla_breach_hours": 175.2,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 16.2,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-15T17:01:57.968Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 733,
@@ -24580,21 +20670,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Documentação recebida corretamente TTN-119383...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 197.79,
-            "sla_met": false,
-            "sla_breach_hours": 193.79,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 758,
-            "ticket_number": "35757",
-            "title": "GBN-69230 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 116.02,
-            "sla_met": false,
-            "sla_breach_hours": 112.02,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 5.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-15T15:01:24.809Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 760,
@@ -24602,10 +20684,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 22702 ##] GBN-85066 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.24,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.23,
+            "sla_met": false,
+            "sla_breach_hours": 2.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T16:44:08.879Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 765,
@@ -24613,10 +20698,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 22992 ##] GBN-69230 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 23.0,
+            "actual_time_hours": 0.67,
             "sla_met": false,
-            "sla_breach_hours": 19.0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.33,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-16",
+            "first_response_at": "2025-10-15T16:53:04.143Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 768,
@@ -24624,54 +20712,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Newblue ES Localizador 1737212 - André Cri...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 185.92,
-            "sla_met": false,
-            "sla_breach_hours": 181.92,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 818,
-            "ticket_number": "35817",
-            "title": "Resposta automática da MSC Cruzeiros  [SR Number: ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 94.13,
-            "sla_met": false,
-            "sla_breach_hours": 90.13,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 885,
-            "ticket_number": "35884",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121096126...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 141.47,
-            "sla_met": false,
-            "sla_breach_hours": 141.22,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 911,
-            "ticket_number": "35910",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121132807...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 217.48,
-            "sla_met": false,
-            "sla_breach_hours": 213.48,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 924,
-            "ticket_number": "35923",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121152859...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.16,
+            "actual_time_hours": 95.92,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T10:19:23.098Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 940,
@@ -24679,21 +20726,13 @@ export const ZAMMAD_METRICS = {
             "title": "Questão LePlan",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 5.54,
+            "actual_time_hours": 0.18,
             "sla_met": false,
-            "sla_breach_hours": 1.54,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 945,
-            "ticket_number": "35944",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 802014098",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 49.93,
-            "sla_met": false,
-            "sla_breach_hours": 49.68,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.82,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T10:05:38.184Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 952,
@@ -24701,21 +20740,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-86545 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.82,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 957,
-            "ticket_number": "35956",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121171209...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 67.5,
+            "actual_time_hours": 0.8,
             "sla_met": false,
-            "sla_breach_hours": 67.25,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.2,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T14:55:06.797Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 985,
@@ -24723,10 +20754,13 @@ export const ZAMMAD_METRICS = {
             "title": "Grupo: GR-4ED7FFDBC6",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 158.26,
+            "actual_time_hours": 21.9,
             "sla_met": false,
-            "sla_breach_hours": 134.26,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 2.1,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-22T15:33:37.830Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 990,
@@ -24734,10 +20768,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Incidente de voo TTN-1211463270#84151811#T151...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 31.43,
+            "actual_time_hours": 3.32,
             "sla_met": false,
-            "sla_breach_hours": 27.43,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 0.68,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-21T11:29:31.245Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 992,
@@ -24745,21 +20782,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: GBN-74842 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 4.54,
-            "sla_met": false,
-            "sla_breach_hours": 0.54,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 994,
-            "ticket_number": "35993",
-            "title": "GBN-66538 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.97,
+            "actual_time_hours": 4.53,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T12:45:09.833Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 998,
@@ -24767,10 +20796,13 @@ export const ZAMMAD_METRICS = {
             "title": "COTAÇÃO SOLFÉRIAS",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 55.03,
+            "actual_time_hours": 1.05,
             "sla_met": false,
-            "sla_breach_hours": 51.03,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.95,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T10:22:35.786Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 999,
@@ -24778,10 +20810,13 @@ export const ZAMMAD_METRICS = {
             "title": "COTAÇÃO SOLTROPICO",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 55.04,
+            "actual_time_hours": 1.08,
             "sla_met": false,
-            "sla_breach_hours": 51.04,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.92,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T10:23:52.929Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1000,
@@ -24789,54 +20824,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de orçamento de grupo - Djerba Julho 2026",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 55.05,
+            "actual_time_hours": 0.63,
             "sla_met": false,
-            "sla_breach_hours": 51.05,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1001,
-            "ticket_number": "351000",
-            "title": "PEDIDO  IMPORTANTE",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.11,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1002,
-            "ticket_number": "351001",
-            "title": "[PEDIDO DE AJUDA] - Paris – Disney 18 a 21 dezembr...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 0.66,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 1004,
-            "ticket_number": "351003",
-            "title": "alteração de voo",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 50.68,
-            "sla_met": false,
-            "sla_breach_hours": 46.68,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1005,
-            "ticket_number": "351004",
-            "title": "Re:[## 23325 ##] GBN-66538 - Seu pedido foi recebi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.44,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.37,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T09:57:21.439Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1006,
@@ -24844,10 +20838,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cancelamento 1756167 New blue",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 76.07,
+            "actual_time_hours": 3.25,
             "sla_met": false,
-            "sla_breach_hours": 72.07,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 0.75,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-21T13:04:55.364Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1007,
@@ -24855,10 +20852,13 @@ export const ZAMMAD_METRICS = {
             "title": "URGENTE blhetes DisneylanParis",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 50.06,
-            "sla_met": false,
-            "sla_breach_hours": 49.81,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 1.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T11:55:05.272Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1008,
@@ -24866,21 +20866,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 22913 ##] GBN-82727 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 54.35,
+            "actual_time_hours": 0.13,
             "sla_met": false,
-            "sla_breach_hours": 50.35,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1009,
-            "ticket_number": "351008",
-            "title": "EXOTICO | REVEILLON NO BRASIL 🥂",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 4.74,
-            "sla_met": false,
-            "sla_breach_hours": 0.74,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.87,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T10:07:48.528Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1016,
@@ -24888,10 +20880,13 @@ export const ZAMMAD_METRICS = {
             "title": "URGENTE - TRANSFERE - GBN - 82332",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 52.85,
+            "actual_time_hours": 0.23,
             "sla_met": false,
-            "sla_breach_hours": 52.6,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 0.02,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T11:43:06.428Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1023,
@@ -24899,10 +20894,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 23377 ##] GBN-81225 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 2.22,
+            "sla_met": false,
+            "sla_breach_hours": 1.78,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T14:52:28.544Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1033,
@@ -24910,10 +20908,13 @@ export const ZAMMAD_METRICS = {
             "title": "Booking Id 6085113, Categoria: Incidência Pós Vend...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.37,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 2.35,
+            "sla_met": false,
+            "sla_breach_hours": 1.65,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T17:13:02.953Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1035,
@@ -24921,10 +20922,13 @@ export const ZAMMAD_METRICS = {
             "title": "Urgente - GBN-75309",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 49.58,
+            "actual_time_hours": 0.68,
             "sla_met": false,
-            "sla_breach_hours": 45.58,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.32,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T15:33:10.247Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1038,
@@ -24932,10 +20936,13 @@ export const ZAMMAD_METRICS = {
             "title": "toda adecomentacao",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 48.84,
+            "actual_time_hours": 1.83,
             "sla_met": false,
-            "sla_breach_hours": 44.84,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.17,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T17:19:05.683Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1043,
@@ -24943,10 +20950,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 23093 ##] GBN-75309 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 48.01,
+            "actual_time_hours": 1.47,
             "sla_met": false,
-            "sla_breach_hours": 44.01,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.53,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T17:34:38.211Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1046,
@@ -24954,10 +20964,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 0.84,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 0.59,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T16:46:42.061Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1047,
@@ -24965,10 +20978,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.87,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T16:46:44.677Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1048,
@@ -24976,10 +20992,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.89,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T16:46:56.831Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1049,
@@ -24987,10 +21006,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.9,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T16:47:06.770Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1050,
@@ -24998,10 +21020,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.9,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T16:48:19.904Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1078,
@@ -25009,43 +21034,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Comprovativo IBAN - Luana Silvestre",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 5.48,
-            "sla_met": false,
-            "sla_breach_hours": 1.48,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1095,
-            "ticket_number": "351093",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121244679...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 22.59,
-            "sla_met": false,
-            "sla_breach_hours": 22.34,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1100,
-            "ticket_number": "351098",
-            "title": "GBN-87098 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 169.01,
-            "sla_met": false,
-            "sla_breach_hours": 168.76,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1125,
-            "ticket_number": "351123",
-            "title": "1756159 W2M:013330007572",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.52,
+            "actual_time_hours": 5.47,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-22T16:43:54.291Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1126,
@@ -25053,10 +21048,13 @@ export const ZAMMAD_METRICS = {
             "title": "1756159 W2M:013330007573",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 101.16,
+            "actual_time_hours": 0.6,
             "sla_met": false,
-            "sla_breach_hours": 97.16,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.4,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-23T08:38:30.329Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1136,
@@ -25064,10 +21062,13 @@ export const ZAMMAD_METRICS = {
             "title": "1756159 W2M:013330007581",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 100.18,
+            "actual_time_hours": 0.4,
             "sla_met": false,
-            "sla_breach_hours": 96.18,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.6,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-23T09:26:01.769Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1137,
@@ -25076,9 +21077,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.03,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_met": false,
+            "sla_breach_hours": 3.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T09:36:12.043Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1138,
@@ -25086,10 +21090,13 @@ export const ZAMMAD_METRICS = {
             "title": "Acessos nas companhias!",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 6.82,
+            "actual_time_hours": 0.33,
             "sla_met": false,
-            "sla_breach_hours": 2.82,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.67,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T09:56:35.645Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1139,
@@ -25097,10 +21104,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-87175 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 6.53,
+            "actual_time_hours": 0.9,
             "sla_met": false,
-            "sla_breach_hours": 2.53,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.1,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T10:52:32.985Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1140,
@@ -25109,9 +21119,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.95,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_met": false,
+            "sla_breach_hours": 3.05,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T10:55:21.168Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1142,
@@ -25119,10 +21132,13 @@ export const ZAMMAD_METRICS = {
             "title": "Acesso ao e-mail",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 150.93,
+            "actual_time_hours": 0.87,
             "sla_met": false,
-            "sla_breach_hours": 146.93,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.13,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-23T11:48:50.187Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1147,
@@ -25130,10 +21146,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Civitatis 12 pessoas-URGENTE",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 150.61,
+            "actual_time_hours": 0.67,
             "sla_met": false,
-            "sla_breach_hours": 146.61,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.33,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-23T11:57:01.142Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1149,
@@ -25141,10 +21160,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Incidente de voo TTN-1211463270#84151811#T151...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.68,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.67,
+            "sla_met": false,
+            "sla_breach_hours": 3.33,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T12:00:37.936Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1159,
@@ -25153,31 +21175,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 2.63,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1188,
-            "ticket_number": "351185",
-            "title": "Icárion - Zanzibar, Praia & Vida Selvagem I - 02/0...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 2.12,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 1190,
-            "ticket_number": "351187",
-            "title": "Icárion - Zanzibar & 1 Dia de Safari Mikumi - 02/0...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 2.12,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_met": false,
+            "sla_breach_hours": 1.37,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T16:38:01.794Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1191,
@@ -25185,10 +21188,13 @@ export const ZAMMAD_METRICS = {
             "title": "Last reminder! Missing data for issuing voucher",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 129.81,
+            "actual_time_hours": 1.05,
             "sla_met": false,
-            "sla_breach_hours": 125.81,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.95,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-24T09:06:34.416Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1192,
@@ -25196,10 +21202,13 @@ export const ZAMMAD_METRICS = {
             "title": "Contacto - Serviço para grupos",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 129.15,
+            "actual_time_hours": 1.15,
             "sla_met": false,
-            "sla_breach_hours": 125.15,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.85,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-24T09:13:19.661Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1195,
@@ -25208,9 +21217,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.22,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_met": false,
+            "sla_breach_hours": 2.78,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-24T09:16:46.247Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1197,
@@ -25218,10 +21230,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Importante: complete su expediente para su vu...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.91,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.9,
+            "sla_met": false,
+            "sla_breach_hours": 3.1,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-24T09:21:03.672Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1200,
@@ -25229,32 +21244,13 @@ export const ZAMMAD_METRICS = {
             "title": "Dúvida sobre atividade",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 81.12,
+            "actual_time_hours": 1.08,
             "sla_met": false,
-            "sla_breach_hours": 77.12,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1201,
-            "ticket_number": "351198",
-            "title": "Contacto - Atividades",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 127.49,
-            "sla_met": false,
-            "sla_breach_hours": 123.49,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1202,
-            "ticket_number": "351199",
-            "title": "GBN-87331 - Seu pedido foi recebido",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 96.98,
-            "sla_met": false,
-            "sla_breach_hours": 96.73,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 2.92,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-24T09:41:44.711Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1233,
@@ -25262,10 +21258,13 @@ export const ZAMMAD_METRICS = {
             "title": "Sua jornada começará em breve!",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 5.46,
-            "sla_met": false,
-            "sla_breach_hours": 1.46,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 5.45,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-24T17:54:51.592Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1260,
@@ -25273,10 +21272,13 @@ export const ZAMMAD_METRICS = {
             "title": "Contacto - Atividades",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 115.86,
-            "sla_met": false,
-            "sla_breach_hours": 111.86,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 21.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-27T10:10:27.951Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1299,
@@ -25284,21 +21286,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Rimain Tours Localizador 3796558515 - Andr...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.13,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1320,
-            "ticket_number": "351317",
-            "title": "Re:[## 23706 ##] GBN-67921 - Seu pedido foi recebi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.79,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.12,
+            "sla_met": false,
+            "sla_breach_hours": 2.88,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T10:14:30.028Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1371,
@@ -25306,10 +21300,13 @@ export const ZAMMAD_METRICS = {
             "title": "Civitatis - Re: Contacto - Atividades",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 15.21,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 5.2,
+            "sla_met": false,
+            "sla_breach_hours": 18.8,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T10:24:04.865Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1412,
@@ -25318,31 +21315,26 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.53,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1460,
-            "ticket_number": "351457",
-            "title": "Cancelamento de Reservas 321-10262995 Bedsonline",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.21,
             "sla_met": false,
-            "sla_breach_hours": 13.21,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.47,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T12:51:11.202Z",
+            "first_response_escalation_at": null
           },
           {
-            "ticket_id": 1467,
-            "ticket_number": "351464",
-            "title": "Fwd: Reserva pendente à espera de emissão",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.14,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "ticket_id": 1451,
+            "ticket_number": "351448",
+            "title": "Solferias - Oferta - LOC: 414136",
+            "priority": "P3",
+            "sla_target_hours": 24.0,
+            "actual_time_hours": 3.72,
+            "sla_met": false,
+            "sla_breach_hours": 20.28,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-29T10:13:13.310Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1471,
@@ -25350,21 +21342,13 @@ export const ZAMMAD_METRICS = {
             "title": "Eticket - 66890519 - EU  14/11/2025  Barcelona, Es...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.9,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1482,
-            "ticket_number": "351479",
-            "title": "Resposta automática da MSC Cruzeiros  [SR Number: ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 7.67,
+            "actual_time_hours": 0.88,
             "sla_met": false,
-            "sla_breach_hours": 3.67,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.12,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-29T10:18:57.841Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1492,
@@ -25372,10 +21356,13 @@ export const ZAMMAD_METRICS = {
             "title": "Flight Change Notification",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 4.88,
-            "sla_met": false,
-            "sla_breach_hours": 0.88,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 4.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-29T16:54:46.693Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1511,
@@ -25384,9 +21371,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.52,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_met": false,
+            "sla_breach_hours": 3.48,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-29T17:14:27.886Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1516,
@@ -25394,10 +21384,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Informações da reserva TTN-1214275701#8489389...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.14,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.13,
+            "sla_met": false,
+            "sla_breach_hours": 3.87,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-29T18:03:10.121Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1525,
@@ -25405,10 +21398,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Informações da reserva TTN-1214278970#8489340...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 14.32,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 4.3,
+            "sla_met": false,
+            "sla_breach_hours": 19.7,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-30T10:59:39.162Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1535,
@@ -25417,9 +21413,12 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.37,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "sla_met": false,
+            "sla_breach_hours": 23.63,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-30T10:00:36.066Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1537,
@@ -25427,29 +21426,21 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Informação importante sobre a documentação da...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 1.4,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 1539,
-            "ticket_number": "351536",
-            "title": "Fwd: Informações da reserva TTN-1214277898#8493179...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.34,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.38,
+            "sla_met": false,
+            "sla_breach_hours": 22.62,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-30T11:02:29.198Z",
+            "first_response_escalation_at": null
           }
         ]
       },
       "Catarina França": {
-        "total_tickets": 96,
-        "sla_met": 13,
-        "sla_missed": 83,
-        "sla_compliance_rate": 13.54,
+        "total_tickets": 47,
+        "sla_met": 21,
+        "sla_missed": 26,
+        "sla_compliance_rate": 44.68,
         "tickets": [
           {
             "ticket_id": 36,
@@ -25457,10 +21448,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Esclarecimento de duvida",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 5.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 5.23,
+            "sla_met": false,
+            "sla_breach_hours": 18.77,
+            "sla_name": "SLA P3",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T13:21:37.485Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 76,
@@ -25468,10 +21462,13 @@ export const ZAMMAD_METRICS = {
             "title": "Viagem México - 2026",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 243.52,
+            "actual_time_hours": 0.9,
             "sla_met": false,
-            "sla_breach_hours": 239.52,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.1,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-09-30T15:22:37.307Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 81,
@@ -25479,10 +21476,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Pedido de Cotação | 17 pessoas - Cabo Verde",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 336.57,
+            "actual_time_hours": 0.13,
             "sla_met": false,
-            "sla_breach_hours": 332.57,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.87,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-09-30T16:24:16.402Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 82,
@@ -25490,10 +21490,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: GBN-51887 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 167.66,
+            "actual_time_hours": 1.4,
             "sla_met": false,
-            "sla_breach_hours": 163.66,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.6,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-09-30T17:40:26.078Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 97,
@@ -25501,10 +21504,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Newblue - 6119135 Confirmação WL",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 320.78,
+            "actual_time_hours": 1.43,
             "sla_met": false,
-            "sla_breach_hours": 296.78,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.57,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-01T09:30:52.118Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 101,
@@ -25512,21 +21518,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Information about your booking - GBN-8...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 143.32,
-            "sla_met": false,
-            "sla_breach_hours": 119.32,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 112,
-            "ticket_number": "35111",
-            "title": "Re:[## 20992 ##] GBN-51887 - Seu pedido foi recebi...",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.12,
+            "actual_time_hours": 28.25,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P1"
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-03T09:27:27.632Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 113,
@@ -25534,32 +21532,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 21663 ##] GBN-82921 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 146.75,
+            "actual_time_hours": 0.2,
             "sla_met": false,
-            "sla_breach_hours": 142.75,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 132,
-            "ticket_number": "35131",
-            "title": "GBN-84348 - Sua confirmação de reserva",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 35.63,
-            "sla_met": false,
-            "sla_breach_hours": 11.63,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 145,
-            "ticket_number": "35144",
-            "title": "Re: Pedido de Cotação | 18 pessoas",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.6,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.8,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-01T13:23:54.155Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 162,
@@ -25567,10 +21546,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cotação Caraíbas - 11 pessoas (Ana Rita ...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 288.07,
-            "sla_met": false,
-            "sla_breach_hours": 284.07,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 6.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-03T09:41:08.508Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 175,
@@ -25578,10 +21560,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de Orçamento grupo 11 pessoas PUNTA CANA (A...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 271.1,
-            "sla_met": false,
-            "sla_breach_hours": 267.1,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 27.17,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-06T14:08:16.506Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 212,
@@ -25589,10 +21574,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de Cotação - grupo entre 10-15 pessoas (Cát...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 415.34,
-            "sla_met": false,
-            "sla_breach_hours": 411.34,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 7.5,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-06T15:42:17.412Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 251,
@@ -25600,10 +21588,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de Cotação - grupo 10 pessoas - Mercados de...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 190.63,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 186.63,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-06T14:27:06.594Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 296,
@@ -25611,21 +21602,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cotação hotel",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 226.8,
-            "sla_met": false,
-            "sla_breach_hours": 222.8,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 315,
-            "ticket_number": "35314",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 72.75,
-            "sla_met": false,
-            "sla_breach_hours": 72.5,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 19.37,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-16",
+            "first_response_at": "2025-10-08T16:37:34.111Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 322,
@@ -25633,10 +21616,13 @@ export const ZAMMAD_METRICS = {
             "title": "ATUALIZAÇÃO DADOS PASSAPORTE - Localizador SMYTRAV...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 76.55,
-            "sla_met": false,
-            "sla_breach_hours": 72.55,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 5.63,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-07T22:32:05.625Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 325,
@@ -25644,32 +21630,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-74839 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 75.26,
+            "actual_time_hours": 2.38,
             "sla_met": false,
-            "sla_breach_hours": 71.26,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 327,
-            "ticket_number": "35326",
-            "title": "Nova Viagem #251000049 - Euforia Glam",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.59,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 331,
-            "ticket_number": "35330",
-            "title": "GBN-85029 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 166.11,
-            "sla_met": false,
-            "sla_breach_hours": 162.11,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.62,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-07T19:57:50.826Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 343,
@@ -25677,54 +21644,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de Cotação - 15 pessoas (12 +3) | DIOGO",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 163.17,
-            "sla_met": false,
-            "sla_breach_hours": 159.17,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 349,
-            "ticket_number": "35348",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604472086",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 153.5,
-            "sla_met": false,
-            "sla_breach_hours": 129.5,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 351,
-            "ticket_number": "35350",
-            "title": "GBN-85048 - Your booking confirmation",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 153.51,
-            "sla_met": false,
-            "sla_breach_hours": 129.51,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 357,
-            "ticket_number": "35356",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120790442...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 55.42,
-            "sla_met": false,
-            "sla_breach_hours": 55.17,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 359,
-            "ticket_number": "35358",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120799703...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 60.8,
-            "sla_met": false,
-            "sla_breach_hours": 60.55,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 5.3,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-08T13:18:13.988Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 373,
@@ -25732,32 +21658,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85079 - Sua confirmação de reserva",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 152.77,
+            "actual_time_hours": 18.22,
             "sla_met": false,
-            "sla_breach_hours": 128.77,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 384,
-            "ticket_number": "35383",
-            "title": "Criação de processo File 412540/25",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 56.58,
-            "sla_met": false,
-            "sla_breach_hours": 56.33,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 400,
-            "ticket_number": "35399",
-            "title": "Reserva confirmada: Ingresso do Oceanário de Lisbo...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 337.68,
-            "sla_met": false,
-            "sla_breach_hours": 313.68,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 5.78,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-09T15:09:53.388Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 412,
@@ -25765,21 +21672,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de Cotação - 70 pessoas | Tiago Ferreira",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 506.04,
-            "sla_met": false,
-            "sla_breach_hours": 502.04,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 417,
-            "ticket_number": "35416",
-            "title": "Criação de processo File 412548/25",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 53.44,
-            "sla_met": false,
-            "sla_breach_hours": 53.19,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 5.53,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-08T21:47:52.962Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 419,
@@ -25787,10 +21686,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 125.4,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 101.4,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 24.0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-08T16:50:43.649Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 447,
@@ -25798,10 +21700,13 @@ export const ZAMMAD_METRICS = {
             "title": "\"GBN-78011 - Your request has been received\"",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 27.16,
+            "actual_time_hours": 1.0,
             "sla_met": false,
-            "sla_breach_hours": 23.16,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-09T14:13:50.818Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 449,
@@ -25809,21 +21714,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-67911 - Seu pedido foi recebido",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 23.38,
-            "sla_met": false,
-            "sla_breach_hours": 23.13,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 457,
-            "ticket_number": "35456",
-            "title": "Reserva confirmada: Tour pela ilha do Sal - Civita...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 96.38,
-            "sla_met": false,
-            "sla_breach_hours": 96.13,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 3.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-09T16:48:39.428Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 486,
@@ -25831,21 +21728,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85429 - Sua confirmação de reserva",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 416.61,
-            "sla_met": false,
-            "sla_breach_hours": 392.61,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 493,
-            "ticket_number": "35492",
-            "title": "Fwd: 1199695315 TTN-1199695315#83343268#T14948386¬...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 7.0,
-            "sla_met": false,
-            "sla_breach_hours": 3.0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 37.52,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-13T17:09:05.284Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 495,
@@ -25853,10 +21742,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva confirmada: Transfer entre o aeroporto de ...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 339.11,
-            "sla_met": false,
-            "sla_breach_hours": 315.11,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 38.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-13T20:28:29.470Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 513,
@@ -25864,10 +21756,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85497 - Sua confirmação de reserva",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 116.43,
-            "sla_met": false,
-            "sla_breach_hours": 92.43,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 36.25,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T21:25:53.665Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 514,
@@ -25875,10 +21770,13 @@ export const ZAMMAD_METRICS = {
             "title": "PEDIDO DE COTAÇÃO - RODRIGO NEVES",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 119.92,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 115.92,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-10T17:10:31.666Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 520,
@@ -25886,21 +21784,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85442 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.41,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 536,
-            "ticket_number": "35535",
-            "title": "GBN-85615 - Sua confirmação de reserva",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 28.92,
+            "actual_time_hours": 2.27,
             "sla_met": false,
-            "sla_breach_hours": 4.92,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 1.73,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T20:19:02.447Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 593,
@@ -25908,10 +21798,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85713 - Sua confirmação de reserva",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 267.51,
-            "sla_met": false,
-            "sla_breach_hours": 243.51,
-            "sla_name": "SLA P3"
+            "actual_time_hours": 29.27,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-15T14:48:33.228Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 615,
@@ -25919,10 +21812,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 45.65,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 45.4,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T17:00:37.752Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 628,
@@ -25930,21 +21826,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva confirmada: Ingresso do Balneário Szécheny...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 45.74,
+            "actual_time_hours": 15.4,
             "sla_met": false,
-            "sla_breach_hours": 21.74,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 633,
-            "ticket_number": "35632",
-            "title": "GBN-85816 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 18.93,
-            "sla_met": false,
-            "sla_breach_hours": 18.68,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 8.6,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-14T20:52:28.001Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 635,
@@ -25952,10 +21840,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85819 - Sua confirmação de reserva",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 44.07,
+            "actual_time_hours": 0.68,
             "sla_met": false,
-            "sla_breach_hours": 40.07,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.32,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T21:31:45.125Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 684,
@@ -25963,10 +21854,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Viagify informa sobre a sua reserva 121003449...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 26.54,
+            "actual_time_hours": 0.02,
             "sla_met": false,
-            "sla_breach_hours": 22.54,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.98,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-14T14:35:56.324Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 686,
@@ -25974,32 +21868,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cotação - 14 pessoas (Rita Arruda)",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 246.84,
-            "sla_met": false,
-            "sla_breach_hours": 242.84,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 691,
-            "ticket_number": "35690",
-            "title": "Proposta Solférias  17369/2025 (6125824)",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.74,
+            "actual_time_hours": 15.73,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 698,
-            "ticket_number": "35697",
-            "title": "GBN-85951 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 196.11,
-            "sla_met": false,
-            "sla_breach_hours": 195.86,
-            "sla_name": "SLA P1"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-15T16:28:35.294Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 717,
@@ -26007,21 +21882,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-68378 - Sua reserva foi atualizada com serviço...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 199.83,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 195.83,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 754,
-            "ticket_number": "35753",
-            "title": "Confirmation of booking with locatorQFSHT5WR",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 48.73,
-            "sla_met": false,
-            "sla_breach_hours": 48.48,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-15T08:10:33.638Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 766,
@@ -26029,32 +21896,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Jorge Cavaco - NEW BLUE - LOC. 6119161",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 189.87,
-            "sla_met": false,
-            "sla_breach_hours": 185.87,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 770,
-            "ticket_number": "35769",
-            "title": "Pedido de cotação - 14 pessoas Malta (Rita Arruda)",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.35,
+            "actual_time_hours": 4.35,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 776,
-            "ticket_number": "35775",
-            "title": "Pedido de cotação - 14 pessoas Malta (Rita Arruda)",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 215.22,
-            "sla_met": false,
-            "sla_breach_hours": 211.22,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-15T20:45:53.978Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 806,
@@ -26062,10 +21910,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Viagify informa sobre a sua reserva 121058464...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 268.32,
+            "actual_time_hours": 3.27,
             "sla_met": false,
-            "sla_breach_hours": 264.32,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 0.73,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-16T14:20:45.912Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 811,
@@ -26073,10 +21924,13 @@ export const ZAMMAD_METRICS = {
             "title": "cotação Boutique Hotel Castelinho, rio de janeiro",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 144.0,
+            "actual_time_hours": 3.88,
             "sla_met": false,
-            "sla_breach_hours": 140.0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 0.12,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-16T16:55:39.476Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 819,
@@ -26084,76 +21938,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva GBN-81979 | Catarina Faco",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 289.4,
+            "actual_time_hours": 0.57,
             "sla_met": false,
-            "sla_breach_hours": 285.4,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 820,
-            "ticket_number": "35819",
-            "title": "Fwd: Reserva pendente à espera de emissão",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.72,
-            "sla_met": false,
-            "sla_breach_hours": 0.47,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 821,
-            "ticket_number": "35820",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121065840...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 7.95,
-            "sla_met": false,
-            "sla_breach_hours": 7.7,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 830,
-            "ticket_number": "35829",
-            "title": "RV: pacotes neve",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 1.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 831,
-            "ticket_number": "35830",
-            "title": "O erro continua | Alteração de dados de reserva | ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.76,
-            "sla_met": false,
-            "sla_breach_hours": 1.76,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 838,
-            "ticket_number": "35837",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.17,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 840,
-            "ticket_number": "35839",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.05,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.43,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-16T13:59:05.390Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 848,
@@ -26161,120 +21952,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cotação - Alambique Hotel",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 160.62,
+            "actual_time_hours": 0.72,
             "sla_met": false,
-            "sla_breach_hours": 156.62,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 866,
-            "ticket_number": "35865",
-            "title": "Voucher Reserva UMAFAMÍLIAEMVIAGEM (Localizador: 6...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 145.31,
-            "sla_met": false,
-            "sla_breach_hours": 145.06,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 905,
-            "ticket_number": "35904",
-            "title": "c - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 123.78,
-            "sla_met": false,
-            "sla_breach_hours": 123.53,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 928,
-            "ticket_number": "35927",
-            "title": "GBN-86631 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 178.47,
-            "sla_met": false,
-            "sla_breach_hours": 178.22,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 955,
-            "ticket_number": "35954",
-            "title": "Fwd: Viagify informa sobre a sua reserva 121170886...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 56.07,
-            "sla_met": false,
-            "sla_breach_hours": 55.82,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 963,
-            "ticket_number": "35962",
-            "title": "Informação de reserva - SPT002501546715",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 54.43,
-            "sla_met": false,
-            "sla_breach_hours": 54.18,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 971,
-            "ticket_number": "35970",
-            "title": "Confirmacao 332616",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 53.05,
-            "sla_met": false,
-            "sla_breach_hours": 52.8,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 973,
-            "ticket_number": "35972",
-            "title": "Fwd: Buenos días Alexandre Manuel Meira Velez Quen...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 51.19,
-            "sla_met": false,
-            "sla_breach_hours": 50.94,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 984,
-            "ticket_number": "35983",
-            "title": "Confirmacao 332627",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 91.64,
-            "sla_met": false,
-            "sla_breach_hours": 91.39,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 987,
-            "ticket_number": "35986",
-            "title": "GBN-86820 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 55.7,
-            "sla_met": false,
-            "sla_breach_hours": 55.45,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 993,
-            "ticket_number": "35992",
-            "title": "Confirmação de reserva para For PT004157 67390950",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 38.23,
-            "sla_met": false,
-            "sla_breach_hours": 37.98,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.28,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-16T21:42:51.810Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1014,
@@ -26282,32 +21966,13 @@ export const ZAMMAD_METRICS = {
             "title": "Check in - Localizadores - Costa - 34501737 / 3451...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 149.67,
-            "sla_met": false,
-            "sla_breach_hours": 145.67,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1024,
-            "ticket_number": "351023",
-            "title": "Fwd: Consulta sobre o seu pedido TTN-1211708862#84...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 33.86,
-            "sla_met": false,
-            "sla_breach_hours": 33.61,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1037,
-            "ticket_number": "351035",
-            "title": "GBN-86947 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 143.89,
-            "sla_met": false,
-            "sla_breach_hours": 143.64,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 5.47,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-21T16:56:45.669Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1042,
@@ -26315,10 +21980,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-73323 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 26.99,
-            "sla_met": false,
-            "sla_breach_hours": 22.99,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 11.23,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-22T13:20:27.221Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1051,
@@ -26326,21 +21994,13 @@ export const ZAMMAD_METRICS = {
             "title": "Localizador 1207997034 _Eduardo Pereira",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 143.08,
-            "sla_met": false,
-            "sla_breach_hours": 139.08,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1064,
-            "ticket_number": "351062",
-            "title": "Cancelación de la reserva con localizador: 3931518",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 6.64,
-            "sla_met": false,
-            "sla_breach_hours": 2.64,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 4.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-21T22:22:21.328Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1069,
@@ -26348,10 +22008,13 @@ export const ZAMMAD_METRICS = {
             "title": "Envio de documentos de File 412541 - VOOS EMITIDOS",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 29.32,
-            "sla_met": false,
-            "sla_breach_hours": 25.32,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 5.9,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-22T14:13:59.651Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1071,
@@ -26359,43 +22022,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Informações da reserva TTN-1207997034#8432591...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.59,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1081,
-            "ticket_number": "351079",
-            "title": "Comprovativo de IBAN",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.63,
+            "actual_time_hours": 1.58,
             "sla_met": false,
-            "sla_breach_hours": 1.63,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1093,
-            "ticket_number": "351091",
-            "title": "GBN-87080 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 126.3,
-            "sla_met": false,
-            "sla_breach_hours": 126.05,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1099,
-            "ticket_number": "351097",
-            "title": "GBN-87095 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 124.8,
-            "sla_met": false,
-            "sla_breach_hours": 124.55,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 2.42,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-22T10:02:53.614Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1121,
@@ -26403,21 +22036,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Grupo: GR-194FF33812 (#2598106)",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 140.45,
+            "actual_time_hours": 2.88,
             "sla_met": false,
-            "sla_breach_hours": 136.45,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1153,
-            "ticket_number": "351151",
-            "title": "Re:[## 23531 ##] GBN-73323 - Seu pedido foi recebi...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.54,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.12,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-22T22:22:33.506Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1162,
@@ -26425,21 +22050,13 @@ export const ZAMMAD_METRICS = {
             "title": "Acesso Douro Acima",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 22.38,
+            "actual_time_hours": 0.03,
             "sla_met": false,
-            "sla_breach_hours": 18.38,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1183,
-            "ticket_number": "351180",
-            "title": "Informação de reserva - SPT002501547595",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 145.18,
-            "sla_met": false,
-            "sla_breach_hours": 144.93,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-23T15:24:14.404Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1205,
@@ -26447,10 +22064,13 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmação de reserva para For PT004157 67528547",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 80.52,
-            "sla_met": false,
-            "sla_breach_hours": 76.52,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 10.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-24T19:52:04.991Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1229,
@@ -26458,21 +22078,13 @@ export const ZAMMAD_METRICS = {
             "title": "pedido de cotação chalé villa nature - campos do j...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 80.05,
-            "sla_met": false,
-            "sla_breach_hours": 76.05,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1243,
-            "ticket_number": "351240",
-            "title": "Confirmação de reserva para For PT004157 67529346",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 73.51,
-            "sla_met": false,
-            "sla_breach_hours": 69.51,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 7.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-24T19:50:19.163Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1255,
@@ -26480,40 +22092,21 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 22545 ##] GBN-85201 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 72.84,
+            "actual_time_hours": 0.9,
             "sla_met": false,
-            "sla_breach_hours": 68.84,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1307,
-            "ticket_number": "351304",
-            "title": "Fwd: Informações da reserva TTN-1210584648#8439469...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.87,
-            "sla_met": false,
-            "sla_breach_hours": 1.87,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1465,
-            "ticket_number": "351462",
-            "title": "Icárion - Belezas de Madagáscar em Privado - 01/07...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.12,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.1,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-24T18:09:41.934Z",
+            "first_response_escalation_at": null
           }
         ]
       },
       "Paula Candeias": {
-        "total_tickets": 99,
-        "sla_met": 18,
-        "sla_missed": 81,
-        "sla_compliance_rate": 18.18,
+        "total_tickets": 54,
+        "sla_met": 8,
+        "sla_missed": 46,
+        "sla_compliance_rate": 14.81,
         "tickets": [
           {
             "ticket_id": 41,
@@ -26521,21 +22114,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Fwd: Fwd: Cotação excursões México outubro",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 8.9,
-            "sla_met": false,
-            "sla_breach_hours": 4.9,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 42,
-            "ticket_number": "35042",
-            "title": "Re: Fwd: Cotação excursões México outubro",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 4.88,
-            "sla_met": false,
-            "sla_breach_hours": 0.88,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 4.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T13:09:09.606Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 71,
@@ -26543,10 +22128,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Pedido de cotação – Transporte 12 pessoas (11 ...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 219.34,
+            "actual_time_hours": 0.2,
             "sla_met": false,
-            "sla_breach_hours": 215.34,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.8,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-09-30T14:16:30.045Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 74,
@@ -26554,21 +22142,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Informações sobre a sua reserva TTN-112535641...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.19,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 79,
-            "ticket_number": "35078",
-            "title": "Re: GBN-78571 - Atualização dados passaporte",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.29,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.18,
+            "sla_met": false,
+            "sla_breach_hours": 3.82,
+            "sla_name": "SLA P2",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T14:38:56.846Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 80,
@@ -26576,21 +22156,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-78571 - Atualização dados passaporte",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 91,
-            "ticket_number": "35090",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.27,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.23,
+            "sla_met": false,
+            "sla_breach_hours": 3.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-09-30",
+            "first_response_at": "2025-09-30T15:36:21.426Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 110,
@@ -26598,10 +22170,13 @@ export const ZAMMAD_METRICS = {
             "title": "URGENTE: Informações sobre a sua reserva TTN-11712...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 501.94,
+            "actual_time_hours": 0.58,
             "sla_met": false,
-            "sla_breach_hours": 497.94,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.42,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-01T13:06:13.709Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 121,
@@ -26609,10 +22184,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de esclarecimento",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 221.94,
+            "actual_time_hours": 0.08,
             "sla_met": false,
-            "sla_breach_hours": 217.94,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.92,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-01T16:00:55.379Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 130,
@@ -26620,10 +22198,13 @@ export const ZAMMAD_METRICS = {
             "title": "Loc.: 1206578285 - alteração de email",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 500.05,
+            "actual_time_hours": 0.07,
             "sla_met": false,
-            "sla_breach_hours": 496.05,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.93,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-01T20:09:54.563Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 136,
@@ -26631,10 +22212,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cancelamento - LOC.   5WZBRAP4",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.85,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.13,
+            "sla_met": false,
+            "sla_breach_hours": 3.87,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-02",
+            "first_response_at": "2025-10-02T08:59:01.190Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 195,
@@ -26642,10 +22226,13 @@ export const ZAMMAD_METRICS = {
             "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604299456",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 71.06,
+            "actual_time_hours": 0.07,
             "sla_met": false,
-            "sla_breach_hours": 67.06,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.93,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-03T16:20:01.894Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 249,
@@ -26653,32 +22240,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de contacto à CIVITATIS – Atividade de obse...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 191.7,
-            "sla_met": false,
-            "sla_breach_hours": 187.7,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 259,
-            "ticket_number": "35258",
-            "title": "Reserva Aérea XDSLD5",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 19.2,
-            "sla_met": false,
-            "sla_breach_hours": 18.95,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 260,
-            "ticket_number": "35259",
-            "title": "XDSLD5 – Novo prazo de emissão",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 19.18,
-            "sla_met": false,
-            "sla_breach_hours": 18.93,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 5.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-06T18:58:32.958Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 265,
@@ -26686,76 +22254,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 69.31,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 69.06,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 268,
-            "ticket_number": "35267",
-            "title": "Eticket 1475511049901",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.68,
-            "sla_met": false,
-            "sla_breach_hours": 16.43,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 269,
-            "ticket_number": "35268",
-            "title": "Envio de Documentação",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.68,
-            "sla_met": false,
-            "sla_breach_hours": 16.43,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 270,
-            "ticket_number": "35269",
-            "title": "Aéreo - Confirmação de Emissão (LOPES GOMES\\SARA) ...",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.68,
-            "sla_met": false,
-            "sla_breach_hours": 16.43,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 271,
-            "ticket_number": "35270",
-            "title": "Aéreo - Confirmação de Emissão (DATCHANGUE\\CARLOS)...",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.68,
-            "sla_met": false,
-            "sla_breach_hours": 16.43,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 272,
-            "ticket_number": "35271",
-            "title": "Eticket 1475511049900",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.68,
-            "sla_met": false,
-            "sla_breach_hours": 16.43,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 273,
-            "ticket_number": "35272",
-            "title": "Carregamento Carteira Digital - RI 258001675",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 16.68,
-            "sla_met": false,
-            "sla_breach_hours": 16.43,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-06T18:09:44.364Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 280,
@@ -26763,32 +22268,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 159.02,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 158.77,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 288,
-            "ticket_number": "35287",
-            "title": "Confirmação de reserva com localizador: 3931427",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 54.85,
-            "sla_met": false,
-            "sla_breach_hours": 54.6,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 301,
-            "ticket_number": "35300",
-            "title": "GBN-84913 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 54.61,
-            "sla_met": false,
-            "sla_breach_hours": 54.36,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-06T21:55:23.284Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 313,
@@ -26796,65 +22282,13 @@ export const ZAMMAD_METRICS = {
             "title": "Urgência - Aluguer de carro para clientes que vão ...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 80.09,
+            "actual_time_hours": 0.03,
             "sla_met": false,
-            "sla_breach_hours": 76.09,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 328,
-            "ticket_number": "35327",
-            "title": "Informação de reserva - SPT002501544975",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 49.81,
-            "sla_met": false,
-            "sla_breach_hours": 49.56,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 333,
-            "ticket_number": "35332",
-            "title": "Confirmação de reserva – Ref PP661699, Sr. MANUEL ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 41.06,
-            "sla_met": false,
-            "sla_breach_hours": 40.81,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 336,
-            "ticket_number": "35335",
-            "title": "GBN-85040 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 470.81,
-            "sla_met": false,
-            "sla_breach_hours": 470.56,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 342,
-            "ticket_number": "35341",
-            "title": "Reserva confirmada: Free tour por Sevilha - Civita...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 134.65,
-            "sla_met": false,
-            "sla_breach_hours": 134.4,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 347,
-            "ticket_number": "35346",
-            "title": "Your booking confirmation",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 148.69,
-            "sla_met": false,
-            "sla_breach_hours": 148.44,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-07T13:51:44.230Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 382,
@@ -26862,43 +22296,13 @@ export const ZAMMAD_METRICS = {
             "title": "PNR's localizador: SPT002501544760",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.28,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 405,
-            "ticket_number": "35404",
-            "title": "Reserva confirmada: Passeio de barco pelo Danúbio ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 165.28,
+            "actual_time_hours": 2.25,
             "sla_met": false,
-            "sla_breach_hours": 165.03,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 406,
-            "ticket_number": "35405",
-            "title": "Reserva confirmada: Ingresso do Balneário Szécheny...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 165.28,
-            "sla_met": false,
-            "sla_breach_hours": 165.03,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 422,
-            "ticket_number": "35421",
-            "title": "GBN-85200 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 145.67,
-            "sla_met": false,
-            "sla_breach_hours": 145.42,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 1.75,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T15:27:16.181Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 450,
@@ -26906,10 +22310,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informação Greve Menzies - Voos Charter SATA // 33...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 5.93,
+            "actual_time_hours": 0.73,
             "sla_met": false,
-            "sla_breach_hours": 1.93,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.27,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T14:36:44.302Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 455,
@@ -26917,10 +22324,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85284: voos Ryanair \"Pendente de ser confirmad...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 116.88,
+            "actual_time_hours": 0.07,
             "sla_met": false,
-            "sla_breach_hours": 112.88,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.93,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-09T16:37:28.800Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 459,
@@ -26928,10 +22338,13 @@ export const ZAMMAD_METRICS = {
             "title": "ROSA PARDAL RD OUTUBRO",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.26,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.25,
+            "sla_met": false,
+            "sla_breach_hours": 3.75,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T17:39:11.735Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 464,
@@ -26939,32 +22352,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cancelamento - GBN-81955",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 118.76,
+            "actual_time_hours": 0.33,
             "sla_met": false,
-            "sla_breach_hours": 114.76,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 474,
-            "ticket_number": "35473",
-            "title": "GBN-85381 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 12.39,
-            "sla_met": false,
-            "sla_breach_hours": 8.39,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 497,
-            "ticket_number": "35496",
-            "title": "Reserva confirmada: Transfer entre o aeroporto de ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 126.22,
-            "sla_met": false,
-            "sla_breach_hours": 125.97,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.67,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-09T19:24:35.818Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 522,
@@ -26972,10 +22366,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-84892 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 95.82,
+            "actual_time_hours": 0.67,
             "sla_met": false,
-            "sla_breach_hours": 91.82,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.33,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-10T19:53:41.006Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 523,
@@ -26983,21 +22380,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-85525 - Sua confirmação de reserva",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 117.22,
-            "sla_met": false,
-            "sla_breach_hours": 93.22,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 540,
-            "ticket_number": "35539",
-            "title": "GBN-85654 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 32.74,
-            "sla_met": false,
-            "sla_breach_hours": 32.49,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 34.25,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T21:29:32.894Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 545,
@@ -27005,54 +22394,13 @@ export const ZAMMAD_METRICS = {
             "title": "localizador 1200415052",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 33.49,
+            "actual_time_hours": 2.05,
             "sla_met": false,
-            "sla_breach_hours": 29.49,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 547,
-            "ticket_number": "35546",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 174.65,
-            "sla_met": false,
-            "sla_breach_hours": 174.4,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 557,
-            "ticket_number": "35556",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120933976...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 80.48,
-            "sla_met": false,
-            "sla_breach_hours": 80.23,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 558,
-            "ticket_number": "35557",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120933892...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 80.49,
-            "sla_met": false,
-            "sla_breach_hours": 80.24,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 562,
-            "ticket_number": "35561",
-            "title": "Fwd: Viagify informa sobre a sua reserva 120920990...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 248.49,
-            "sla_met": false,
-            "sla_breach_hours": 248.24,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 1.95,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-13T10:10:22.455Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 579,
@@ -27060,10 +22408,13 @@ export const ZAMMAD_METRICS = {
             "title": "Agregar reservas 63316063 + 63612384",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 47.56,
+            "actual_time_hours": 1.1,
             "sla_met": false,
-            "sla_breach_hours": 43.56,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.9,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-13T11:53:34.175Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 596,
@@ -27071,10 +22422,13 @@ export const ZAMMAD_METRICS = {
             "title": "reserva 405743 e 405744  - DOCUMENTACAO",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.29,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.28,
+            "sla_met": false,
+            "sla_breach_hours": 3.72,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T14:23:03.965Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 619,
@@ -27082,10 +22436,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reservas A34603691 e A34603694",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 44.48,
-            "sla_met": false,
-            "sla_breach_hours": 40.48,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 24.47,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T20:20:05.660Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 626,
@@ -27093,32 +22450,13 @@ export const ZAMMAD_METRICS = {
             "title": "pedido de alteraçao civitatis A34603688",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 25.02,
+            "actual_time_hours": 0.23,
             "sla_met": false,
-            "sla_breach_hours": 21.02,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 648,
-            "ticket_number": "35647",
-            "title": "GBN-85829 - Your booking confirmation",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 34.93,
-            "sla_met": false,
-            "sla_breach_hours": 34.68,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 667,
-            "ticket_number": "35666",
-            "title": "GBN-85872 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 33.48,
-            "sla_met": false,
-            "sla_breach_hours": 33.23,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-13T18:24:02.573Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 670,
@@ -27126,32 +22464,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 266.08,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 265.83,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 677,
-            "ticket_number": "35676",
-            "title": "GBN-85883 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 30.4,
-            "sla_met": false,
-            "sla_breach_hours": 30.15,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 690,
-            "ticket_number": "35689",
-            "title": "GBN-85933 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 169.34,
-            "sla_met": false,
-            "sla_breach_hours": 169.09,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-25",
+            "first_response_at": "2025-10-14T11:49:44.356Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 694,
@@ -27159,10 +22478,13 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmação de reserva – Ref PP621324, Sr. Pedro P...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 23.1,
+            "actual_time_hours": 0.68,
             "sla_met": false,
-            "sla_breach_hours": 19.1,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.32,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-14T16:39:38.518Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 705,
@@ -27170,10 +22492,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cabo Verde - Hotel Belorizonte",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 19.07,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 15.07,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-14T18:05:52.882Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 716,
@@ -27181,21 +22506,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva GBN-85829 & GBN-85883",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.27,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 723,
-            "ticket_number": "35722",
-            "title": "Orçamento 19521/25/27/45657 Rui Simões_Brasil",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.81,
+            "actual_time_hours": 0.25,
             "sla_met": false,
-            "sla_breach_hours": 1.81,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.75,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T08:26:40.678Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 739,
@@ -27203,10 +22520,13 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmação de reserva para For PT004157 63517580",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.43,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.42,
+            "sla_met": false,
+            "sla_breach_hours": 3.58,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T11:38:17.393Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 744,
@@ -27214,10 +22534,13 @@ export const ZAMMAD_METRICS = {
             "title": "PNR´s do localizador: SPT002501544719",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 3.7,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 2.42,
+            "sla_met": false,
+            "sla_breach_hours": 1.58,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T14:35:50.749Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 756,
@@ -27225,32 +22548,13 @@ export const ZAMMAD_METRICS = {
             "title": "XDSLD5 – Alteração de Horário – Aceite",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.63,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 790,
-            "ticket_number": "35789",
-            "title": "Criação de processo File 413248/25",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 167.76,
+            "actual_time_hours": 1.62,
             "sla_met": false,
-            "sla_breach_hours": 167.51,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 792,
-            "ticket_number": "35791",
-            "title": "Reserva confirmada: Cruzeiro noturno com jantar e ...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 330.8,
-            "sla_met": false,
-            "sla_breach_hours": 330.55,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 2.38,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T16:34:12.645Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 832,
@@ -27258,32 +22562,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva 332434 WL",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 25.23,
-            "sla_met": false,
-            "sla_breach_hours": 21.23,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 836,
-            "ticket_number": "35835",
-            "title": "YYP7N6 – Novo prazo de emissão",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 164.0,
-            "sla_met": false,
-            "sla_breach_hours": 163.75,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 845,
-            "ticket_number": "35844",
-            "title": "GBN-86352 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 117.97,
-            "sla_met": false,
-            "sla_breach_hours": 117.72,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 15.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T17:11:46.487Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 849,
@@ -27291,10 +22576,13 @@ export const ZAMMAD_METRICS = {
             "title": "RESERVA LOCALIZADOR 604477832",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 17.81,
+            "actual_time_hours": 1.0,
             "sla_met": false,
-            "sla_breach_hours": 13.81,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-16T22:05:46.813Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 865,
@@ -27302,10 +22590,13 @@ export const ZAMMAD_METRICS = {
             "title": "Mensagem sobre a reserva 34659217 - Civitatis",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.43,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.42,
+            "sla_met": false,
+            "sla_breach_hours": 2.58,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T14:49:45.413Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 874,
@@ -27313,10 +22604,13 @@ export const ZAMMAD_METRICS = {
             "title": "RV: easyJet booking reference: KBF2SVQ",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.64,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 2.62,
+            "sla_met": false,
+            "sla_breach_hours": 1.38,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T16:04:16.361Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 875,
@@ -27324,10 +22618,13 @@ export const ZAMMAD_METRICS = {
             "title": "reserva smy",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 6.72,
+            "actual_time_hours": 0.57,
             "sla_met": false,
-            "sla_breach_hours": 2.72,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.43,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T14:00:40.583Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 876,
@@ -27335,10 +22632,13 @@ export const ZAMMAD_METRICS = {
             "title": "newblue loc 6114820",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 8.44,
+            "actual_time_hours": 2.13,
             "sla_met": false,
-            "sla_breach_hours": 4.44,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.87,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T15:34:49.050Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 879,
@@ -27346,10 +22646,13 @@ export const ZAMMAD_METRICS = {
             "title": "File 407385",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 5.88,
+            "actual_time_hours": 1.62,
             "sla_met": false,
-            "sla_breach_hours": 1.88,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.38,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T15:54:52.466Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 888,
@@ -27357,21 +22660,13 @@ export const ZAMMAD_METRICS = {
             "title": "pedido cotação El horno Albergue Manzanos",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 136.85,
+            "actual_time_hours": 1.78,
             "sla_met": false,
-            "sla_breach_hours": 132.85,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 892,
-            "ticket_number": "35891",
-            "title": "Confirmacao 332519",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 264.87,
-            "sla_met": false,
-            "sla_breach_hours": 264.62,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 2.22,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-17T21:06:05.702Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 894,
@@ -27379,10 +22674,13 @@ export const ZAMMAD_METRICS = {
             "title": "loc 331198 e loc 326340",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 66.33,
+            "actual_time_hours": 0.75,
             "sla_met": false,
-            "sla_breach_hours": 62.33,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.25,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-17T21:21:23.999Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 895,
@@ -27390,10 +22688,13 @@ export const ZAMMAD_METRICS = {
             "title": "Código Odisseias",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.03,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.02,
+            "sla_met": false,
+            "sla_breach_hours": 3.98,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T21:25:01.267Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 926,
@@ -27401,10 +22702,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cotação Saona - Urgente",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.86,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.08,
+            "sla_met": false,
+            "sla_breach_hours": 2.92,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T09:27:06.103Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 975,
@@ -27412,10 +22716,13 @@ export const ZAMMAD_METRICS = {
             "title": "pedido de cotação para o hotel ledger plaza bangui",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 186.64,
-            "sla_met": false,
-            "sla_breach_hours": 182.64,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 9.15,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-21T14:31:34.591Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 978,
@@ -27423,10 +22730,13 @@ export const ZAMMAD_METRICS = {
             "title": "| Urgente - dúvida nova reserva - GBN-86805 |",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 64.45,
+            "actual_time_hours": 2.55,
             "sla_met": false,
-            "sla_breach_hours": 60.45,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.45,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-20T22:01:09.144Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1015,
@@ -27434,10 +22744,13 @@ export const ZAMMAD_METRICS = {
             "title": "Localizador QFSHT5WR",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 49.28,
+            "actual_time_hours": 2.85,
             "sla_met": false,
-            "sla_breach_hours": 45.28,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.15,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T14:19:43.971Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1021,
@@ -27445,21 +22758,13 @@ export const ZAMMAD_METRICS = {
             "title": "Noite de Passagem de Ano - DoubleTree by Hilton Is...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 6.14,
+            "actual_time_hours": 2.65,
             "sla_met": false,
-            "sla_breach_hours": 2.14,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1065,
-            "ticket_number": "351063",
-            "title": "RESERVA / FATURA PROFORMA LOCALIZADOR 604480449",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 30.04,
-            "sla_met": false,
-            "sla_breach_hours": 29.79,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 1.35,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T14:23:23.354Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1066,
@@ -27467,32 +22772,13 @@ export const ZAMMAD_METRICS = {
             "title": "REMINDER: Dados de Passaporte - nosso File 408716",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.86,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1067,
-            "ticket_number": "351065",
-            "title": "GBN-85654 - Seu pedido foi recebido",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 6.63,
+            "actual_time_hours": 1.83,
             "sla_met": false,
-            "sla_breach_hours": 2.63,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1085,
-            "ticket_number": "351083",
-            "title": "GBN-87057 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 70.12,
-            "sla_met": false,
-            "sla_breach_hours": 69.87,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 2.17,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-22T09:58:45.787Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1104,
@@ -27500,10 +22786,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 22.07,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 21.82,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-22T16:30:29.515Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1115,
@@ -27511,54 +22800,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reserva Rimain Tours Localizador 3796558515 - Andr...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 16.92,
-            "sla_met": false,
-            "sla_breach_hours": 12.92,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1122,
-            "ticket_number": "351120",
-            "title": "Reserva confirmada: Free tour por Florença - Civit...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 141.32,
-            "sla_met": false,
-            "sla_breach_hours": 141.07,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1175,
-            "ticket_number": "351173",
-            "title": "GBN-87317 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 94.93,
-            "sla_met": false,
-            "sla_breach_hours": 94.68,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1177,
-            "ticket_number": "351175",
-            "title": "GBN-87324 - Sua confirmação de reserva",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 93.05,
-            "sla_met": false,
-            "sla_breach_hours": 92.8,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1276,
-            "ticket_number": "351273",
-            "title": "GBN Travel: Information about your booking - GBN-8...",
-            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 53.83,
-            "sla_met": false,
-            "sla_breach_hours": 53.58,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 6.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T11:57:52.833Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1278,
@@ -27566,10 +22814,13 @@ export const ZAMMAD_METRICS = {
             "title": "pedido de cotação",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.29,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.28,
+            "sla_met": false,
+            "sla_breach_hours": 3.72,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-25",
+            "first_response_at": "2025-10-25T15:44:12.471Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1287,
@@ -27577,10 +22828,13 @@ export const ZAMMAD_METRICS = {
             "title": "Soltropico hurghada",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 76.82,
-            "sla_met": false,
-            "sla_breach_hours": 72.82,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 5.35,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-26T14:36:57.574Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1444,
@@ -27588,10 +22842,13 @@ export const ZAMMAD_METRICS = {
             "title": "Atestado multiusos - voos e Disney",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 22.85,
+            "actual_time_hours": 0.95,
             "sla_met": false,
-            "sla_breach_hours": 18.85,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.05,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-28T17:49:59.284Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1528,
@@ -27599,18 +22856,21 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmacao 333035",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 0.76,
+            "actual_time_hours": 0.05,
             "sla_met": false,
-            "sla_breach_hours": 0.51,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.95,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-29T22:01:46.088Z",
+            "first_response_escalation_at": null
           }
         ]
       },
       "Magali Morim": {
-        "total_tickets": 14,
-        "sla_met": 0,
-        "sla_missed": 14,
-        "sla_compliance_rate": 0.0,
+        "total_tickets": 5,
+        "sla_met": 4,
+        "sla_missed": 1,
+        "sla_compliance_rate": 80.0,
         "tickets": [
           {
             "ticket_id": 43,
@@ -27618,32 +22878,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cancelamento",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 28.21,
-            "sla_met": false,
-            "sla_breach_hours": 27.96,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 138,
-            "ticket_number": "35137",
-            "title": "Lucia Duarte - saída da ufev",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 98.31,
-            "sla_met": false,
-            "sla_breach_hours": 94.31,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 184,
-            "ticket_number": "35183",
-            "title": "Reencaminhar: Lucia Duarte - saída da ufev",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 0.25,
-            "sla_met": false,
-            "sla_breach_hours": 0.0,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 18.13,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-01",
+            "first_response_at": "2025-10-01T12:26:53.695Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 233,
@@ -27651,10 +22892,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Cancelamento de subscrição",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 2.6,
-            "sla_met": false,
-            "sla_breach_hours": 2.35,
-            "sla_name": "SLA P1"
+            "actual_time_hours": 2.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T11:34:30.283Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 356,
@@ -27662,10 +22906,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cancelamento subscrição",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 78.02,
-            "sla_met": false,
-            "sla_breach_hours": 74.02,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 48.0,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-11",
+            "first_response_at": "2025-10-11T14:52:09.440Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 532,
@@ -27673,87 +22920,13 @@ export const ZAMMAD_METRICS = {
             "title": "reserva 405743 e 405744",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 4.94,
+            "actual_time_hours": 1.63,
             "sla_met": false,
-            "sla_breach_hours": 0.94,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 606,
-            "ticket_number": "35605",
-            "title": "Pedido de partilha de \"CABO VERDE.mp4\"",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.74,
-            "sla_met": false,
-            "sla_breach_hours": 13.74,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 607,
-            "ticket_number": "35606",
-            "title": "Pedido de partilha de \"CABO VERDE.mp4\"",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.74,
-            "sla_met": false,
-            "sla_breach_hours": 13.74,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 608,
-            "ticket_number": "35607",
-            "title": "Pedido de partilha de \"CABO VERDE.mp4\"",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.74,
-            "sla_met": false,
-            "sla_breach_hours": 13.74,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 610,
-            "ticket_number": "35609",
-            "title": "Pedido de partilha de \"CABO VERDE.mp4\"",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 17.47,
-            "sla_met": false,
-            "sla_breach_hours": 13.47,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 700,
-            "ticket_number": "35699",
-            "title": "Obrigado por estarem connosco no TNews On The Road...",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 88.82,
-            "sla_met": false,
-            "sla_breach_hours": 64.82,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 722,
-            "ticket_number": "35721",
-            "title": "Pedido de partilha de \"CABO VERDE.mp4\"",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 72.97,
-            "sla_met": false,
-            "sla_breach_hours": 68.97,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 750,
-            "ticket_number": "35749",
-            "title": "Pedido de partilha de \"CABO VERDE.mp4\"",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 67.88,
-            "sla_met": false,
-            "sla_breach_hours": 63.88,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.37,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-11",
+            "first_response_at": "2025-10-11T11:46:28.371Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 859,
@@ -27761,18 +22934,21 @@ export const ZAMMAD_METRICS = {
             "title": "Screenshot 2025-10-17 at 08.21.41",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 24.46,
-            "sla_met": false,
-            "sla_breach_hours": 20.46,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 14.42,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-18",
+            "first_response_at": "2025-10-18T09:48:14.812Z",
+            "first_response_escalation_at": null
           }
         ]
       },
       "Cátia Leal": {
-        "total_tickets": 47,
-        "sla_met": 14,
-        "sla_missed": 33,
-        "sla_compliance_rate": 29.79,
+        "total_tickets": 20,
+        "sla_met": 6,
+        "sla_missed": 14,
+        "sla_compliance_rate": 30.0,
         "tickets": [
           {
             "ticket_id": 128,
@@ -27780,10 +22956,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido de cancelamento GBN",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 526.54,
+            "actual_time_hours": 0.02,
             "sla_met": false,
-            "sla_breach_hours": 522.54,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.98,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-01T19:58:00.764Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 129,
@@ -27791,10 +22970,13 @@ export const ZAMMAD_METRICS = {
             "title": "Egotravel devolução -   331041",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 188.03,
+            "actual_time_hours": 3.17,
             "sla_met": false,
-            "sla_breach_hours": 184.03,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 0.83,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-02T09:15:30.314Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 244,
@@ -27802,10 +22984,13 @@ export const ZAMMAD_METRICS = {
             "title": "loc 6119184 - NB",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 53.65,
-            "sla_met": false,
-            "sla_breach_hours": 49.65,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 33.65,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T16:58:11.794Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 338,
@@ -27813,10 +22998,13 @@ export const ZAMMAD_METRICS = {
             "title": "URGENTE - Pedido de informação sobre alteração na ...",
             "priority": "P3",
             "sla_target_hours": 24.0,
-            "actual_time_hours": 372.15,
+            "actual_time_hours": 1.5,
             "sla_met": false,
-            "sla_breach_hours": 348.15,
-            "sla_name": "SLA P3"
+            "sla_breach_hours": 22.5,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-08T09:15:44.352Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 416,
@@ -27824,10 +23012,13 @@ export const ZAMMAD_METRICS = {
             "title": "Informações importantes : 412548/2025 - SOLFERIAS.",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 40.37,
-            "sla_met": false,
-            "sla_breach_hours": 36.37,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 7.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-09T10:06:32.880Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 438,
@@ -27835,43 +23026,13 @@ export const ZAMMAD_METRICS = {
             "title": "Nova Viagem #251000072 - Bucket List",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.13,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 589,
-            "ticket_number": "35588",
-            "title": "Reserva cancelada com localizador: 3934466",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 0.19,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 629,
-            "ticket_number": "35628",
-            "title": "Atividade cancelada: Ingresso do Balneário Széchen...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 354.01,
+            "actual_time_hours": 0.05,
             "sla_met": false,
-            "sla_breach_hours": 350.01,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 630,
-            "ticket_number": "35629",
-            "title": "reserva  A34603688 civitatis",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 16.19,
-            "sla_met": false,
-            "sla_breach_hours": 12.19,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.95,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T08:47:30.622Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 661,
@@ -27879,43 +23040,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reembolso Reserva",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 215.42,
-            "sla_met": false,
-            "sla_breach_hours": 211.42,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 732,
-            "ticket_number": "35731",
-            "title": "Cancellation of the booking with   8B17T3PV",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 192.77,
-            "sla_met": false,
-            "sla_breach_hours": 168.77,
-            "sla_name": "SLA P3"
-          },
-          {
-            "ticket_id": 736,
-            "ticket_number": "35735",
-            "title": "LOC: 1210276553",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 191.74,
-            "sla_met": false,
-            "sla_breach_hours": 187.74,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 981,
-            "ticket_number": "35980",
-            "title": "Re: Comissões",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 62.26,
-            "sla_met": false,
-            "sla_breach_hours": 58.26,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 6.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-14T17:31:57.104Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1003,
@@ -27923,10 +23054,13 @@ export const ZAMMAD_METRICS = {
             "title": "NIB Devolução caução Hotel",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 48.71,
+            "actual_time_hours": 0.58,
             "sla_met": false,
-            "sla_breach_hours": 44.71,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.42,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-21T09:58:54.663Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1088,
@@ -27934,10 +23068,13 @@ export const ZAMMAD_METRICS = {
             "title": "RE: Comissões",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 172.11,
-            "sla_met": false,
-            "sla_breach_hours": 168.11,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 20.05,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-23T18:25:01.830Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1131,
@@ -27945,10 +23082,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Re: Pedido de devolução da diferença de trans...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.51,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.5,
+            "sla_met": false,
+            "sla_breach_hours": 3.5,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T08:59:19.320Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1182,
@@ -27956,21 +23096,13 @@ export const ZAMMAD_METRICS = {
             "title": "teste Cátia 1",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 109.6,
-            "sla_met": false,
-            "sla_breach_hours": 105.6,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1189,
-            "ticket_number": "351186",
-            "title": "GBN-83745 - Sua reserva está pendente de pagamento",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.16,
-            "sla_met": false,
-            "sla_breach_hours": 1.16,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 48.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T10:05:25.478Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1199,
@@ -27978,21 +23110,13 @@ export const ZAMMAD_METRICS = {
             "title": "Comissões Mês de Outubro",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 4.46,
+            "actual_time_hours": 3.3,
             "sla_met": false,
-            "sla_breach_hours": 0.46,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1212,
-            "ticket_number": "351209",
-            "title": "RECIBOS VERDES",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 3.08,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 0.7,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-24T11:47:35.413Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1240,
@@ -28000,10 +23124,13 @@ export const ZAMMAD_METRICS = {
             "title": "Comissões",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 69.34,
+            "actual_time_hours": 1.88,
             "sla_met": false,
-            "sla_breach_hours": 65.34,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.12,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-24T16:30:56.266Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1242,
@@ -28011,65 +23138,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Comissão - valores por confirmar",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.97,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1264,
-            "ticket_number": "351261",
-            "title": "GBN-83745 - Sua reserva está pendente de pagamento",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 51.98,
+            "actual_time_hours": 1.95,
             "sla_met": false,
-            "sla_breach_hours": 47.98,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1270,
-            "ticket_number": "351267",
-            "title": "A/C Cátia Leal - envio de recibo comissão 12059675...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 75.89,
-            "sla_met": false,
-            "sla_breach_hours": 71.89,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1281,
-            "ticket_number": "351278",
-            "title": "Recibo Emitido - Levantamento Comissões",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 27.39,
-            "sla_met": false,
-            "sla_breach_hours": 23.39,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1285,
-            "ticket_number": "351282",
-            "title": "Dados para faturação: Viagem #251000103 - O mundo ...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 29.28,
-            "sla_met": false,
-            "sla_breach_hours": 25.28,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1290,
-            "ticket_number": "351287",
-            "title": "Comissões",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 25.57,
-            "sla_met": false,
-            "sla_breach_hours": 21.57,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.05,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-24T16:35:43.512Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1297,
@@ -28077,54 +23152,13 @@ export const ZAMMAD_METRICS = {
             "title": "Reembolso",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 2.65,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1302,
-            "ticket_number": "351299",
-            "title": "CONTROLO RESERVAS... - 240.00€ - 30/07/2025 240.00...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.67,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1304,
-            "ticket_number": "351301",
-            "title": "CONTROLO RESERVAS... - 1645 - 15/09/2025 1000 - 26...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.68,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1311,
-            "ticket_number": "351308",
-            "title": "GBN-62019 - Sua reserva está pendente de pagamento",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 28.22,
+            "actual_time_hours": 2.63,
             "sla_met": false,
-            "sla_breach_hours": 24.22,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1312,
-            "ticket_number": "351309",
-            "title": "GBN-83782 - Sua reserva está pendente de pagamento",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.43,
-            "sla_met": false,
-            "sla_breach_hours": 1.43,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.37,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T11:45:43.076Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1317,
@@ -28132,21 +23166,13 @@ export const ZAMMAD_METRICS = {
             "title": "Fwd: Re: Fwd: Reserva Barcadouro Porto/Régua/Porto...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 27.88,
+            "actual_time_hours": 3.05,
             "sla_met": false,
-            "sla_breach_hours": 23.88,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1318,
-            "ticket_number": "351315",
-            "title": "Pedido de Sinalização De Reserva 332333",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 4.27,
-            "sla_met": false,
-            "sla_breach_hours": 4.02,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 0.95,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-27T12:58:31.834Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1326,
@@ -28154,21 +23180,13 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmação e Fatura de Reserva",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 6.01,
+            "actual_time_hours": 2.35,
             "sla_met": false,
-            "sla_breach_hours": 2.01,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1329,
-            "ticket_number": "351326",
-            "title": "Fwd: A sua reserva continua CONFIRMADA — tentativa...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.99,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 1.65,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T13:55:06.523Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1340,
@@ -28176,10 +23194,13 @@ export const ZAMMAD_METRICS = {
             "title": "FATURAS CLIENTES - CÁTIA LEAL",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 22.19,
+            "actual_time_hours": null,
             "sla_met": false,
-            "sla_breach_hours": 18.19,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-27T15:08:00.768Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1343,
@@ -28187,87 +23208,13 @@ export const ZAMMAD_METRICS = {
             "title": "Confirmação de Reserva * File 414136 ***alteração ...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.61,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1345,
-            "ticket_number": "351342",
-            "title": "Comissões",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 23.16,
+            "actual_time_hours": 0.03,
             "sla_met": false,
-            "sla_breach_hours": 19.16,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1366,
-            "ticket_number": "351363",
-            "title": "Pedido de pagamento - PT004157",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.34,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1394,
-            "ticket_number": "351391",
-            "title": "900164028 // Prepaid reservations -4 days before c...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 30.67,
-            "sla_met": false,
-            "sla_breach_hours": 26.67,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1413,
-            "ticket_number": "351410",
-            "title": "Re: Comissões A/C Cátia Leal",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 29.04,
-            "sla_met": false,
-            "sla_breach_hours": 25.04,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1424,
-            "ticket_number": "351421",
-            "title": "Fwd: File 24800025 | Solução Perfeita",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 5.2,
-            "sla_met": false,
-            "sla_breach_hours": 1.2,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1436,
-            "ticket_number": "351433",
-            "title": "Fatura Pro Forma Localizador 408831",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.19,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1438,
-            "ticket_number": "351435",
-            "title": "Fatura Pro Forma Localizador 409435",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.27,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T16:06:38.901Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1473,
@@ -28275,51 +23222,911 @@ export const ZAMMAD_METRICS = {
             "title": "2ª Notificação: Reclamação pagamento Reserva 60448...",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 1.48,
-            "sla_met": false,
-            "sla_breach_hours": 1.23,
-            "sla_name": "SLA P1"
-          },
-          {
-            "ticket_id": 1493,
-            "ticket_number": "351490",
-            "title": "K000018205 - Extrato da conta",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 3.98,
+            "actual_time_hours": 1.47,
             "sla_met": true,
             "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-29T10:53:47.531Z",
+            "first_response_escalation_at": null
+          }
+        ]
+      },
+      "Não Atribuído": {
+        "total_tickets": 62,
+        "sla_met": 0,
+        "sla_missed": 62,
+        "sla_compliance_rate": 0.0,
+        "tickets": [
+          {
+            "ticket_id": 207,
+            "ticket_number": "35206",
+            "title": "A sua reserva n.º 63316063: mantenha-se ligado enq...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.35,
+            "sla_met": false,
+            "sla_breach_hours": 3.65,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T08:32:45.847Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 209,
+            "ticket_number": "35208",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T08:11:09.429Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 256,
+            "ticket_number": "35255",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T17:06:24.504Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 257,
+            "ticket_number": "35256",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T17:06:58.986Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 261,
+            "ticket_number": "35260",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T18:09:17.541Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 262,
+            "ticket_number": "35261",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T18:09:20.386Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 264,
+            "ticket_number": "35263",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-06T18:09:37.667Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 282,
+            "ticket_number": "35281",
+            "title": "GBN-84890 - RGPD",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.15,
+            "sla_met": false,
+            "sla_breach_hours": 3.85,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-07T08:15:35.380Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 284,
+            "ticket_number": "35283",
+            "title": "Pedido de pagamento - PT004157",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.12,
+            "sla_met": false,
+            "sla_breach_hours": 3.88,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-07",
+            "first_response_at": "2025-10-07T08:14:10.769Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 350,
+            "ticket_number": "35349",
+            "title": "Ana Martins- OPTI nº 2412000015",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.53,
+            "sla_met": false,
+            "sla_breach_hours": 3.47,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-08",
+            "first_response_at": "2025-10-08T08:58:04.893Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 430,
+            "ticket_number": "35429",
+            "title": "Adicione novas experiências para sua viagem GBN-70...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.5,
+            "sla_met": false,
+            "sla_breach_hours": 3.5,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T08:37:54.439Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 437,
+            "ticket_number": "35436",
+            "title": "RE: Multibanco - File 411467/25",
+            "priority": "P3",
+            "sla_target_hours": 24.0,
+            "actual_time_hours": 0.22,
+            "sla_met": false,
+            "sla_breach_hours": 23.78,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T08:57:34.902Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 460,
+            "ticket_number": "35459",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-09T17:24:05.732Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 461,
+            "ticket_number": "35460",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T17:24:08.593Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 462,
+            "ticket_number": "35461",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-09",
+            "first_response_at": "2025-10-09T17:24:11.344Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 473,
+            "ticket_number": "35472",
+            "title": "Flexible Autos - Reserva com pagamento pendente Re...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": 0.43,
+            "sla_met": false,
+            "sla_breach_hours": 3.57,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T08:33:12.189Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 485,
+            "ticket_number": "35484",
+            "title": "Envio de documentos de File 412540/25 * VOOS EMITI...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.15,
+            "sla_met": false,
+            "sla_breach_hours": 3.85,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T09:59:20.474Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 515,
+            "ticket_number": "35514",
+            "title": "GBN-84048 - Seu pedido foi recebido",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 1.92,
+            "sla_met": false,
+            "sla_breach_hours": 2.08,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-10",
+            "first_response_at": "2025-10-10T19:24:42.045Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 524,
+            "ticket_number": "35523",
+            "title": "Re:[##   22649   ##] GBN-85079 - Seu pedido foi re...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.12,
+            "sla_met": false,
+            "sla_breach_hours": 3.88,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-10T19:55:57.388Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 553,
+            "ticket_number": "35552",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-13T08:07:03.495Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 568,
+            "ticket_number": "35567",
+            "title": "Envio documentos - (Recibo-231005804)  n. 10043481...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.32,
+            "sla_met": false,
+            "sla_breach_hours": 3.68,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T10:08:39.575Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 613,
+            "ticket_number": "35612",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T17:00:32.072Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 614,
+            "ticket_number": "35613",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T17:00:34.458Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 616,
+            "ticket_number": "35615",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T17:08:16.654Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 640,
+            "ticket_number": "35639",
+            "title": "Envio de ato isolado viagens",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.52,
+            "sla_met": false,
+            "sla_breach_hours": 3.48,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T08:45:06.246Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 644,
+            "ticket_number": "35643",
+            "title": "Document from Costa Crociere",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.98,
+            "sla_met": false,
+            "sla_breach_hours": 3.02,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T09:17:27.116Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 645,
+            "ticket_number": "35644",
+            "title": "Adicione novas experiências para sua viagem GBN-66...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 1.03,
+            "sla_met": false,
+            "sla_breach_hours": 2.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T09:20:17.419Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 646,
+            "ticket_number": "35645",
+            "title": "Reserva Aérea DQ2S9K",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 1.15,
+            "sla_met": false,
+            "sla_breach_hours": 2.85,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T09:27:34.613Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 647,
+            "ticket_number": "35646",
+            "title": "Document from Costa Crociere",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 1.18,
+            "sla_met": false,
+            "sla_breach_hours": 2.82,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T09:29:05.032Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 651,
+            "ticket_number": "35650",
+            "title": "Reserva Aérea DQ2S9K",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 1.65,
+            "sla_met": false,
+            "sla_breach_hours": 2.35,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T09:57:28.731Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 706,
+            "ticket_number": "35705",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-14",
+            "first_response_at": "2025-10-14T18:10:14.537Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 735,
+            "ticket_number": "35734",
+            "title": "GBN-86003 - Seu pedido foi recebido",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.52,
+            "sla_met": false,
+            "sla_breach_hours": 3.48,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T10:47:28.806Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 759,
+            "ticket_number": "35758",
+            "title": "Reserva alterada: Visita guiada por Pompeia",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 1.03,
+            "sla_met": false,
+            "sla_breach_hours": 2.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T16:32:47.545Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 763,
+            "ticket_number": "35762",
+            "title": "Envio de Documentação Financeira",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.67,
+            "sla_met": false,
+            "sla_breach_hours": 3.33,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-15",
+            "first_response_at": "2025-10-15T16:48:46.644Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 794,
+            "ticket_number": "35793",
+            "title": "Dúvida sobre EXECUTIVE na Solférias",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": 0.13,
+            "sla_met": false,
+            "sla_breach_hours": 3.87,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-15T21:34:07.099Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 870,
+            "ticket_number": "35869",
+            "title": "CONTROLO RESERVAS... - 300.00€ - 08/07/2025 300.00...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.23,
+            "sla_met": false,
+            "sla_breach_hours": 3.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T13:39:38.618Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 873,
+            "ticket_number": "35872",
+            "title": "CONTROLO RESERVAS - PAGAMENTOS - UMA FAMILIA EM VI...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.23,
+            "sla_met": false,
+            "sla_breach_hours": 3.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T13:40:12.745Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 877,
+            "ticket_number": "35876",
+            "title": "Re: autorização para emissão de bilhetes",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 3.23,
+            "sla_met": false,
+            "sla_breach_hours": 0.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-17",
+            "first_response_at": "2025-10-17T16:40:46.800Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1010,
+            "ticket_number": "351009",
+            "title": "CONTROLO RESERVAS... - 150 - 17/06/2025 150 - 16/0...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 2.4,
+            "sla_met": false,
+            "sla_breach_hours": 1.6,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-21T12:29:21.627Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1132,
+            "ticket_number": "351130",
+            "title": "Fwd: Documentação da reserva TTN-1212212049#843483...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.42,
+            "sla_met": false,
+            "sla_breach_hours": 3.58,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T08:54:53.682Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1163,
+            "ticket_number": "351161",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T15:36:13.733Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1164,
+            "ticket_number": "351162",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T15:36:16.163Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1165,
+            "ticket_number": "351163",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T15:36:20.174Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1167,
+            "ticket_number": "351165",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T15:44:32.048Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1171,
+            "ticket_number": "351169",
+            "title": "| Nova reserva GBN-86805 - envio de doc |",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 2.8,
+            "sla_met": false,
+            "sla_breach_hours": 1.2,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-23",
+            "first_response_at": "2025-10-23T19:54:20.012Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1232,
+            "ticket_number": "351229",
+            "title": "Reserva modificada: Excursão a Santo Domingo",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.88,
+            "sla_met": false,
+            "sla_breach_hours": 3.12,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-24T13:20:58.144Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1239,
+            "ticket_number": "351236",
+            "title": "In Sure Broker - Pedido de alteração de pessoa seg...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.03,
+            "sla_met": false,
+            "sla_breach_hours": 3.97,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-24",
+            "first_response_at": "2025-10-24T13:50:30.571Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1252,
+            "ticket_number": "351249",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-25",
+            "first_response_at": "2025-10-24T16:51:50.236Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1253,
+            "ticket_number": "351250",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-25",
+            "first_response_at": "2025-10-24T16:51:53.741Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1254,
+            "ticket_number": "351251",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-25",
+            "first_response_at": "2025-10-24T16:51:58.790Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1267,
+            "ticket_number": "351264",
+            "title": "Eticket - 66890519 - EU  14/11/2025  Barcelona, Es...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.47,
+            "sla_met": false,
+            "sla_breach_hours": 3.53,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-25",
+            "first_response_at": "2025-10-25T08:28:12.123Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1313,
+            "ticket_number": "351310",
+            "title": "Nova Viagem #251000275 - Rota dos Sonhos",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.57,
+            "sla_met": false,
+            "sla_breach_hours": 3.43,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T09:46:17.113Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1322,
+            "ticket_number": "351319",
+            "title": "Confirmação de reserva para For PT004157 67528547",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.33,
+            "sla_met": false,
+            "sla_breach_hours": 3.67,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T11:26:06.809Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1323,
+            "ticket_number": "351320",
+            "title": "Confirmação de reserva para For PT004157 67529346",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.35,
+            "sla_met": false,
+            "sla_breach_hours": 3.65,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T11:27:11.902Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1324,
+            "ticket_number": "351321",
+            "title": "Confirmação de reserva para For PT004157 67529122",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.32,
+            "sla_met": false,
+            "sla_breach_hours": 3.68,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T11:25:27.818Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1351,
+            "ticket_number": "351348",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T16:40:30.580Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1368,
+            "ticket_number": "351365",
+            "title": "Fwd: Acompanhamento do procedimento TTN-1210584648...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.1,
+            "sla_met": false,
+            "sla_breach_hours": 3.9,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T18:42:32.800Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1419,
+            "ticket_number": "351416",
+            "title": "\"GBN-87699 - Your request has been received\"",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T11:59:05.642Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1433,
+            "ticket_number": "351430",
+            "title": "Aproveite o Stopover em Angola com a TAAG! ✈️",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.2,
+            "sla_met": false,
+            "sla_breach_hours": 3.8,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T16:17:08.365Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1435,
+            "ticket_number": "351432",
+            "title": " Novidades sobre atribuição de comissões às agênci...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.22,
+            "sla_met": false,
+            "sla_breach_hours": 3.78,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T16:17:49.820Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1437,
+            "ticket_number": "351434",
+            "title": "Fwd: Novidades sobre atribuição de comissões às ag...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.3,
+            "sla_met": false,
+            "sla_breach_hours": 3.7,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T16:22:23.782Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1457,
+            "ticket_number": "351454",
+            "title": "Nova Viagem #251000296 - Maria Moreira",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 2.13,
+            "sla_met": false,
+            "sla_breach_hours": 1.87,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-29",
+            "first_response_at": "2025-10-29T10:08:03.939Z",
+            "first_response_escalation_at": null
           }
         ]
       },
       "Rafaela Lapa": {
-        "total_tickets": 24,
-        "sla_met": 16,
-        "sla_missed": 8,
-        "sla_compliance_rate": 66.67,
+        "total_tickets": 20,
+        "sla_met": 0,
+        "sla_missed": 20,
+        "sla_compliance_rate": 0.0,
         "tickets": [
-          {
-            "ticket_id": 191,
-            "ticket_number": "35190",
-            "title": "GBN-62019 - Seu pedido foi recebido",
-            "priority": "P3",
-            "sla_target_hours": 24.0,
-            "actual_time_hours": 209.26,
-            "sla_met": false,
-            "sla_breach_hours": 185.26,
-            "sla_name": "SLA P3"
-          },
           {
             "ticket_id": 227,
             "ticket_number": "35226",
             "title": "Esclarecimento sobre seguros para atividades extra...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.98,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.95,
+            "sla_met": false,
+            "sla_breach_hours": 3.05,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T10:08:36.471Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 230,
@@ -28327,10 +24134,13 @@ export const ZAMMAD_METRICS = {
             "title": "Acompanhamento da gestão do seu dossier com o núme...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.94,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.92,
+            "sla_met": false,
+            "sla_breach_hours": 3.08,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T10:19:42.915Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 232,
@@ -28338,10 +24148,13 @@ export const ZAMMAD_METRICS = {
             "title": "[Ávoris] Re: EXPEDIENTE 604273864 + LOCALIZADOR RE...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.98,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.97,
+            "sla_met": false,
+            "sla_breach_hours": 3.03,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T10:26:45.881Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 235,
@@ -28349,21 +24162,13 @@ export const ZAMMAD_METRICS = {
             "title": "GBN-81955 - Seu pedido foi recebido",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.82,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 539,
-            "ticket_number": "35538",
-            "title": "DPXP44 – Reserva com emissão hoje",
-            "priority": "P1",
-            "sla_target_hours": 0.25,
-            "actual_time_hours": 1.34,
+            "actual_time_hours": 0.8,
             "sla_met": false,
-            "sla_breach_hours": 1.09,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 3.2,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-06",
+            "first_response_at": "2025-10-06T10:24:24.461Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 577,
@@ -28371,10 +24176,13 @@ export const ZAMMAD_METRICS = {
             "title": "Aéreo - Confirmação de Emissão (RIBEIRO/LUIS)",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 8.76,
+            "actual_time_hours": 1.23,
             "sla_met": false,
-            "sla_breach_hours": 4.76,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T11:20:09.392Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 612,
@@ -28382,10 +24190,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 22730 ##] GBN-79019 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 1.88,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 1.87,
+            "sla_met": false,
+            "sla_breach_hours": 2.13,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-13",
+            "first_response_at": "2025-10-13T18:45:26.417Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 898,
@@ -28393,10 +24204,13 @@ export const ZAMMAD_METRICS = {
             "title": "Localizadores NewBlue - 6119681 + 6119684 + 611968...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.56,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.55,
+            "sla_met": false,
+            "sla_breach_hours": 3.45,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-19",
+            "first_response_at": "2025-10-19T09:24:47.027Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 904,
@@ -28404,10 +24218,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 23198 ##] GBN-79019 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 46.64,
+            "actual_time_hours": 0.02,
             "sla_met": false,
-            "sla_breach_hours": 42.64,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.98,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-21",
+            "first_response_at": "2025-10-19T09:52:07.125Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 922,
@@ -28415,10 +24232,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido esclarecimento Solferias",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 8.44,
+            "actual_time_hours": 0.85,
             "sla_met": false,
-            "sla_breach_hours": 4.44,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.15,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T09:13:16.733Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 923,
@@ -28426,10 +24246,13 @@ export const ZAMMAD_METRICS = {
             "title": "Assintos Pendentes",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.91,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.9,
+            "sla_met": false,
+            "sla_breach_hours": 3.1,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T09:15:51.707Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 930,
@@ -28437,10 +24260,13 @@ export const ZAMMAD_METRICS = {
             "title": "Pedido relativo à reserva 604477059",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 49.66,
+            "actual_time_hours": 1.15,
             "sla_met": false,
-            "sla_breach_hours": 45.66,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 2.85,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-20T09:30:42.849Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 931,
@@ -28448,10 +24274,13 @@ export const ZAMMAD_METRICS = {
             "title": "Cancelamento de reserva",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.69,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.67,
+            "sla_met": false,
+            "sla_breach_hours": 3.33,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T09:01:41.811Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 964,
@@ -28459,10 +24288,13 @@ export const ZAMMAD_METRICS = {
             "title": "SMY 1167089501",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.59,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.58,
+            "sla_met": false,
+            "sla_breach_hours": 3.42,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T16:44:20.150Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1075,
@@ -28470,21 +24302,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re:[## 23445 ##] GBN-84757 - Seu pedido foi recebi...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.27,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1208,
-            "ticket_number": "351205",
-            "title": "Confirmação de reserva para For PT004157 66890519",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 2.18,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.25,
+            "sla_met": false,
+            "sla_breach_hours": 3.75,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-22",
+            "first_response_at": "2025-10-22T09:55:25.699Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1292,
@@ -28492,21 +24316,13 @@ export const ZAMMAD_METRICS = {
             "title": "REMINDER: Dados de Passaporte - nosso File 406908",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.34,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
-          },
-          {
-            "ticket_id": 1316,
-            "ticket_number": "351313",
-            "title": "Urgente - Problema alojamento",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 10.59,
+            "actual_time_hours": 0.33,
             "sla_met": false,
-            "sla_breach_hours": 6.59,
-            "sla_name": "SLA P2"
+            "sla_breach_hours": 3.67,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T09:26:30.208Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1365,
@@ -28514,10 +24330,13 @@ export const ZAMMAD_METRICS = {
             "title": "Re: Pedido de autorização",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.5,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.48,
+            "sla_met": false,
+            "sla_breach_hours": 3.52,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-27",
+            "first_response_at": "2025-10-27T18:31:09.115Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1392,
@@ -28525,10 +24344,13 @@ export const ZAMMAD_METRICS = {
             "title": "Eticket - 66890519 - EU  14/11/2025  Barcelona, Es...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.23,
+            "sla_met": false,
+            "sla_breach_hours": 3.77,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T09:19:12.767Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1393,
@@ -28536,10 +24358,13 @@ export const ZAMMAD_METRICS = {
             "title": "Eticket - 66890519 - EU  14/11/2025  Barcelona, Es...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.22,
+            "sla_met": false,
+            "sla_breach_hours": 3.78,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T09:18:15.205Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1396,
@@ -28547,10 +24372,13 @@ export const ZAMMAD_METRICS = {
             "title": "Eticket - 66890519 - EU  14/11/2025  Barcelona, Es...",
             "priority": "P2",
             "sla_target_hours": 4.0,
-            "actual_time_hours": 0.21,
-            "sla_met": true,
-            "sla_breach_hours": 0,
-            "sla_name": "SLA P2"
+            "actual_time_hours": 0.2,
+            "sla_met": false,
+            "sla_breach_hours": 3.8,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T09:17:17.537Z",
+            "first_response_escalation_at": null
           },
           {
             "ticket_id": 1406,
@@ -28558,19 +24386,22 @@ export const ZAMMAD_METRICS = {
             "title": "\"GBN-87699 - Your request has been received\"",
             "priority": "P1",
             "sla_target_hours": 0.25,
-            "actual_time_hours": 0.71,
+            "actual_time_hours": 0.03,
             "sla_met": false,
-            "sla_breach_hours": 0.46,
-            "sla_name": "SLA P1"
+            "sla_breach_hours": 0.22,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-28",
+            "first_response_at": "2025-10-28T10:40:41.829Z",
+            "first_response_escalation_at": null
           }
         ]
       }
     },
     "summary": {
-      "total_tickets_analyzed": 913,
-      "total_sla_met": 259,
-      "total_sla_missed": 654,
-      "overall_compliance_rate": 28.37
+      "total_tickets_analyzed": 423,
+      "total_sla_met": 82,
+      "total_sla_missed": 341,
+      "overall_compliance_rate": 19.39
     }
   }
 };
