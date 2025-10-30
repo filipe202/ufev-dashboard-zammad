@@ -149,20 +149,36 @@ def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, cl
     
     # Se temos os dados do Zammad, usar diretamente
     if first_response_diff_in_min is not None:
-        # Negativo ou zero = SLA cumprido, positivo = SLA violado
+        # Negativo ou zero = SLA cumprido (respondeu antes/no prazo)
+        # Positivo = SLA violado (respondeu depois do prazo)
         sla_met = first_response_diff_in_min <= 0
-        sla_breach_minutes = max(0, first_response_diff_in_min) if first_response_diff_in_min else 0
-        sla_breach_hours = round(sla_breach_minutes / 60, 2) if sla_breach_minutes else 0
+        
+        # Se violou, a violação é o valor positivo; se cumpriu, violação = 0
+        if first_response_diff_in_min > 0:
+            sla_breach_minutes = first_response_diff_in_min
+            sla_breach_hours = round(sla_breach_minutes / 60, 2)
+        else:
+            sla_breach_minutes = 0
+            sla_breach_hours = 0
     else:
         # Fallback: se não temos dados de SLA do Zammad
         sla_met = None
         sla_breach_hours = None
     
-    # Tempo real de primeira resposta
-    actual_time_hours = round(first_response_in_min / 60, 2) if first_response_in_min else None
+    # Tempo real de primeira resposta (em horas de calendário, não horas de trabalho)
+    # O Zammad calcula SLA em horas de trabalho (business hours), mas first_response_in_min é em minutos reais
+    actual_time_hours = round(first_response_in_min / 60, 2) if first_response_in_min and first_response_in_min > 0 else None
     
-    # Tempo alvo do SLA
+    # Tempo alvo do SLA (em horas de trabalho)
     sla_target_hours = sla_target.get("first_response_time_hours") or sla_target.get("solution_time_hours")
+    
+    # Calcular o tempo alvo real baseado no diff
+    # Se temos first_response_in_min e first_response_diff_in_min, podemos calcular o target real
+    if first_response_in_min and first_response_diff_in_min is not None:
+        # target = actual - diff (em minutos de trabalho)
+        sla_target_minutes = first_response_in_min - first_response_diff_in_min
+        if sla_target_minutes > 0:
+            sla_target_hours = round(sla_target_minutes / 60, 2)
     
     return {
         "ticket_id": ticket.get("id"),
