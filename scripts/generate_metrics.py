@@ -30,7 +30,7 @@ AGENT_NAME_OVERRIDES = {
 }
 AGENT_IDS = set(AGENT_NAME_OVERRIDES.keys())
 
-FROM_DATE = "2025-09-30"  # Expandir para início de setembro
+FROM_DATE = "2025-10-15"  # Expandir para início de setembro
 OPEN_STATE_QUERY = "state:new OR state:open OR state:pending reminder OR state:pending close"
 CLOSED_STATES = {"closed"}
 OPEN_STATES = {state.strip().lower() for state in OPEN_STATE_QUERY.replace("state:", "").split("OR")}
