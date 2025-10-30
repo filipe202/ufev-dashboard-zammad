@@ -6,7 +6,7 @@ export const ZAMMAD_METRICS = {
   "agents": {
     "Inês Martinho": {
       "overall": {
-        "avg_time_hours": 64.23,
+        "avg_time_hours": 63.61,
         "tickets_count": 143,
         "tickets_per_day": {
           "2025-09-30": 10,
@@ -30,9 +30,9 @@ export const ZAMMAD_METRICS = {
           "2025-10-24": 10,
           "2025-10-25": 1,
           "2025-10-27": 8,
-          "2025-10-28": 19,
+          "2025-10-28": 18,
           "2025-10-29": 6,
-          "2025-10-30": 7
+          "2025-10-30": 8
         }
       },
       "priorities": {
@@ -51,7 +51,7 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 50.59,
+          "avg_time_hours": 49.73,
           "tickets_count": 72,
           "tickets_per_day": {
             "2025-09-30": 2,
@@ -69,9 +69,9 @@ export const ZAMMAD_METRICS = {
             "2025-10-23": 3,
             "2025-10-24": 5,
             "2025-10-27": 6,
-            "2025-10-28": 15,
+            "2025-10-28": 14,
             "2025-10-29": 6,
-            "2025-10-30": 3
+            "2025-10-30": 4
           }
         },
         "P3": {
@@ -112,8 +112,8 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 64.23,
-            "tickets_count": 119,
+            "avg_time_hours": 63.61,
+            "tickets_count": 121,
             "tickets_per_day": {
               "2025-09-30": 10,
               "2025-10-01": 3,
@@ -129,7 +129,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-15": 6,
               "2025-10-16": 1,
               "2025-10-17": 3,
-              "2025-10-20": 2,
+              "2025-10-20": 3,
               "2025-10-21": 7,
               "2025-10-22": 9,
               "2025-10-23": 6,
@@ -137,7 +137,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-25": 1,
               "2025-10-27": 6,
               "2025-10-28": 17,
-              "2025-10-30": 2
+              "2025-10-30": 3
             }
           },
           "priorities": {
@@ -156,8 +156,8 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 50.59,
-              "tickets_count": 53,
+              "avg_time_hours": 49.73,
+              "tickets_count": 55,
               "tickets_per_day": {
                 "2025-09-30": 2,
                 "2025-10-01": 3,
@@ -168,14 +168,14 @@ export const ZAMMAD_METRICS = {
                 "2025-10-09": 1,
                 "2025-10-10": 3,
                 "2025-10-15": 1,
-                "2025-10-20": 2,
+                "2025-10-20": 3,
                 "2025-10-21": 3,
                 "2025-10-22": 6,
                 "2025-10-23": 3,
                 "2025-10-24": 3,
                 "2025-10-27": 4,
                 "2025-10-28": 13,
-                "2025-10-30": 1
+                "2025-10-30": 2
               }
             },
             "P3": {
@@ -209,24 +209,6 @@ export const ZAMMAD_METRICS = {
                 "2025-10-21": 1,
                 "2025-10-23": 1,
                 "2025-10-25": 1
-              }
-            }
-          }
-        },
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-28": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-28": 1
               }
             }
           }
@@ -266,10 +248,9 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 13,
+            "tickets_count": 12,
             "tickets_per_day": {
               "2025-10-06": 2,
-              "2025-10-20": 1,
               "2025-10-22": 2,
               "2025-10-24": 2,
               "2025-10-27": 1,
@@ -281,9 +262,8 @@ export const ZAMMAD_METRICS = {
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 11,
+              "tickets_count": 10,
               "tickets_per_day": {
-                "2025-10-20": 1,
                 "2025-10-22": 2,
                 "2025-10-24": 2,
                 "2025-10-27": 1,
@@ -306,7 +286,7 @@ export const ZAMMAD_METRICS = {
     "Não Atribuído": {
       "overall": {
         "avg_time_hours": 28.84,
-        "tickets_count": 345,
+        "tickets_count": 348,
         "tickets_per_day": {
           "2025-09-30": 8,
           "2025-10-01": 2,
@@ -331,7 +311,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 27,
           "2025-10-28": 9,
           "2025-10-29": 35,
-          "2025-10-30": 4
+          "2025-10-30": 7
         }
       },
       "priorities": {
@@ -344,7 +324,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 3.67,
-          "tickets_count": 109,
+          "tickets_count": 112,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 1,
@@ -366,7 +346,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 7,
             "2025-10-28": 7,
             "2025-10-29": 12,
-            "2025-10-30": 3
+            "2025-10-30": 6
           }
         },
         "P3": {
@@ -518,19 +498,19 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 11,
+            "tickets_count": 14,
             "tickets_per_day": {
               "2025-10-27": 2,
               "2025-10-29": 6,
-              "2025-10-30": 3
+              "2025-10-30": 6
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 6,
               "tickets_per_day": {
-                "2025-10-30": 3
+                "2025-10-30": 6
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -628,8 +608,8 @@ export const ZAMMAD_METRICS = {
     },
     "Sandra Reis": {
       "overall": {
-        "avg_time_hours": 66.94,
-        "tickets_count": 239,
+        "avg_time_hours": 65.93,
+        "tickets_count": 244,
         "tickets_per_day": {
           "2025-09-30": 9,
           "2025-10-01": 8,
@@ -647,14 +627,14 @@ export const ZAMMAD_METRICS = {
           "2025-10-19": 2,
           "2025-10-20": 8,
           "2025-10-21": 15,
-          "2025-10-22": 3,
-          "2025-10-23": 27,
+          "2025-10-22": 4,
+          "2025-10-23": 28,
           "2025-10-24": 9,
           "2025-10-26": 1,
           "2025-10-27": 7,
           "2025-10-28": 10,
           "2025-10-29": 23,
-          "2025-10-30": 8
+          "2025-10-30": 11
         }
       },
       "priorities": {
@@ -669,8 +649,8 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 52.46,
-          "tickets_count": 144,
+          "avg_time_hours": 51.15,
+          "tickets_count": 147,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-01": 1,
@@ -695,7 +675,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 6,
             "2025-10-28": 8,
             "2025-10-29": 17,
-            "2025-10-30": 4
+            "2025-10-30": 7
           }
         },
         "P3": {
@@ -722,7 +702,7 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": 125.91,
-          "tickets_count": 35,
+          "tickets_count": 37,
           "tickets_per_day": {
             "2025-10-07": 3,
             "2025-10-08": 1,
@@ -732,8 +712,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-14": 2,
             "2025-10-15": 3,
             "2025-10-21": 2,
-            "2025-10-22": 1,
-            "2025-10-23": 3,
+            "2025-10-22": 2,
+            "2025-10-23": 4,
             "2025-10-28": 1,
             "2025-10-29": 4
           }
@@ -742,8 +722,8 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 66.94,
-            "tickets_count": 196,
+            "avg_time_hours": 65.93,
+            "tickets_count": 199,
             "tickets_per_day": {
               "2025-09-30": 7,
               "2025-10-01": 8,
@@ -766,7 +746,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-27": 6,
               "2025-10-28": 4,
               "2025-10-29": 15,
-              "2025-10-30": 6
+              "2025-10-30": 9
             }
           },
           "priorities": {
@@ -780,8 +760,8 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 52.46,
-              "tickets_count": 116,
+              "avg_time_hours": 51.15,
+              "tickets_count": 119,
               "tickets_per_day": {
                 "2025-09-30": 1,
                 "2025-10-01": 1,
@@ -804,7 +784,7 @@ export const ZAMMAD_METRICS = {
                 "2025-10-27": 5,
                 "2025-10-28": 2,
                 "2025-10-29": 14,
-                "2025-10-30": 2
+                "2025-10-30": 5
               }
             },
             "P3": {
@@ -849,10 +829,28 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-22": 1
+            }
+          },
+          "priorities": {
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-22": 1
+              }
+            }
+          }
+        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 19,
+            "tickets_count": 20,
             "tickets_per_day": {
               "2025-10-02": 1,
               "2025-10-07": 2,
@@ -861,6 +859,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-15": 1,
               "2025-10-20": 1,
               "2025-10-21": 1,
+              "2025-10-23": 1,
               "2025-10-24": 3,
               "2025-10-27": 1,
               "2025-10-28": 2,
@@ -902,8 +901,9 @@ export const ZAMMAD_METRICS = {
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 3,
+              "tickets_count": 4,
               "tickets_per_day": {
+                "2025-10-23": 1,
                 "2025-10-29": 3
               }
             }
@@ -1230,12 +1230,22 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 1,
+            "tickets_count": 3,
             "tickets_per_day": {
+              "2025-10-01": 1,
+              "2025-10-16": 1,
               "2025-10-27": 1
             }
           },
           "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-01": 1,
+                "2025-10-16": 1
+              }
+            },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
               "tickets_count": 1,
@@ -1332,10 +1342,8 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 3,
             "tickets_per_day": {
-              "2025-10-01": 1,
-              "2025-10-16": 1,
               "2025-10-21": 1,
               "2025-10-22": 1,
               "2025-10-25": 1
@@ -1344,10 +1352,8 @@ export const ZAMMAD_METRICS = {
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 5,
+              "tickets_count": 3,
               "tickets_per_day": {
-                "2025-10-01": 1,
-                "2025-10-16": 1,
                 "2025-10-21": 1,
                 "2025-10-22": 1,
                 "2025-10-25": 1
@@ -1359,13 +1365,13 @@ export const ZAMMAD_METRICS = {
     },
     "Paula Candeias": {
       "overall": {
-        "avg_time_hours": 78.88,
-        "tickets_count": 157,
+        "avg_time_hours": 73.4,
+        "tickets_count": 148,
         "tickets_per_day": {
           "2025-09-30": 8,
           "2025-10-02": 1,
           "2025-10-03": 1,
-          "2025-10-06": 2,
+          "2025-10-06": 1,
           "2025-10-07": 9,
           "2025-10-08": 2,
           "2025-10-09": 10,
@@ -1378,15 +1384,15 @@ export const ZAMMAD_METRICS = {
           "2025-10-19": 2,
           "2025-10-20": 6,
           "2025-10-21": 3,
-          "2025-10-22": 10,
-          "2025-10-23": 14,
+          "2025-10-22": 7,
+          "2025-10-23": 13,
           "2025-10-24": 4,
           "2025-10-25": 6,
           "2025-10-26": 1,
-          "2025-10-27": 11,
-          "2025-10-28": 4,
-          "2025-10-29": 9,
-          "2025-10-30": 6
+          "2025-10-27": 9,
+          "2025-10-28": 3,
+          "2025-10-29": 7,
+          "2025-10-30": 7
         }
       },
       "priorities": {
@@ -1398,13 +1404,13 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 56.78,
-          "tickets_count": 86,
+          "avg_time_hours": 47.81,
+          "tickets_count": 80,
           "tickets_per_day": {
             "2025-09-30": 8,
             "2025-10-02": 1,
             "2025-10-03": 1,
-            "2025-10-06": 2,
+            "2025-10-06": 1,
             "2025-10-07": 1,
             "2025-10-08": 1,
             "2025-10-09": 5,
@@ -1416,27 +1422,27 @@ export const ZAMMAD_METRICS = {
             "2025-10-19": 1,
             "2025-10-20": 5,
             "2025-10-21": 1,
-            "2025-10-22": 6,
+            "2025-10-22": 5,
             "2025-10-23": 4,
             "2025-10-25": 2,
             "2025-10-26": 1,
             "2025-10-27": 2,
             "2025-10-28": 1,
-            "2025-10-29": 7,
-            "2025-10-30": 3
+            "2025-10-29": 5,
+            "2025-10-30": 1
           }
         },
         "P3": {
-          "avg_time_hours": 117.22,
-          "tickets_count": 4,
+          "avg_time_hours": 40.23,
+          "tickets_count": 3,
           "tickets_per_day": {
             "2025-10-15": 1,
-            "2025-10-30": 3
+            "2025-10-30": 2
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
-          "avg_time_hours": 124.66,
-          "tickets_count": 59,
+          "avg_time_hours": 121.65,
+          "tickets_count": 57,
           "tickets_per_day": {
             "2025-10-08": 1,
             "2025-10-09": 5,
@@ -1447,21 +1453,22 @@ export const ZAMMAD_METRICS = {
             "2025-10-19": 1,
             "2025-10-20": 1,
             "2025-10-21": 2,
-            "2025-10-22": 4,
-            "2025-10-23": 10,
+            "2025-10-22": 2,
+            "2025-10-23": 9,
             "2025-10-24": 4,
             "2025-10-25": 4,
-            "2025-10-27": 9,
-            "2025-10-28": 3,
-            "2025-10-29": 2
+            "2025-10-27": 7,
+            "2025-10-28": 2,
+            "2025-10-29": 2,
+            "2025-10-30": 4
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 78.88,
-            "tickets_count": 99,
+            "avg_time_hours": 73.4,
+            "tickets_count": 105,
             "tickets_per_day": {
               "2025-09-30": 6,
               "2025-10-02": 1,
@@ -1477,12 +1484,13 @@ export const ZAMMAD_METRICS = {
               "2025-10-17": 8,
               "2025-10-20": 3,
               "2025-10-21": 3,
-              "2025-10-22": 5,
+              "2025-10-22": 4,
               "2025-10-23": 8,
               "2025-10-25": 3,
               "2025-10-27": 4,
               "2025-10-28": 3,
-              "2025-10-29": 4
+              "2025-10-29": 4,
+              "2025-10-30": 7
             }
           },
           "priorities": {
@@ -1494,7 +1502,7 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P2": {
-              "avg_time_hours": 56.78,
+              "avg_time_hours": 47.81,
               "tickets_count": 54,
               "tickets_per_day": {
                 "2025-09-30": 6,
@@ -1509,23 +1517,25 @@ export const ZAMMAD_METRICS = {
                 "2025-10-17": 8,
                 "2025-10-20": 2,
                 "2025-10-21": 1,
-                "2025-10-22": 4,
+                "2025-10-22": 3,
                 "2025-10-23": 4,
                 "2025-10-25": 1,
                 "2025-10-28": 1,
-                "2025-10-29": 2
+                "2025-10-29": 2,
+                "2025-10-30": 1
               }
             },
             "P3": {
-              "avg_time_hours": 117.22,
-              "tickets_count": 1,
+              "avg_time_hours": 40.23,
+              "tickets_count": 3,
               "tickets_per_day": {
-                "2025-10-15": 1
+                "2025-10-15": 1,
+                "2025-10-30": 2
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": 124.66,
-              "tickets_count": 36,
+              "avg_time_hours": 121.65,
+              "tickets_count": 40,
               "tickets_per_day": {
                 "2025-10-09": 5,
                 "2025-10-13": 2,
@@ -1539,7 +1549,8 @@ export const ZAMMAD_METRICS = {
                 "2025-10-25": 2,
                 "2025-10-27": 4,
                 "2025-10-28": 2,
-                "2025-10-29": 2
+                "2025-10-29": 2,
+                "2025-10-30": 4
               }
             }
           }
@@ -1547,33 +1558,20 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 12,
+            "tickets_count": 3,
             "tickets_per_day": {
               "2025-10-19": 1,
-              "2025-10-22": 1,
-              "2025-10-25": 1,
               "2025-10-27": 1,
-              "2025-10-29": 2,
-              "2025-10-30": 6
+              "2025-10-29": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 8,
+              "tickets_count": 2,
               "tickets_per_day": {
                 "2025-10-19": 1,
-                "2025-10-22": 1,
-                "2025-10-25": 1,
-                "2025-10-29": 2,
-                "2025-10-30": 3
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 3,
-              "tickets_per_day": {
-                "2025-10-30": 3
+                "2025-10-29": 1
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -1588,22 +1586,20 @@ export const ZAMMAD_METRICS = {
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 29,
+            "tickets_count": 23,
             "tickets_per_day": {
               "2025-09-30": 2,
-              "2025-10-06": 1,
               "2025-10-08": 1,
               "2025-10-09": 1,
               "2025-10-13": 1,
               "2025-10-19": 1,
               "2025-10-20": 1,
-              "2025-10-22": 3,
-              "2025-10-23": 6,
+              "2025-10-22": 2,
+              "2025-10-23": 5,
               "2025-10-24": 4,
               "2025-10-25": 2,
               "2025-10-26": 1,
-              "2025-10-27": 4,
-              "2025-10-28": 1
+              "2025-10-27": 2
             }
           },
           "priorities": {
@@ -1612,25 +1608,24 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 7,
               "tickets_per_day": {
                 "2025-09-30": 2,
-                "2025-10-06": 1,
                 "2025-10-09": 1,
                 "2025-10-13": 1,
                 "2025-10-20": 1,
+                "2025-10-22": 1,
                 "2025-10-26": 1
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 22,
+              "tickets_count": 16,
               "tickets_per_day": {
                 "2025-10-08": 1,
                 "2025-10-19": 1,
-                "2025-10-22": 3,
-                "2025-10-23": 6,
+                "2025-10-22": 1,
+                "2025-10-23": 5,
                 "2025-10-24": 4,
                 "2025-10-25": 2,
-                "2025-10-27": 4,
-                "2025-10-28": 1
+                "2025-10-27": 2
               }
             }
           }
@@ -1649,8 +1644,9 @@ export const ZAMMAD_METRICS = {
               "2025-10-17": 1,
               "2025-10-20": 2,
               "2025-10-22": 1,
+              "2025-10-25": 1,
               "2025-10-27": 2,
-              "2025-10-29": 3
+              "2025-10-29": 2
             }
           },
           "priorities": {
@@ -1667,8 +1663,9 @@ export const ZAMMAD_METRICS = {
                 "2025-10-17": 1,
                 "2025-10-20": 2,
                 "2025-10-22": 1,
+                "2025-10-25": 1,
                 "2025-10-27": 2,
-                "2025-10-29": 3
+                "2025-10-29": 2
               }
             }
           }
@@ -2205,7 +2202,7 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_22": {
       "overall": {
-        "avg_time_hours": 67.74,
+        "avg_time_hours": 68.35,
         "tickets_count": 203,
         "tickets_per_day": {
           "2025-09-30": 3,
@@ -2223,14 +2220,14 @@ export const ZAMMAD_METRICS = {
           "2025-10-17": 11,
           "2025-10-20": 4,
           "2025-10-21": 13,
-          "2025-10-22": 4,
+          "2025-10-22": 3,
           "2025-10-23": 13,
           "2025-10-24": 7,
           "2025-10-25": 10,
-          "2025-10-27": 23,
-          "2025-10-28": 4,
+          "2025-10-27": 21,
+          "2025-10-28": 3,
           "2025-10-29": 10,
-          "2025-10-30": 5
+          "2025-10-30": 9
         }
       },
       "priorities": {
@@ -2275,7 +2272,7 @@ export const ZAMMAD_METRICS = {
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
-          "avg_time_hours": 68.16,
+          "avg_time_hours": 68.92,
           "tickets_count": 157,
           "tickets_per_day": {
             "2025-09-30": 2,
@@ -2292,22 +2289,21 @@ export const ZAMMAD_METRICS = {
             "2025-10-17": 11,
             "2025-10-20": 4,
             "2025-10-21": 9,
-            "2025-10-22": 3,
+            "2025-10-22": 2,
             "2025-10-23": 12,
             "2025-10-24": 4,
             "2025-10-25": 9,
-            "2025-10-27": 20,
-            "2025-10-28": 1,
+            "2025-10-27": 18,
             "2025-10-29": 8,
-            "2025-10-30": 4
+            "2025-10-30": 8
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 67.74,
-            "tickets_count": 173,
+            "avg_time_hours": 68.35,
+            "tickets_count": 177,
             "tickets_per_day": {
               "2025-09-30": 3,
               "2025-10-01": 1,
@@ -2330,7 +2326,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-27": 16,
               "2025-10-28": 3,
               "2025-10-29": 9,
-              "2025-10-30": 1
+              "2025-10-30": 5
             }
           },
           "priorities": {
@@ -2372,8 +2368,8 @@ export const ZAMMAD_METRICS = {
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
-              "avg_time_hours": 68.16,
-              "tickets_count": 135,
+              "avg_time_hours": 68.92,
+              "tickets_count": 139,
               "tickets_per_day": {
                 "2025-09-30": 2,
                 "2025-10-01": 1,
@@ -2394,7 +2390,8 @@ export const ZAMMAD_METRICS = {
                 "2025-10-24": 1,
                 "2025-10-25": 9,
                 "2025-10-27": 14,
-                "2025-10-29": 7
+                "2025-10-29": 7,
+                "2025-10-30": 4
               }
             }
           }
@@ -2423,7 +2420,7 @@ export const ZAMMAD_METRICS = {
             "tickets_count": 3,
             "tickets_per_day": {
               "2025-10-10": 1,
-              "2025-10-27": 1,
+              "2025-10-22": 1,
               "2025-10-30": 1
             }
           },
@@ -2439,7 +2436,7 @@ export const ZAMMAD_METRICS = {
               "avg_time_hours": null,
               "tickets_count": 2,
               "tickets_per_day": {
-                "2025-10-27": 1,
+                "2025-10-22": 1,
                 "2025-10-30": 1
               }
             }
@@ -2448,7 +2445,7 @@ export const ZAMMAD_METRICS = {
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 24,
+            "tickets_count": 20,
             "tickets_per_day": {
               "2025-10-02": 1,
               "2025-10-09": 2,
@@ -2457,10 +2454,8 @@ export const ZAMMAD_METRICS = {
               "2025-10-17": 1,
               "2025-10-20": 1,
               "2025-10-21": 2,
-              "2025-10-22": 2,
               "2025-10-24": 4,
-              "2025-10-27": 5,
-              "2025-10-28": 1,
+              "2025-10-27": 4,
               "2025-10-30": 3
             }
           },
@@ -2483,16 +2478,14 @@ export const ZAMMAD_METRICS = {
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 19,
+              "tickets_count": 15,
               "tickets_per_day": {
                 "2025-10-13": 1,
                 "2025-10-17": 1,
                 "2025-10-20": 1,
                 "2025-10-21": 2,
-                "2025-10-22": 2,
                 "2025-10-24": 3,
-                "2025-10-27": 5,
-                "2025-10-28": 1,
+                "2025-10-27": 4,
                 "2025-10-30": 3
               }
             }
@@ -2539,19 +2532,21 @@ export const ZAMMAD_METRICS = {
     "cliente_26": {
       "overall": {
         "avg_time_hours": 172.71,
-        "tickets_count": 3,
+        "tickets_count": 6,
         "tickets_per_day": {
           "2025-10-01": 1,
           "2025-10-13": 1,
-          "2025-10-27": 1
+          "2025-10-27": 1,
+          "2025-10-30": 3
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 1,
+          "tickets_count": 4,
           "tickets_per_day": {
-            "2025-10-27": 1
+            "2025-10-27": 1,
+            "2025-10-30": 3
           }
         },
         "P3": {
@@ -2580,6 +2575,24 @@ export const ZAMMAD_METRICS = {
               "tickets_per_day": {
                 "2025-10-01": 1,
                 "2025-10-13": 1
+              }
+            }
+          }
+        },
+        "New": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 3,
+            "tickets_per_day": {
+              "2025-10-30": 3
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 3,
+              "tickets_per_day": {
+                "2025-10-30": 3
               }
             }
           }
@@ -3264,8 +3277,8 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_44": {
       "overall": {
-        "avg_time_hours": 36.68,
-        "tickets_count": 132,
+        "avg_time_hours": 36.37,
+        "tickets_count": 131,
         "tickets_per_day": {
           "2025-09-30": 4,
           "2025-10-08": 6,
@@ -3283,7 +3296,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-24": 5,
           "2025-10-27": 12,
           "2025-10-28": 13,
-          "2025-10-29": 19,
+          "2025-10-29": 18,
           "2025-10-30": 6
         }
       },
@@ -3299,7 +3312,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": 22.51,
-          "tickets_count": 65,
+          "tickets_count": 64,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-08": 6,
@@ -3314,12 +3327,12 @@ export const ZAMMAD_METRICS = {
             "2025-10-24": 4,
             "2025-10-27": 6,
             "2025-10-28": 11,
-            "2025-10-29": 9,
+            "2025-10-29": 8,
             "2025-10-30": 2
           }
         },
         "P3": {
-          "avg_time_hours": 94.32,
+          "avg_time_hours": 81.26,
           "tickets_count": 8,
           "tickets_per_day": {
             "2025-10-10": 1,
@@ -3354,8 +3367,8 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 36.68,
-            "tickets_count": 106,
+            "avg_time_hours": 36.37,
+            "tickets_count": 107,
             "tickets_per_day": {
               "2025-09-30": 4,
               "2025-10-08": 5,
@@ -3374,7 +3387,7 @@ export const ZAMMAD_METRICS = {
               "2025-10-27": 8,
               "2025-10-28": 12,
               "2025-10-29": 8,
-              "2025-10-30": 4
+              "2025-10-30": 5
             }
           },
           "priorities": {
@@ -3408,13 +3421,13 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P3": {
-              "avg_time_hours": 94.32,
-              "tickets_count": 6,
+              "avg_time_hours": 81.26,
+              "tickets_count": 7,
               "tickets_per_day": {
                 "2025-10-14": 1,
                 "2025-10-15": 1,
                 "2025-10-23": 1,
-                "2025-10-30": 3
+                "2025-10-30": 4
               }
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -3442,13 +3455,21 @@ export const ZAMMAD_METRICS = {
         "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 6,
             "tickets_per_day": {
               "2025-10-27": 1,
-              "2025-10-29": 4
+              "2025-10-29": 4,
+              "2025-10-30": 1
             }
           },
           "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-30": 1
+              }
+            },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
               "tickets_count": 5,
@@ -3462,27 +3483,12 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-27": 1,
-              "2025-10-30": 2
+              "2025-10-27": 1
             }
           },
           "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-30": 1
-              }
-            },
-            "P3": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-30": 1
-              }
-            },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
               "tickets_count": 1,
@@ -3558,21 +3564,21 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 4,
+            "tickets_count": 3,
             "tickets_per_day": {
               "2025-10-27": 1,
               "2025-10-28": 1,
-              "2025-10-29": 2
+              "2025-10-29": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 3,
               "tickets_per_day": {
                 "2025-10-27": 1,
                 "2025-10-28": 1,
-                "2025-10-29": 2
+                "2025-10-29": 1
               }
             }
           }
@@ -3657,7 +3663,7 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_50": {
       "overall": {
-        "avg_time_hours": 89.2,
+        "avg_time_hours": 82.13,
         "tickets_count": 22,
         "tickets_per_day": {
           "2025-09-30": 1,
@@ -3670,14 +3676,13 @@ export const ZAMMAD_METRICS = {
           "2025-10-23": 3,
           "2025-10-26": 1,
           "2025-10-27": 1,
-          "2025-10-28": 1,
-          "2025-10-29": 3,
-          "2025-10-30": 1
+          "2025-10-29": 2,
+          "2025-10-30": 3
         }
       },
       "priorities": {
         "P2": {
-          "avg_time_hours": 102.62,
+          "avg_time_hours": 90.96,
           "tickets_count": 18,
           "tickets_per_day": {
             "2025-09-30": 1,
@@ -3688,8 +3693,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-20": 2,
             "2025-10-23": 3,
             "2025-10-26": 1,
-            "2025-10-28": 1,
-            "2025-10-29": 3
+            "2025-10-29": 2,
+            "2025-10-30": 2
           }
         },
         "P3": {
@@ -3706,8 +3711,8 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 89.2,
-            "tickets_count": 14,
+            "avg_time_hours": 82.13,
+            "tickets_count": 16,
             "tickets_per_day": {
               "2025-10-01": 3,
               "2025-10-08": 1,
@@ -3717,20 +3722,21 @@ export const ZAMMAD_METRICS = {
               "2025-10-23": 3,
               "2025-10-27": 1,
               "2025-10-29": 1,
-              "2025-10-30": 1
+              "2025-10-30": 3
             }
           },
           "priorities": {
             "P2": {
-              "avg_time_hours": 102.62,
-              "tickets_count": 10,
+              "avg_time_hours": 90.96,
+              "tickets_count": 12,
               "tickets_per_day": {
                 "2025-10-01": 2,
                 "2025-10-10": 1,
                 "2025-10-14": 1,
                 "2025-10-20": 2,
                 "2025-10-23": 3,
-                "2025-10-29": 1
+                "2025-10-29": 1,
+                "2025-10-30": 2
               }
             },
             "P3": {
@@ -3750,7 +3756,7 @@ export const ZAMMAD_METRICS = {
             "avg_time_hours": null,
             "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-28": 1
+              "2025-10-16": 1
             }
           },
           "priorities": {
@@ -3758,7 +3764,7 @@ export const ZAMMAD_METRICS = {
               "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-28": 1
+                "2025-10-16": 1
               }
             }
           }
@@ -3784,23 +3790,21 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 6,
+            "tickets_count": 4,
             "tickets_per_day": {
               "2025-10-14": 2,
-              "2025-10-16": 1,
               "2025-10-26": 1,
-              "2025-10-29": 2
+              "2025-10-29": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 6,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-14": 2,
-                "2025-10-16": 1,
                 "2025-10-26": 1,
-                "2025-10-29": 2
+                "2025-10-29": 1
               }
             }
           }
@@ -3975,12 +3979,12 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_57": {
       "overall": {
-        "avg_time_hours": 36.92,
-        "tickets_count": 40,
+        "avg_time_hours": 35.66,
+        "tickets_count": 39,
         "tickets_per_day": {
           "2025-10-01": 2,
           "2025-10-02": 1,
-          "2025-10-06": 2,
+          "2025-10-06": 1,
           "2025-10-07": 4,
           "2025-10-09": 1,
           "2025-10-13": 2,
@@ -4012,7 +4016,7 @@ export const ZAMMAD_METRICS = {
           "tickets_count": 32,
           "tickets_per_day": {
             "2025-10-01": 1,
-            "2025-10-06": 2,
+            "2025-10-06": 1,
             "2025-10-07": 3,
             "2025-10-09": 1,
             "2025-10-13": 2,
@@ -4025,25 +4029,26 @@ export const ZAMMAD_METRICS = {
             "2025-10-24": 2,
             "2025-10-25": 1,
             "2025-10-27": 4,
-            "2025-10-29": 1
+            "2025-10-29": 1,
+            "2025-10-30": 1
           }
         },
         "P3": {
-          "avg_time_hours": 62.2,
-          "tickets_count": 5,
+          "avg_time_hours": 46.79,
+          "tickets_count": 4,
           "tickets_per_day": {
             "2025-10-02": 1,
             "2025-10-07": 1,
             "2025-10-15": 1,
-            "2025-10-30": 2
+            "2025-10-30": 1
           }
         }
       },
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 36.92,
-            "tickets_count": 28,
+            "avg_time_hours": 35.66,
+            "tickets_count": 29,
             "tickets_per_day": {
               "2025-10-01": 1,
               "2025-10-02": 1,
@@ -4057,7 +4062,8 @@ export const ZAMMAD_METRICS = {
               "2025-10-21": 5,
               "2025-10-22": 2,
               "2025-10-23": 3,
-              "2025-10-27": 2
+              "2025-10-27": 2,
+              "2025-10-30": 1
             }
           },
           "priorities": {
@@ -4087,23 +4093,23 @@ export const ZAMMAD_METRICS = {
               }
             },
             "P3": {
-              "avg_time_hours": 62.2,
-              "tickets_count": 3,
+              "avg_time_hours": 46.79,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-02": 1,
                 "2025-10-07": 1,
-                "2025-10-15": 1
+                "2025-10-15": 1,
+                "2025-10-30": 1
               }
             }
           }
         },
-        "Open": {
+        "New": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 3,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-27": 1,
-              "2025-10-30": 2
+              "2025-10-30": 1
             }
           },
           "priorities": {
@@ -4111,14 +4117,27 @@ export const ZAMMAD_METRICS = {
               "avg_time_hours": null,
               "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-27": 1
+                "2025-10-30": 1
               }
-            },
-            "P3": {
+            }
+          }
+        },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-01": 1,
+              "2025-10-27": 1
+            }
+          },
+          "priorities": {
+            "P2": {
               "avg_time_hours": null,
               "tickets_count": 2,
               "tickets_per_day": {
-                "2025-10-30": 2
+                "2025-10-01": 1,
+                "2025-10-27": 1
               }
             }
           }
@@ -4126,9 +4145,8 @@ export const ZAMMAD_METRICS = {
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 4,
+            "tickets_count": 3,
             "tickets_per_day": {
-              "2025-10-06": 1,
               "2025-10-24": 1,
               "2025-10-27": 1,
               "2025-10-29": 1
@@ -4137,9 +4155,8 @@ export const ZAMMAD_METRICS = {
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 3,
               "tickets_per_day": {
-                "2025-10-06": 1,
                 "2025-10-24": 1,
                 "2025-10-27": 1,
                 "2025-10-29": 1
@@ -4150,9 +4167,8 @@ export const ZAMMAD_METRICS = {
         "Pendente Operador": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 5,
+            "tickets_count": 4,
             "tickets_per_day": {
-              "2025-10-01": 1,
               "2025-10-23": 2,
               "2025-10-24": 1,
               "2025-10-25": 1
@@ -4168,9 +4184,8 @@ export const ZAMMAD_METRICS = {
             },
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 3,
               "tickets_per_day": {
-                "2025-10-01": 1,
                 "2025-10-23": 1,
                 "2025-10-24": 1,
                 "2025-10-25": 1
@@ -5673,44 +5688,6 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-15": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_91": {
-      "overall": {
-        "avg_time_hours": 501.94,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-22": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": 501.94,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-22": 1
-          }
-        }
-      },
-      "states": {
-        "Closed": {
-          "overall": {
-            "avg_time_hours": 501.94,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-22": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": 501.94,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-22": 1
               }
             }
           }
@@ -7728,14 +7705,32 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
+        "Open": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-27": 1
+            }
+          },
+          "priorities": {
+            "Reservas sem Formulário / sem pedido RGPD e CVO": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-27": 1
+              }
+            }
+          }
+        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 10,
+            "tickets_count": 9,
             "tickets_per_day": {
               "2025-10-23": 4,
               "2025-10-24": 3,
-              "2025-10-27": 2,
+              "2025-10-27": 1,
               "2025-10-28": 1
             }
           },
@@ -7751,10 +7746,9 @@ export const ZAMMAD_METRICS = {
             },
             "Reservas sem Formulário / sem pedido RGPD e CVO": {
               "avg_time_hours": null,
-              "tickets_count": 4,
+              "tickets_count": 3,
               "tickets_per_day": {
-                "2025-10-24": 3,
-                "2025-10-27": 1
+                "2025-10-24": 3
               }
             }
           }
@@ -10161,7 +10155,7 @@ export const ZAMMAD_METRICS = {
     },
     "cliente_233": {
       "overall": {
-        "avg_time_hours": 12.65,
+        "avg_time_hours": 11.04,
         "tickets_count": 7,
         "tickets_per_day": {
           "2025-10-14": 1,
@@ -10172,7 +10166,7 @@ export const ZAMMAD_METRICS = {
       },
       "priorities": {
         "P2": {
-          "avg_time_hours": 12.65,
+          "avg_time_hours": 11.04,
           "tickets_count": 7,
           "tickets_per_day": {
             "2025-10-14": 1,
@@ -10185,19 +10179,21 @@ export const ZAMMAD_METRICS = {
       "states": {
         "Closed": {
           "overall": {
-            "avg_time_hours": 12.65,
-            "tickets_count": 3,
+            "avg_time_hours": 11.04,
+            "tickets_count": 4,
             "tickets_per_day": {
               "2025-10-14": 1,
+              "2025-10-20": 1,
               "2025-10-28": 2
             }
           },
           "priorities": {
             "P2": {
-              "avg_time_hours": 12.65,
-              "tickets_count": 3,
+              "avg_time_hours": 11.04,
+              "tickets_count": 4,
               "tickets_per_day": {
                 "2025-10-14": 1,
+                "2025-10-20": 1,
                 "2025-10-28": 2
               }
             }
@@ -10235,24 +10231,6 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 2,
               "tickets_per_day": {
                 "2025-10-28": 2
-              }
-            }
-          }
-        },
-        "Pendente Operador": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-20": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-20": 1
               }
             }
           }
@@ -10652,19 +10630,17 @@ export const ZAMMAD_METRICS = {
         "Open": {
           "overall": {
             "avg_time_hours": null,
-            "tickets_count": 2,
+            "tickets_count": 1,
             "tickets_per_day": {
-              "2025-10-26": 1,
-              "2025-10-29": 1
+              "2025-10-26": 1
             }
           },
           "priorities": {
             "P2": {
               "avg_time_hours": null,
-              "tickets_count": 2,
+              "tickets_count": 1,
               "tickets_per_day": {
-                "2025-10-26": 1,
-                "2025-10-29": 1
+                "2025-10-26": 1
               }
             }
           }
@@ -10691,6 +10667,24 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-09": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-29": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-29": 1
               }
             }
           }
@@ -12183,7 +12177,7 @@ export const ZAMMAD_METRICS = {
             }
           }
         },
-        "Open": {
+        "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
             "tickets_count": 1,
@@ -13971,6 +13965,82 @@ export const ZAMMAD_METRICS = {
         }
       }
     },
+    "cliente_374": {
+      "overall": {
+        "avg_time_hours": 0.45,
+        "tickets_count": 2,
+        "tickets_per_day": {
+          "2025-10-30": 2
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.45,
+          "tickets_count": 2,
+          "tickets_per_day": {
+            "2025-10-30": 2
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.45,
+            "tickets_count": 2,
+            "tickets_per_day": {
+              "2025-10-30": 2
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.45,
+              "tickets_count": 2,
+              "tickets_per_day": {
+                "2025-10-30": 2
+              }
+            }
+          }
+        }
+      }
+    },
+    "cliente_375": {
+      "overall": {
+        "avg_time_hours": 0.36,
+        "tickets_count": 1,
+        "tickets_per_day": {
+          "2025-10-30": 1
+        }
+      },
+      "priorities": {
+        "P2": {
+          "avg_time_hours": 0.36,
+          "tickets_count": 1,
+          "tickets_per_day": {
+            "2025-10-30": 1
+          }
+        }
+      },
+      "states": {
+        "Closed": {
+          "overall": {
+            "avg_time_hours": 0.36,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-30": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": 0.36,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-30": 1
+              }
+            }
+          }
+        }
+      }
+    },
     "cliente_74": {
       "overall": {
         "avg_time_hours": null,
@@ -14737,24 +14807,6 @@ export const ZAMMAD_METRICS = {
         }
       },
       "states": {
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-25": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-25": 1
-              }
-            }
-          }
-        },
         "Pendente Consultor": {
           "overall": {
             "avg_time_hours": null,
@@ -14769,6 +14821,24 @@ export const ZAMMAD_METRICS = {
               "tickets_count": 1,
               "tickets_per_day": {
                 "2025-10-26": 1
+              }
+            }
+          }
+        },
+        "Pendente Operador": {
+          "overall": {
+            "avg_time_hours": null,
+            "tickets_count": 1,
+            "tickets_per_day": {
+              "2025-10-25": 1
+            }
+          },
+          "priorities": {
+            "P2": {
+              "avg_time_hours": null,
+              "tickets_count": 1,
+              "tickets_per_day": {
+                "2025-10-25": 1
               }
             }
           }
@@ -15099,82 +15169,6 @@ export const ZAMMAD_METRICS = {
         }
       }
     },
-    "cliente_260": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-30": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-30": 1
-          }
-        }
-      },
-      "states": {
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-30": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-30": 1
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_349": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 1,
-        "tickets_per_day": {
-          "2025-10-30": 1
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 1,
-          "tickets_per_day": {
-            "2025-10-30": 1
-          }
-        }
-      },
-      "states": {
-        "Open": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 1,
-            "tickets_per_day": {
-              "2025-10-30": 1
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 1,
-              "tickets_per_day": {
-                "2025-10-30": 1
-              }
-            }
-          }
-        }
-      }
-    },
     "cliente_371": {
       "overall": {
         "avg_time_hours": null,
@@ -15213,45 +15207,7 @@ export const ZAMMAD_METRICS = {
         }
       }
     },
-    "cliente_374": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 2,
-        "tickets_per_day": {
-          "2025-10-30": 2
-        }
-      },
-      "priorities": {
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 2,
-          "tickets_per_day": {
-            "2025-10-30": 2
-          }
-        }
-      },
-      "states": {
-        "New": {
-          "overall": {
-            "avg_time_hours": null,
-            "tickets_count": 2,
-            "tickets_per_day": {
-              "2025-10-30": 2
-            }
-          },
-          "priorities": {
-            "P2": {
-              "avg_time_hours": null,
-              "tickets_count": 2,
-              "tickets_per_day": {
-                "2025-10-30": 2
-              }
-            }
-          }
-        }
-      }
-    },
-    "cliente_375": {
+    "cliente_91": {
       "overall": {
         "avg_time_hours": null,
         "tickets_count": 1,
@@ -15309,7 +15265,7 @@ export const ZAMMAD_METRICS = {
     },
     "2025-10-06": {
       "closed": 19,
-      "open": 7
+      "open": 6
     },
     "2025-10-07": {
       "closed": 65,
@@ -15364,16 +15320,16 @@ export const ZAMMAD_METRICS = {
       "open": 6
     },
     "2025-10-20": {
-      "closed": 25,
-      "open": 13
+      "closed": 26,
+      "open": 12
     },
     "2025-10-21": {
       "closed": 37,
       "open": 7
     },
     "2025-10-22": {
-      "closed": 36,
-      "open": 10
+      "closed": 35,
+      "open": 9
     },
     "2025-10-23": {
       "closed": 82,
@@ -15393,26 +15349,26 @@ export const ZAMMAD_METRICS = {
     },
     "2025-10-27": {
       "closed": 69,
-      "open": 27
+      "open": 25
     },
     "2025-10-28": {
       "closed": 49,
-      "open": 18
+      "open": 16
     },
     "2025-10-29": {
       "closed": 55,
-      "open": 34
+      "open": 32
     },
     "2025-10-30": {
-      "closed": 8,
-      "open": 22
+      "closed": 19,
+      "open": 19
     }
   },
   "states": {
     "Closed": {
       "overall": {
-        "avg_time_hours": 57.45,
-        "tickets_count": 916,
+        "avg_time_hours": 56.72,
+        "tickets_count": 927,
         "tickets_per_day": {
           "2025-09-30": 32,
           "2025-10-01": 15,
@@ -15432,9 +15388,9 @@ export const ZAMMAD_METRICS = {
           "2025-10-17": 36,
           "2025-10-18": 4,
           "2025-10-19": 1,
-          "2025-10-20": 25,
+          "2025-10-20": 26,
           "2025-10-21": 37,
-          "2025-10-22": 36,
+          "2025-10-22": 35,
           "2025-10-23": 82,
           "2025-10-24": 31,
           "2025-10-25": 14,
@@ -15442,7 +15398,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 69,
           "2025-10-28": 49,
           "2025-10-29": 55,
-          "2025-10-30": 8
+          "2025-10-30": 19
         }
       },
       "priorities": {
@@ -15468,8 +15424,8 @@ export const ZAMMAD_METRICS = {
           }
         },
         "P2": {
-          "avg_time_hours": 47.33,
-          "tickets_count": 450,
+          "avg_time_hours": 45.87,
+          "tickets_count": 455,
           "tickets_per_day": {
             "2025-09-30": 13,
             "2025-10-01": 4,
@@ -15488,9 +15444,9 @@ export const ZAMMAD_METRICS = {
             "2025-10-17": 11,
             "2025-10-18": 3,
             "2025-10-19": 1,
-            "2025-10-20": 16,
+            "2025-10-20": 17,
             "2025-10-21": 22,
-            "2025-10-22": 19,
+            "2025-10-22": 18,
             "2025-10-23": 40,
             "2025-10-24": 20,
             "2025-10-25": 3,
@@ -15498,12 +15454,12 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 39,
             "2025-10-28": 39,
             "2025-10-29": 33,
-            "2025-10-30": 3
+            "2025-10-30": 8
           }
         },
         "P3": {
-          "avg_time_hours": 87.55,
-          "tickets_count": 120,
+          "avg_time_hours": 86.14,
+          "tickets_count": 122,
           "tickets_per_day": {
             "2025-09-30": 11,
             "2025-10-01": 7,
@@ -15527,12 +15483,12 @@ export const ZAMMAD_METRICS = {
             "2025-10-24": 9,
             "2025-10-27": 3,
             "2025-10-28": 4,
-            "2025-10-30": 5
+            "2025-10-30": 7
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
-          "avg_time_hours": 63.96,
-          "tickets_count": 310,
+          "avg_time_hours": 64.35,
+          "tickets_count": 314,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-01": 2,
@@ -15555,7 +15511,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-25": 11,
             "2025-10-27": 25,
             "2025-10-28": 4,
-            "2025-10-29": 21
+            "2025-10-29": 21,
+            "2025-10-30": 4
           }
         }
       }
@@ -15581,11 +15538,11 @@ export const ZAMMAD_METRICS = {
     "Pendente Consultor": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 122,
+        "tickets_count": 117,
         "tickets_per_day": {
           "2025-09-30": 3,
           "2025-10-02": 1,
-          "2025-10-06": 3,
+          "2025-10-06": 2,
           "2025-10-07": 2,
           "2025-10-08": 3,
           "2025-10-09": 5,
@@ -15597,13 +15554,13 @@ export const ZAMMAD_METRICS = {
           "2025-10-19": 3,
           "2025-10-20": 8,
           "2025-10-21": 6,
-          "2025-10-22": 5,
+          "2025-10-22": 4,
           "2025-10-23": 11,
           "2025-10-24": 17,
           "2025-10-25": 2,
           "2025-10-26": 2,
-          "2025-10-27": 16,
-          "2025-10-28": 9,
+          "2025-10-27": 14,
+          "2025-10-28": 8,
           "2025-10-29": 13,
           "2025-10-30": 3
         }
@@ -15621,7 +15578,7 @@ export const ZAMMAD_METRICS = {
           "tickets_count": 52,
           "tickets_per_day": {
             "2025-09-30": 3,
-            "2025-10-06": 2,
+            "2025-10-06": 1,
             "2025-10-07": 1,
             "2025-10-08": 1,
             "2025-10-09": 1,
@@ -15632,6 +15589,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-17": 1,
             "2025-10-20": 6,
             "2025-10-21": 1,
+            "2025-10-22": 1,
             "2025-10-23": 4,
             "2025-10-24": 7,
             "2025-10-26": 2,
@@ -15656,7 +15614,7 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
-          "tickets_count": 56,
+          "tickets_count": 51,
           "tickets_per_day": {
             "2025-10-08": 1,
             "2025-10-13": 1,
@@ -15665,12 +15623,11 @@ export const ZAMMAD_METRICS = {
             "2025-10-19": 3,
             "2025-10-20": 2,
             "2025-10-21": 5,
-            "2025-10-22": 5,
+            "2025-10-22": 3,
             "2025-10-23": 7,
             "2025-10-24": 8,
             "2025-10-25": 2,
-            "2025-10-27": 9,
-            "2025-10-28": 1,
+            "2025-10-27": 7,
             "2025-10-29": 7,
             "2025-10-30": 3
           }
@@ -15680,10 +15637,9 @@ export const ZAMMAD_METRICS = {
     "Pendente Operador": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 49,
+        "tickets_count": 46,
         "tickets_per_day": {
           "2025-09-30": 1,
-          "2025-10-01": 1,
           "2025-10-03": 1,
           "2025-10-06": 2,
           "2025-10-07": 1,
@@ -15691,18 +15647,17 @@ export const ZAMMAD_METRICS = {
           "2025-10-10": 2,
           "2025-10-13": 1,
           "2025-10-14": 4,
-          "2025-10-16": 1,
           "2025-10-17": 1,
-          "2025-10-20": 3,
+          "2025-10-20": 2,
           "2025-10-21": 1,
           "2025-10-22": 4,
           "2025-10-23": 3,
           "2025-10-24": 3,
-          "2025-10-25": 1,
+          "2025-10-25": 2,
           "2025-10-26": 1,
           "2025-10-27": 3,
           "2025-10-28": 4,
-          "2025-10-29": 6,
+          "2025-10-29": 5,
           "2025-10-30": 4
         }
       },
@@ -15716,27 +15671,25 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 45,
+          "tickets_count": 42,
           "tickets_per_day": {
-            "2025-10-01": 1,
             "2025-10-03": 1,
             "2025-10-07": 1,
             "2025-10-09": 1,
             "2025-10-10": 2,
             "2025-10-13": 1,
             "2025-10-14": 4,
-            "2025-10-16": 1,
             "2025-10-17": 1,
-            "2025-10-20": 3,
+            "2025-10-20": 2,
             "2025-10-21": 1,
             "2025-10-22": 4,
             "2025-10-23": 2,
             "2025-10-24": 3,
-            "2025-10-25": 1,
+            "2025-10-25": 2,
             "2025-10-26": 1,
             "2025-10-27": 3,
             "2025-10-28": 4,
-            "2025-10-29": 6,
+            "2025-10-29": 5,
             "2025-10-30": 4
           }
         },
@@ -15746,6 +15699,74 @@ export const ZAMMAD_METRICS = {
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-06": 2
+          }
+        }
+      }
+    },
+    "Open": {
+      "overall": {
+        "avg_time_hours": null,
+        "tickets_count": 32,
+        "tickets_per_day": {
+          "2025-10-01": 1,
+          "2025-10-06": 1,
+          "2025-10-08": 2,
+          "2025-10-10": 2,
+          "2025-10-14": 1,
+          "2025-10-16": 1,
+          "2025-10-19": 1,
+          "2025-10-22": 1,
+          "2025-10-26": 1,
+          "2025-10-27": 6,
+          "2025-10-28": 3,
+          "2025-10-29": 6,
+          "2025-10-30": 6
+        }
+      },
+      "priorities": {
+        "P1": {
+          "avg_time_hours": null,
+          "tickets_count": 4,
+          "tickets_per_day": {
+            "2025-10-28": 1,
+            "2025-10-29": 1,
+            "2025-10-30": 2
+          }
+        },
+        "P2": {
+          "avg_time_hours": null,
+          "tickets_count": 19,
+          "tickets_per_day": {
+            "2025-10-01": 1,
+            "2025-10-08": 1,
+            "2025-10-10": 1,
+            "2025-10-14": 1,
+            "2025-10-16": 1,
+            "2025-10-19": 1,
+            "2025-10-26": 1,
+            "2025-10-27": 3,
+            "2025-10-28": 1,
+            "2025-10-29": 5,
+            "2025-10-30": 3
+          }
+        },
+        "P3": {
+          "avg_time_hours": null,
+          "tickets_count": 3,
+          "tickets_per_day": {
+            "2025-10-06": 1,
+            "2025-10-08": 1,
+            "2025-10-10": 1
+          }
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+          "avg_time_hours": null,
+          "tickets_count": 6,
+          "tickets_per_day": {
+            "2025-10-22": 1,
+            "2025-10-27": 3,
+            "2025-10-28": 1,
+            "2025-10-30": 1
           }
         }
       }
@@ -15787,73 +15808,6 @@ export const ZAMMAD_METRICS = {
           "tickets_per_day": {
             "2025-10-07": 1,
             "2025-10-08": 1
-          }
-        }
-      }
-    },
-    "Open": {
-      "overall": {
-        "avg_time_hours": null,
-        "tickets_count": 39,
-        "tickets_per_day": {
-          "2025-10-06": 1,
-          "2025-10-08": 2,
-          "2025-10-10": 2,
-          "2025-10-14": 1,
-          "2025-10-19": 1,
-          "2025-10-22": 1,
-          "2025-10-25": 1,
-          "2025-10-26": 1,
-          "2025-10-27": 6,
-          "2025-10-28": 4,
-          "2025-10-29": 7,
-          "2025-10-30": 12
-        }
-      },
-      "priorities": {
-        "P1": {
-          "avg_time_hours": null,
-          "tickets_count": 4,
-          "tickets_per_day": {
-            "2025-10-28": 1,
-            "2025-10-29": 1,
-            "2025-10-30": 2
-          }
-        },
-        "P2": {
-          "avg_time_hours": null,
-          "tickets_count": 24,
-          "tickets_per_day": {
-            "2025-10-08": 1,
-            "2025-10-10": 1,
-            "2025-10-14": 1,
-            "2025-10-19": 1,
-            "2025-10-22": 1,
-            "2025-10-25": 1,
-            "2025-10-26": 1,
-            "2025-10-27": 3,
-            "2025-10-28": 2,
-            "2025-10-29": 6,
-            "2025-10-30": 6
-          }
-        },
-        "P3": {
-          "avg_time_hours": null,
-          "tickets_count": 6,
-          "tickets_per_day": {
-            "2025-10-06": 1,
-            "2025-10-08": 1,
-            "2025-10-10": 1,
-            "2025-10-30": 3
-          }
-        },
-        "Reservas sem Formulário / sem pedido RGPD e CVO": {
-          "avg_time_hours": null,
-          "tickets_count": 5,
-          "tickets_per_day": {
-            "2025-10-27": 3,
-            "2025-10-28": 1,
-            "2025-10-30": 1
           }
         }
       }
@@ -15902,19 +15856,19 @@ export const ZAMMAD_METRICS = {
     "New": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 11,
+        "tickets_count": 14,
         "tickets_per_day": {
           "2025-10-27": 2,
           "2025-10-29": 6,
-          "2025-10-30": 3
+          "2025-10-30": 6
         }
       },
       "priorities": {
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 3,
+          "tickets_count": 6,
           "tickets_per_day": {
-            "2025-10-30": 3
+            "2025-10-30": 6
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
@@ -15931,10 +15885,10 @@ export const ZAMMAD_METRICS = {
   "workload_analysis": {
     "created": {
       "by_weekday": {
-        "Segunda": 273,
+        "Segunda": 272,
         "Terça": 269,
-        "Quarta": 248,
-        "Quinta": 167,
+        "Quarta": 246,
+        "Quinta": 169,
         "Sexta": 160,
         "Sábado": 13,
         "Domingo": 27
@@ -15950,16 +15904,16 @@ export const ZAMMAD_METRICS = {
         "07h": 0,
         "08h": 3,
         "09h": 205,
-        "10h": 157,
-        "11h": 58,
-        "12h": 100,
-        "13h": 46,
-        "14h": 93,
-        "15h": 67,
+        "10h": 156,
+        "11h": 57,
+        "12h": 98,
+        "13h": 48,
+        "14h": 92,
+        "15h": 70,
         "16h": 63,
         "17h": 97,
         "18h": 62,
-        "19h": 41,
+        "19h": 40,
         "20h": 51,
         "21h": 43,
         "22h": 50,
@@ -16039,7 +15993,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Segunda",
           "hour": "14h",
-          "tickets": 11
+          "tickets": 10
         },
         {
           "weekday": "Segunda",
@@ -16274,7 +16228,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quarta",
           "hour": "13h",
-          "tickets": 18
+          "tickets": 17
         },
         {
           "weekday": "Quarta",
@@ -16304,7 +16258,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quarta",
           "hour": "19h",
-          "tickets": 9
+          "tickets": 8
         },
         {
           "weekday": "Quarta",
@@ -16379,22 +16333,22 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quinta",
           "hour": "10h",
-          "tickets": 14
+          "tickets": 13
         },
         {
           "weekday": "Quinta",
           "hour": "11h",
-          "tickets": 12
+          "tickets": 11
         },
         {
           "weekday": "Quinta",
           "hour": "12h",
-          "tickets": 26
+          "tickets": 24
         },
         {
           "weekday": "Quinta",
           "hour": "13h",
-          "tickets": 5
+          "tickets": 8
         },
         {
           "weekday": "Quinta",
@@ -16404,7 +16358,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quinta",
           "hour": "15h",
-          "tickets": 7
+          "tickets": 10
         },
         {
           "weekday": "Quinta",
@@ -16815,10 +16769,10 @@ export const ZAMMAD_METRICS = {
     },
     "closed": {
       "by_weekday": {
-        "Segunda": 165,
+        "Segunda": 166,
         "Terça": 253,
-        "Quarta": 206,
-        "Quinta": 148,
+        "Quarta": 205,
+        "Quinta": 159,
         "Sexta": 121,
         "Sábado": 20,
         "Domingo": 3
@@ -16835,13 +16789,13 @@ export const ZAMMAD_METRICS = {
         "08h": 2,
         "09h": 61,
         "10h": 86,
-        "11h": 70,
+        "11h": 69,
         "12h": 57,
-        "13h": 50,
-        "14h": 83,
-        "15h": 86,
+        "13h": 56,
+        "14h": 84,
+        "15h": 90,
         "16h": 65,
-        "17h": 124,
+        "17h": 125,
         "18h": 77,
         "19h": 51,
         "20h": 26,
@@ -16938,7 +16892,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Segunda",
           "hour": "17h",
-          "tickets": 16
+          "tickets": 17
         },
         {
           "weekday": "Segunda",
@@ -17148,7 +17102,7 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quarta",
           "hour": "11h",
-          "tickets": 27
+          "tickets": 26
         },
         {
           "weekday": "Quarta",
@@ -17278,17 +17232,17 @@ export const ZAMMAD_METRICS = {
         {
           "weekday": "Quinta",
           "hour": "13h",
-          "tickets": 12
+          "tickets": 18
         },
         {
           "weekday": "Quinta",
           "hour": "14h",
-          "tickets": 16
+          "tickets": 17
         },
         {
           "weekday": "Quinta",
           "hour": "15h",
-          "tickets": 13
+          "tickets": 17
         },
         {
           "weekday": "Quinta",
@@ -17699,9 +17653,9 @@ export const ZAMMAD_METRICS = {
     }
   },
   "agent_responses": {
-    "Sandra Reis": 905,
-    "Inês Martinho": 664,
-    "Paula Candeias": 591,
+    "Sandra Reis": 914,
+    "Inês Martinho": 681,
+    "Paula Candeias": 580,
     "Catarina França": 530,
     "Não Atribuído": 443,
     "Cátia Leal": 201,
@@ -17725,9 +17679,9 @@ export const ZAMMAD_METRICS = {
       "tickets_closed": 47
     },
     "Sandra Reis": {
-      "avg_interactions_per_ticket": 4.62,
-      "total_interactions": 905,
-      "tickets_closed": 196
+      "avg_interactions_per_ticket": 4.59,
+      "total_interactions": 914,
+      "tickets_closed": 199
     },
     "Rafaela Lapa": {
       "avg_interactions_per_ticket": 4.62,
@@ -17739,15 +17693,15 @@ export const ZAMMAD_METRICS = {
       "total_interactions": 530,
       "tickets_closed": 96
     },
-    "Inês Martinho": {
-      "avg_interactions_per_ticket": 5.58,
-      "total_interactions": 664,
-      "tickets_closed": 119
-    },
     "Paula Candeias": {
-      "avg_interactions_per_ticket": 5.97,
-      "total_interactions": 591,
-      "tickets_closed": 99
+      "avg_interactions_per_ticket": 5.52,
+      "total_interactions": 580,
+      "tickets_closed": 105
+    },
+    "Inês Martinho": {
+      "avg_interactions_per_ticket": 5.63,
+      "total_interactions": 681,
+      "tickets_closed": 121
     }
   },
   "agent_state_changes": {
@@ -17868,13 +17822,13 @@ export const ZAMMAD_METRICS = {
     "Paula Candeias": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 192,
+        "tickets_count": 184,
         "tickets_per_day": {
           "2025-09-30": 12,
           "2025-10-01": 6,
           "2025-10-02": 4,
           "2025-10-03": 1,
-          "2025-10-06": 12,
+          "2025-10-06": 11,
           "2025-10-07": 4,
           "2025-10-08": 6,
           "2025-10-09": 8,
@@ -17886,15 +17840,15 @@ export const ZAMMAD_METRICS = {
           "2025-10-17": 9,
           "2025-10-20": 5,
           "2025-10-21": 4,
-          "2025-10-22": 12,
-          "2025-10-23": 16,
+          "2025-10-22": 11,
+          "2025-10-23": 15,
           "2025-10-24": 4,
           "2025-10-25": 13,
           "2025-10-26": 1,
           "2025-10-27": 9,
           "2025-10-28": 5,
-          "2025-10-29": 8,
-          "2025-10-30": 5
+          "2025-10-29": 6,
+          "2025-10-30": 2
         }
       },
       "priorities": {
@@ -17907,13 +17861,13 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 106,
+          "tickets_count": 101,
           "tickets_per_day": {
             "2025-09-30": 8,
             "2025-10-01": 6,
             "2025-10-02": 4,
             "2025-10-03": 1,
-            "2025-10-06": 2,
+            "2025-10-06": 1,
             "2025-10-07": 1,
             "2025-10-08": 1,
             "2025-10-09": 7,
@@ -17931,22 +17885,22 @@ export const ZAMMAD_METRICS = {
             "2025-10-26": 1,
             "2025-10-27": 2,
             "2025-10-28": 4,
-            "2025-10-29": 5,
-            "2025-10-30": 3
+            "2025-10-29": 3,
+            "2025-10-30": 1
           }
         },
         "P3": {
           "avg_time_hours": null,
-          "tickets_count": 4,
+          "tickets_count": 3,
           "tickets_per_day": {
             "2025-10-08": 1,
             "2025-10-14": 1,
-            "2025-10-30": 2
+            "2025-10-30": 1
           }
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
-          "tickets_count": 74,
+          "tickets_count": 72,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-06": 2,
@@ -17960,8 +17914,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-16": 1,
             "2025-10-17": 1,
             "2025-10-21": 2,
-            "2025-10-22": 7,
-            "2025-10-23": 11,
+            "2025-10-22": 6,
+            "2025-10-23": 10,
             "2025-10-24": 4,
             "2025-10-25": 8,
             "2025-10-27": 7,
@@ -17974,7 +17928,7 @@ export const ZAMMAD_METRICS = {
     "Sandra Reis": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 243,
+        "tickets_count": 248,
         "tickets_per_day": {
           "2025-09-30": 19,
           "2025-10-01": 14,
@@ -17992,13 +17946,13 @@ export const ZAMMAD_METRICS = {
           "2025-10-19": 2,
           "2025-10-20": 12,
           "2025-10-21": 26,
-          "2025-10-22": 4,
-          "2025-10-23": 14,
+          "2025-10-22": 5,
+          "2025-10-23": 15,
           "2025-10-24": 14,
           "2025-10-27": 6,
           "2025-10-28": 11,
           "2025-10-29": 15,
-          "2025-10-30": 6
+          "2025-10-30": 9
         }
       },
       "priorities": {
@@ -18016,7 +17970,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 147,
+          "tickets_count": 150,
           "tickets_per_day": {
             "2025-09-30": 1,
             "2025-10-01": 5,
@@ -18040,7 +17994,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 3,
             "2025-10-28": 9,
             "2025-10-29": 9,
-            "2025-10-30": 3
+            "2025-10-30": 6
           }
         },
         "P3": {
@@ -18068,7 +18022,7 @@ export const ZAMMAD_METRICS = {
         },
         "Reservas sem Formulário / sem pedido RGPD e CVO": {
           "avg_time_hours": null,
-          "tickets_count": 31,
+          "tickets_count": 33,
           "tickets_per_day": {
             "2025-10-01": 2,
             "2025-10-03": 1,
@@ -18080,7 +18034,8 @@ export const ZAMMAD_METRICS = {
             "2025-10-13": 1,
             "2025-10-20": 3,
             "2025-10-21": 1,
-            "2025-10-22": 2,
+            "2025-10-22": 3,
+            "2025-10-23": 1,
             "2025-10-24": 1,
             "2025-10-27": 1,
             "2025-10-29": 3
@@ -18250,7 +18205,7 @@ export const ZAMMAD_METRICS = {
     "Não Atribuído": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 325,
+        "tickets_count": 328,
         "tickets_per_day": {
           "2025-09-30": 7,
           "2025-10-01": 3,
@@ -18277,7 +18232,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 31,
           "2025-10-28": 20,
           "2025-10-29": 12,
-          "2025-10-30": 4
+          "2025-10-30": 7
         }
       },
       "priorities": {
@@ -18290,7 +18245,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 105,
+          "tickets_count": 108,
           "tickets_per_day": {
             "2025-09-30": 4,
             "2025-10-03": 1,
@@ -18312,7 +18267,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 7,
             "2025-10-28": 14,
             "2025-10-29": 5,
-            "2025-10-30": 3
+            "2025-10-30": 6
           }
         },
         "P3": {
@@ -18390,7 +18345,7 @@ export const ZAMMAD_METRICS = {
     "Cátia Leal": {
       "overall": {
         "avg_time_hours": null,
-        "tickets_count": 63,
+        "tickets_count": 62,
         "tickets_per_day": {
           "2025-10-01": 1,
           "2025-10-06": 1,
@@ -18409,7 +18364,7 @@ export const ZAMMAD_METRICS = {
           "2025-10-27": 13,
           "2025-10-28": 10,
           "2025-10-29": 7,
-          "2025-10-30": 5
+          "2025-10-30": 4
         }
       },
       "priorities": {
@@ -18424,7 +18379,7 @@ export const ZAMMAD_METRICS = {
         },
         "P2": {
           "avg_time_hours": null,
-          "tickets_count": 57,
+          "tickets_count": 56,
           "tickets_per_day": {
             "2025-10-01": 1,
             "2025-10-06": 1,
@@ -18443,7 +18398,7 @@ export const ZAMMAD_METRICS = {
             "2025-10-27": 12,
             "2025-10-28": 9,
             "2025-10-29": 5,
-            "2025-10-30": 3
+            "2025-10-30": 2
           }
         },
         "P3": {
@@ -18620,10 +18575,10 @@ export const ZAMMAD_METRICS = {
     },
     "agent_sla_compliance": {
       "Inês Martinho": {
-        "total_tickets": 81,
-        "sla_met": 20,
-        "sla_missed": 61,
-        "sla_compliance_rate": 24.69,
+        "total_tickets": 83,
+        "sla_met": 61,
+        "sla_missed": 22,
+        "sla_compliance_rate": 73.49,
         "tickets": [
           {
             "ticket_id": 31,
@@ -18632,8 +18587,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.32,
-            "sla_met": false,
-            "sla_breach_hours": 23.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T08:25:46.843Z",
@@ -18644,10 +18599,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35035",
             "title": "Dúvida urgente para Insure Broker",
             "priority": "P1",
-            "sla_target_hours": 0.12,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 0.18,
-            "sla_met": false,
-            "sla_breach_hours": 0.07,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P1",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T08:17:47.393Z",
@@ -18660,8 +18615,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.22,
-            "sla_met": false,
-            "sla_breach_hours": 22.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T09:40:07.938Z",
@@ -18674,8 +18629,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.08,
-            "sla_met": false,
-            "sla_breach_hours": 3.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-01",
             "first_response_at": "2025-09-30T10:55:25.574Z",
@@ -18688,8 +18643,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P1",
             "sla_target_hours": 0.25,
             "actual_time_hours": 0.07,
-            "sla_met": false,
-            "sla_breach_hours": 0.18,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P1",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T11:24:17.220Z",
@@ -18716,8 +18671,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.02,
-            "sla_met": false,
-            "sla_breach_hours": 23.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-09",
             "first_response_at": "2025-09-30T15:03:07.540Z",
@@ -18730,8 +18685,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.08,
-            "sla_met": false,
-            "sla_breach_hours": 3.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T16:21:17.842Z",
@@ -18744,8 +18699,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.1,
-            "sla_met": false,
-            "sla_breach_hours": 3.9,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T16:22:08.450Z",
@@ -18756,10 +18711,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35093",
             "title": "Esclarecimento - seguro",
             "priority": "P2",
-            "sla_target_hours": 0.2,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.1,
-            "sla_met": false,
-            "sla_breach_hours": 1.9,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-01",
             "first_response_at": "2025-10-01T08:36:36.711Z",
@@ -18772,8 +18727,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.02,
-            "sla_met": false,
-            "sla_breach_hours": 3.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-01",
             "first_response_at": "2025-10-01T10:37:38.040Z",
@@ -18786,8 +18741,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 3.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-01T11:43:01.785Z",
@@ -18798,10 +18753,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35108",
             "title": "Re:[## 19431 ##] GBN-49195 - Seu pedido foi recebi...",
             "priority": "P3",
-            "sla_target_hours": 84.93,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 54.47,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 30.47,
             "sla_name": "SLA P3",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-06T15:52:44.669Z",
@@ -18814,8 +18769,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 23.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-02",
             "first_response_at": "2025-10-01T14:15:30.105Z",
@@ -18826,10 +18781,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35117",
             "title": "RESERVA REALIZADA PENDENTE DE CONFIRMAÇÃO: 3925065",
             "priority": "P3",
-            "sla_target_hours": 21.17,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 22.58,
-            "sla_met": false,
-            "sla_breach_hours": 1.42,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-03",
             "first_response_at": "2025-10-03T09:05:02.363Z",
@@ -18842,8 +18797,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.13,
-            "sla_met": false,
-            "sla_breach_hours": 3.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-02",
             "first_response_at": "2025-10-02T08:52:49.165Z",
@@ -18856,8 +18811,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.53,
-            "sla_met": false,
-            "sla_breach_hours": 22.47,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-02T15:08:36.031Z",
@@ -18870,8 +18825,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.07,
-            "sla_met": false,
-            "sla_breach_hours": 3.93,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-02T16:25:26.231Z",
@@ -18884,8 +18839,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.2,
-            "sla_met": false,
-            "sla_breach_hours": 23.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-03T08:35:35.717Z",
@@ -18896,10 +18851,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35177",
             "title": "Mensagem sobre a reserva 34347903 - Civitatis",
             "priority": "P3",
-            "sla_target_hours": 19.33,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 21.67,
-            "sla_met": false,
-            "sla_breach_hours": 2.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-06T08:54:30.952Z",
@@ -18910,10 +18865,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35181",
             "title": "pacote dubai",
             "priority": "P3",
-            "sla_target_hours": 17.1,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 20.55,
-            "sla_met": false,
-            "sla_breach_hours": 3.45,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-06T08:58:05.367Z",
@@ -18926,8 +18881,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.8,
-            "sla_met": false,
-            "sla_breach_hours": 22.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-06T10:45:17.415Z",
@@ -18940,8 +18895,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.37,
-            "sla_met": false,
-            "sla_breach_hours": 23.63,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-06T11:14:16.760Z",
@@ -18952,10 +18907,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35247",
             "title": "\"GBN-81115 - Your request has been received\"",
             "priority": "P1",
-            "sla_target_hours": 5.12,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 2.68,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 2.43,
             "sla_name": "SLA P1",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-06T16:13:01.052Z",
@@ -18968,8 +18923,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.3,
-            "sla_met": false,
-            "sla_breach_hours": 2.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-07T09:13:57.058Z",
@@ -18982,8 +18937,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.8,
-            "sla_met": false,
-            "sla_breach_hours": 22.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-07T09:55:16.062Z",
@@ -18996,8 +18951,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.93,
-            "sla_met": false,
-            "sla_breach_hours": 3.07,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-07T10:27:59.101Z",
@@ -19010,8 +18965,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.05,
-            "sla_met": false,
-            "sla_breach_hours": 3.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-07T16:06:09.605Z",
@@ -19024,8 +18979,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 5.55,
-            "sla_met": false,
-            "sla_breach_hours": 18.45,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-07T21:54:21.657Z",
@@ -19038,8 +18993,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 2.38,
-            "sla_met": false,
-            "sla_breach_hours": 21.62,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T10:06:44.832Z",
@@ -19050,10 +19005,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35339",
             "title": "GBN-85045 - Seu pedido foi recebido",
             "priority": "P3",
-            "sla_target_hours": 161.8,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 92.9,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 68.9,
             "sla_name": "SLA P3",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-15T12:54:03.618Z",
@@ -19064,10 +19019,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35340",
             "title": "Número de informação da reserva: 6119302",
             "priority": "P1",
-            "sla_target_hours": 1.75,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 1.0,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.75,
             "sla_name": "SLA P1",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T09:00:35.544Z",
@@ -19080,8 +19035,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.02,
-            "sla_met": false,
-            "sla_breach_hours": 3.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-08T08:13:01.713Z",
@@ -19094,8 +19049,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.03,
-            "sla_met": false,
-            "sla_breach_hours": 22.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T09:28:12.986Z",
@@ -19122,8 +19077,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.45,
-            "sla_met": false,
-            "sla_breach_hours": 22.55,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T10:18:15.542Z",
@@ -19134,10 +19089,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35385",
             "title": "GBN-85056 - Seu pedido foi recebido",
             "priority": "P1",
-            "sla_target_hours": 17.58,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 8.92,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 8.67,
             "sla_name": "SLA P1",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-09T08:08:17.849Z",
@@ -19150,8 +19105,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.67,
-            "sla_met": false,
-            "sla_breach_hours": 22.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-20T09:02:40.071Z",
@@ -19164,8 +19119,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 5.03,
-            "sla_met": false,
-            "sla_breach_hours": 18.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-09T13:10:12.248Z",
@@ -19178,8 +19133,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.92,
-            "sla_met": false,
-            "sla_breach_hours": 3.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-09T16:01:00.052Z",
@@ -19192,8 +19147,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.47,
-            "sla_met": false,
-            "sla_breach_hours": 23.53,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T08:34:55.448Z",
@@ -19206,8 +19161,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.33,
-            "sla_met": false,
-            "sla_breach_hours": 3.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-10T10:09:25.367Z",
@@ -19218,10 +19173,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35532",
             "title": "Cotação para Excursão Ilha Saona",
             "priority": "P3",
-            "sla_target_hours": 4.13,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 14.07,
-            "sla_met": false,
-            "sla_breach_hours": 9.93,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T08:59:34.036Z",
@@ -19232,10 +19187,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35571",
             "title": "Smy  1208975897",
             "priority": "P2",
-            "sla_target_hours": 0.5,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.25,
-            "sla_met": false,
-            "sla_breach_hours": 1.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-13T12:20:43.788Z",
@@ -19246,10 +19201,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35591",
             "title": "Reserva - GBN-81115",
             "priority": "P3",
-            "sla_target_hours": 10.83,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 17.42,
-            "sla_met": false,
-            "sla_breach_hours": 6.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-14T16:51:14.643Z",
@@ -19260,10 +19215,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35600",
             "title": "Fwd: A sua reserva continua CONFIRMADA — tentativa...",
             "priority": "P3",
-            "sla_target_hours": 223.57,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 123.78,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 99.78,
             "sla_name": "SLA P3",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T09:03:31.639Z",
@@ -19276,8 +19231,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.35,
-            "sla_met": false,
-            "sla_breach_hours": 23.65,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T17:54:31.156Z",
@@ -19290,8 +19245,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 2.15,
-            "sla_met": false,
-            "sla_breach_hours": 21.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T08:56:40.784Z",
@@ -19304,8 +19259,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.4,
-            "sla_met": false,
-            "sla_breach_hours": 22.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-15T09:34:15.671Z",
@@ -19318,8 +19273,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.12,
-            "sla_met": false,
-            "sla_breach_hours": 22.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-15T10:20:38.363Z",
@@ -19332,8 +19287,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.6,
-            "sla_met": false,
-            "sla_breach_hours": 23.4,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T11:49:14.302Z",
@@ -19346,8 +19301,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 4.55,
-            "sla_met": false,
-            "sla_breach_hours": 19.45,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-16",
             "first_response_at": "2025-10-16T08:34:05.848Z",
@@ -19358,10 +19313,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35797",
             "title": "Reserva GBN-85830 - Solicitação de alteração da re...",
             "priority": "P1",
-            "sla_target_hours": 0.62,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 0.43,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.18,
             "sla_name": "SLA P1",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-16T08:26:16.107Z",
@@ -19372,10 +19327,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35809",
             "title": "GBN-85634 - Seu pedido foi recebido",
             "priority": "P3",
-            "sla_target_hours": 2.47,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 13.23,
-            "sla_met": false,
-            "sla_breach_hours": 10.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T12:14:52.378Z",
@@ -19386,10 +19341,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35859",
             "title": "GBN-75309 - Seu pedido foi recebido",
             "priority": "P3",
-            "sla_target_hours": 45.83,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 34.92,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 10.92,
             "sla_name": "SLA P3",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-20T12:26:10.860Z",
@@ -19402,8 +19357,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.62,
-            "sla_met": false,
-            "sla_breach_hours": 23.38,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-17T12:00:12.629Z",
@@ -19414,10 +19369,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35870",
             "title": "Comprovativo Iban do Cancelamento GBN-83955",
             "priority": "P2",
-            "sla_target_hours": 135.4,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 69.7,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 65.7,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T09:07:24.596Z",
@@ -19428,10 +19383,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35905",
             "title": "Icárion - Belek (Antalya) - 27/07/2026 - 6084125 -...",
             "priority": "P2",
-            "sla_target_hours": 4.17,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.08,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.08,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T08:47:45.297Z",
@@ -19442,13 +19397,27 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35924",
             "title": "Fwd: Localizador 1204392277 - Smytravel lhe inform...",
             "priority": "P2",
-            "sla_target_hours": 1.23,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.62,
-            "sla_met": false,
-            "sla_breach_hours": 1.38,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-20T10:58:33.066Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 939,
+            "ticket_number": "35938",
+            "title": "Voucher transfer",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 1.0,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-20",
+            "first_response_at": "2025-10-20T10:54:45.956Z",
             "first_response_escalation_at": null
           },
           {
@@ -19456,10 +19425,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35946",
             "title": "Fwd: Acompanhamento do procedimento TTN-1191602245...",
             "priority": "P2",
-            "sla_target_hours": 108.2,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 56.1,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 52.1,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-27T10:16:26.682Z",
@@ -19472,8 +19441,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.12,
-            "sla_met": false,
-            "sla_breach_hours": 3.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-20T17:17:10.814Z",
@@ -19486,8 +19455,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 2.62,
-            "sla_met": false,
-            "sla_breach_hours": 21.38,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-21T08:25:33.884Z",
@@ -19498,10 +19467,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35987",
             "title": "Devolução de dinheiro ",
             "priority": "P1",
-            "sla_target_hours": 2.22,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 1.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.98,
             "sla_name": "SLA P1",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T09:18:23.058Z",
@@ -19512,10 +19481,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351025",
             "title": "Pedido Contratação Direta rent-a-car",
             "priority": "P2",
-            "sla_target_hours": 27.57,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 15.78,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 11.78,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-22T15:09:53.415Z",
@@ -19528,8 +19497,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.32,
-            "sla_met": false,
-            "sla_breach_hours": 3.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-22T09:48:31.351Z",
@@ -19542,8 +19511,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.88,
-            "sla_met": false,
-            "sla_breach_hours": 23.12,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-22T13:00:05.706Z",
@@ -19554,10 +19523,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351117",
             "title": "Fwd: Consulta sobre Localizador: 1204392277 TTN-12...",
             "priority": "P2",
-            "sla_target_hours": 2.07,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.03,
-            "sla_met": false,
-            "sla_breach_hours": 0.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T08:07:03.369Z",
@@ -19568,10 +19537,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351128",
             "title": "Discover how to book your NDC content without any ...",
             "priority": "P3",
-            "sla_target_hours": 110.87,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 67.43,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 43.43,
             "sla_name": "SLA P3",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T16:41:38.754Z",
@@ -19582,10 +19551,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351131",
             "title": "🌍 Comunicação oficial - Ethiopian Airlines anuncia...",
             "priority": "P2",
-            "sla_target_hours": 130.37,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 67.18,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 63.18,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T16:42:02.171Z",
@@ -19596,10 +19565,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351153",
             "title": "Reserva smy 1180706605",
             "priority": "P2",
-            "sla_target_hours": 1.57,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.78,
-            "sla_met": false,
-            "sla_breach_hours": 1.22,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-23T16:35:11.630Z",
@@ -19610,10 +19579,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351182",
             "title": "Fwd: Caso 04765539 recibido",
             "priority": "P2",
-            "sla_target_hours": 94.53,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 49.27,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 45.27,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T12:19:40.871Z",
@@ -19624,10 +19593,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351225",
             "title": "Fwd: Caso 04765540 recibido",
             "priority": "P2",
-            "sla_target_hours": 86.67,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 45.33,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 41.33,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T12:19:07.649Z",
@@ -19638,10 +19607,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351233",
             "title": "NDC-X Amdeus",
             "priority": "P2",
-            "sla_target_hours": 83.53,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 43.77,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 39.77,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T11:56:33.092Z",
@@ -19654,8 +19623,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.05,
-            "sla_met": false,
-            "sla_breach_hours": 3.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-24T21:20:44.004Z",
@@ -19668,8 +19637,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.3,
-            "sla_met": false,
-            "sla_breach_hours": 3.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T10:05:11.353Z",
@@ -19682,8 +19651,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.22,
-            "sla_met": false,
-            "sla_breach_hours": 2.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T12:19:07.419Z",
@@ -19696,8 +19665,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.3,
-            "sla_met": false,
-            "sla_breach_hours": 2.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T14:10:54.294Z",
@@ -19708,10 +19677,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351344",
             "title": "Fwd: Caso 04765540 rechazado",
             "priority": "P1",
-            "sla_target_hours": 20.55,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 10.4,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 10.15,
             "sla_name": "SLA P1",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T12:48:01.851Z",
@@ -19722,10 +19691,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351355",
             "title": "Fwd: Já faz parte de Vueling Partners",
             "priority": "P2",
-            "sla_target_hours": 11.93,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 7.97,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 3.97,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T12:00:00.588Z",
@@ -19738,8 +19707,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.18,
-            "sla_met": false,
-            "sla_breach_hours": 3.82,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T12:01:28.515Z",
@@ -19752,20 +19721,34 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.4,
-            "sla_met": false,
-            "sla_breach_hours": 23.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-30",
             "first_response_at": "2025-10-28T13:24:21.547Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1431,
+            "ticket_number": "351428",
+            "title": "GBN-81748 - Questão cliente",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 2.0,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-28T16:29:33.854Z",
             "first_response_escalation_at": null
           }
         ]
       },
       "Sandra Reis": {
-        "total_tickets": 135,
-        "sla_met": 23,
-        "sla_missed": 112,
-        "sla_compliance_rate": 17.04,
+        "total_tickets": 138,
+        "sla_met": 104,
+        "sla_missed": 34,
+        "sla_compliance_rate": 75.36,
         "tickets": [
           {
             "ticket_id": 33,
@@ -19774,8 +19757,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 23.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-13",
             "first_response_at": "2025-09-30T08:47:00.241Z",
@@ -19788,8 +19771,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.73,
-            "sla_met": false,
-            "sla_breach_hours": 23.27,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-01",
             "first_response_at": "2025-09-30T08:51:24.733Z",
@@ -19800,10 +19783,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35044",
             "title": "GBN-83978 - Sua confirmação de reserva",
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
-            "sla_target_hours": 54.4,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 29.2,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 28.95,
             "sla_name": "SLA P1",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-02T09:35:33.936Z",
@@ -19816,8 +19799,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.68,
-            "sla_met": false,
-            "sla_breach_hours": 23.32,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T09:04:58.918Z",
@@ -19830,8 +19813,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.12,
-            "sla_met": false,
-            "sla_breach_hours": 22.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T09:34:03.807Z",
@@ -19844,8 +19827,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.07,
-            "sla_met": false,
-            "sla_breach_hours": 23.93,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-10",
             "first_response_at": "2025-09-30T08:44:59.073Z",
@@ -19858,8 +19841,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.57,
-            "sla_met": false,
-            "sla_breach_hours": 22.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T10:42:19.920Z",
@@ -19872,8 +19855,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.42,
-            "sla_met": false,
-            "sla_breach_hours": 3.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T10:37:21.820Z",
@@ -19886,8 +19869,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.83,
-            "sla_met": false,
-            "sla_breach_hours": 23.17,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T11:01:45.446Z",
@@ -19900,8 +19883,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.2,
-            "sla_met": false,
-            "sla_breach_hours": 22.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-01",
             "first_response_at": "2025-09-30T11:30:37.472Z",
@@ -19914,8 +19897,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.7,
-            "sla_met": false,
-            "sla_breach_hours": 23.3,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-01",
             "first_response_at": "2025-09-30T11:32:43.058Z",
@@ -19928,8 +19911,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 2.93,
-            "sla_met": false,
-            "sla_breach_hours": 21.07,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-02",
             "first_response_at": "2025-09-30T14:55:44.688Z",
@@ -19942,8 +19925,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.98,
-            "sla_met": false,
-            "sla_breach_hours": 23.02,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T14:48:39.556Z",
@@ -19956,8 +19939,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.32,
-            "sla_met": false,
-            "sla_breach_hours": 22.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T15:23:46.130Z",
@@ -19970,8 +19953,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 23.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-01",
             "first_response_at": "2025-09-30T16:56:44.308Z",
@@ -19984,8 +19967,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 3.5,
-            "sla_met": false,
-            "sla_breach_hours": 20.5,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-01T08:52:19.523Z",
@@ -19998,8 +19981,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 3.62,
-            "sla_met": false,
-            "sla_breach_hours": 20.38,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-01T08:59:49.532Z",
@@ -20012,8 +19995,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.05,
-            "sla_met": false,
-            "sla_breach_hours": 23.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-01",
             "first_response_at": "2025-10-01T08:22:43.602Z",
@@ -20026,8 +20009,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.42,
-            "sla_met": false,
-            "sla_breach_hours": 3.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-01T09:18:01.041Z",
@@ -20054,8 +20037,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.32,
-            "sla_met": false,
-            "sla_breach_hours": 23.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-01",
             "first_response_at": "2025-10-01T11:01:50.643Z",
@@ -20068,8 +20051,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.82,
-            "sla_met": false,
-            "sla_breach_hours": 22.18,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-01",
             "first_response_at": "2025-10-01T13:05:00.968Z",
@@ -20082,8 +20065,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.65,
-            "sla_met": false,
-            "sla_breach_hours": 3.35,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-01T14:16:18.579Z",
@@ -20096,8 +20079,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.32,
-            "sla_met": false,
-            "sla_breach_hours": 3.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-01",
             "first_response_at": "2025-10-01T13:56:18.910Z",
@@ -20110,8 +20093,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.13,
-            "sla_met": false,
-            "sla_breach_hours": 23.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-01T14:57:45.169Z",
@@ -20124,8 +20107,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.3,
-            "sla_met": false,
-            "sla_breach_hours": 23.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-01T15:07:40.065Z",
@@ -20166,8 +20149,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.77,
-            "sla_met": false,
-            "sla_breach_hours": 2.23,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-02",
             "first_response_at": "2025-10-02T13:18:57.794Z",
@@ -20192,10 +20175,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35153",
             "title": "Re:[## 21594 ##] GBN-83188 - Seu pedido foi recebi...",
             "priority": "P2",
-            "sla_target_hours": 14.9,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 9.45,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 5.45,
             "sla_name": "SLA P2",
             "close_date": "2025-10-03",
             "first_response_at": "2025-10-03T10:25:29.955Z",
@@ -20206,10 +20189,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35159",
             "title": "Re:[## 20192 ##] GBN-75991 - Seu pedido foi recebi...",
             "priority": "P2",
-            "sla_target_hours": 21.5,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 12.75,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 8.75,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-03T15:15:51.507Z",
@@ -20222,8 +20205,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 5.13,
-            "sla_met": false,
-            "sla_breach_hours": 18.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-03T14:21:35.733Z",
@@ -20234,10 +20217,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35187",
             "title": "joana costa GBN-72699 e GBN-84581",
             "priority": "P3",
-            "sla_target_hours": 21.83,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 22.92,
-            "sla_met": false,
-            "sla_breach_hours": 1.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-06T15:00:03.550Z",
@@ -20248,10 +20231,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35191",
             "title": "Reserva Grupo Cabo Verde",
             "priority": "P3",
-            "sla_target_hours": 23.03,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 23.52,
-            "sla_met": false,
-            "sla_breach_hours": 0.48,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-06T15:36:14.160Z",
@@ -20278,8 +20261,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.27,
-            "sla_met": false,
-            "sla_breach_hours": 22.73,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-06T10:15:35.964Z",
@@ -20292,8 +20275,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.32,
-            "sla_met": false,
-            "sla_breach_hours": 2.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-06T10:19:44.277Z",
@@ -20306,8 +20289,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.72,
-            "sla_met": false,
-            "sla_breach_hours": 3.28,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-06T11:12:50.931Z",
@@ -20320,8 +20303,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 2.33,
-            "sla_met": false,
-            "sla_breach_hours": 21.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-06T15:29:48.252Z",
@@ -20348,8 +20331,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 5.8,
-            "sla_met": false,
-            "sla_breach_hours": 18.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-07T09:58:03.194Z",
@@ -20362,8 +20345,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.28,
-            "sla_met": false,
-            "sla_breach_hours": 3.72,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-07T11:34:22.342Z",
@@ -20374,10 +20357,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35310",
             "title": "Loc1192905973 - smy",
             "priority": "P2",
-            "sla_target_hours": 0.23,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.12,
-            "sla_met": false,
-            "sla_breach_hours": 1.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-07T15:39:17.657Z",
@@ -20388,10 +20371,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35329",
             "title": "Pedido e cotação - Longa duração",
             "priority": "P2",
-            "sla_target_hours": 11.2,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 7.6,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 3.6,
             "sla_name": "SLA P2",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T13:12:13.224Z",
@@ -20402,10 +20385,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35331",
             "title": "Comprovativo Ana Catarina Silva",
             "priority": "P2",
-            "sla_target_hours": 7.63,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.82,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.82,
             "sla_name": "SLA P2",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T11:38:25.666Z",
@@ -20418,8 +20401,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.4,
-            "sla_met": false,
-            "sla_breach_hours": 3.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T09:23:41.317Z",
@@ -20430,10 +20413,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35384",
             "title": "Reserva Grupo - Djerba",
             "priority": "P2",
-            "sla_target_hours": 25.4,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 14.7,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 10.7,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-09T13:55:10.607Z",
@@ -20446,8 +20429,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.7,
-            "sla_met": false,
-            "sla_breach_hours": 2.3,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T15:29:20.853Z",
@@ -20458,10 +20441,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35398",
             "title": "fatura",
             "priority": "P2",
-            "sla_target_hours": 0.47,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.23,
-            "sla_met": false,
-            "sla_breach_hours": 1.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-08T16:29:14.162Z",
@@ -20474,8 +20457,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.25,
-            "sla_met": false,
-            "sla_breach_hours": 3.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-09T11:05:10.628Z",
@@ -20488,8 +20471,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.15,
-            "sla_met": false,
-            "sla_breach_hours": 3.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-09T10:58:38.455Z",
@@ -20500,10 +20483,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35469",
             "title": "RE: GBN Travel: Information about your booking - G...",
             "priority": "P2",
-            "sla_target_hours": 5.63,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.82,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.82,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-10T12:56:15.571Z",
@@ -20516,8 +20499,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.3,
-            "sla_met": false,
-            "sla_breach_hours": 3.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T09:30:20.745Z",
@@ -20530,8 +20513,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.42,
-            "sla_met": false,
-            "sla_breach_hours": 3.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T09:37:06.339Z",
@@ -20544,8 +20527,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.02,
-            "sla_met": false,
-            "sla_breach_hours": 2.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T10:29:28.565Z",
@@ -20556,10 +20539,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35500",
             "title": "Pedido GBN - urgente -   69230",
             "priority": "P3",
-            "sla_target_hours": 51.53,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 37.77,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 13.77,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T20:05:32.188Z",
@@ -20570,10 +20553,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35501",
             "title": "Cancelamento de Transfers por parte de operador - ...",
             "priority": "P2",
-            "sla_target_hours": 50.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 27.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 23.35,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-13T09:41:45.934Z",
@@ -20584,10 +20567,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35526",
             "title": "Re:[## 21062 ##] GBN-82207 - Seu pedido foi recebi...",
             "priority": "P2",
-            "sla_target_hours": 41.0,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 22.5,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 18.5,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T10:42:06.469Z",
@@ -20600,8 +20583,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.37,
-            "sla_met": false,
-            "sla_breach_hours": 3.63,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T08:29:01.720Z",
@@ -20612,10 +20595,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35541",
             "title": "Urgente troca de hotel",
             "priority": "P1",
-            "sla_target_hours": 5.18,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 2.72,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 2.47,
             "sla_name": "SLA P1",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T10:50:08.338Z",
@@ -20628,8 +20611,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 4.75,
-            "sla_met": false,
-            "sla_breach_hours": 19.25,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T12:52:27.111Z",
@@ -20642,8 +20625,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.73,
-            "sla_met": false,
-            "sla_breach_hours": 23.27,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-16",
             "first_response_at": "2025-10-13T08:53:53.644Z",
@@ -20656,8 +20639,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.68,
-            "sla_met": false,
-            "sla_breach_hours": 3.32,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-13T08:55:16.341Z",
@@ -20670,8 +20653,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.6,
-            "sla_met": false,
-            "sla_breach_hours": 2.4,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T12:22:54.705Z",
@@ -20684,8 +20667,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.2,
-            "sla_met": false,
-            "sla_breach_hours": 2.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T12:50:09.257Z",
@@ -20698,8 +20681,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.27,
-            "sla_met": false,
-            "sla_breach_hours": 22.73,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T12:54:30.296Z",
@@ -20712,8 +20695,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.32,
-            "sla_met": false,
-            "sla_breach_hours": 22.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T12:57:04.067Z",
@@ -20726,8 +20709,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.33,
-            "sla_met": false,
-            "sla_breach_hours": 22.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T12:58:16.440Z",
@@ -20738,10 +20721,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35641",
             "title": "CANCELAMENTO RESERVAS",
             "priority": "P2",
-            "sla_target_hours": 0.97,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.48,
-            "sla_met": false,
-            "sla_breach_hours": 1.52,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T10:46:51.320Z",
@@ -20752,10 +20735,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35657",
             "title": "Grupo: GR-624BFC69FC",
             "priority": "P2",
-            "sla_target_hours": 0.23,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.12,
-            "sla_met": false,
-            "sla_breach_hours": 1.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-16",
             "first_response_at": "2025-10-14T12:07:03.423Z",
@@ -20766,10 +20749,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35658",
             "title": "Grupo: GR-17DFF0BC81",
             "priority": "P2",
-            "sla_target_hours": 0.3,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.15,
-            "sla_met": false,
-            "sla_breach_hours": 1.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-16",
             "first_response_at": "2025-10-14T12:08:14.515Z",
@@ -20780,10 +20763,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35661",
             "title": "Pedido de cotaçao Disneland Paris",
             "priority": "P2",
-            "sla_target_hours": 7.3,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.65,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.65,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-14T16:28:11.508Z",
@@ -20796,8 +20779,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.33,
-            "sla_met": false,
-            "sla_breach_hours": 3.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T12:10:20.020Z",
@@ -20808,10 +20791,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35672",
             "title": "AC Sandra Reis - Tour de 7 dias pelo melhor da Tur...",
             "priority": "P2",
-            "sla_target_hours": 5.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.85,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.85,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T16:47:53.367Z",
@@ -20822,10 +20805,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35674",
             "title": "Fwd: 1125356410 TTN-1125356410#83528832#T14997406¬...",
             "priority": "P2",
-            "sla_target_hours": 5.4,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.7,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.7,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T16:54:45.686Z",
@@ -20836,10 +20819,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35703",
             "title": "GBN-82727 - Seu pedido foi recebido",
             "priority": "P2",
-            "sla_target_hours": 8.67,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 6.33,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 2.33,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T10:17:45.088Z",
@@ -20852,8 +20835,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.23,
-            "sla_met": false,
-            "sla_breach_hours": 3.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T08:24:35.197Z",
@@ -20866,8 +20849,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.38,
-            "sla_met": false,
-            "sla_breach_hours": 3.62,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T08:34:50.973Z",
@@ -20880,8 +20863,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 7.8,
-            "sla_met": false,
-            "sla_breach_hours": 16.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-15T17:01:57.968Z",
@@ -20892,10 +20875,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35732",
             "title": "Fwd: Documentação recebida corretamente TTN-119383...",
             "priority": "P2",
-            "sla_target_hours": 7.57,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.78,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.78,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-15T15:01:24.809Z",
@@ -20908,8 +20891,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.23,
-            "sla_met": false,
-            "sla_breach_hours": 2.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T16:44:08.879Z",
@@ -20922,8 +20905,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 3.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-16",
             "first_response_at": "2025-10-15T16:53:04.143Z",
@@ -20934,10 +20917,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35767",
             "title": "Reserva Newblue ES Localizador 1737212 - André Cri...",
             "priority": "P2",
-            "sla_target_hours": 187.83,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 95.92,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 91.92,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T10:19:23.098Z",
@@ -20950,8 +20933,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.18,
-            "sla_met": false,
-            "sla_breach_hours": 3.82,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T10:05:38.184Z",
@@ -20964,8 +20947,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.8,
-            "sla_met": false,
-            "sla_breach_hours": 3.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T14:55:06.797Z",
@@ -20976,10 +20959,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35984",
             "title": "Grupo: GR-4ED7FFDBC6",
             "priority": "P3",
-            "sla_target_hours": 19.8,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 21.9,
-            "sla_met": false,
-            "sla_breach_hours": 2.1,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-22T15:33:37.830Z",
@@ -20990,10 +20973,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35989",
             "title": "Fwd: Incidente de voo TTN-1211463270#84151811#T151...",
             "priority": "P2",
-            "sla_target_hours": 2.63,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.32,
-            "sla_met": false,
-            "sla_breach_hours": 0.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-21T11:29:31.245Z",
@@ -21004,10 +20987,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35991",
             "title": "Re: GBN-74842 - Seu pedido foi recebido",
             "priority": "P2",
-            "sla_target_hours": 5.07,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.53,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.53,
             "sla_name": "SLA P2",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-21T12:45:09.833Z",
@@ -21020,8 +21003,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.05,
-            "sla_met": false,
-            "sla_breach_hours": 2.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T10:22:35.786Z",
@@ -21034,8 +21017,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.08,
-            "sla_met": false,
-            "sla_breach_hours": 2.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T10:23:52.929Z",
@@ -21048,8 +21031,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.63,
-            "sla_met": false,
-            "sla_breach_hours": 3.37,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T09:57:21.439Z",
@@ -21060,10 +21043,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351005",
             "title": "Pedido de cancelamento 1756167 New blue",
             "priority": "P2",
-            "sla_target_hours": 2.5,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.25,
-            "sla_met": false,
-            "sla_breach_hours": 0.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-21T13:04:55.364Z",
@@ -21074,10 +21057,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351006",
             "title": "URGENTE blhetes DisneylanParis",
             "priority": "P1",
-            "sla_target_hours": 3.58,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 1.92,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.67,
             "sla_name": "SLA P1",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T11:55:05.272Z",
@@ -21090,8 +21073,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.13,
-            "sla_met": false,
-            "sla_breach_hours": 3.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T10:07:48.528Z",
@@ -21102,10 +21085,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351015",
             "title": "URGENTE - TRANSFERE - GBN - 82332",
             "priority": "P1",
-            "sla_target_hours": 0.22,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 0.23,
-            "sla_met": false,
-            "sla_breach_hours": 0.02,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P1",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T11:43:06.428Z",
@@ -21116,10 +21099,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351022",
             "title": "Re:[## 23377 ##] GBN-81225 - Seu pedido foi recebi...",
             "priority": "P2",
-            "sla_target_hours": 0.43,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.22,
-            "sla_met": false,
-            "sla_breach_hours": 1.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-21T14:52:28.544Z",
@@ -21130,10 +21113,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351031",
             "title": "Booking Id 6085113, Categoria: Incidência Pós Vend...",
             "priority": "P2",
-            "sla_target_hours": 0.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.35,
-            "sla_met": false,
-            "sla_breach_hours": 1.65,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-21T17:13:02.953Z",
@@ -21146,8 +21129,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.68,
-            "sla_met": false,
-            "sla_breach_hours": 3.32,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T15:33:10.247Z",
@@ -21160,8 +21143,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.83,
-            "sla_met": false,
-            "sla_breach_hours": 2.17,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T17:19:05.683Z",
@@ -21174,8 +21157,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.47,
-            "sla_met": false,
-            "sla_breach_hours": 2.53,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T17:34:38.211Z",
@@ -21256,10 +21239,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351076",
             "title": "Re: Comprovativo IBAN - Luana Silvestre",
             "priority": "P2",
-            "sla_target_hours": 6.93,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.47,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.47,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-22T16:43:54.291Z",
@@ -21272,8 +21255,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.6,
-            "sla_met": false,
-            "sla_breach_hours": 3.4,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-23T08:38:30.329Z",
@@ -21286,8 +21269,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.4,
-            "sla_met": false,
-            "sla_breach_hours": 3.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-23T09:26:01.769Z",
@@ -21300,8 +21283,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 3.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T09:36:12.043Z",
@@ -21314,8 +21297,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.33,
-            "sla_met": false,
-            "sla_breach_hours": 3.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T09:56:35.645Z",
@@ -21328,8 +21311,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.9,
-            "sla_met": false,
-            "sla_breach_hours": 3.1,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T10:52:32.985Z",
@@ -21342,8 +21325,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.95,
-            "sla_met": false,
-            "sla_breach_hours": 3.05,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T10:55:21.168Z",
@@ -21356,8 +21339,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.87,
-            "sla_met": false,
-            "sla_breach_hours": 3.13,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-23T11:48:50.187Z",
@@ -21370,8 +21353,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 3.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-23T11:57:01.142Z",
@@ -21384,8 +21367,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 3.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T12:00:37.936Z",
@@ -21396,10 +21379,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351157",
             "title": "Fwd: Informações sobre a sua reserva TTN-121170886...",
             "priority": "P2",
-            "sla_target_hours": 1.27,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.63,
-            "sla_met": false,
-            "sla_breach_hours": 1.37,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T16:38:01.794Z",
@@ -21412,8 +21395,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.05,
-            "sla_met": false,
-            "sla_breach_hours": 2.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-24T09:06:34.416Z",
@@ -21426,8 +21409,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.15,
-            "sla_met": false,
-            "sla_breach_hours": 2.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-24T09:13:19.661Z",
@@ -21440,8 +21423,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.22,
-            "sla_met": false,
-            "sla_breach_hours": 2.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-24T09:16:46.247Z",
@@ -21454,8 +21437,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.9,
-            "sla_met": false,
-            "sla_breach_hours": 3.1,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-24T09:21:03.672Z",
@@ -21468,8 +21451,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.08,
-            "sla_met": false,
-            "sla_breach_hours": 2.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-24T09:41:44.711Z",
@@ -21480,10 +21463,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351230",
             "title": "Sua jornada começará em breve!",
             "priority": "P2",
-            "sla_target_hours": 6.9,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.45,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.45,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-24T17:54:51.592Z",
@@ -21494,10 +21477,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351257",
             "title": "Contacto - Atividades",
             "priority": "P2",
-            "sla_target_hours": 39.17,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 21.58,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 17.58,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-27T10:10:27.951Z",
@@ -21510,8 +21493,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.12,
-            "sla_met": false,
-            "sla_breach_hours": 2.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T10:14:30.028Z",
@@ -21524,8 +21507,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 5.2,
-            "sla_met": false,
-            "sla_breach_hours": 18.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T10:24:04.865Z",
@@ -21538,8 +21521,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.53,
-            "sla_met": false,
-            "sla_breach_hours": 2.47,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T12:51:11.202Z",
@@ -21552,8 +21535,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 3.72,
-            "sla_met": false,
-            "sla_breach_hours": 20.28,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-30",
             "first_response_at": "2025-10-29T10:13:13.310Z",
@@ -21566,8 +21549,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.88,
-            "sla_met": false,
-            "sla_breach_hours": 3.12,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-29T10:18:57.841Z",
@@ -21578,10 +21561,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351489",
             "title": "Flight Change Notification",
             "priority": "P2",
-            "sla_target_hours": 5.73,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.87,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.87,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-29T16:54:46.693Z",
@@ -21594,8 +21577,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.52,
-            "sla_met": false,
-            "sla_breach_hours": 3.48,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-29T17:14:27.886Z",
@@ -21608,8 +21591,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.13,
-            "sla_met": false,
-            "sla_breach_hours": 3.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-29T18:03:10.121Z",
@@ -21622,8 +21605,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 4.3,
-            "sla_met": false,
-            "sla_breach_hours": 19.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-30",
             "first_response_at": "2025-10-30T10:59:39.162Z",
@@ -21636,8 +21619,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.37,
-            "sla_met": false,
-            "sla_breach_hours": 23.63,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-30",
             "first_response_at": "2025-10-30T10:00:36.066Z",
@@ -21650,11 +21633,53 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.38,
-            "sla_met": false,
-            "sla_breach_hours": 22.62,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-30",
             "first_response_at": "2025-10-30T11:02:29.198Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1557,
+            "ticket_number": "351554",
+            "title": "HENRIQUES FALCAO/AFONSO MIGUEL MR 16NOV2025 LIS MA...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-30T12:27:57.271Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1558,
+            "ticket_number": "351555",
+            "title": "SILVA GONCALVES/INES CARINA MRS 16NOV2025 LIS MAD",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-30T12:28:18.862Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1559,
+            "ticket_number": "351556",
+            "title": "SPT002501547595 //// Envio de bilhetes /// RSV liq...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.35,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-30T12:28:43.258Z",
             "first_response_escalation_at": null
           }
         ]
@@ -21672,8 +21697,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 5.23,
-            "sla_met": false,
-            "sla_breach_hours": 18.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T13:21:37.485Z",
@@ -21686,8 +21711,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.9,
-            "sla_met": false,
-            "sla_breach_hours": 3.1,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-09-30T15:22:37.307Z",
@@ -21700,8 +21725,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.13,
-            "sla_met": false,
-            "sla_breach_hours": 3.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-09-30T16:24:16.402Z",
@@ -21714,8 +21739,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.4,
-            "sla_met": false,
-            "sla_breach_hours": 2.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-09-30T17:40:26.078Z",
@@ -21728,8 +21753,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.43,
-            "sla_met": false,
-            "sla_breach_hours": 22.57,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-01T09:30:52.118Z",
@@ -21740,10 +21765,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35100",
             "title": "GBN Travel: Information about your booking - GBN-8...",
             "priority": "P3",
-            "sla_target_hours": 32.5,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 28.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 4.25,
             "sla_name": "SLA P3",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-03T09:27:27.632Z",
@@ -21756,8 +21781,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.2,
-            "sla_met": false,
-            "sla_breach_hours": 3.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-01T13:23:54.155Z",
@@ -21768,10 +21793,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35161",
             "title": "Pedido de cotação Caraíbas - 11 pessoas (Ana Rita ...",
             "priority": "P2",
-            "sla_target_hours": 9.4,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 6.7,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 2.7,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-03T09:41:08.508Z",
@@ -21782,10 +21807,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35174",
             "title": "Pedido de Orçamento grupo 11 pessoas PUNTA CANA (A...",
             "priority": "P2",
-            "sla_target_hours": 50.33,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 27.17,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 23.17,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-06T14:08:16.506Z",
@@ -21796,10 +21821,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35211",
             "title": "Pedido de Cotação - grupo entre 10-15 pessoas (Cát...",
             "priority": "P2",
-            "sla_target_hours": 11.0,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 7.5,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 3.5,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-06T15:42:17.412Z",
@@ -21824,10 +21849,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35295",
             "title": "Pedido de cotação hotel",
             "priority": "P2",
-            "sla_target_hours": 34.73,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 19.37,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 15.37,
             "sla_name": "SLA P2",
             "close_date": "2025-10-16",
             "first_response_at": "2025-10-08T16:37:34.111Z",
@@ -21838,10 +21863,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35321",
             "title": "ATUALIZAÇÃO DADOS PASSAPORTE - Localizador SMYTRAV...",
             "priority": "P2",
-            "sla_target_hours": 7.27,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.63,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.63,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-07T22:32:05.625Z",
@@ -21852,10 +21877,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35324",
             "title": "GBN-74839 - Seu pedido foi recebido",
             "priority": "P2",
-            "sla_target_hours": 0.77,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.38,
-            "sla_met": false,
-            "sla_breach_hours": 1.62,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-07T19:57:50.826Z",
@@ -21866,10 +21891,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35342",
             "title": "Pedido de Cotação - 15 pessoas (12 +3) | DIOGO",
             "priority": "P2",
-            "sla_target_hours": 6.6,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.3,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.3,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-08T13:18:13.988Z",
@@ -21880,10 +21905,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35372",
             "title": "GBN-85079 - Sua confirmação de reserva",
             "priority": "P3",
-            "sla_target_hours": 12.43,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 18.22,
-            "sla_met": false,
-            "sla_breach_hours": 5.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-09T15:09:53.388Z",
@@ -21894,10 +21919,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35411",
             "title": "Pedido de Cotação - 70 pessoas | Tiago Ferreira",
             "priority": "P2",
-            "sla_target_hours": 7.07,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.53,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.53,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-08T21:47:52.962Z",
@@ -21924,8 +21949,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.0,
-            "sla_met": false,
-            "sla_breach_hours": 3.0,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-09T14:13:50.818Z",
@@ -21936,10 +21961,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35448",
             "title": "GBN-67911 - Seu pedido foi recebido",
             "priority": "P1",
-            "sla_target_hours": 5.92,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 3.08,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 2.83,
             "sla_name": "SLA P1",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-09T16:48:39.428Z",
@@ -21950,10 +21975,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35485",
             "title": "GBN-85429 - Sua confirmação de reserva",
             "priority": "P3",
-            "sla_target_hours": 51.03,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 37.52,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 13.52,
             "sla_name": "SLA P3",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-13T17:09:05.284Z",
@@ -21964,10 +21989,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35494",
             "title": "Reserva confirmada: Transfer entre o aeroporto de ...",
             "priority": "P3",
-            "sla_target_hours": 53.37,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 38.68,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 14.68,
             "sla_name": "SLA P3",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-13T20:28:29.470Z",
@@ -21978,10 +22003,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35512",
             "title": "GBN-85497 - Sua confirmação de reserva",
             "priority": "P3",
-            "sla_target_hours": 48.5,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 36.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 12.25,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T21:25:53.665Z",
@@ -22006,10 +22031,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35519",
             "title": "GBN-85442 - Seu pedido foi recebido",
             "priority": "P2",
-            "sla_target_hours": 0.53,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.27,
-            "sla_met": false,
-            "sla_breach_hours": 1.73,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T20:19:02.447Z",
@@ -22020,10 +22045,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35592",
             "title": "GBN-85713 - Sua confirmação de reserva",
             "priority": "P3",
-            "sla_target_hours": 34.53,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 29.27,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 5.27,
             "sla_name": "SLA P3",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-15T14:48:33.228Z",
@@ -22048,10 +22073,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35627",
             "title": "Reserva confirmada: Ingresso do Balneário Szécheny...",
             "priority": "P3",
-            "sla_target_hours": 6.8,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 15.4,
-            "sla_met": false,
-            "sla_breach_hours": 8.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-14T20:52:28.001Z",
@@ -22064,8 +22089,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.68,
-            "sla_met": false,
-            "sla_breach_hours": 3.32,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T21:31:45.125Z",
@@ -22078,8 +22103,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.02,
-            "sla_met": false,
-            "sla_breach_hours": 3.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-14T14:35:56.324Z",
@@ -22090,10 +22115,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35685",
             "title": "Pedido de cotação - 14 pessoas (Rita Arruda)",
             "priority": "P2",
-            "sla_target_hours": 27.47,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 15.73,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 11.73,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-15T16:28:35.294Z",
@@ -22118,10 +22143,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35765",
             "title": "Reserva Jorge Cavaco - NEW BLUE - LOC. 6119161",
             "priority": "P2",
-            "sla_target_hours": 4.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.35,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-15T20:45:53.978Z",
@@ -22132,10 +22157,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35805",
             "title": "Fwd: Viagify informa sobre a sua reserva 121058464...",
             "priority": "P2",
-            "sla_target_hours": 2.53,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.27,
-            "sla_met": false,
-            "sla_breach_hours": 0.73,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-16T14:20:45.912Z",
@@ -22146,10 +22171,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35810",
             "title": "cotação Boutique Hotel Castelinho, rio de janeiro",
             "priority": "P2",
-            "sla_target_hours": 3.77,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.88,
-            "sla_met": false,
-            "sla_breach_hours": 0.12,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-16T16:55:39.476Z",
@@ -22162,8 +22187,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.57,
-            "sla_met": false,
-            "sla_breach_hours": 3.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-16T13:59:05.390Z",
@@ -22176,8 +22201,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.72,
-            "sla_met": false,
-            "sla_breach_hours": 3.28,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-16T21:42:51.810Z",
@@ -22188,10 +22213,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351013",
             "title": "Check in - Localizadores - Costa - 34501737 / 3451...",
             "priority": "P2",
-            "sla_target_hours": 6.93,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.47,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.47,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-21T16:56:45.669Z",
@@ -22202,10 +22227,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351040",
             "title": "GBN-73323 - Seu pedido foi recebido",
             "priority": "P2",
-            "sla_target_hours": 18.47,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 11.23,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 7.23,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-22T13:20:27.221Z",
@@ -22216,10 +22241,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351049",
             "title": "Localizador 1207997034 _Eduardo Pereira",
             "priority": "P2",
-            "sla_target_hours": 5.17,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.58,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.58,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-21T22:22:21.328Z",
@@ -22230,10 +22255,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351067",
             "title": "Envio de documentos de File 412541 - VOOS EMITIDOS",
             "priority": "P2",
-            "sla_target_hours": 7.8,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.9,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.9,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-22T14:13:59.651Z",
@@ -22246,8 +22271,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.58,
-            "sla_met": false,
-            "sla_breach_hours": 2.42,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-22T10:02:53.614Z",
@@ -22258,10 +22283,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351119",
             "title": "Re: Grupo: GR-194FF33812 (#2598106)",
             "priority": "P2",
-            "sla_target_hours": 1.77,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.88,
-            "sla_met": false,
-            "sla_breach_hours": 1.12,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-22T22:22:33.506Z",
@@ -22274,8 +22299,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 3.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-23T15:24:14.404Z",
@@ -22286,10 +22311,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351202",
             "title": "Confirmação de reserva para For PT004157 67528547",
             "priority": "P2",
-            "sla_target_hours": 16.17,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 10.08,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 6.08,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-24T19:52:04.991Z",
@@ -22300,10 +22325,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351226",
             "title": "pedido de cotação chalé villa nature - campos do j...",
             "priority": "P2",
-            "sla_target_hours": 11.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 7.85,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 3.85,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-24T19:50:19.163Z",
@@ -22316,8 +22341,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.9,
-            "sla_met": false,
-            "sla_breach_hours": 3.1,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-24T18:09:41.934Z",
@@ -22326,20 +22351,20 @@ export const ZAMMAD_METRICS = {
         ]
       },
       "Paula Candeias": {
-        "total_tickets": 54,
-        "sla_met": 8,
-        "sla_missed": 46,
-        "sla_compliance_rate": 14.81,
+        "total_tickets": 57,
+        "sla_met": 42,
+        "sla_missed": 15,
+        "sla_compliance_rate": 73.68,
         "tickets": [
           {
             "ticket_id": 41,
             "ticket_number": "35041",
             "title": "Re: Fwd: Fwd: Cotação excursões México outubro",
             "priority": "P2",
-            "sla_target_hours": 5.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 4.85,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 0.85,
             "sla_name": "SLA P2",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T13:09:09.606Z",
@@ -22352,8 +22377,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.2,
-            "sla_met": false,
-            "sla_breach_hours": 3.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-09",
             "first_response_at": "2025-09-30T14:16:30.045Z",
@@ -22366,8 +22391,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.18,
-            "sla_met": false,
-            "sla_breach_hours": 3.82,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T14:38:56.846Z",
@@ -22380,25 +22405,11 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.23,
-            "sla_met": false,
-            "sla_breach_hours": 3.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-09-30",
             "first_response_at": "2025-09-30T15:36:21.426Z",
-            "first_response_escalation_at": null
-          },
-          {
-            "ticket_id": 110,
-            "ticket_number": "35109",
-            "title": "URGENTE: Informações sobre a sua reserva TTN-11712...",
-            "priority": "P2",
-            "sla_target_hours": 4.0,
-            "actual_time_hours": 0.58,
-            "sla_met": false,
-            "sla_breach_hours": 3.42,
-            "sla_name": "SLA P2",
-            "close_date": "2025-10-22",
-            "first_response_at": "2025-10-01T13:06:13.709Z",
             "first_response_escalation_at": null
           },
           {
@@ -22408,8 +22419,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.08,
-            "sla_met": false,
-            "sla_breach_hours": 3.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-01T16:00:55.379Z",
@@ -22422,8 +22433,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.07,
-            "sla_met": false,
-            "sla_breach_hours": 3.93,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-01T20:09:54.563Z",
@@ -22436,8 +22447,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.13,
-            "sla_met": false,
-            "sla_breach_hours": 3.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-02",
             "first_response_at": "2025-10-02T08:59:01.190Z",
@@ -22450,8 +22461,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.07,
-            "sla_met": false,
-            "sla_breach_hours": 3.93,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-03T16:20:01.894Z",
@@ -22462,10 +22473,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35248",
             "title": "Pedido de contacto à CIVITATIS – Atividade de obse...",
             "priority": "P2",
-            "sla_target_hours": 6.67,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.33,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.33,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-06T18:58:32.958Z",
@@ -22506,8 +22517,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 3.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-07T13:51:44.230Z",
@@ -22518,10 +22529,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35381",
             "title": "PNR's localizador: SPT002501544760",
             "priority": "P2",
-            "sla_target_hours": 0.5,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.25,
-            "sla_met": false,
-            "sla_breach_hours": 1.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T15:27:16.181Z",
@@ -22534,8 +22545,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.73,
-            "sla_met": false,
-            "sla_breach_hours": 3.27,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-09T14:36:44.302Z",
@@ -22548,8 +22559,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.07,
-            "sla_met": false,
-            "sla_breach_hours": 3.93,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-09T16:37:28.800Z",
@@ -22562,8 +22573,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.25,
-            "sla_met": false,
-            "sla_breach_hours": 3.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-09T17:39:11.735Z",
@@ -22576,8 +22587,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.33,
-            "sla_met": false,
-            "sla_breach_hours": 3.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-09T19:24:35.818Z",
@@ -22590,8 +22601,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 3.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-10T19:53:41.006Z",
@@ -22602,10 +22613,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35522",
             "title": "GBN-85525 - Sua confirmação de reserva",
             "priority": "P3",
-            "sla_target_hours": 44.5,
+            "sla_target_hours": 24.0,
             "actual_time_hours": 34.25,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 10.25,
             "sla_name": "SLA P3",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T21:29:32.894Z",
@@ -22616,10 +22627,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35544",
             "title": "localizador 1200415052",
             "priority": "P2",
-            "sla_target_hours": 0.1,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.05,
-            "sla_met": false,
-            "sla_breach_hours": 1.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-13T10:10:22.455Z",
@@ -22632,8 +22643,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.1,
-            "sla_met": false,
-            "sla_breach_hours": 2.9,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-13T11:53:34.175Z",
@@ -22646,8 +22657,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.28,
-            "sla_met": false,
-            "sla_breach_hours": 3.72,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T14:23:03.965Z",
@@ -22658,10 +22669,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35618",
             "title": "Reservas A34603691 e A34603694",
             "priority": "P2",
-            "sla_target_hours": 44.93,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 24.47,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 20.47,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T20:20:05.660Z",
@@ -22674,8 +22685,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.23,
-            "sla_met": false,
-            "sla_breach_hours": 3.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-13T18:24:02.573Z",
@@ -22702,8 +22713,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.68,
-            "sla_met": false,
-            "sla_breach_hours": 3.32,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-14T16:39:38.518Z",
@@ -22730,8 +22741,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.25,
-            "sla_met": false,
-            "sla_breach_hours": 3.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T08:26:40.678Z",
@@ -22744,8 +22755,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.42,
-            "sla_met": false,
-            "sla_breach_hours": 3.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T11:38:17.393Z",
@@ -22756,10 +22767,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35743",
             "title": "PNR´s do localizador: SPT002501544719",
             "priority": "P2",
-            "sla_target_hours": 0.83,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.42,
-            "sla_met": false,
-            "sla_breach_hours": 1.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T14:35:50.749Z",
@@ -22772,8 +22783,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.62,
-            "sla_met": false,
-            "sla_breach_hours": 2.38,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T16:34:12.645Z",
@@ -22784,10 +22795,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35831",
             "title": "Reserva 332434 WL",
             "priority": "P2",
-            "sla_target_hours": 26.4,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 15.2,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 11.2,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T17:11:46.487Z",
@@ -22800,8 +22811,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.0,
-            "sla_met": false,
-            "sla_breach_hours": 3.0,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-16T22:05:46.813Z",
@@ -22814,8 +22825,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.42,
-            "sla_met": false,
-            "sla_breach_hours": 2.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T14:49:45.413Z",
@@ -22826,10 +22837,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35873",
             "title": "RV: easyJet booking reference: KBF2SVQ",
             "priority": "P2",
-            "sla_target_hours": 1.23,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.62,
-            "sla_met": false,
-            "sla_breach_hours": 1.38,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T16:04:16.361Z",
@@ -22842,8 +22853,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.57,
-            "sla_met": false,
-            "sla_breach_hours": 3.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T14:00:40.583Z",
@@ -22854,10 +22865,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35875",
             "title": "newblue loc 6114820",
             "priority": "P2",
-            "sla_target_hours": 0.27,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.13,
-            "sla_met": false,
-            "sla_breach_hours": 1.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T15:34:49.050Z",
@@ -22870,8 +22881,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.62,
-            "sla_met": false,
-            "sla_breach_hours": 2.38,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T15:54:52.466Z",
@@ -22884,8 +22895,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.78,
-            "sla_met": false,
-            "sla_breach_hours": 2.22,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-17T21:06:05.702Z",
@@ -22898,8 +22909,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.75,
-            "sla_met": false,
-            "sla_breach_hours": 3.25,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-17T21:21:23.999Z",
@@ -22912,8 +22923,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.02,
-            "sla_met": false,
-            "sla_breach_hours": 3.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T21:25:01.267Z",
@@ -22926,8 +22937,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.08,
-            "sla_met": false,
-            "sla_breach_hours": 2.92,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T09:27:06.103Z",
@@ -22938,10 +22949,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35974",
             "title": "pedido de cotação para o hotel ledger plaza bangui",
             "priority": "P2",
-            "sla_target_hours": 14.3,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 9.15,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 5.15,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-21T14:31:34.591Z",
@@ -22952,10 +22963,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35977",
             "title": "| Urgente - dúvida nova reserva - GBN-86805 |",
             "priority": "P2",
-            "sla_target_hours": 1.1,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.55,
-            "sla_met": false,
-            "sla_breach_hours": 1.45,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-20T22:01:09.144Z",
@@ -22966,10 +22977,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351014",
             "title": "Localizador QFSHT5WR",
             "priority": "P2",
-            "sla_target_hours": 1.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.85,
-            "sla_met": false,
-            "sla_breach_hours": 1.15,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T14:19:43.971Z",
@@ -22980,10 +22991,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351020",
             "title": "Noite de Passagem de Ano - DoubleTree by Hilton Is...",
             "priority": "P2",
-            "sla_target_hours": 1.3,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.65,
-            "sla_met": false,
-            "sla_breach_hours": 1.35,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-21T14:23:23.354Z",
@@ -22996,8 +23007,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.83,
-            "sla_met": false,
-            "sla_breach_hours": 2.17,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-22T09:58:45.787Z",
@@ -23022,10 +23033,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351113",
             "title": "Reserva Rimain Tours Localizador 3796558515 - Andr...",
             "priority": "P2",
-            "sla_target_hours": 9.77,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 6.88,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 2.88,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T11:57:52.833Z",
@@ -23038,8 +23049,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.28,
-            "sla_met": false,
-            "sla_breach_hours": 3.72,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-25",
             "first_response_at": "2025-10-25T15:44:12.471Z",
@@ -23050,13 +23061,41 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351284",
             "title": "Soltropico hurghada",
             "priority": "P2",
-            "sla_target_hours": 6.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 5.35,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.35,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-26T14:36:57.574Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1348,
+            "ticket_number": "351345",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-27T16:34:27.655Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1349,
+            "ticket_number": "351346",
+            "title": "GBN Travel: Reenvio de confirmação de reserva - GB...",
+            "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
+            "sla_target_hours": 0.25,
+            "actual_time_hours": null,
+            "sla_met": false,
+            "sla_breach_hours": 4.0,
+            "sla_name": "SLA P1",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-27T16:40:21.518Z",
             "first_response_escalation_at": null
           },
           {
@@ -23066,11 +23105,25 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.95,
-            "sla_met": false,
-            "sla_breach_hours": 3.05,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-28T17:49:59.284Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1519,
+            "ticket_number": "351516",
+            "title": "GBN-65990 - Tour 10 3931518 - GBN-66418 - Cancelam...",
+            "priority": "P2",
+            "sla_target_hours": 4.0,
+            "actual_time_hours": 0.17,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P2",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-29T18:52:28.790Z",
             "first_response_escalation_at": null
           },
           {
@@ -23080,30 +23133,44 @@ export const ZAMMAD_METRICS = {
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
             "actual_time_hours": 0.05,
-            "sla_met": false,
-            "sla_breach_hours": 3.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P1",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-29T22:01:46.088Z",
+            "first_response_escalation_at": null
+          },
+          {
+            "ticket_id": 1549,
+            "ticket_number": "351546",
+            "title": "Re:[## 23945 ##] GBN-66418 - Seu pedido foi recebi...",
+            "priority": "P3",
+            "sla_target_hours": 24.0,
+            "actual_time_hours": 0.55,
+            "sla_met": true,
+            "sla_breach_hours": 0,
+            "sla_name": "SLA P3",
+            "close_date": "2025-10-30",
+            "first_response_at": "2025-10-30T12:25:29.524Z",
             "first_response_escalation_at": null
           }
         ]
       },
       "Magali Morim": {
         "total_tickets": 5,
-        "sla_met": 4,
-        "sla_missed": 1,
-        "sla_compliance_rate": 80.0,
+        "sla_met": 1,
+        "sla_missed": 4,
+        "sla_compliance_rate": 20.0,
         "tickets": [
           {
             "ticket_id": 43,
             "ticket_number": "35043",
             "title": "Cancelamento",
             "priority": "P1",
-            "sla_target_hours": 36.02,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 18.13,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 17.88,
             "sla_name": "SLA P1",
             "close_date": "2025-10-01",
             "first_response_at": "2025-10-01T12:26:53.695Z",
@@ -23114,10 +23181,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35232",
             "title": "Re: Cancelamento de subscrição",
             "priority": "P1",
-            "sla_target_hours": 3.92,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 2.08,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.83,
             "sla_name": "SLA P1",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-06T11:34:30.283Z",
@@ -23128,10 +23195,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35355",
             "title": "Cancelamento subscrição",
             "priority": "P2",
-            "sla_target_hours": 92.0,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 48.0,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 44.0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-11",
             "first_response_at": "2025-10-11T14:52:09.440Z",
@@ -23144,8 +23211,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.63,
-            "sla_met": false,
-            "sla_breach_hours": 2.37,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-11",
             "first_response_at": "2025-10-11T11:46:28.371Z",
@@ -23156,10 +23223,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35858",
             "title": "Screenshot 2025-10-17 at 08.21.41",
             "priority": "P2",
-            "sla_target_hours": 24.83,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 14.42,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 10.42,
             "sla_name": "SLA P2",
             "close_date": "2025-10-18",
             "first_response_at": "2025-10-18T09:48:14.812Z",
@@ -23169,9 +23236,9 @@ export const ZAMMAD_METRICS = {
       },
       "Cátia Leal": {
         "total_tickets": 20,
-        "sla_met": 6,
-        "sla_missed": 14,
-        "sla_compliance_rate": 30.0,
+        "sla_met": 13,
+        "sla_missed": 7,
+        "sla_compliance_rate": 65.0,
         "tickets": [
           {
             "ticket_id": 128,
@@ -23180,8 +23247,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.02,
-            "sla_met": false,
-            "sla_breach_hours": 3.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-01T19:58:00.764Z",
@@ -23192,10 +23259,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35128",
             "title": "Egotravel devolução -   331041",
             "priority": "P2",
-            "sla_target_hours": 2.33,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.17,
-            "sla_met": false,
-            "sla_breach_hours": 0.83,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-02T09:15:30.314Z",
@@ -23206,10 +23273,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35243",
             "title": "loc 6119184 - NB",
             "priority": "P2",
-            "sla_target_hours": 63.3,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 33.65,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 29.65,
             "sla_name": "SLA P2",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T16:58:11.794Z",
@@ -23222,8 +23289,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 1.5,
-            "sla_met": false,
-            "sla_breach_hours": 22.5,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-08T09:15:44.352Z",
@@ -23234,10 +23301,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35415",
             "title": "Informações importantes : 412548/2025 - SOLFERIAS.",
             "priority": "P2",
-            "sla_target_hours": 11.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 7.85,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 3.85,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-09T10:06:32.880Z",
@@ -23250,8 +23317,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.05,
-            "sla_met": false,
-            "sla_breach_hours": 3.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-09T08:47:30.622Z",
@@ -23262,10 +23329,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35660",
             "title": "Reembolso Reserva",
             "priority": "P2",
-            "sla_target_hours": 9.9,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 6.95,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 2.95,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-14T17:31:57.104Z",
@@ -23278,8 +23345,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.58,
-            "sla_met": false,
-            "sla_breach_hours": 3.42,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-21T09:58:54.663Z",
@@ -23290,10 +23357,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351086",
             "title": "RE: Comissões",
             "priority": "P2",
-            "sla_target_hours": 36.1,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 20.05,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 16.05,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-23T18:25:01.830Z",
@@ -23306,8 +23373,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.5,
-            "sla_met": false,
-            "sla_breach_hours": 3.5,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T08:59:19.320Z",
@@ -23318,10 +23385,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351179",
             "title": "teste Cátia 1",
             "priority": "P2",
-            "sla_target_hours": 93.17,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 48.58,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 44.58,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T10:05:25.478Z",
@@ -23332,10 +23399,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351196",
             "title": "Comissões Mês de Outubro",
             "priority": "P2",
-            "sla_target_hours": 2.6,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.3,
-            "sla_met": false,
-            "sla_breach_hours": 0.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-24T11:47:35.413Z",
@@ -23348,8 +23415,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.88,
-            "sla_met": false,
-            "sla_breach_hours": 2.12,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-24T16:30:56.266Z",
@@ -23362,8 +23429,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.95,
-            "sla_met": false,
-            "sla_breach_hours": 2.05,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-24T16:35:43.512Z",
@@ -23374,10 +23441,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351294",
             "title": "Reembolso",
             "priority": "P2",
-            "sla_target_hours": 1.27,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.63,
-            "sla_met": false,
-            "sla_breach_hours": 1.37,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T11:45:43.076Z",
@@ -23388,10 +23455,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351314",
             "title": "Fwd: Re: Fwd: Reserva Barcadouro Porto/Régua/Porto...",
             "priority": "P2",
-            "sla_target_hours": 2.1,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.05,
-            "sla_met": false,
-            "sla_breach_hours": 0.95,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-27T12:58:31.834Z",
@@ -23402,10 +23469,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351323",
             "title": "Confirmação e Fatura de Reserva",
             "priority": "P2",
-            "sla_target_hours": 0.7,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.35,
-            "sla_met": false,
-            "sla_breach_hours": 1.65,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T13:55:06.523Z",
@@ -23432,8 +23499,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 3.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T16:06:38.901Z",
@@ -23444,10 +23511,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351470",
             "title": "2ª Notificação: Reclamação pagamento Reserva 60448...",
             "priority": "P1",
-            "sla_target_hours": 2.68,
+            "sla_target_hours": 0.25,
             "actual_time_hours": 1.47,
-            "sla_met": true,
-            "sla_breach_hours": 0,
+            "sla_met": false,
+            "sla_breach_hours": 1.22,
             "sla_name": "SLA P1",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-29T10:53:47.531Z",
@@ -23457,9 +23524,9 @@ export const ZAMMAD_METRICS = {
       },
       "Não Atribuído": {
         "total_tickets": 62,
-        "sla_met": 0,
-        "sla_missed": 62,
-        "sla_compliance_rate": 0.0,
+        "sla_met": 38,
+        "sla_missed": 24,
+        "sla_compliance_rate": 61.29,
         "tickets": [
           {
             "ticket_id": 207,
@@ -23468,8 +23535,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.35,
-            "sla_met": false,
-            "sla_breach_hours": 3.65,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-06T08:32:45.847Z",
@@ -23566,8 +23633,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.15,
-            "sla_met": false,
-            "sla_breach_hours": 3.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-07T08:15:35.380Z",
@@ -23580,8 +23647,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.12,
-            "sla_met": false,
-            "sla_breach_hours": 3.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-07",
             "first_response_at": "2025-10-07T08:14:10.769Z",
@@ -23594,8 +23661,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.53,
-            "sla_met": false,
-            "sla_breach_hours": 3.47,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-08",
             "first_response_at": "2025-10-08T08:58:04.893Z",
@@ -23608,8 +23675,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.5,
-            "sla_met": false,
-            "sla_breach_hours": 3.5,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-09T08:37:54.439Z",
@@ -23622,8 +23689,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P3",
             "sla_target_hours": 24.0,
             "actual_time_hours": 0.22,
-            "sla_met": false,
-            "sla_breach_hours": 23.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P3",
             "close_date": "2025-10-09",
             "first_response_at": "2025-10-09T08:57:34.902Z",
@@ -23679,7 +23746,7 @@ export const ZAMMAD_METRICS = {
             "sla_target_hours": 0.25,
             "actual_time_hours": 0.43,
             "sla_met": false,
-            "sla_breach_hours": 3.57,
+            "sla_breach_hours": 0.18,
             "sla_name": "SLA P1",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T08:33:12.189Z",
@@ -23692,8 +23759,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.15,
-            "sla_met": false,
-            "sla_breach_hours": 3.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T09:59:20.474Z",
@@ -23706,8 +23773,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.92,
-            "sla_met": false,
-            "sla_breach_hours": 2.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-10",
             "first_response_at": "2025-10-10T19:24:42.045Z",
@@ -23720,8 +23787,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.12,
-            "sla_met": false,
-            "sla_breach_hours": 3.88,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-10T19:55:57.388Z",
@@ -23748,8 +23815,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.32,
-            "sla_met": false,
-            "sla_breach_hours": 3.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T10:08:39.575Z",
@@ -23804,8 +23871,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.52,
-            "sla_met": false,
-            "sla_breach_hours": 3.48,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T08:45:06.246Z",
@@ -23818,8 +23885,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.98,
-            "sla_met": false,
-            "sla_breach_hours": 3.02,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T09:17:27.116Z",
@@ -23832,8 +23899,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.03,
-            "sla_met": false,
-            "sla_breach_hours": 2.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T09:20:17.419Z",
@@ -23846,8 +23913,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.15,
-            "sla_met": false,
-            "sla_breach_hours": 2.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T09:27:34.613Z",
@@ -23860,8 +23927,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.18,
-            "sla_met": false,
-            "sla_breach_hours": 2.82,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T09:29:05.032Z",
@@ -23874,8 +23941,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.65,
-            "sla_met": false,
-            "sla_breach_hours": 2.35,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-14",
             "first_response_at": "2025-10-14T09:57:28.731Z",
@@ -23902,8 +23969,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.52,
-            "sla_met": false,
-            "sla_breach_hours": 3.48,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T10:47:28.806Z",
@@ -23916,8 +23983,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.03,
-            "sla_met": false,
-            "sla_breach_hours": 2.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T16:32:47.545Z",
@@ -23930,8 +23997,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 3.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-15",
             "first_response_at": "2025-10-15T16:48:46.644Z",
@@ -23944,8 +24011,8 @@ export const ZAMMAD_METRICS = {
             "priority": "Reservas sem Formulário / sem pedido RGPD e CVO",
             "sla_target_hours": 0.25,
             "actual_time_hours": 0.13,
-            "sla_met": false,
-            "sla_breach_hours": 3.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P1",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-15T21:34:07.099Z",
@@ -23958,8 +24025,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.23,
-            "sla_met": false,
-            "sla_breach_hours": 3.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T13:39:38.618Z",
@@ -23972,8 +24039,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.23,
-            "sla_met": false,
-            "sla_breach_hours": 3.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T13:40:12.745Z",
@@ -23984,10 +24051,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "35876",
             "title": "Re: autorização para emissão de bilhetes",
             "priority": "P2",
-            "sla_target_hours": 2.47,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 3.23,
-            "sla_met": false,
-            "sla_breach_hours": 0.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-17",
             "first_response_at": "2025-10-17T16:40:46.800Z",
@@ -23998,10 +24065,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351009",
             "title": "CONTROLO RESERVAS... - 150 - 17/06/2025 150 - 16/0...",
             "priority": "P2",
-            "sla_target_hours": 0.8,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.4,
-            "sla_met": false,
-            "sla_breach_hours": 1.6,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-21T12:29:21.627Z",
@@ -24014,8 +24081,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.42,
-            "sla_met": false,
-            "sla_breach_hours": 3.58,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T08:54:53.682Z",
@@ -24082,10 +24149,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351169",
             "title": "| Nova reserva GBN-86805 - envio de doc |",
             "priority": "P2",
-            "sla_target_hours": 1.6,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.8,
-            "sla_met": false,
-            "sla_breach_hours": 1.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-23",
             "first_response_at": "2025-10-23T19:54:20.012Z",
@@ -24098,8 +24165,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.88,
-            "sla_met": false,
-            "sla_breach_hours": 3.12,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-24T13:20:58.144Z",
@@ -24112,8 +24179,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 3.97,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-24",
             "first_response_at": "2025-10-24T13:50:30.571Z",
@@ -24168,8 +24235,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.47,
-            "sla_met": false,
-            "sla_breach_hours": 3.53,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-25",
             "first_response_at": "2025-10-25T08:28:12.123Z",
@@ -24182,8 +24249,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.57,
-            "sla_met": false,
-            "sla_breach_hours": 3.43,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T09:46:17.113Z",
@@ -24196,8 +24263,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.33,
-            "sla_met": false,
-            "sla_breach_hours": 3.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T11:26:06.809Z",
@@ -24210,8 +24277,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.35,
-            "sla_met": false,
-            "sla_breach_hours": 3.65,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T11:27:11.902Z",
@@ -24224,8 +24291,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.32,
-            "sla_met": false,
-            "sla_breach_hours": 3.68,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T11:25:27.818Z",
@@ -24252,8 +24319,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.1,
-            "sla_met": false,
-            "sla_breach_hours": 3.9,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T18:42:32.800Z",
@@ -24280,8 +24347,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.2,
-            "sla_met": false,
-            "sla_breach_hours": 3.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T16:17:08.365Z",
@@ -24294,8 +24361,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.22,
-            "sla_met": false,
-            "sla_breach_hours": 3.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T16:17:49.820Z",
@@ -24308,8 +24375,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.3,
-            "sla_met": false,
-            "sla_breach_hours": 3.7,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T16:22:23.782Z",
@@ -24320,10 +24387,10 @@ export const ZAMMAD_METRICS = {
             "ticket_number": "351454",
             "title": "Nova Viagem #251000296 - Maria Moreira",
             "priority": "P2",
-            "sla_target_hours": 0.27,
+            "sla_target_hours": 4.0,
             "actual_time_hours": 2.13,
-            "sla_met": false,
-            "sla_breach_hours": 1.87,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-29",
             "first_response_at": "2025-10-29T10:08:03.939Z",
@@ -24333,9 +24400,9 @@ export const ZAMMAD_METRICS = {
       },
       "Rafaela Lapa": {
         "total_tickets": 20,
-        "sla_met": 0,
-        "sla_missed": 20,
-        "sla_compliance_rate": 0.0,
+        "sla_met": 20,
+        "sla_missed": 0,
+        "sla_compliance_rate": 100.0,
         "tickets": [
           {
             "ticket_id": 227,
@@ -24344,8 +24411,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.95,
-            "sla_met": false,
-            "sla_breach_hours": 3.05,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-06T10:08:36.471Z",
@@ -24358,8 +24425,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.92,
-            "sla_met": false,
-            "sla_breach_hours": 3.08,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-06T10:19:42.915Z",
@@ -24372,8 +24439,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.97,
-            "sla_met": false,
-            "sla_breach_hours": 3.03,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-06T10:26:45.881Z",
@@ -24386,8 +24453,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.8,
-            "sla_met": false,
-            "sla_breach_hours": 3.2,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-06",
             "first_response_at": "2025-10-06T10:24:24.461Z",
@@ -24400,8 +24467,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.23,
-            "sla_met": false,
-            "sla_breach_hours": 2.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T11:20:09.392Z",
@@ -24414,8 +24481,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.87,
-            "sla_met": false,
-            "sla_breach_hours": 2.13,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-13",
             "first_response_at": "2025-10-13T18:45:26.417Z",
@@ -24428,8 +24495,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.55,
-            "sla_met": false,
-            "sla_breach_hours": 3.45,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-19",
             "first_response_at": "2025-10-19T09:24:47.027Z",
@@ -24442,8 +24509,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.02,
-            "sla_met": false,
-            "sla_breach_hours": 3.98,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-21",
             "first_response_at": "2025-10-19T09:52:07.125Z",
@@ -24456,8 +24523,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.85,
-            "sla_met": false,
-            "sla_breach_hours": 3.15,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T09:13:16.733Z",
@@ -24470,8 +24537,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.9,
-            "sla_met": false,
-            "sla_breach_hours": 3.1,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T09:15:51.707Z",
@@ -24484,8 +24551,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 1.15,
-            "sla_met": false,
-            "sla_breach_hours": 2.85,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-20T09:30:42.849Z",
@@ -24498,8 +24565,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.67,
-            "sla_met": false,
-            "sla_breach_hours": 3.33,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T09:01:41.811Z",
@@ -24512,8 +24579,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.58,
-            "sla_met": false,
-            "sla_breach_hours": 3.42,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-20",
             "first_response_at": "2025-10-20T16:44:20.150Z",
@@ -24526,8 +24593,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.25,
-            "sla_met": false,
-            "sla_breach_hours": 3.75,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-22",
             "first_response_at": "2025-10-22T09:55:25.699Z",
@@ -24540,8 +24607,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.33,
-            "sla_met": false,
-            "sla_breach_hours": 3.67,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T09:26:30.208Z",
@@ -24554,8 +24621,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.48,
-            "sla_met": false,
-            "sla_breach_hours": 3.52,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-27",
             "first_response_at": "2025-10-27T18:31:09.115Z",
@@ -24568,8 +24635,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.23,
-            "sla_met": false,
-            "sla_breach_hours": 3.77,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T09:19:12.767Z",
@@ -24582,8 +24649,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.22,
-            "sla_met": false,
-            "sla_breach_hours": 3.78,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T09:18:15.205Z",
@@ -24596,8 +24663,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P2",
             "sla_target_hours": 4.0,
             "actual_time_hours": 0.2,
-            "sla_met": false,
-            "sla_breach_hours": 3.8,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P2",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T09:17:17.537Z",
@@ -24610,8 +24677,8 @@ export const ZAMMAD_METRICS = {
             "priority": "P1",
             "sla_target_hours": 0.25,
             "actual_time_hours": 0.03,
-            "sla_met": false,
-            "sla_breach_hours": 0.22,
+            "sla_met": true,
+            "sla_breach_hours": 0,
             "sla_name": "SLA P1",
             "close_date": "2025-10-28",
             "first_response_at": "2025-10-28T10:40:41.829Z",
@@ -24621,10 +24688,10 @@ export const ZAMMAD_METRICS = {
       }
     },
     "summary": {
-      "total_tickets_analyzed": 424,
-      "total_sla_met": 82,
-      "total_sla_missed": 342,
-      "overall_compliance_rate": 19.34
+      "total_tickets_analyzed": 432,
+      "total_sla_met": 300,
+      "total_sla_missed": 132,
+      "overall_compliance_rate": 69.44
     }
   }
 };
