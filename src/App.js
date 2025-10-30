@@ -143,7 +143,10 @@ function summarize(rows, efficiencyData = null) {
   const vals = rows.filter(r => typeof r.avg_time_hours === "number");
   const avgAll = vals.length ? (vals.reduce((s,r)=>s+r.avg_time_hours,0) / vals.length) : 0;
   
-  const eligible = rows.filter(r => (r.tickets_count||0) >= 10 && typeof r.avg_time_hours === "number" && r.label !== "Não Atribuído");
+  // Calcular limite dinâmico: 10% do total de tickets, com mínimo de 5 e máximo de 50
+  const dynamicMinTickets = Math.max(5, Math.min(50, Math.ceil(totalTickets * 0.1)));
+  
+  const eligible = rows.filter(r => (r.tickets_count||0) >= dynamicMinTickets && typeof r.avg_time_hours === "number" && r.label !== "Não Atribuído");
   
   // Top por tempo (menor tempo médio)
   const topTime = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
@@ -152,7 +155,7 @@ function summarize(rows, efficiencyData = null) {
   let topRatio = null;
   if (efficiencyData) {
     const efficiencyEligible = Object.entries(efficiencyData)
-      .filter(([agent, data]) => data.tickets_closed >= 10 && agent !== "Não Atribuído")
+      .filter(([agent, data]) => data.tickets_closed >= dynamicMinTickets && agent !== "Não Atribuído")
       .map(([agent, data]) => {
         // Encontrar dados do agente nos dados principais
         const agentData = rows.find(r => r.label === agent);
@@ -188,7 +191,102 @@ function summarize(rows, efficiencyData = null) {
     topRatio = eligible.sort((a,b)=>b.tickets_count - a.tickets_count)[0] || null;
   }
   
-  return { totalTickets, avgAll, topTime, topRatio };
+  return { totalTickets, avgAll, topTime, topRatio, dynamicMinTickets };
+}
+
+// Componente para filtro de datas
+function DateFilter({ selected, onChange }) {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef(null);
+
+  const dateOptions = [
+    { value: "all", label: "Todos os dados" },
+    { value: "6months", label: "Últimos 6 meses" },
+    { value: "1month", label: "Último mês" },
+    { value: "15days", label: "Últimos 15 dias" },
+    { value: "7days", label: "Última semana" }
+  ];
+
+  useEffect(() => {
+    if (!open) return;
+    const handleClick = (event) => {
+      if (containerRef.current && !containerRef.current.contains(event.target)) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClick);
+    return () => document.removeEventListener("mousedown", handleClick);
+  }, [open]);
+
+  const selectedOption = dateOptions.find(opt => opt.value === selected) || dateOptions[0];
+
+  return (
+    <div ref={containerRef} style={{ position: "relative" }}>
+      <button
+        type="button"
+        onClick={() => setOpen((prev) => !prev)}
+        style={{
+          width: "100%",
+          padding: "10px 12px",
+          borderRadius: 8,
+          border: "1px solid #cbd5f5",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: 8,
+          background: "#fff",
+          cursor: "pointer",
+          fontSize: 14,
+        }}
+      >
+        <span style={{ color: "#1f2937", fontWeight: 500 }}>{selectedOption.label}</span>
+        <span style={{ fontSize: 12, color: "#64748b" }}>{open ? "▲" : "▼"}</span>
+      </button>
+      {open && (
+        <div
+          style={{
+            position: "absolute",
+            top: "calc(100% + 4px)",
+            left: 0,
+            right: 0,
+            zIndex: 10,
+            background: "#fff",
+            border: "1px solid #cbd5f5",
+            borderRadius: 8,
+            boxShadow: "0 10px 25px rgba(15, 23, 42, 0.12)",
+            maxHeight: 220,
+            overflowY: "auto",
+          }}
+        >
+          {dateOptions.map((option) => (
+            <button
+              key={option.value}
+              onClick={() => {
+                onChange(option.value);
+                setOpen(false);
+              }}
+              style={{
+                width: "100%",
+                display: "flex",
+                alignItems: "center",
+                gap: 10,
+                padding: "10px 12px",
+                fontSize: 14,
+                cursor: "pointer",
+                border: "none",
+                background: selected === option.value ? "#f1f5f9" : "transparent",
+                color: "#1f2937",
+                textAlign: "left",
+                borderBottom: "1px solid #f1f5f9",
+              }}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+      )}
+    </div>
+  );
 }
 
 function MultiSelect({ options, selected, onChange, placeholder }) {
@@ -309,6 +407,7 @@ export default function App() {
   const [selectedGroups, setSelectedGroups] = useState(["ALL"]);
   const [error, setError] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [selectedDateFilter, setSelectedDateFilter] = useState("all"); // Novo estado para filtro de data
   const fromDateRef = useRef("");
   const isMobile = useIsMobile();
 
@@ -346,6 +445,132 @@ export default function App() {
   const setFromDateSynced = useCallback((value) => {
     fromDateRef.current = value;
   }, []);
+
+  // Função para calcular a data de corte baseada no filtro selecionado
+  const getDateCutoff = useCallback((filterType) => {
+    const now = new Date();
+    const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    switch (filterType) {
+      case "7days":
+        return new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+      case "15days":
+        return new Date(today.getTime() - 15 * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+      case "1month":
+        const oneMonthAgo = new Date(today);
+        oneMonthAgo.setMonth(oneMonthAgo.getMonth() - 1);
+        return oneMonthAgo.toISOString().split('T')[0];
+      case "6months":
+        const sixMonthsAgo = new Date(today);
+        sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+        return sixMonthsAgo.toISOString().split('T')[0];
+      case "all":
+      default:
+        return null; // Sem filtro de data
+    }
+  }, []);
+
+  // Função para filtrar dados baseado na data
+  const filterDataByDate = useCallback((originalData, dateFilter) => {
+    if (!originalData || dateFilter === "all") {
+      return originalData;
+    }
+
+    const cutoffDate = getDateCutoff(dateFilter);
+    if (!cutoffDate) {
+      return originalData;
+    }
+
+    const filterBucketByDate = (bucket) => {
+      if (!bucket || !bucket.tickets_per_day) {
+        return bucket;
+      }
+
+      const filteredTicketsPerDay = {};
+      let filteredCount = 0;
+
+      Object.entries(bucket.tickets_per_day).forEach(([date, count]) => {
+        if (date >= cutoffDate) {
+          filteredTicketsPerDay[date] = count;
+          filteredCount += count;
+        }
+      });
+
+      return {
+        ...bucket,
+        tickets_per_day: filteredTicketsPerDay,
+        tickets_count: filteredCount
+      };
+    };
+
+    const filterEntityData = (entityData) => {
+      const filtered = {};
+      
+      Object.entries(entityData).forEach(([entityName, entityBuckets]) => {
+        filtered[entityName] = {
+          overall: filterBucketByDate(entityBuckets.overall),
+          priorities: {},
+          states: {}
+        };
+
+        // Filtrar prioridades
+        if (entityBuckets.priorities) {
+          Object.entries(entityBuckets.priorities).forEach(([priority, bucket]) => {
+            filtered[entityName].priorities[priority] = filterBucketByDate(bucket);
+          });
+        }
+
+        // Filtrar estados
+        if (entityBuckets.states) {
+          Object.entries(entityBuckets.states).forEach(([state, stateData]) => {
+            filtered[entityName].states[state] = {
+              overall: filterBucketByDate(stateData.overall),
+              priorities: {}
+            };
+            
+            if (stateData.priorities) {
+              Object.entries(stateData.priorities).forEach(([priority, bucket]) => {
+                filtered[entityName].states[state].priorities[priority] = filterBucketByDate(bucket);
+              });
+            }
+          });
+        }
+      });
+
+      return filtered;
+    };
+
+    // Filtrar daily_summary
+    const filteredDailySummary = {};
+    if (originalData.daily_summary) {
+      Object.entries(originalData.daily_summary).forEach(([date, summary]) => {
+        if (date >= cutoffDate) {
+          filteredDailySummary[date] = summary;
+        }
+      });
+    }
+
+    return {
+      ...originalData,
+      agents: filterEntityData(originalData.agents || {}),
+      customers: filterEntityData(originalData.customers || {}),
+      states: originalData.states ? Object.fromEntries(
+        Object.entries(originalData.states).map(([state, stateData]) => [
+          state,
+          {
+            overall: filterBucketByDate(stateData.overall),
+            priorities: Object.fromEntries(
+              Object.entries(stateData.priorities || {}).map(([priority, bucket]) => [
+                priority,
+                filterBucketByDate(bucket)
+              ])
+            )
+          }
+        ])
+      ) : {},
+      daily_summary: filteredDailySummary
+    };
+  }, [getDateCutoff]);
 
   const fetchMetrics = useCallback(async (dateOverride) => {
     setError(null);
@@ -393,13 +618,17 @@ export default function App() {
 
   const dataset = useMemo(() => {
     if (!data) return null;
-    const customers = data.customers || {};
+    
+    // Aplicar filtro de data aos dados
+    const filteredData = filterDataByDate(data, selectedDateFilter);
+    
+    const customers = filteredData.customers || {};
     const filterCustomers = (predicate) =>
       Object.fromEntries(Object.entries(customers).filter(([label]) => predicate(label)));
     const isFam = (label) => label?.toLowerCase().endsWith("@familiaemviagem.com");
 
     if (viewMode === "agents") {
-      return data.agents;
+      return filteredData.agents;
     }
     if (viewMode === "customers") {
       return filterCustomers(isFam);
@@ -408,10 +637,10 @@ export default function App() {
       return filterCustomers(label => !isFam(label));
     }
     if (viewMode === "states") {
-      return data.states;
+      return filteredData.states;
     }
-    return data.agents;
-  }, [data, viewMode]);
+    return filteredData.agents;
+  }, [data, viewMode, selectedDateFilter, filterDataByDate]);
 
   const priorities = useMemo(() => {
     const set = new Set(["ALL"]);
@@ -597,6 +826,26 @@ export default function App() {
           ))}
         </div>
 
+        {/* Filtro de período */}
+        <div style={{marginBottom: 16}}>
+          <div style={{display: "flex", gap: 12, alignItems: "end"}}>
+            <div style={{minWidth: 200}}>
+              <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Filtrar por Período</label>
+              <DateFilter
+                selected={selectedDateFilter}
+                onChange={setSelectedDateFilter}
+              />
+            </div>
+            <div style={{fontSize: 12, color: "#6b7280", padding: "8px 0"}}>
+              {selectedDateFilter !== "all" && (
+                <span>
+                  📅 Mostrando dados desde {getDateCutoff(selectedDateFilter)}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+
         <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
           <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
             Número de Respostas por Agente ({totalResponses} respostas analisadas)
@@ -756,6 +1005,26 @@ export default function App() {
               {option.label}
             </button>
           ))}
+        </div>
+
+        {/* Filtro de período */}
+        <div style={{marginBottom: 16}}>
+          <div style={{display: "flex", gap: 12, alignItems: "end"}}>
+            <div style={{minWidth: 200}}>
+              <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Filtrar por Período</label>
+              <DateFilter
+                selected={selectedDateFilter}
+                onChange={setSelectedDateFilter}
+              />
+            </div>
+            <div style={{fontSize: 12, color: "#6b7280", padding: "8px 0"}}>
+              {selectedDateFilter !== "all" && (
+                <span>
+                  📅 Mostrando dados desde {getDateCutoff(selectedDateFilter)}
+                </span>
+              )}
+            </div>
+          </div>
         </div>
 
         <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
@@ -982,6 +1251,13 @@ export default function App() {
 
         {/* Filtros */}
         <div style={{display: "flex", gap: 16, marginBottom: 16, flexWrap: "wrap"}}>
+          <div style={{flex: 1, minWidth: 200}}>
+            <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Filtrar por Período</label>
+            <DateFilter
+              selected={selectedDateFilter}
+              onChange={setSelectedDateFilter}
+            />
+          </div>
           <div style={{flex: 1, minWidth: 200}}>
             <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Filtrar por Prioridade</label>
             <MultiSelect
@@ -1599,6 +1875,13 @@ export default function App() {
       {/* Controles */}
       <div style={{display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px,1fr))", gap: 12, marginBottom: 12}}>
         <div>
+          <label style={{fontSize: 12, color: "#555"}}>Período</label>
+          <DateFilter
+            selected={selectedDateFilter}
+            onChange={setSelectedDateFilter}
+          />
+        </div>
+        <div>
           <label style={{fontSize: 12, color: "#555"}}>Prioridade</label>
           <MultiSelect
             options={priorities}
@@ -1656,7 +1939,7 @@ export default function App() {
           <div style={{fontSize:28, fontWeight:600}}>{kpis.avgAll ? kpis.avgAll.toFixed(2) : "—"}</div>
         </div>
         <div style={{borderTop:"4px solid #10B981", border:"1px solid #eee", borderRadius:10, padding:16}}>
-          <div style={{fontSize:12, color:"#666"}}>Top eficiência (mín. 10)</div>
+          <div style={{fontSize:12, color:"#666"}}>Top eficiência (mín. {kpis.dynamicMinTickets})</div>
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
             {kpis.topRatio ? (
               kpis.topRatio.efficiency_ratio !== undefined ? 
@@ -1666,7 +1949,7 @@ export default function App() {
           </div>
         </div>
         <div style={{borderTop:"4px solid #005A8D", border:"1px solid #eee", borderRadius:10, padding:16}}>
-          <div style={{fontSize:12, color:"#666"}}>Top tempo (mín. 10)</div>
+          <div style={{fontSize:12, color:"#666"}}>Top tempo (mín. {kpis.dynamicMinTickets})</div>
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
             {kpis.topTime ? `${kpis.topTime.label} · ${kpis.topTime.avg_time_hours.toFixed(2)}h` : "—"}
           </div>
