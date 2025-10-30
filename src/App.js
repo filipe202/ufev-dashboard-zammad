@@ -406,6 +406,7 @@ export default function App() {
   const [selectedStates, setSelectedStates] = useState(["ALL"]);
   const [sortKey, setSortKey] = useState("tickets"); // "tickets" | "avg"
   const [selectedGroups, setSelectedGroups] = useState(["ALL"]);
+  const [selectedAgents, setSelectedAgents] = useState(["ALL"]); // Estado para filtro de agentes
   const [error, setError] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [selectedDateFilter, setSelectedDateFilter] = useState("all"); // Novo estado para filtro de data
