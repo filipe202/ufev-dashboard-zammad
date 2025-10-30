@@ -83,6 +83,85 @@ def record_entity(holder, day: str, priority_name: str, state_label: str, delta_
     update_bucket(state_holder["overall"], day, delta_hours)
     update_bucket(state_holder["priorities"][priority_name], day, delta_hours)
 
+def get_sla_target(priority_name: str, sla_targets: dict) -> dict:
+    """Determina o SLA aplicável baseado na prioridade ou configuração de SLA"""
+    # Se temos SLAs configurados, procurar o SLA que corresponde à prioridade
+    if sla_targets:
+        # Tentar encontrar SLA específico para a prioridade
+        for sla_id, sla_data in sla_targets.items():
+            sla_name = sla_data.get("name", "").upper()
+            if priority_name in sla_name:
+                # Usar solution_time se disponível, senão usar first_response_time
+                solution_time = sla_data.get("solution_time_hours")
+                first_response_time = sla_data.get("first_response_time_hours")
+                
+                target_hours = solution_time if solution_time else first_response_time
+                
+                return {
+                    "name": sla_data.get("name"),
+                    "solution_time_hours": target_hours,
+                    "first_response_time_hours": first_response_time,
+                    "update_time_hours": sla_data.get("update_time_hours"),
+                }
+        
+        # Se não encontrou SLA específico, usar o primeiro disponível
+        sla_id = next(iter(sla_targets))
+        sla_data = sla_targets[sla_id]
+        solution_time = sla_data.get("solution_time_hours")
+        first_response_time = sla_data.get("first_response_time_hours")
+        target_hours = solution_time if solution_time else first_response_time
+        
+        return {
+            "name": sla_data.get("name"),
+            "solution_time_hours": target_hours,
+            "first_response_time_hours": first_response_time,
+            "update_time_hours": sla_data.get("update_time_hours"),
+        }
+    
+    # Fallback para SLAs baseados em prioridade
+    priority_sla_hours = {
+        "P1": 4,    # 4 horas para crítico
+        "P2": 24,   # 24 horas para alto
+        "P3": 72,   # 72 horas para médio
+        "P4": 168,  # 7 dias para baixo
+    }
+    
+    target_hours = priority_sla_hours.get(priority_name, 48)  # 48h padrão
+    
+    return {
+        "name": f"SLA-{priority_name}",
+        "solution_time_hours": target_hours,
+        "first_response_time_hours": target_hours / 4,  # 25% do tempo para primeira resposta
+        "update_time_hours": target_hours / 2,    # 50% do tempo para atualização
+    }
+
+def check_sla_compliance(ticket: dict, delta_hours: float, priority_name: str, sla_targets: dict) -> dict:
+    """Verifica se o ticket cumpriu o SLA"""
+    sla_target = get_sla_target(priority_name, sla_targets)
+    
+    # Para análise de SLA, vamos usar o tempo de solução
+    solution_time_hours = sla_target.get("solution_time_hours", 48)
+    
+    # Se não temos tempo de solução ou delta_hours, não podemos avaliar SLA
+    if solution_time_hours is None or delta_hours is None:
+        sla_met = False
+        sla_breach_hours = None
+    else:
+        sla_met = delta_hours <= solution_time_hours
+        sla_breach_hours = round(delta_hours - solution_time_hours, 2) if not sla_met else 0
+    
+    return {
+        "ticket_id": ticket.get("id"),
+        "ticket_number": ticket.get("number"),
+        "title": ticket.get("title", "")[:50] + "..." if len(ticket.get("title", "")) > 50 else ticket.get("title", ""),
+        "priority": priority_name,
+        "sla_target_hours": solution_time_hours,
+        "actual_time_hours": round(delta_hours, 2) if delta_hours is not None else None,
+        "sla_met": sla_met,
+        "sla_breach_hours": sla_breach_hours,
+        "sla_name": sla_target.get("name", "SLA Padrão")
+    }
+
 S = requests.Session()
 S.headers.update({"Authorization": f"Token token={TOKEN}"})
 
@@ -259,6 +338,47 @@ def main():
     state_by_id = {s["id"]: s.get("name") or f"state_{s['id']}" for s in states}
     log(f"Estados mapeados: {state_by_id}")
 
+    # Buscar SLAs da API
+    try:
+        slas = paged_get("/slas")
+        log(f"SLAs encontrados: {len(slas)}")
+        sla_by_id = {}
+        sla_targets = {}
+        
+        for sla in slas:
+            sla_id = sla.get("id")
+            sla_name = sla.get("name") or f"sla_{sla_id}"
+            sla_by_id[sla_id] = sla_name
+            
+            # Extrair tempos de SLA (em minutos)
+            # A API do Zammad retorna os tempos dentro de objetos aninhados
+            first_response_time = sla.get("first_response_time")
+            update_time = sla.get("update_time")
+            solution_time = sla.get("solution_time")
+            
+            # Log para debug
+            log(f"SLA {sla_name} (ID {sla_id}): first_response_time={first_response_time}, update_time={update_time}, solution_time={solution_time}")
+            
+            sla_targets[sla_id] = {
+                "name": sla_name,
+                "first_response_time_minutes": first_response_time,
+                "update_time_minutes": update_time,
+                "solution_time_minutes": solution_time,
+                "first_response_time_hours": first_response_time / 60 if first_response_time and first_response_time > 0 else None,
+                "update_time_hours": update_time / 60 if update_time and update_time > 0 else None,
+                "solution_time_hours": solution_time / 60 if solution_time and solution_time > 0 else None,
+            }
+        
+        log(f"SLAs configurados: {sla_targets}")
+        
+    except requests.HTTPError as err:
+        if err.response is not None and err.response.status_code == 403:
+            log("WARN: sem permissão para /slas, usando SLAs padrão baseados em prioridades")
+            sla_by_id = {}
+            sla_targets = {}
+        else:
+            raise
+
     # Usar endpoint direto em vez de search para garantir todos os tickets
     tickets_raw = paged_get("/tickets")
     log(f"Total tickets encontrados: {len(tickets_raw)}")
@@ -331,6 +451,15 @@ def main():
         "priorities": defaultdict(make_bucket)
     })
     
+    # Análise de SLA por agente
+    agent_sla_compliance = defaultdict(lambda: {
+        "total_tickets": 0,
+        "sla_met": 0,
+        "sla_missed": 0,
+        "sla_compliance_rate": 0.0,
+        "tickets": []  # Lista detalhada dos tickets
+    })
+    
     # Análise temporal - carga de trabalho (criação)
     created_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
     created_by_hour = defaultdict(int)     # 0-23h
@@ -382,6 +511,17 @@ def main():
             record_entity(customer_bucket, day, priority_name, state_label, delta)
 
         record_entity(per_state[state_label], day, priority_name, state_label, delta)
+
+        # Análise de SLA para tickets fechados
+        if agent and delta is not None:
+            sla_compliance = check_sla_compliance(t, delta, priority_name, sla_targets)
+            agent_sla_compliance[agent]["total_tickets"] += 1
+            agent_sla_compliance[agent]["tickets"].append(sla_compliance)
+            
+            if sla_compliance["sla_met"]:
+                agent_sla_compliance[agent]["sla_met"] += 1
+            else:
+                agent_sla_compliance[agent]["sla_missed"] += 1
 
         closed_by_day[day] += 1
 
@@ -665,8 +805,15 @@ def main():
     # Ordenar por eficiência (menos interações = mais eficiente)
     agent_efficiency = dict(sorted(agent_efficiency.items(), key=lambda x: x[1]["avg_interactions_per_ticket"]))
     
+    # Calcular taxas de cumprimento de SLA
+    for agent_name, sla_data in agent_sla_compliance.items():
+        total = sla_data["total_tickets"]
+        if total > 0:
+            sla_data["sla_compliance_rate"] = round((sla_data["sla_met"] / total) * 100, 2)
+    
     log(f"Respostas estimadas: {dict(agent_responses)}")
     log(f"Eficiência por agente: {agent_efficiency}")
+    log(f"SLA compliance por agente: {dict(agent_sla_compliance)}")
 
     def format_bucket(bucket):
         avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
@@ -782,6 +929,19 @@ def main():
                 "priorities": sort_bucket_map(data["priorities"])
             }
             for agent, data in agent_state_changes.items()
+        },
+        "sla_analysis": {
+            "sla_targets": sla_targets,
+            "agent_sla_compliance": dict(agent_sla_compliance),
+            "summary": {
+                "total_tickets_analyzed": sum(data["total_tickets"] for data in agent_sla_compliance.values()),
+                "total_sla_met": sum(data["sla_met"] for data in agent_sla_compliance.values()),
+                "total_sla_missed": sum(data["sla_missed"] for data in agent_sla_compliance.values()),
+                "overall_compliance_rate": round(
+                    (sum(data["sla_met"] for data in agent_sla_compliance.values()) / 
+                     max(1, sum(data["total_tickets"] for data in agent_sla_compliance.values()))) * 100, 2
+                )
+            }
         }
     }
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)

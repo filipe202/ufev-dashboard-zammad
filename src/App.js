@@ -14,6 +14,7 @@ const useIsMobile = () => {
   
   return isMobile;
 };
+
 const COLORS = [
   "#82B1FF", // azul lavanda
   "#FFAB91", // pêssego suave
@@ -415,7 +416,7 @@ export default function App() {
   const getViewModeFromURL = () => {
     const hash = window.location.hash.slice(1); // Remove o #
     const baseHash = hash.split('?')[0];
-    const validModes = ["agents", "states", "responses", "efficiency", "workload", "state_changes"];
+    const validModes = ["agents", "states", "responses", "efficiency", "workload", "state_changes", "sla_compliance"];
     return validModes.includes(baseHash) ? baseHash : "agents";
   };
 
@@ -806,6 +807,7 @@ export default function App() {
             { value: "efficiency", label: "Eficiência por Agente" },
             { value: "state_changes", label: "Trocas de Estado" },
             { value: "workload", label: "Análise Temporal" },
+            { value: "sla_compliance", label: "SLA Compliance" },
           ].map(option => (
             <button
               key={option.value}
@@ -987,6 +989,7 @@ export default function App() {
             { value: "efficiency", label: "Eficiência por Agente" },
             { value: "state_changes", label: "Trocas de Estado" },
             { value: "workload", label: "Análise Temporal" },
+            { value: "sla_compliance", label: "SLA Compliance" },
           ].map(option => (
             <button
               key={option.value}
@@ -1525,6 +1528,7 @@ export default function App() {
             { value: "efficiency", label: "Eficiência por Agente" },
             { value: "state_changes", label: "Trocas de Estado" },
             { value: "workload", label: "Análise Temporal" },
+            { value: "sla_compliance", label: "SLA Compliance" },
           ].map(option => (
             <button
               key={option.value}
@@ -1815,6 +1819,260 @@ export default function App() {
     );
   }
 
+  // Renderizar SLA Compliance
+  if (viewMode === "sla_compliance" && data?.sla_analysis) {
+    const slaAnalysis = data.sla_analysis;
+    const agentCompliance = slaAnalysis.agent_sla_compliance || {};
+    const summary = slaAnalysis.summary || {};
+    
+    // Preparar dados para visualização
+    const complianceData = Object.entries(agentCompliance).map(([agent, data]) => ({
+      name: agent,
+      totalTickets: data.total_tickets,
+      slaMet: data.sla_met,
+      slaMissed: data.sla_missed,
+      complianceRate: data.sla_compliance_rate,
+      tickets: data.tickets || []
+    })).sort((a, b) => b.complianceRate - a.complianceRate);
+
+    return (
+      <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
+        <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
+          <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
+          <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
+            SLA Compliance por Agente
+          </h1>
+          <button 
+            onClick={() => {
+              setIsAuthenticated(false);
+              sessionStorage.removeItem('ufev_dashboard_auth');
+            }}
+            style={{
+              padding: "8px 16px",
+              backgroundColor: "#dc3545",
+              color: "white",
+              border: "none",
+              borderRadius: "4px",
+              cursor: "pointer",
+              fontSize: "14px"
+            }}
+          >
+            Logout
+          </button>
+        </div>
+        
+        <div style={{display:"flex", gap:8, marginBottom:16, flexWrap:"wrap"}}>
+          {[
+            { value: "agents", label: "Por agentes" },
+            { value: "states", label: "Por estados" },
+            { value: "responses", label: "Respostas por Agente" },
+            { value: "efficiency", label: "Eficiência por Agente" },
+            { value: "state_changes", label: "Trocas de Estado" },
+            { value: "workload", label: "Análise Temporal" },
+            { value: "sla_compliance", label: "SLA Compliance" },
+          ].map(option => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => updateViewMode(option.value)}
+              style={{
+                padding:"8px 16px",
+                borderRadius:999,
+                border:"1px solid",
+                borderColor: viewMode === option.value ? "#005A8D" : "#e2e8f0",
+                backgroundColor: viewMode === option.value ? "#005A8D" : "white",
+                color: viewMode === option.value ? "white" : "#64748b",
+                cursor:"pointer"
+              }}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Filtro de período */}
+        <div style={{marginBottom: 16}}>
+          <div style={{display: "flex", gap: 12, alignItems: "end"}}>
+            <div style={{minWidth: 200}}>
+              <label style={{fontSize: 12, color: "#555", display: "block", marginBottom: 4}}>Filtrar por Período</label>
+              <DateFilter
+                selected={selectedDateFilter}
+                onChange={setSelectedDateFilter}
+              />
+            </div>
+            <div style={{fontSize: 12, color: "#6b7280", padding: "8px 0"}}>
+              {selectedDateFilter !== "all" && (
+                <span>
+                  📅 Mostrando dados desde {getDateCutoff(selectedDateFilter)}
+                </span>
+              )}
+            </div>
+          </div>
+        </div>
+
+        {/* KPIs de SLA */}
+        <div style={{display:"grid", gridTemplateColumns: isMobile ? "repeat(2, minmax(0,1fr))" : "repeat(4, minmax(0,1fr))", gap:12, margin:"12px 0"}}>
+          <div style={{borderTop:"4px solid #0096D6", border:"1px solid #eee", borderRadius:10, padding:16}}>
+            <div style={{fontSize:12, color:"#666"}}>Tickets Analisados</div>
+            <div style={{fontSize:28, fontWeight:600}}>{summary.total_tickets_analyzed || 0}</div>
+          </div>
+          <div style={{borderTop:"4px solid #10B981", border:"1px solid #eee", borderRadius:10, padding:16}}>
+            <div style={{fontSize:12, color:"#666"}}>SLA Cumpridos</div>
+            <div style={{fontSize:28, fontWeight:600}}>{summary.total_sla_met || 0}</div>
+          </div>
+          <div style={{borderTop:"4px solid #EF4444", border:"1px solid #eee", borderRadius:10, padding:16}}>
+            <div style={{fontSize:12, color:"#666"}}>SLA Violados</div>
+            <div style={{fontSize:28, fontWeight:600}}>{summary.total_sla_missed || 0}</div>
+          </div>
+          <div style={{borderTop:"4px solid #F59E0B", border:"1px solid #eee", borderRadius:10, padding:16}}>
+            <div style={{fontSize:12, color:"#666"}}>Taxa Geral de Cumprimento</div>
+            <div style={{fontSize:28, fontWeight:600}}>{summary.overall_compliance_rate || 0}%</div>
+          </div>
+        </div>
+
+        {/* Gráfico de Compliance por Agente */}
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)", marginBottom: 24}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
+            Taxa de Cumprimento de SLA por Agente
+          </h3>
+          <div style={{height: 400, overflowY: "auto"}}>
+            {complianceData.map((agent, index) => {
+              const maxRate = Math.max(...complianceData.map(a => a.complianceRate));
+              const percentage = maxRate > 0 ? (agent.complianceRate / maxRate) * 100 : 0;
+              
+              // Cor baseada na taxa de compliance
+              const getBarColor = (rate) => {
+                if (rate >= 95) return "#10B981"; // Verde
+                if (rate >= 85) return "#F59E0B"; // Amarelo
+                if (rate >= 70) return "#FB923C"; // Laranja
+                return "#EF4444"; // Vermelho
+              };
+              
+              return (
+                <div key={agent.name} style={{
+                  display: "flex",
+                  alignItems: "center",
+                  marginBottom: 12,
+                  gap: 12
+                }}>
+                  <div style={{
+                    width: isMobile ? 120 : 150,
+                    fontSize: 12,
+                    fontWeight: 500,
+                    color: "#374151",
+                    textAlign: "right"
+                  }}>
+                    {agent.name}
+                  </div>
+                  <div style={{
+                    flex: 1,
+                    height: 24,
+                    backgroundColor: "#f3f4f6",
+                    borderRadius: 12,
+                    overflow: "hidden",
+                    position: "relative",
+                    minWidth: 200
+                  }}>
+                    <div style={{
+                      width: `${percentage}%`,
+                      height: "100%",
+                      backgroundColor: getBarColor(agent.complianceRate),
+                      borderRadius: 12,
+                      transition: "width 0.3s ease"
+                    }} />
+                    <div style={{
+                      position: "absolute",
+                      left: 8,
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      fontSize: 11,
+                      fontWeight: 600,
+                      color: "#374151"
+                    }}>
+                      {agent.complianceRate}% ({agent.slaMet}/{agent.totalTickets})
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Tabela Detalhada */}
+        <div style={{backgroundColor: "white", padding: 20, borderRadius: 8, boxShadow: "0 1px 3px rgba(0,0,0,0.1)"}}>
+          <h3 style={{margin: "0 0 16px 0", color: "#1f2937"}}>
+            Detalhe de Tickets com Violação de SLA
+          </h3>
+          <div style={{overflowX: "auto"}}>
+            <table style={{width: "100%", borderCollapse: "collapse", fontSize: 12}}>
+              <thead>
+                <tr style={{backgroundColor: "#f8fafc"}}>
+                  <th style={{padding: "8px", textAlign: "left", borderBottom: "1px solid #e2e8f0"}}>Agente</th>
+                  <th style={{padding: "8px", textAlign: "left", borderBottom: "1px solid #e2e8f0"}}>Ticket</th>
+                  <th style={{padding: "8px", textAlign: "left", borderBottom: "1px solid #e2e8f0"}}>Prioridade</th>
+                  <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>SLA (h)</th>
+                  <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Real (h)</th>
+                  <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Violação (h)</th>
+                  <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                {complianceData.flatMap(agent => 
+                  agent.tickets
+                    .filter(ticket => !ticket.sla_met)
+                    .slice(0, 20) // Limitar para não sobrecarregar
+                    .map((ticket, idx) => (
+                      <tr key={`${agent.name}-${ticket.ticket_id}-${idx}`} style={{borderBottom: "1px solid #f1f5f9"}}>
+                        <td style={{padding: "8px"}}>{agent.name}</td>
+                        <td style={{padding: "8px"}}>
+                          <div style={{fontSize: 11, color: "#6b7280"}}>#{ticket.ticket_number}</div>
+                          <div style={{fontWeight: 500}}>{ticket.title}</div>
+                        </td>
+                        <td style={{padding: "8px", textAlign: "center"}}>
+                          <span style={{
+                            padding: "2px 6px",
+                            borderRadius: 4,
+                            fontSize: 10,
+                            fontWeight: 600,
+                            backgroundColor: ticket.priority === "P1" ? "#FEE2E2" : ticket.priority === "P2" ? "#FEF3C7" : "#DBEAFE",
+                            color: ticket.priority === "P1" ? "#991B1B" : ticket.priority === "P2" ? "#92400E" : "#1E40AF"
+                          }}>
+                            {ticket.priority}
+                          </span>
+                        </td>
+                        <td style={{padding: "8px", textAlign: "center"}}>{ticket.sla_target_hours}</td>
+                        <td style={{padding: "8px", textAlign: "center"}}>{ticket.actual_time_hours}</td>
+                        <td style={{padding: "8px", textAlign: "center", color: "#EF4444", fontWeight: 600}}>
+                          +{ticket.sla_breach_hours}
+                        </td>
+                        <td style={{padding: "8px", textAlign: "center"}}>
+                          <span style={{
+                            padding: "2px 6px",
+                            borderRadius: 4,
+                            fontSize: 10,
+                            fontWeight: 600,
+                            backgroundColor: "#FEE2E2",
+                            color: "#991B1B"
+                          }}>
+                            Violação
+                          </span>
+                        </td>
+                      </tr>
+                    ))
+                )}
+              </tbody>
+            </table>
+            {complianceData.flatMap(agent => agent.tickets.filter(ticket => !ticket.sla_met)).length === 0 && (
+              <div style={{textAlign: "center", padding: "32px", color: "#6b7280"}}>
+                🎉 Não há violações de SLA no período analisado!
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
 <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16, flexWrap: "wrap"}}>
@@ -1852,6 +2110,7 @@ export default function App() {
           { value: "efficiency", label: "Eficiência por Agente" },
           { value: "state_changes", label: "Trocas de Estado" },
           { value: "workload", label: "Análise Temporal" },
+          { value: "sla_compliance", label: "SLA Compliance" },
         ].map(option => (
           <button
             key={option.value}
