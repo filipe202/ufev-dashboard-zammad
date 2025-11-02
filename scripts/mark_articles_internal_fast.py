@@ -70,29 +70,44 @@ def get_all_tickets_and_filter():
     """Buscar todos os tickets e filtrar apenas os abertos"""
     log("Buscando todos os tickets para filtrar apenas os abertos...")
     
-    # Usar a mesma função do script original
+    # Buscar TODOS os tickets com paginação melhorada
     out = []
     page = 1
     per_page = 100
+    max_pages = 100  # Limite de segurança para evitar loop infinito
     
-    while True:
+    log(f"Iniciando busca de tickets com per_page={per_page}")
+    
+    while page <= max_pages:
         params = {"per_page": per_page, "page": page}
         url = f"{BASE_URL}/api/v1/tickets"
-        log(f"GET {url} params={params}")
-        r = S.get(url, params=params, timeout=60)
-        log(f"<- {r.status_code} {url}")
-        r.raise_for_status()
-        data = r.json()
+        log(f"Buscando página {page}...")
         
-        if not data:
-            break
+        try:
+            r = S.get(url, params=params, timeout=60)
+            log(f"Status: {r.status_code}")
+            r.raise_for_status()
+            data = r.json()
             
-        out.extend(data)
-        log(f"Página {page}: {len(data)} tickets, total acumulado: {len(out)}")
-        
-        if len(data) < per_page:
+            if not data or len(data) == 0:
+                log(f"Página {page} vazia - fim da paginação")
+                break
+                
+            out.extend(data)
+            log(f"Página {page}: {len(data)} tickets | Total acumulado: {len(out)}")
+            
+            # Se retornou menos que per_page, chegamos ao fim
+            if len(data) < per_page:
+                log(f"Última página encontrada (retornou {len(data)} < {per_page})")
+                break
+                
+            page += 1
+            
+        except Exception as e:
+            log(f"Erro na página {page}: {e}")
             break
-        page += 1
+    
+    log(f"Busca concluída: {len(out)} tickets totais em {page-1} páginas")
     
     # Agora filtrar apenas tickets abertos
     log(f"Filtrando tickets abertos de {len(out)} tickets totais...")
@@ -111,22 +126,37 @@ def get_all_tickets_and_filter():
         log(f"Erro ao buscar estados: {e}")
         state_by_id = {}
     
-    # Estados considerados abertos
-    open_states = {"new", "open", "pending reminder", "pending close"}
-    
-    open_tickets = []
+    # Analisar todos os estados encontrados
+    states_found = {}
     for ticket in out:
         state_id = ticket.get("state_id")
         if state_id and state_id in state_by_id:
-            state_name = state_by_id[state_id]
-            if state_name in open_states:
+            state_name = state_by_id[state_id].lower()
+            states_found[state_name] = states_found.get(state_name, 0) + 1
+    
+    log(f"Estados encontrados nos tickets: {states_found}")
+    
+    # Estados considerados fechados (mais restritivo - só excluir os claramente fechados)
+    closed_states = {"closed", "merged", "removed"}
+    
+    open_tickets = []
+    closed_tickets = []
+    
+    for ticket in out:
+        state_id = ticket.get("state_id")
+        if state_id and state_id in state_by_id:
+            state_name = state_by_id[state_id].lower()
+            if state_name in closed_states:
+                closed_tickets.append(ticket)
+            else:
+                # Incluir todos os outros estados como "abertos"
                 open_tickets.append(ticket)
         else:
             # Se não conseguimos determinar o estado, incluir por segurança
             log(f"Ticket {ticket.get('id')} sem estado conhecido, incluindo por segurança")
             open_tickets.append(ticket)
     
-    log(f"Tickets abertos encontrados: {len(open_tickets)} de {len(out)} totais")
+    log(f"Tickets abertos: {len(open_tickets)} | Tickets fechados: {len(closed_tickets)} | Total: {len(out)}")
     return open_tickets
 
 def extract_emails_from_text(text):
