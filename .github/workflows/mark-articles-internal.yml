@@ -1,9 +1,9 @@
 name: Mark Zammad Articles as Internal
 
 on:
-  # Execução automática a cada hora
+  # Execução automática a cada 5 minutos
   schedule:
-    - cron: '0 * * * *'  # A cada hora no minuto 0
+    - cron: '*/5 * * * *'  # A cada 5 minutos
   
   # Permite execução manual
   workflow_dispatch:
@@ -20,6 +20,8 @@ on:
 jobs:
   mark-articles:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
     - name: Checkout repository
