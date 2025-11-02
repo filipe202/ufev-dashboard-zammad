@@ -35,7 +35,21 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Run mark articles script (frequent)
+      - name: Create logs directory
+        run: mkdir -p logs
+
+      - name: Run mark articles script (dry-run check)
+        if: github.event.inputs.dry_run == 'true'
+        env:
+          ZAMMAD_TOKEN: ${{ secrets.ZAMMAD_TOKEN }}
+          ZAMMAD_BASE_URL: ${{ secrets.ZAMMAD_BASE_URL }}
+          ZAMMAD_VERIFY_SSL: "false"
+        run: |
+          echo "🧪 Execução frequente em modo teste (dry-run)..."
+          python scripts/mark_articles_internal_fast.py --dry-run
+
+      - name: Run mark articles script (production)
+        if: github.event.inputs.dry_run != 'true'
         env:
           ZAMMAD_TOKEN: ${{ secrets.ZAMMAD_TOKEN }}
           ZAMMAD_BASE_URL: ${{ secrets.ZAMMAD_BASE_URL }}
@@ -44,7 +58,18 @@ jobs:
           echo "⚡ Execução frequente (horário comercial)..."
           python scripts/mark_articles_internal_fast.py
 
+      - name: Upload logs as artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: execution-logs-frequent-${{ github.run_number }}
+          path: |
+            logs/
+            scripts/processed_articles_cache.json
+          retention-days: 30
+
       - name: Commit cache updates
+        if: github.event.inputs.dry_run != 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
