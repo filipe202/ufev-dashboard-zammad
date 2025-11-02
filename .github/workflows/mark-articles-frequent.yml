@@ -7,6 +7,15 @@ on:
 
   # Permite execução manual
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Executar em modo teste (dry-run)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+        - 'true'
+        - 'false'
 
 jobs:
   mark-articles-frequent:
