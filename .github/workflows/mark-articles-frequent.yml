@@ -1,0 +1,50 @@
+name: Mark Articles - Frequent (Every 30min)
+
+on:
+  # Execução a cada 30 minutos durante horário comercial (8h-18h UTC+1 = 7h-17h UTC)
+  schedule:
+    - cron: '*/30 7-17 * * 1-5'  # Seg-Sex, 7h-17h UTC, a cada 30min
+  
+  # Permite execução manual
+  workflow_dispatch:
+
+jobs:
+  mark-articles-frequent:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+    
+    - name: Run mark articles script (frequent)
+      env:
+        ZAMMAD_TOKEN: ${{ secrets.ZAMMAD_TOKEN }}
+        ZAMMAD_BASE_URL: ${{ secrets.ZAMMAD_BASE_URL }}
+        ZAMMAD_VERIFY_SSL: 'false'
+      run: |
+        echo "⚡ Execução frequente (horário comercial)..."
+        python scripts/mark_articles_internal_fast.py
+    
+    - name: Commit cache updates
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action Bot"
+        
+        if [ -f "scripts/processed_articles_cache.json" ]; then
+          git add scripts/processed_articles_cache.json
+          
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 Cache update - frequent run [skip ci]"
+            git push
+          fi
+        fi

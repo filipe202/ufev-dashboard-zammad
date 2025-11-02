@@ -1,0 +1,88 @@
+name: Mark Zammad Articles as Internal
+
+on:
+  # Execução automática a cada hora
+  schedule:
+    - cron: '0 * * * *'  # A cada hora no minuto 0
+  
+  # Permite execução manual
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Executar em modo teste (dry-run)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+        - 'true'
+        - 'false'
+
+jobs:
+  mark-articles:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install requests
+    
+    - name: Create logs directory
+      run: mkdir -p logs
+    
+    - name: Run mark articles script (dry-run check)
+      if: github.event.inputs.dry_run == 'true'
+      env:
+        ZAMMAD_TOKEN: ${{ secrets.ZAMMAD_TOKEN }}
+        ZAMMAD_BASE_URL: ${{ secrets.ZAMMAD_BASE_URL }}
+        ZAMMAD_VERIFY_SSL: 'false'
+      run: |
+        echo "🧪 Executando em modo teste (dry-run)..."
+        python scripts/mark_articles_internal_fast.py --dry-run
+    
+    - name: Run mark articles script (production)
+      if: github.event.inputs.dry_run != 'true'
+      env:
+        ZAMMAD_TOKEN: ${{ secrets.ZAMMAD_TOKEN }}
+        ZAMMAD_BASE_URL: ${{ secrets.ZAMMAD_BASE_URL }}
+        ZAMMAD_VERIFY_SSL: 'false'
+      run: |
+        echo "🚀 Executando em modo produção..."
+        python scripts/mark_articles_internal_fast.py
+    
+    - name: Upload logs as artifact
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: execution-logs-${{ github.run_number }}
+        path: |
+          logs/
+          scripts/processed_articles_cache.json
+        retention-days: 30
+    
+    - name: Commit and push cache updates
+      if: github.event.inputs.dry_run != 'true'
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Adicionar cache se foi modificado
+        if [ -f "scripts/processed_articles_cache.json" ]; then
+          git add scripts/processed_articles_cache.json
+          
+          # Só fazer commit se há mudanças
+          if ! git diff --staged --quiet; then
+            git commit -m "🤖 Update processed articles cache [skip ci]"
+            git push
+          else
+            echo "ℹ️ Nenhuma mudança no cache para commitar"
+          fi
+        fi
