@@ -2234,42 +2234,26 @@ export default function App() {
   if (viewMode === "distribution" && data?.agents) {
     const agents = data.agents;
     
-    // Aplicar filtros de prioridade e estado
+    // Aplicar filtro de prioridade (estado sempre "Closed" pois só tickets fechados têm tempo de resolução)
     const useAllPriorities = !selectedPriorities?.length || selectedPriorities.includes("ALL");
-    const useAllStates = !selectedStates?.length || selectedStates.includes("ALL");
     
-    // Função para obter distribuição filtrada
+    // Função para obter distribuição filtrada (apenas tickets fechados)
     const getFilteredDistribution = (agentData) => {
+      // Usar dados do estado "Closed" pois só tickets fechados têm distribuição de tempo
+      const closedData = agentData.states?.["Closed"];
+      if (!closedData) return {};
+      
+      if (useAllPriorities) {
+        // Sem filtro de prioridade - usar overall do estado Closed
+        return closedData.overall?.time_distribution || {};
+      }
+      
+      // Filtrar por prioridade dentro do estado Closed
       let distributions = [];
-      
-      if (useAllStates && useAllPriorities) {
-        // Sem filtros - usar overall
-        return agentData.overall?.time_distribution || {};
-      }
-      
-      if (useAllStates && !useAllPriorities) {
-        // Filtrar só por prioridade
-        selectedPriorities.forEach(priority => {
-          const dist = agentData.priorities?.[priority]?.time_distribution;
-          if (dist) distributions.push(dist);
-        });
-      } else {
-        // Filtrar por estado (e opcionalmente prioridade)
-        selectedStates.forEach(state => {
-          const stateData = agentData.states?.[state];
-          if (!stateData) return;
-          
-          if (useAllPriorities) {
-            const dist = stateData.overall?.time_distribution;
-            if (dist) distributions.push(dist);
-          } else {
-            selectedPriorities.forEach(priority => {
-              const dist = stateData.priorities?.[priority]?.time_distribution;
-              if (dist) distributions.push(dist);
-            });
-          }
-        });
-      }
+      selectedPriorities.forEach(priority => {
+        const dist = closedData.priorities?.[priority]?.time_distribution;
+        if (dist) distributions.push(dist);
+      });
       
       // Merge das distribuições
       const merged = {};
@@ -2363,9 +2347,9 @@ export default function App() {
           ))}
         </div>
 
-        {/* Filtros de Prioridade e Estado */}
+        {/* Filtro de Prioridade */}
         <div style={{backgroundColor:"#f8fafc", padding:16, borderRadius:8, marginBottom:16}}>
-          <div style={{display:"flex", gap:16, flexWrap:"wrap", alignItems:"center"}}>
+          <div style={{display:"flex", gap:16, flexWrap:"wrap", alignItems:"flex-start"}}>
             <div style={{flex:"1", minWidth:200}}>
               <label style={{display:"block", fontSize:12, fontWeight:600, color:"#374151", marginBottom:8}}>
                 Prioridade
@@ -2377,26 +2361,23 @@ export default function App() {
                 placeholder="Todas as prioridades"
               />
             </div>
-            <div style={{flex:"1", minWidth:200}}>
-              <label style={{display:"block", fontSize:12, fontWeight:600, color:"#374151", marginBottom:8}}>
-                Estado
-              </label>
-              <MultiSelect
-                options={stateOptions}
-                selected={selectedStates}
-                onChange={setSelectedStates}
-                placeholder="Todos os estados"
-              />
+            <div style={{flex:"1", minWidth:200, padding:"8px 12px", backgroundColor:"#e0f2fe", borderRadius:6, border:"1px solid #bae6fd"}}>
+              <div style={{fontSize:12, fontWeight:600, color:"#0369a1", marginBottom:4}}>
+                ℹ️ Apenas tickets fechados
+              </div>
+              <div style={{fontSize:11, color:"#0c4a6e"}}>
+                Esta análise mostra apenas tickets fechados, pois só estes têm tempo de resolução calculado.
+              </div>
             </div>
           </div>
         </div>
 
         <div style={{backgroundColor:"white", padding:20, borderRadius:8, boxShadow:"0 1px 3px rgba(0,0,0,0.1)", marginBottom:24}}>
           <h3 style={{margin:"0 0 16px 0", color:"#1f2937"}}>
-            Matriz: Agente × Intervalo de Resolução
+            Matriz: Agente × Intervalo de Resolução (Tickets Fechados)
           </h3>
           <p style={{color:"#666", fontSize:14, marginBottom:16}}>
-            Mostra quantos tickets cada agente resolveu em cada intervalo de tempo. Cores mais escuras = mais tickets.
+            Mostra quantos tickets fechados cada agente resolveu em cada intervalo de tempo. Cores mais escuras = mais tickets.
           </p>
           
           <div style={{overflowX:"auto"}}>
