@@ -7,6 +7,7 @@ env/
 __pycache__/
 *.pyc
 *.pyo
+*.bat
 
 # dependencies
 node_modules/
@@ -40,3 +41,5 @@ yarn-error.log*
 
 # OS
 Thumbs.db
+scripts/password_reset_report.json
+scripts/password_reset_report.csv
