@@ -52,6 +52,7 @@ def make_bucket():
         "total_time": 0.0,
         "time_count": 0,
         "count": 0,
+        "time_values": [],  # Lista de tempos individuais para calcular moda
     }
 
 
@@ -78,6 +79,7 @@ def update_bucket(bucket, day: str, delta_hours: float | None):
         bucket["time_count"] += 1
         bucket["time_per_day"][day] += delta_hours
         bucket["time_count_per_day"][day] += 1
+        bucket["time_values"].append(delta_hours)
 
 
 def record_entity(holder, day: str, priority_name: str, state_label: str, delta_hours: float | None):
@@ -858,10 +860,36 @@ def main():
     log(f"Eficiência por agente: {agent_efficiency}")
     log(f"SLA compliance por agente: {dict(agent_sla_compliance)}")
 
+    def calculate_mode(time_values):
+        """Calcula a moda (duração mais frequente) agrupando em intervalos de 6 horas"""
+        if not time_values:
+            return None
+        
+        # Agrupar tempos em bins de 6 horas (0-6h, 6-12h, 12-18h, etc.)
+        bin_size = 6
+        bins = defaultdict(int)
+        
+        for time_val in time_values:
+            bin_index = int(time_val // bin_size)
+            bins[bin_index] += 1
+        
+        # Encontrar o bin com mais ocorrências
+        if not bins:
+            return None
+        
+        most_common_bin = max(bins.items(), key=lambda x: x[1])[0]
+        
+        # Retornar o ponto médio do bin mais comum
+        mode_center = (most_common_bin * bin_size) + (bin_size / 2)
+        return round(mode_center, 2)
+
     def format_bucket(bucket):
         avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
+        mode_time = calculate_mode(bucket.get("time_values", []))
+        
         return {
             "avg_time_hours": round(avg_time, 2) if avg_time is not None else None,
+            "mode_time_hours": mode_time,
             "tickets_count": bucket["count"],
             "tickets_per_day": dict(sorted(bucket["tickets_per_day"].items())),
             "time_per_day": dict(sorted(bucket["time_per_day"].items())),

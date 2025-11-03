@@ -542,7 +542,10 @@ export default function App() {
         tickets_count: filteredCount,
         time_per_day: filteredTimePerDay,
         time_count_per_day: filteredTimeCountPerDay,
-        avg_time_hours: newAvgTime !== null ? parseFloat(newAvgTime.toFixed(2)) : null
+        avg_time_hours: newAvgTime !== null ? parseFloat(newAvgTime.toFixed(2)) : null,
+        // Nota: mode_time_hours não pode ser recalculada com filtro de data
+        // pois requer valores individuais de tempo que não estão disponíveis
+        mode_time_hours: bucket.mode_time_hours
       };
     };
 
@@ -2318,7 +2321,7 @@ export default function App() {
       {error && <div style={{color:"#b91c1c", marginBottom:12}}>Erro a carregar JSON: {error}</div>}
 
       {/* KPIs */}
-      <div style={{display:"grid", gridTemplateColumns: isMobile ? "repeat(2, minmax(0,1fr))" : "repeat(4, minmax(0,1fr))", gap:12, margin:"12px 0"}}>
+      <div style={{display:"grid", gridTemplateColumns: isMobile ? "repeat(2, minmax(0,1fr))" : "repeat(5, minmax(0,1fr))", gap:12, margin:"12px 0"}}>
         <div style={{borderTop:"4px solid #0096D6", border:"1px solid #eee", borderRadius:10, padding:16}}>
           <div style={{fontSize:12, color:"#666"}}>Tickets (total)</div>
           <div style={{fontSize:28, fontWeight:600}}>{kpis.totalTickets || 0}</div>
@@ -2341,6 +2344,12 @@ export default function App() {
           <div style={{fontSize:12, color:"#666"}}>Top tempo (mín. {kpis.dynamicMinTickets})</div>
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
             {kpis.topTime ? `${kpis.topTime.label} · ${kpis.topTime.avg_time_hours.toFixed(2)}h` : "—"}
+          </div>
+        </div>
+        <div style={{borderTop:"4px solid #8B5CF6", border:"1px solid #eee", borderRadius:10, padding:16}}>
+          <div style={{fontSize:12, color:"#666"}}>Duração mais frequente</div>
+          <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
+            {kpis.topTime?.mode_time_hours ? `${kpis.topTime.mode_time_hours.toFixed(1)}h` : "—"}
           </div>
         </div>
       </div>
@@ -2466,6 +2475,7 @@ export default function App() {
               <th style={{textAlign:"left", padding:10}}>{groupLabel}</th>
               <th style={{textAlign:"right", padding:10}}># Tickets</th>
               <th style={{textAlign:"right", padding:10}}>Média (h)</th>
+              <th style={{textAlign:"right", padding:10}}>Mais freq. (h)</th>
               {days.map(d => (
                 <th key={d} style={{textAlign:"center", padding:10, whiteSpace:"nowrap"}}>{d}</th>
               ))}
@@ -2477,6 +2487,9 @@ export default function App() {
                 <td style={{padding:10, fontWeight:600}}>{r.label}</td>
                 <td style={{padding:10, textAlign:"right"}}>{r.tickets_count ?? 0}</td>
                 <td style={{padding:10, textAlign:"right"}}>{typeof r.avg_time_hours === "number" ? r.avg_time_hours.toFixed(2) : "—"}</td>
+                <td style={{padding:10, textAlign:"right", color:"#8B5CF6", fontWeight:500}}>
+                  {typeof r.mode_time_hours === "number" ? r.mode_time_hours.toFixed(1) : "—"}
+                </td>
                 {days.map(d => (
                   <td key={d} style={{padding:10, textAlign:"center"}}>{r.perDay?.[d] ?? 0}</td>
                 ))}
@@ -2489,6 +2502,7 @@ export default function App() {
               <td style={{padding:10, textAlign:"right", fontWeight:700, color:"#374151"}}>
                 {rows.reduce((sum, r) => sum + (r.tickets_count ?? 0), 0)}
               </td>
+              <td style={{padding:10, textAlign:"right", color:"#6b7280"}}>—</td>
               <td style={{padding:10, textAlign:"right", color:"#6b7280"}}>—</td>
               {days.map(d => {
                 const dayTotal = rows.reduce((sum, r) => sum + (r.perDay?.[d] ?? 0), 0);
