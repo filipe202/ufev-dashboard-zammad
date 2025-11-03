@@ -861,11 +861,11 @@ def main():
     log(f"SLA compliance por agente: {dict(agent_sla_compliance)}")
 
     def calculate_mode(time_values):
-        """Calcula a moda (duração mais frequente) agrupando em intervalos de 6 horas"""
+        """Calcula a moda (duração mais frequente) agrupando em intervalos de 2 horas"""
         if not time_values:
-            return None
+            return None, None
         
-        # Agrupar tempos em bins de 6 horas (0-6h, 6-12h, 12-18h, etc.)
+        # Agrupar tempos em bins de 2 horas (0-2h, 2-4h, 4-6h, etc.)
         bin_size = 2
         bins = defaultdict(int)
         
@@ -875,21 +875,22 @@ def main():
         
         # Encontrar o bin com mais ocorrências
         if not bins:
-            return None
+            return None, None
         
-        most_common_bin = max(bins.items(), key=lambda x: x[1])[0]
+        most_common_bin, frequency = max(bins.items(), key=lambda x: x[1])
         
-        # Retornar o ponto médio do bin mais comum
+        # Retornar o ponto médio do bin mais comum e a frequência
         mode_center = (most_common_bin * bin_size) + (bin_size / 2)
-        return round(mode_center, 2)
+        return round(mode_center, 2), frequency
 
     def format_bucket(bucket):
         avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
-        mode_time = calculate_mode(bucket.get("time_values", []))
+        mode_time, mode_frequency = calculate_mode(bucket.get("time_values", []))
         
         return {
             "avg_time_hours": round(avg_time, 2) if avg_time is not None else None,
             "mode_time_hours": mode_time,
+            "mode_frequency": mode_frequency,
             "tickets_count": bucket["count"],
             "tickets_per_day": dict(sorted(bucket["tickets_per_day"].items())),
             "time_per_day": dict(sorted(bucket["time_per_day"].items())),

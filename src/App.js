@@ -30,7 +30,7 @@ const COLORS = [
 
 
 function emptyBucket() {
-  return { avg_time_hours: null, mode_time_hours: null, tickets_count: 0, tickets_per_day: {} };
+  return { avg_time_hours: null, mode_time_hours: null, mode_frequency: null, tickets_count: 0, tickets_per_day: {} };
 }
 
 function cloneBucket(bucket) {
@@ -38,6 +38,7 @@ function cloneBucket(bucket) {
   return {
     avg_time_hours: typeof bucket.avg_time_hours === "number" ? bucket.avg_time_hours : null,
     mode_time_hours: typeof bucket.mode_time_hours === "number" ? bucket.mode_time_hours : null,
+    mode_frequency: typeof bucket.mode_frequency === "number" ? bucket.mode_frequency : null,
     tickets_count: bucket.tickets_count ?? 0,
     tickets_per_day: { ...(bucket.tickets_per_day || {}) },
   };
@@ -49,6 +50,7 @@ function mergeBuckets(buckets) {
   let weightedHours = 0;
   let weightedMode = 0;
   let modeCount = 0;
+  let totalModeFrequency = 0;
 
   buckets.forEach((bucket) => {
     if (!bucket) return;
@@ -61,6 +63,9 @@ function mergeBuckets(buckets) {
       weightedMode += bucket.mode_time_hours * ticketsCount;
       modeCount += ticketsCount;
     }
+    if (typeof bucket.mode_frequency === "number") {
+      totalModeFrequency += bucket.mode_frequency;
+    }
     Object.entries(bucket.tickets_per_day || {}).forEach(([day, count]) => {
       accPerDay[day] = (accPerDay[day] || 0) + (count || 0);
     });
@@ -68,9 +73,11 @@ function mergeBuckets(buckets) {
 
   const avg = totalTickets > 0 ? weightedHours / totalTickets : null;
   const mode = modeCount > 0 ? weightedMode / modeCount : null;
+  const modeFreq = totalModeFrequency > 0 ? totalModeFrequency : null;
   return {
     avg_time_hours: avg,
     mode_time_hours: mode,
+    mode_frequency: modeFreq,
     tickets_count: totalTickets,
     tickets_per_day: accPerDay,
   };
@@ -126,6 +133,7 @@ function computeRowsFromGroups(groupsObj, selectedPriorities, selectedStates) {
       label,
       avg_time_hours: bucket.avg_time_hours ?? null,
       mode_time_hours: bucket.mode_time_hours ?? null,
+      mode_frequency: bucket.mode_frequency ?? null,
       tickets_count: bucket.tickets_count ?? 0,
       perDay: bucket.tickets_per_day || {}
     };
@@ -2367,6 +2375,11 @@ export default function App() {
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
             {kpis.topMode ? `${kpis.topMode.label} · ${kpis.topMode.mode_time_hours.toFixed(1)}h` : "—"}
           </div>
+          {kpis.topMode && kpis.topMode.mode_frequency && (
+            <div style={{fontSize:11, color:"#8B5CF6", marginTop:4}}>
+              {kpis.topMode.mode_frequency} tickets neste intervalo
+            </div>
+          )}
         </div>
       </div>
 
@@ -2504,7 +2517,14 @@ export default function App() {
                 <td style={{padding:10, textAlign:"right"}}>{r.tickets_count ?? 0}</td>
                 <td style={{padding:10, textAlign:"right"}}>{typeof r.avg_time_hours === "number" ? r.avg_time_hours.toFixed(2) : "—"}</td>
                 <td style={{padding:10, textAlign:"right", color:"#8B5CF6", fontWeight:500}}>
-                  {typeof r.mode_time_hours === "number" ? r.mode_time_hours.toFixed(1) : "—"}
+                  {typeof r.mode_time_hours === "number" ? (
+                    <div>
+                      <div>{r.mode_time_hours.toFixed(1)}</div>
+                      {typeof r.mode_frequency === "number" && (
+                        <div style={{fontSize:10, color:"#999", fontWeight:400}}>({r.mode_frequency} tickets)</div>
+                      )}
+                    </div>
+                  ) : "—"}
                 </td>
                 {days.map(d => (
                   <td key={d} style={{padding:10, textAlign:"center"}}>{r.perDay?.[d] ?? 0}</td>
