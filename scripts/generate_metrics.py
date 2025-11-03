@@ -866,7 +866,7 @@ def main():
             return None
         
         # Agrupar tempos em bins de 6 horas (0-6h, 6-12h, 12-18h, etc.)
-        bin_size = 6
+        bin_size = 2
         bins = defaultdict(int)
         
         for time_val in time_values:
