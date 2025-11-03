@@ -882,15 +882,39 @@ def main():
         # Retornar o ponto médio do bin mais comum e a frequência
         mode_center = (most_common_bin * bin_size) + (bin_size / 2)
         return round(mode_center, 2), frequency
+    
+    def calculate_distribution(time_values):
+        """Calcula a distribuição completa de tickets por intervalos de tempo"""
+        if not time_values:
+            return {}
+        
+        bin_size = 2  # Intervalos de 2 horas
+        bins = defaultdict(int)
+        
+        for time_val in time_values:
+            bin_index = int(time_val // bin_size)
+            bins[bin_index] += 1
+        
+        # Converter índices de bins em labels legíveis
+        distribution = {}
+        for bin_index, count in bins.items():
+            start = bin_index * bin_size
+            end = start + bin_size
+            label = f"{start}-{end}h"
+            distribution[label] = count
+        
+        return dict(sorted(distribution.items(), key=lambda x: int(x[0].split('-')[0])))
 
     def format_bucket(bucket):
         avg_time = bucket["total_time"] / bucket["time_count"] if bucket["time_count"] else None
         mode_time, mode_frequency = calculate_mode(bucket.get("time_values", []))
+        distribution = calculate_distribution(bucket.get("time_values", []))
         
         return {
             "avg_time_hours": round(avg_time, 2) if avg_time is not None else None,
             "mode_time_hours": mode_time,
             "mode_frequency": mode_frequency,
+            "time_distribution": distribution,
             "tickets_count": bucket["count"],
             "tickets_per_day": dict(sorted(bucket["tickets_per_day"].items())),
             "time_per_day": dict(sorted(bucket["time_per_day"].items())),

@@ -2230,6 +2230,257 @@ export default function App() {
     );
   }
 
+  // Renderizar Distribuição por Intervalo
+  if (viewMode === "distribution" && data?.agents) {
+    const agents = data.agents;
+    
+    // Aplicar filtros de prioridade e estado
+    const useAllPriorities = !selectedPriorities?.length || selectedPriorities.includes("ALL");
+    const useAllStates = !selectedStates?.length || selectedStates.includes("ALL");
+    
+    // Função para obter distribuição filtrada
+    const getFilteredDistribution = (agentData) => {
+      let distributions = [];
+      
+      if (useAllStates && useAllPriorities) {
+        // Sem filtros - usar overall
+        return agentData.overall?.time_distribution || {};
+      }
+      
+      if (useAllStates && !useAllPriorities) {
+        // Filtrar só por prioridade
+        selectedPriorities.forEach(priority => {
+          const dist = agentData.priorities?.[priority]?.time_distribution;
+          if (dist) distributions.push(dist);
+        });
+      } else {
+        // Filtrar por estado (e opcionalmente prioridade)
+        selectedStates.forEach(state => {
+          const stateData = agentData.states?.[state];
+          if (!stateData) return;
+          
+          if (useAllPriorities) {
+            const dist = stateData.overall?.time_distribution;
+            if (dist) distributions.push(dist);
+          } else {
+            selectedPriorities.forEach(priority => {
+              const dist = stateData.priorities?.[priority]?.time_distribution;
+              if (dist) distributions.push(dist);
+            });
+          }
+        });
+      }
+      
+      // Merge das distribuições
+      const merged = {};
+      distributions.forEach(dist => {
+        Object.entries(dist).forEach(([interval, count]) => {
+          merged[interval] = (merged[interval] || 0) + count;
+        });
+      });
+      return merged;
+    };
+    
+    // Preparar dados da matriz com filtros aplicados
+    const matrixData = Object.entries(agents)
+      .filter(([name]) => name !== "Não Atribuído")
+      .map(([name, agentData]) => {
+        const distribution = getFilteredDistribution(agentData);
+        const total = Object.values(distribution).reduce((sum, count) => sum + count, 0);
+        return {
+          name,
+          distribution,
+          total
+        };
+      })
+      .filter(agent => agent.total > 0) // Remover agentes sem tickets nos filtros
+      .sort((a, b) => b.total - a.total);
+    
+    // Coletar todos os intervalos únicos após filtros
+    const allIntervals = new Set();
+    matrixData.forEach(agent => {
+      Object.keys(agent.distribution).forEach(interval => allIntervals.add(interval));
+    });
+    
+    // Ordenar intervalos numericamente
+    const sortedIntervals = Array.from(allIntervals).sort((a, b) => {
+      const aStart = parseInt(a.split('-')[0]);
+      const bStart = parseInt(b.split('-')[0]);
+      return aStart - bStart;
+    });
+    
+    // Calcular máximo para escala de cores
+    const maxCount = Math.max(...matrixData.flatMap(agent => 
+      Object.values(agent.distribution)
+    ));
+    
+    const getHeatColor = (count) => {
+      if (!count) return "#f8fafc";
+      const intensity = count / maxCount;
+      // Gradiente de azul claro para azul escuro
+      const r = Math.round(240 - (intensity * 180));
+      const g = Math.round(248 - (intensity * 168));
+      const b = Math.round(255 - (intensity * 95));
+      return `rgb(${r}, ${g}, ${b})`;
+    };
+    
+    return (
+      <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
+        <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16}}>
+          <img src="logo.svg" alt="UFEV" style={{height:48, objectFit:"contain"}} />
+          <h1 style={{fontSize:24, fontWeight:600, color:"#005A8D", margin:0, flex:1}}>
+            Distribuição de Tickets por Intervalo de Tempo
+          </h1>
+        </div>
+        
+        <div style={{display:"flex", gap:8, marginBottom:16, flexWrap:"wrap"}}>
+          {[
+            { value: "agents", label: "Por agentes" },
+            { value: "states", label: "Por estados" },
+            { value: "distribution", label: "Distribuição por Intervalo" },
+            { value: "responses", label: "Respostas por Agente" },
+            { value: "efficiency", label: "Eficiência por Agente" },
+            { value: "state_changes", label: "Trocas de Estado" },
+            { value: "workload", label: "Análise Temporal" },
+            { value: "sla_compliance", label: "SLA Compliance" },
+          ].map(option => (
+            <button
+              key={option.value}
+              type="button"
+              onClick={() => updateViewMode(option.value)}
+              style={{
+                padding:"8px 16px",
+                borderRadius:999,
+                border:"1px solid",
+                borderColor: viewMode === option.value ? "#005A8D" : "#e2e8f0",
+                backgroundColor: viewMode === option.value ? "#005A8D" : "white",
+                color: viewMode === option.value ? "white" : "#64748b",
+                cursor:"pointer"
+              }}
+            >
+              {option.label}
+            </button>
+          ))}
+        </div>
+
+        {/* Filtros de Prioridade e Estado */}
+        <div style={{backgroundColor:"#f8fafc", padding:16, borderRadius:8, marginBottom:16}}>
+          <div style={{display:"flex", gap:16, flexWrap:"wrap", alignItems:"center"}}>
+            <div style={{flex:"1", minWidth:200}}>
+              <label style={{display:"block", fontSize:12, fontWeight:600, color:"#374151", marginBottom:8}}>
+                Prioridade
+              </label>
+              <MultiSelect
+                options={priorities}
+                selected={selectedPriorities}
+                onChange={setSelectedPriorities}
+                placeholder="Todas as prioridades"
+              />
+            </div>
+            <div style={{flex:"1", minWidth:200}}>
+              <label style={{display:"block", fontSize:12, fontWeight:600, color:"#374151", marginBottom:8}}>
+                Estado
+              </label>
+              <MultiSelect
+                options={stateOptions}
+                selected={selectedStates}
+                onChange={setSelectedStates}
+                placeholder="Todos os estados"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div style={{backgroundColor:"white", padding:20, borderRadius:8, boxShadow:"0 1px 3px rgba(0,0,0,0.1)", marginBottom:24}}>
+          <h3 style={{margin:"0 0 16px 0", color:"#1f2937"}}>
+            Matriz: Agente × Intervalo de Resolução
+          </h3>
+          <p style={{color:"#666", fontSize:14, marginBottom:16}}>
+            Mostra quantos tickets cada agente resolveu em cada intervalo de tempo. Cores mais escuras = mais tickets.
+          </p>
+          
+          <div style={{overflowX:"auto"}}>
+            <table style={{width:"100%", borderCollapse:"collapse", fontSize:isMobile ? 12 : 14}}>
+              <thead>
+                <tr style={{backgroundColor:"#f8fafc"}}>
+                  <th style={{padding:12, textAlign:"left", fontWeight:600, borderBottom:"2px solid #e2e8f0", position:"sticky", left:0, backgroundColor:"#f8fafc", zIndex:1}}>
+                    Agente
+                  </th>
+                  <th style={{padding:12, textAlign:"center", fontWeight:600, borderBottom:"2px solid #e2e8f0"}}>
+                    Total
+                  </th>
+                  {sortedIntervals.map(interval => (
+                    <th key={interval} style={{padding:12, textAlign:"center", fontWeight:600, borderBottom:"2px solid #e2e8f0", whiteSpace:"nowrap"}}>
+                      {interval}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {matrixData.map((agent, idx) => (
+                  <tr key={agent.name} style={{backgroundColor: idx % 2 ? "#fff" : "#f8fafc"}}>
+                    <td style={{padding:12, fontWeight:600, borderBottom:"1px solid #e2e8f0", position:"sticky", left:0, backgroundColor: idx % 2 ? "#fff" : "#f8fafc", zIndex:1}}>
+                      {agent.name}
+                    </td>
+                    <td style={{padding:12, textAlign:"center", fontWeight:600, borderBottom:"1px solid #e2e8f0", color:"#005A8D"}}>
+                      {agent.total}
+                    </td>
+                    {sortedIntervals.map(interval => {
+                      const count = agent.distribution[interval] || 0;
+                      const percentage = agent.total > 0 ? ((count / agent.total) * 100).toFixed(0) : 0;
+                      return (
+                        <td 
+                          key={interval} 
+                          style={{
+                            padding:12, 
+                            textAlign:"center", 
+                            borderBottom:"1px solid #e2e8f0",
+                            backgroundColor: getHeatColor(count),
+                            color: count > maxCount * 0.5 ? "white" : "#1f2937",
+                            fontWeight: count > 0 ? 600 : 400
+                          }}
+                          title={`${count} tickets (${percentage}%)`}
+                        >
+                          {count > 0 ? count : "—"}
+                        </td>
+                      );
+                    })}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          
+          <div style={{marginTop:16, padding:12, backgroundColor:"#f8fafc", borderRadius:8}}>
+            <div style={{fontSize:12, color:"#666", marginBottom:8}}>Legenda de cores:</div>
+            <div style={{display:"flex", alignItems:"center", gap:8, flexWrap:"wrap"}}>
+              <div style={{display:"flex", alignItems:"center", gap:4}}>
+                <div style={{width:20, height:20, backgroundColor:"#f8fafc", border:"1px solid #e2e8f0"}}></div>
+                <span style={{fontSize:12}}>0 tickets</span>
+              </div>
+              <div style={{display:"flex", alignItems:"center", gap:4}}>
+                <div style={{width:20, height:20, backgroundColor:getHeatColor(maxCount * 0.25)}}></div>
+                <span style={{fontSize:12}}>Baixo</span>
+              </div>
+              <div style={{display:"flex", alignItems:"center", gap:4}}>
+                <div style={{width:20, height:20, backgroundColor:getHeatColor(maxCount * 0.5)}}></div>
+                <span style={{fontSize:12}}>Médio</span>
+              </div>
+              <div style={{display:"flex", alignItems:"center", gap:4}}>
+                <div style={{width:20, height:20, backgroundColor:getHeatColor(maxCount * 0.75)}}></div>
+                <span style={{fontSize:12}}>Alto</span>
+              </div>
+              <div style={{display:"flex", alignItems:"center", gap:4}}>
+                <div style={{width:20, height:20, backgroundColor:getHeatColor(maxCount)}}></div>
+                <span style={{fontSize:12}}>Máximo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div style={{maxWidth: 1200, margin: isMobile ? "10px auto" : "20px auto", padding: isMobile ? "0 8px" : "0 16px", fontFamily: "system-ui, Arial"}}>
 <div style={{display:"flex", alignItems:"center", gap:12, marginBottom:16, flexWrap: "wrap"}}>
@@ -2263,6 +2514,7 @@ export default function App() {
         {[
           { value: "agents", label: "Por agentes" },
           { value: "states", label: "Por estados" },
+          { value: "distribution", label: "Distribuição por Intervalo" },
           { value: "responses", label: "Respostas por Agente" },
           { value: "efficiency", label: "Eficiência por Agente" },
           { value: "state_changes", label: "Trocas de Estado" },
