@@ -139,7 +139,7 @@ function toStackedSeries(days, rows) {
   });
 }
 
-function summarize(rows, efficiencyData = null) {
+function summarize(rows, efficiencyData = null, dataset = null, selectedPriorities = null) {
   const totalTickets = rows.reduce((s, r) => s + (r.tickets_count || 0), 0);
   const vals = rows.filter(r => typeof r.avg_time_hours === "number");
   const avgAll = vals.length ? (vals.reduce((s,r)=>s+r.avg_time_hours,0) / vals.length) : 0;
@@ -152,30 +152,48 @@ function summarize(rows, efficiencyData = null) {
   // Top por tempo (menor tempo médio)
   const topTime = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
   
-  // Top por eficiência (baseado em interações por ticket - menor é melhor)
+  // Top por eficiência (tickets fechados / tickets atribuídos)
+  // Calcular usando dados filtrados (com estados)
   let topRatio = null;
   if (efficiencyData) {
-    const efficiencyEligible = Object.entries(efficiencyData)
-      .filter(([agent, data]) => data.tickets_closed >= dynamicMinTickets && agent !== "Não Atribuído")
-      .map(([agent, data]) => {
-        // Usar avg_interactions_per_ticket como métrica de eficiência
-        // Menor número = mais eficiente (resolve com menos interações)
-        const avg_interactions = data.avg_interactions_per_ticket || 0;
-        const tickets_closed = data.tickets_closed;
+    const efficiencyEligible = rows
+      .filter(r => r.label !== "Não Atribuído" && (r.tickets_count || 0) >= dynamicMinTickets)
+      .map((agentRow) => {
+        const agent = agentRow.label;
         
-        // Calcular eficiência invertida: quanto menor avg_interactions, maior a eficiência
-        // Normalizar para uma escala de 0-1 onde 1 é o melhor
-        // Usamos 1/avg_interactions para inverter (mais interações = menor eficiência)
-        const efficiency_ratio = avg_interactions > 0 ? (1 / avg_interactions) : 0;
+        // tickets_count = total de tickets do agente (todos os estados, já filtrado)
+        const tickets_assigned = agentRow.tickets_count || 0;
+        
+        // Calcular tickets fechados a partir dos dados filtrados
+        // Precisamos buscar no dataset original com filtros aplicados
+        let tickets_closed = 0;
+        
+        // Se temos dados de estados, usar o estado "Closed"
+        // Nota: precisamos recalcular com filtros aplicados
+        const agentPayload = dataset?.[agent];
+        if (agentPayload?.states?.Closed) {
+          const closedBucket = computeBucketForPayload(
+            { states: { Closed: agentPayload.states.Closed } },
+            selectedPriorities,
+            ["Closed"]
+          );
+          tickets_closed = closedBucket.tickets_count || 0;
+        }
+        
+        // Calcular eficiência: tickets fechados / tickets atribuídos
+        let efficiency_ratio = 0;
+        if (tickets_assigned > 0) {
+          efficiency_ratio = tickets_closed / tickets_assigned;
+        }
         
         return {
           label: agent,
           tickets_closed: tickets_closed,
-          avg_interactions: avg_interactions,
+          tickets_assigned: tickets_assigned,
           efficiency_ratio: efficiency_ratio
         };
       })
-      .filter(item => item.tickets_closed > 0); // Só incluir quem tem tickets fechados
+      .filter(item => item.tickets_assigned > 0); // Só incluir quem tem tickets atribuídos
     
     topRatio = efficiencyEligible.sort((a,b) => b.efficiency_ratio - a.efficiency_ratio)[0] || null;
   } else {
@@ -702,7 +720,7 @@ export default function App() {
   }, [dataset, selectedPriorities, selectedStates, selectedGroups, sortKey, viewMode]);
 
   const series = useMemo(() => toStackedSeries(days, rows), [days, rows]);
-  const kpis = useMemo(() => summarize(rows, data?.agent_efficiency), [rows, data?.agent_efficiency]);
+  const kpis = useMemo(() => summarize(rows, data?.agent_efficiency, dataset, selectedPriorities), [rows, data?.agent_efficiency, dataset, selectedPriorities]);
 
   const groupLabel = {
     agents: "Agente",
@@ -2281,8 +2299,8 @@ export default function App() {
           <div style={{fontSize:12, color:"#666"}}>Top eficiência (mín. {kpis.dynamicMinTickets})</div>
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
             {kpis.topRatio ? (
-              kpis.topRatio.avg_interactions !== undefined ? 
-                `${kpis.topRatio.label} · ${kpis.topRatio.avg_interactions.toFixed(2)} int/ticket` :
+              kpis.topRatio.efficiency_ratio !== undefined ? 
+                `${kpis.topRatio.label} · ${(kpis.topRatio.efficiency_ratio * 100).toFixed(1)}%` :
                 `${kpis.topRatio.label} · ${kpis.topRatio.tickets_count} tickets`
             ) : "—"}
           </div>
