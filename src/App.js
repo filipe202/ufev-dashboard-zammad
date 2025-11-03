@@ -152,39 +152,30 @@ function summarize(rows, efficiencyData = null) {
   // Top por tempo (menor tempo médio)
   const topTime = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
   
-  // Top por eficiência (tickets fechados / tickets atribuídos)
+  // Top por eficiência (baseado em interações por ticket - menor é melhor)
   let topRatio = null;
   if (efficiencyData) {
     const efficiencyEligible = Object.entries(efficiencyData)
       .filter(([agent, data]) => data.tickets_closed >= dynamicMinTickets && agent !== "Não Atribuído")
       .map(([agent, data]) => {
-        // Encontrar dados do agente nos dados principais
-        const agentData = rows.find(r => r.label === agent);
-        
-        // tickets_count nos dados principais = total de tickets atribuídos (abertos + fechados)
-        // tickets_closed no agent_efficiency = tickets efetivamente fechados
-        const tickets_assigned = agentData?.tickets_count || 0;
+        // Usar avg_interactions_per_ticket como métrica de eficiência
+        // Menor número = mais eficiente (resolve com menos interações)
+        const avg_interactions = data.avg_interactions_per_ticket || 0;
         const tickets_closed = data.tickets_closed;
         
-        // Calcular eficiência real, mas limitar a 100%
-        let efficiency_ratio = 0;
-        if (tickets_assigned > 0) {
-          efficiency_ratio = Math.min(tickets_closed / tickets_assigned, 1.0);
-        }
-        
-        // Debug para casos anómalos
-        if (tickets_closed > tickets_assigned) {
-          console.warn(`${agent}: ${tickets_closed} fechados > ${tickets_assigned} atribuídos - limitando a 100%`);
-        }
+        // Calcular eficiência invertida: quanto menor avg_interactions, maior a eficiência
+        // Normalizar para uma escala de 0-1 onde 1 é o melhor
+        // Usamos 1/avg_interactions para inverter (mais interações = menor eficiência)
+        const efficiency_ratio = avg_interactions > 0 ? (1 / avg_interactions) : 0;
         
         return {
           label: agent,
           tickets_closed: tickets_closed,
-          tickets_assigned: tickets_assigned,
+          avg_interactions: avg_interactions,
           efficiency_ratio: efficiency_ratio
         };
       })
-      .filter(item => item.tickets_assigned > 0); // Só incluir quem tem tickets atribuídos
+      .filter(item => item.tickets_closed > 0); // Só incluir quem tem tickets fechados
     
     topRatio = efficiencyEligible.sort((a,b) => b.efficiency_ratio - a.efficiency_ratio)[0] || null;
   } else {
@@ -2290,8 +2281,8 @@ export default function App() {
           <div style={{fontSize:12, color:"#666"}}>Top eficiência (mín. {kpis.dynamicMinTickets})</div>
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
             {kpis.topRatio ? (
-              kpis.topRatio.efficiency_ratio !== undefined ? 
-                `${kpis.topRatio.label} · ${(kpis.topRatio.efficiency_ratio * 100).toFixed(1)}%` :
+              kpis.topRatio.avg_interactions !== undefined ? 
+                `${kpis.topRatio.label} · ${kpis.topRatio.avg_interactions.toFixed(2)} int/ticket` :
                 `${kpis.topRatio.label} · ${kpis.topRatio.tickets_count} tickets`
             ) : "—"}
           </div>
