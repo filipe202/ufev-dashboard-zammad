@@ -47,6 +47,8 @@ def format_state_label(raw_state: str | None) -> str:
 def make_bucket():
     return {
         "tickets_per_day": defaultdict(int),
+        "time_per_day": defaultdict(float),
+        "time_count_per_day": defaultdict(int),
         "total_time": 0.0,
         "time_count": 0,
         "count": 0,
@@ -74,6 +76,8 @@ def update_bucket(bucket, day: str, delta_hours: float | None):
     if delta_hours is not None:
         bucket["total_time"] += delta_hours
         bucket["time_count"] += 1
+        bucket["time_per_day"][day] += delta_hours
+        bucket["time_count_per_day"][day] += 1
 
 
 def record_entity(holder, day: str, priority_name: str, state_label: str, delta_hours: float | None):
@@ -860,6 +864,8 @@ def main():
             "avg_time_hours": round(avg_time, 2) if avg_time is not None else None,
             "tickets_count": bucket["count"],
             "tickets_per_day": dict(sorted(bucket["tickets_per_day"].items())),
+            "time_per_day": dict(sorted(bucket["time_per_day"].items())),
+            "time_count_per_day": dict(sorted(bucket["time_count_per_day"].items())),
         }
 
     def sort_bucket_map(bucket_map):

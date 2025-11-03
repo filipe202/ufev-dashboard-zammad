@@ -141,13 +141,15 @@ function toStackedSeries(days, rows) {
 
 function summarize(rows, efficiencyData = null, dataset = null, selectedPriorities = null) {
   const totalTickets = rows.reduce((s, r) => s + (r.tickets_count || 0), 0);
-  const vals = rows.filter(r => typeof r.avg_time_hours === "number");
-  const avgAll = vals.length ? (vals.reduce((s,r)=>s+r.avg_time_hours,0) / vals.length) : 0;
   
   // Calcular limite dinâmico: 10% do total de tickets, com mínimo de 5 e máximo de 50
   const dynamicMinTickets = Math.max(5, Math.min(50, Math.ceil(totalTickets * 0.1)));
   
+  // Filtrar apenas agentes elegíveis (com mínimo de tickets) para cálculo da média
   const eligible = rows.filter(r => (r.tickets_count||0) >= dynamicMinTickets && typeof r.avg_time_hours === "number" && r.label !== "Não Atribuído");
+  
+  // Calcular média apenas dos agentes elegíveis
+  const avgAll = eligible.length ? (eligible.reduce((s,r)=>s+r.avg_time_hours,0) / eligible.length) : 0;
   
   // Top por tempo (menor tempo médio)
   const topTime = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
@@ -498,7 +500,11 @@ export default function App() {
       }
 
       const filteredTicketsPerDay = {};
+      const filteredTimePerDay = {};
+      const filteredTimeCountPerDay = {};
       let filteredCount = 0;
+      let filteredTotalTime = 0;
+      let filteredTimeCount = 0;
 
       Object.entries(bucket.tickets_per_day).forEach(([date, count]) => {
         if (date >= cutoffDate) {
@@ -507,10 +513,36 @@ export default function App() {
         }
       });
 
+      // Filtrar time_per_day se existir
+      if (bucket.time_per_day) {
+        Object.entries(bucket.time_per_day).forEach(([date, time]) => {
+          if (date >= cutoffDate) {
+            filteredTimePerDay[date] = time;
+            filteredTotalTime += time;
+          }
+        });
+      }
+
+      // Filtrar time_count_per_day se existir
+      if (bucket.time_count_per_day) {
+        Object.entries(bucket.time_count_per_day).forEach(([date, count]) => {
+          if (date >= cutoffDate) {
+            filteredTimeCountPerDay[date] = count;
+            filteredTimeCount += count;
+          }
+        });
+      }
+
+      // Recalcular avg_time_hours com os dados filtrados
+      const newAvgTime = filteredTimeCount > 0 ? filteredTotalTime / filteredTimeCount : null;
+
       return {
         ...bucket,
         tickets_per_day: filteredTicketsPerDay,
-        tickets_count: filteredCount
+        tickets_count: filteredCount,
+        time_per_day: filteredTimePerDay,
+        time_count_per_day: filteredTimeCountPerDay,
+        avg_time_hours: newAvgTime !== null ? parseFloat(newAvgTime.toFixed(2)) : null
       };
     };
 
