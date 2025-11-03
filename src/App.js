@@ -30,13 +30,14 @@ const COLORS = [
 
 
 function emptyBucket() {
-  return { avg_time_hours: null, tickets_count: 0, tickets_per_day: {} };
+  return { avg_time_hours: null, mode_time_hours: null, tickets_count: 0, tickets_per_day: {} };
 }
 
 function cloneBucket(bucket) {
   if (!bucket) return emptyBucket();
   return {
     avg_time_hours: typeof bucket.avg_time_hours === "number" ? bucket.avg_time_hours : null,
+    mode_time_hours: typeof bucket.mode_time_hours === "number" ? bucket.mode_time_hours : null,
     tickets_count: bucket.tickets_count ?? 0,
     tickets_per_day: { ...(bucket.tickets_per_day || {}) },
   };
@@ -46,6 +47,8 @@ function mergeBuckets(buckets) {
   const accPerDay = {};
   let totalTickets = 0;
   let weightedHours = 0;
+  let weightedMode = 0;
+  let modeCount = 0;
 
   buckets.forEach((bucket) => {
     if (!bucket) return;
@@ -54,14 +57,20 @@ function mergeBuckets(buckets) {
     if (typeof bucket.avg_time_hours === "number" && ticketsCount > 0) {
       weightedHours += bucket.avg_time_hours * ticketsCount;
     }
+    if (typeof bucket.mode_time_hours === "number" && ticketsCount > 0) {
+      weightedMode += bucket.mode_time_hours * ticketsCount;
+      modeCount += ticketsCount;
+    }
     Object.entries(bucket.tickets_per_day || {}).forEach(([day, count]) => {
       accPerDay[day] = (accPerDay[day] || 0) + (count || 0);
     });
   });
 
   const avg = totalTickets > 0 ? weightedHours / totalTickets : null;
+  const mode = modeCount > 0 ? weightedMode / modeCount : null;
   return {
     avg_time_hours: avg,
+    mode_time_hours: mode,
     tickets_count: totalTickets,
     tickets_per_day: accPerDay,
   };
@@ -116,6 +125,7 @@ function computeRowsFromGroups(groupsObj, selectedPriorities, selectedStates) {
     return {
       label,
       avg_time_hours: bucket.avg_time_hours ?? null,
+      mode_time_hours: bucket.mode_time_hours ?? null,
       tickets_count: bucket.tickets_count ?? 0,
       perDay: bucket.tickets_per_day || {}
     };
@@ -153,6 +163,12 @@ function summarize(rows, efficiencyData = null, dataset = null, selectedPrioriti
   
   // Top por tempo (menor tempo médio)
   const topTime = eligible.sort((a,b)=>a.avg_time_hours - b.avg_time_hours)[0] || null;
+  
+  // Top por duração mais frequente (menor moda)
+  const eligibleWithMode = eligible.filter(r => typeof r.mode_time_hours === "number");
+  const topMode = eligibleWithMode.length > 0 
+    ? eligibleWithMode.sort((a,b)=>a.mode_time_hours - b.mode_time_hours)[0] 
+    : null;
   
   // Top por eficiência (tickets fechados / tickets atribuídos)
   // Calcular usando dados filtrados (com estados)
@@ -203,7 +219,7 @@ function summarize(rows, efficiencyData = null, dataset = null, selectedPrioriti
     topRatio = eligible.sort((a,b)=>b.tickets_count - a.tickets_count)[0] || null;
   }
   
-  return { totalTickets, avgAll, topTime, topRatio, dynamicMinTickets };
+  return { totalTickets, avgAll, topTime, topMode, topRatio, dynamicMinTickets };
 }
 
 // Componente para filtro de datas
@@ -2347,9 +2363,9 @@ export default function App() {
           </div>
         </div>
         <div style={{borderTop:"4px solid #8B5CF6", border:"1px solid #eee", borderRadius:10, padding:16}}>
-          <div style={{fontSize:12, color:"#666"}}>Duração mais frequente</div>
+          <div style={{fontSize:12, color:"#666"}}>Top duração freq. (mín. {kpis.dynamicMinTickets})</div>
           <div style={{fontSize: isMobile ? 14 : 16, fontWeight:600}}>
-            {kpis.topTime?.mode_time_hours ? `${kpis.topTime.mode_time_hours.toFixed(1)}h` : "—"}
+            {kpis.topMode ? `${kpis.topMode.label} · ${kpis.topMode.mode_time_hours.toFixed(1)}h` : "—"}
           </div>
         </div>
       </div>
