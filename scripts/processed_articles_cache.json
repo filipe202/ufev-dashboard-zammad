@@ -10928,5 +10928,10 @@
     "processed_at": "2025-11-04T09:32:30.603982",
     "was_internal": false,
     "action": "marked_internal"
+  },
+  "6960": {
+    "processed_at": "2025-11-04T09:48:38.333098",
+    "was_internal": true,
+    "action": "skipped_already_internal"
   }
 }
