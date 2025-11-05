@@ -41,5 +41,6 @@ yarn-error.log*
 
 # OS
 Thumbs.db
-scripts/password_reset_report.json
-scripts/password_reset_report.csv
+scripts/password*.json
+scripts/password*.csv
+scripts/last_reset_date.txt
