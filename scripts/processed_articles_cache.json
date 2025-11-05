@@ -12538,5 +12538,90 @@
     "processed_at": "2025-11-05T15:35:57.280578",
     "was_internal": true,
     "action": "skipped_already_internal"
+  },
+  "7319": {
+    "processed_at": "2025-11-05T15:51:36.424241",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "7311": {
+    "processed_at": "2025-11-05T15:51:37.875753",
+    "was_internal": true,
+    "action": "skipped_already_internal"
+  },
+  "4923": {
+    "processed_at": "2025-11-05T15:51:38.738669",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "4924": {
+    "processed_at": "2025-11-05T15:51:38.738669",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "5076": {
+    "processed_at": "2025-11-05T15:51:38.738669",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "7317": {
+    "processed_at": "2025-11-05T15:51:38.738669",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "7308": {
+    "processed_at": "2025-11-05T15:51:44.412483",
+    "was_internal": true,
+    "action": "skipped_already_internal"
+  },
+  "7318": {
+    "processed_at": "2025-11-05T15:51:57.277891",
+    "was_internal": true,
+    "action": "skipped_already_internal"
+  },
+  "7305": {
+    "processed_at": "2025-11-05T15:52:03.248832",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "7320": {
+    "processed_at": "2025-11-05T15:52:03.987868",
+    "was_internal": true,
+    "action": "skipped_already_internal"
+  },
+  "7310": {
+    "processed_at": "2025-11-05T15:52:05.434420",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "7312": {
+    "processed_at": "2025-11-05T15:52:05.822476",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "7313": {
+    "processed_at": "2025-11-05T15:52:06.683419",
+    "was_internal": false,
+    "action": "kept_public"
+  },
+  "7315": {
+    "processed_at": "2025-11-05T15:52:07.150331",
+    "was_internal": true,
+    "action": "skipped_already_internal"
+  },
+  "7321": {
+    "processed_at": "2025-11-05T15:52:08.473410",
+    "was_internal": true,
+    "action": "skipped_already_internal"
+  },
+  "7306": {
+    "processed_at": "2025-11-05T15:52:10.851660",
+    "was_internal": true,
+    "action": "skipped_already_internal"
+  },
+  "7314": {
+    "processed_at": "2025-11-05T15:52:11.242792",
+    "was_internal": false,
+    "action": "marked_internal"
   }
 }
