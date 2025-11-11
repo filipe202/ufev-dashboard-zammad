@@ -89,6 +89,44 @@ def record_entity(holder, day: str, priority_name: str, state_label: str, delta_
     update_bucket(state_holder["overall"], day, delta_hours)
     update_bucket(state_holder["priorities"][priority_name], day, delta_hours)
 
+def get_ticket_articles(ticket_id: int) -> list:
+    """Busca todos os artigos de um ticket"""
+    url = f"{BASE_URL}/api/v1/ticket_articles/by_ticket/{ticket_id}"
+    
+    try:
+        r = requests.get(url, headers={"Authorization": f"Token token={TOKEN}"}, timeout=60)
+        r.raise_for_status()
+        
+        response_data = r.json()
+        
+        # A API pode retornar lista diretamente ou com assets
+        if isinstance(response_data, list):
+            articles = response_data
+        else:
+            articles = response_data.get("assets", {}).get("TicketArticle", {})
+            if isinstance(articles, dict):
+                articles = list(articles.values())
+        
+        return articles
+    except Exception as e:
+        print(f"Erro ao buscar artigos do ticket {ticket_id}: {e}")
+        return []
+
+
+def get_first_interaction_time(ticket_id: int) -> str:
+    """Retorna o timestamp da primeira interação (segundo artigo)"""
+    articles = get_ticket_articles(ticket_id)
+    
+    if not articles or len(articles) < 2:
+        return None
+    
+    # Ordenar por data de criação
+    articles.sort(key=lambda x: x.get('created_at', ''))
+    
+    # Retornar o segundo artigo (primeira interação)
+    return articles[1].get('created_at')
+
+
 def get_sla_target(priority_name: str, sla_targets: dict) -> dict:
     """Determina o SLA aplicável baseado na prioridade (HARDCODED)"""
     # SLAs hardcoded por prioridade - ignora configuração do Zammad
@@ -161,15 +199,38 @@ def get_first_interaction_time(ticket_id: int) -> str:
 
 
 def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, close_date: str) -> dict:
-    """Verifica se o ticket cumpriu o SLA usando dados do Zammad"""
+    """Verifica se o ticket cumpriu o SLA usando primeira interação (segundo artigo)"""
     sla_target = get_sla_target(priority_name, sla_targets)
     
-    # Usar dados de SLA do Zammad
-    # first_response_in_min: tempo real até primeira resposta (em minutos)
-    # first_response_diff_in_min: diferença em relação ao SLA (negativo = cumprido, positivo = violado)
-    # first_response_escalation_at: quando o SLA expira
+    # Usar primeira interação real em vez dos dados internos do Zammad
+    # Busca o segundo artigo do ticket como primeira interação
     
-    first_response_in_min = ticket.get("first_response_in_min")
+    # Buscar primeira interação real
+    ticket_id = ticket.get("id")
+    first_interaction_time = get_first_interaction_time(ticket_id)
+    
+    if first_interaction_time:
+        # Calcular tempo real até primeira interação
+        created_at = ticket.get("created_at")
+        if created_at:
+            try:
+                created_dt = datetime.fromisoformat(created_at.replace('Z', '+00:00'))
+                interaction_dt = datetime.fromisoformat(first_interaction_time.replace('Z', '+00:00'))
+                
+                # Calcular diferença em minutos
+                delta = interaction_dt - created_dt
+                first_response_in_min = int(delta.total_seconds() / 60)
+                
+                print(f"Ticket {ticket_id}: primeira interação em {first_response_in_min} minutos")
+            except Exception as e:
+                print(f"Erro ao calcular tempo para ticket {ticket_id}: {e}")
+                first_response_in_min = ticket.get("first_response_in_min")
+        else:
+            first_response_in_min = ticket.get("first_response_in_min")
+    else:
+        # Fallback para dados do Zammad
+        first_response_in_min = ticket.get("first_response_in_min")
+    
     first_response_diff_in_min = ticket.get("first_response_diff_in_min")
     
     # Tempo alvo do SLA (FIXO por prioridade - vem da configuração do Zammad)
