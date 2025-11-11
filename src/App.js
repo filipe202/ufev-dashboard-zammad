@@ -2168,7 +2168,7 @@ export default function App() {
                   <th style={{padding: "8px", textAlign: "left", borderBottom: "1px solid #e2e8f0"}}>Ticket</th>
                   <th style={{padding: "8px", textAlign: "left", borderBottom: "1px solid #e2e8f0"}}>Prioridade</th>
                   <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Data Criação</th>
-                  <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Data Fecho</th>
+                  <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Data Primeira resposta</th>
                   <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>SLA (h)</th>
                   <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Real (h)</th>
                   <th style={{padding: "8px", textAlign: "center", borderBottom: "1px solid #e2e8f0"}}>Violação (h)</th>
@@ -2209,7 +2209,7 @@ export default function App() {
                           }) : '-'}
                         </td>
                         <td style={{padding: "8px", textAlign: "center", fontSize: 11}}>
-                          {ticket.close_date || '-'}
+                          {ticket.first_response_at || '-'}
                         </td>
                         <td style={{padding: "8px", textAlign: "center"}}>{ticket.sla_target_hours}</td>
                         <td style={{padding: "8px", textAlign: "center"}}>{ticket.actual_time_hours}</td>
