@@ -127,6 +127,20 @@ def get_first_interaction_time(ticket_id: int) -> str:
     return articles[1].get('created_at')
 
 
+def format_datetime(iso_string: str) -> str:
+    """Formata timestamp ISO para formato legível dd/mm/yyyy hh:mm:ss"""
+    if not iso_string:
+        return "N/A"
+    try:
+        dt = datetime.fromisoformat(iso_string.replace('Z', '+00:00'))
+        # Converter para timezone Portugal (UTC+1)
+        portugal_tz = timezone(timedelta(hours=1))
+        local_dt = dt.astimezone(portugal_tz)
+        return local_dt.strftime("%d/%m/%Y %H:%M:%S")
+    except Exception:
+        return iso_string
+
+
 def get_sla_target(priority_name: str, sla_targets: dict) -> dict:
     """Determina o SLA aplicável baseado na prioridade (HARDCODED)"""
     # SLAs hardcoded por prioridade - ignora configuração do Zammad
@@ -228,31 +242,52 @@ def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, cl
         else:
             first_response_in_min = ticket.get("first_response_in_min")
     else:
-        # Fallback para dados do Zammad
+        # Usar dados do Zammad quando não conseguir buscar primeira interação
         first_response_in_min = ticket.get("first_response_in_min")
+        first_interaction_time = ticket.get("first_response_at")  # Usar timestamp do Zammad
+        
+        # Se não há resposta mas ticket foi fechado, usar data de fechamento
+        if not first_interaction_time and ticket.get("close_at"):
+            first_interaction_time = ticket.get("close_at")
+            created_at = ticket.get("created_at")
+            
+            if created_at and first_interaction_time:
+                try:
+                    created_dt = datetime.fromisoformat(created_at.replace('Z', '+00:00'))
+                    closed_dt = datetime.fromisoformat(first_interaction_time.replace('Z', '+00:00'))
+                    
+                    # Calcular diferença em minutos
+                    delta = closed_dt - created_dt
+                    first_response_in_min = int(delta.total_seconds() / 60)
+                    
+                    print(f"Ticket {ticket_id}: sem resposta, usando fechamento - {first_response_in_min} minutos")
+                except Exception as e:
+                    print(f"Erro ao calcular tempo de fechamento para ticket {ticket_id}: {e}")
+        
+        if first_response_in_min:
+            print(f"Ticket {ticket_id}: usando dados Zammad - {first_response_in_min} minutos")
     
     first_response_diff_in_min = ticket.get("first_response_diff_in_min")
     
     # Tempo alvo do SLA (FIXO por prioridade - vem da configuração do Zammad)
     sla_target_hours = sla_target.get("first_response_time_hours") or sla_target.get("solution_time_hours")
     
-    # Tempo real de primeira resposta (em minutos de trabalho do Zammad)
-    # O Zammad calcula SLA em horas de trabalho (business hours)
-    # first_response_in_min é o tempo em minutos de trabalho até a primeira resposta
-    actual_time_hours = round(first_response_in_min / 60, 2) if first_response_in_min and first_response_in_min > 0 else None
+    # Tempo real de primeira resposta - garantir que nunca seja None
+    if first_response_in_min is not None and first_response_in_min >= 0:
+        actual_time_hours = round(first_response_in_min / 60, 2)
+    else:
+        # Se não temos dados válidos, assumir 0 (resposta imediata)
+        actual_time_hours = 0.0
+        print(f"AVISO: Ticket {ticket_id} sem dados válidos de tempo, assumindo 0h")
     
     # Calcular SLA baseado na comparação direta: tempo real vs tempo alvo
-    if actual_time_hours is not None and sla_target_hours is not None:
-        # Converter sla_target para minutos para comparar com first_response_in_min
-        sla_target_minutes = sla_target_hours * 60
-        
+    if sla_target_hours is not None:
         # SLA cumprido se tempo real <= tempo alvo
-        sla_met = first_response_in_min <= sla_target_minutes
+        sla_met = actual_time_hours <= sla_target_hours
         
         # Calcular violação
         if not sla_met:
-            sla_breach_minutes = first_response_in_min - sla_target_minutes
-            sla_breach_hours = round(sla_breach_minutes / 60, 2)
+            sla_breach_hours = round(actual_time_hours - sla_target_hours, 2)
         else:
             sla_breach_hours = 0
     elif first_response_diff_in_min is not None:
@@ -274,15 +309,19 @@ def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, cl
         "ticket_number": ticket.get("number"),
         "title": ticket.get("title", "")[:50] + "..." if len(ticket.get("title", "")) > 50 else ticket.get("title", ""),
         "priority": priority_name,
-        "created_at": ticket.get("created_at"),
+        "created_at": format_datetime(ticket.get("created_at")),
+        "created_at_raw": ticket.get("created_at"),
         "close_date": close_date,
         "sla_target_hours": sla_target_hours,
         "actual_time_hours": actual_time_hours,
         "sla_met": sla_met,
         "sla_breach_hours": sla_breach_hours,
         "sla_name": sla_target.get("name", "SLA Padrão"),
-        "first_response_at": ticket.get("first_response_at"),
-        "first_response_escalation_at": ticket.get("first_response_escalation_at")
+        "first_response_at": format_datetime(first_interaction_time),
+        "first_response_at_raw": first_interaction_time,
+        "first_response_escalation_at": format_datetime(ticket.get("first_response_escalation_at")),
+        "using_first_interaction": bool(first_interaction_time != ticket.get("first_response_at")),
+        "using_close_date": bool(first_interaction_time == ticket.get("close_at"))
     }
 
 S = requests.Session()
