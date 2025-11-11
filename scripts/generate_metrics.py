@@ -90,55 +90,36 @@ def record_entity(holder, day: str, priority_name: str, state_label: str, delta_
     update_bucket(state_holder["priorities"][priority_name], day, delta_hours)
 
 def get_sla_target(priority_name: str, sla_targets: dict) -> dict:
-    """Determina o SLA aplicável baseado na prioridade ou configuração de SLA"""
-    # Se temos SLAs configurados, procurar o SLA que corresponde à prioridade
-    if sla_targets:
-        # Tentar encontrar SLA específico para a prioridade
-        for sla_id, sla_data in sla_targets.items():
-            sla_name = sla_data.get("name", "").upper()
-            if priority_name in sla_name:
-                # Usar solution_time se disponível, senão usar first_response_time
-                solution_time = sla_data.get("solution_time_hours")
-                first_response_time = sla_data.get("first_response_time_hours")
-                
-                target_hours = solution_time if solution_time else first_response_time
-                
-                return {
-                    "name": sla_data.get("name"),
-                    "solution_time_hours": target_hours,
-                    "first_response_time_hours": first_response_time,
-                    "update_time_hours": sla_data.get("update_time_hours"),
-                }
-        
-        # Se não encontrou SLA específico, usar o primeiro disponível
-        sla_id = next(iter(sla_targets))
-        sla_data = sla_targets[sla_id]
-        solution_time = sla_data.get("solution_time_hours")
-        first_response_time = sla_data.get("first_response_time_hours")
-        target_hours = solution_time if solution_time else first_response_time
-        
-        return {
-            "name": sla_data.get("name"),
-            "solution_time_hours": target_hours,
-            "first_response_time_hours": first_response_time,
-            "update_time_hours": sla_data.get("update_time_hours"),
-        }
-    
-    # Fallback para SLAs baseados em prioridade
-    priority_sla_hours = {
-        "P1": 4,    # 4 horas para crítico
-        "P2": 24,   # 24 horas para alto
-        "P3": 72,   # 72 horas para médio
-        "P4": 168,  # 7 dias para baixo
+    """Determina o SLA aplicável baseado na prioridade (HARDCODED)"""
+    # SLAs hardcoded por prioridade - ignora configuração do Zammad
+    # Apenas First Response Time é usado
+    priority_sla_config = {
+        "P1": {
+            "name": "SLA P1",
+            "first_response_time_hours": 0.25,  # 15 minutos
+        },
+        "P2": {
+            "name": "SLA P2",
+            "first_response_time_hours": 4,  # 4 horas
+        },
+        "P3": {
+            "name": "SLA P3",
+            "first_response_time_hours": 24,  # 24 horas
+        },
+        "Reservas sem Formulário / sem pedido RGPD e CVO": {
+            "name": "Reservas sem formulário",
+            "first_response_time_hours": 24,  # 24 horas
+        },
     }
     
-    target_hours = priority_sla_hours.get(priority_name, 48)  # 48h padrão
+    # Retornar SLA específico ou padrão
+    if priority_name in priority_sla_config:
+        return priority_sla_config[priority_name]
     
+    # SLA padrão para prioridades desconhecidas
     return {
-        "name": f"SLA-{priority_name}",
-        "solution_time_hours": target_hours,
-        "first_response_time_hours": target_hours / 4,  # 25% do tempo para primeira resposta
-        "update_time_hours": target_hours / 2,    # 50% do tempo para atualização
+        "name": "SLA Padrão",
+        "first_response_time_hours": 24,
     }
 
 def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, close_date: str) -> dict:
@@ -194,12 +175,13 @@ def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, cl
         "ticket_number": ticket.get("number"),
         "title": ticket.get("title", "")[:50] + "..." if len(ticket.get("title", "")) > 50 else ticket.get("title", ""),
         "priority": priority_name,
+        "created_at": ticket.get("created_at"),
+        "close_date": close_date,
         "sla_target_hours": sla_target_hours,
         "actual_time_hours": actual_time_hours,
         "sla_met": sla_met,
         "sla_breach_hours": sla_breach_hours,
         "sla_name": sla_target.get("name", "SLA Padrão"),
-        "close_date": close_date,
         "first_response_at": ticket.get("first_response_at"),
         "first_response_escalation_at": ticket.get("first_response_escalation_at")
     }
@@ -502,6 +484,12 @@ def main():
         "tickets": []  # Lista detalhada dos tickets
     })
     
+    # Tempo em estado ativo por agente
+    agent_active_time = defaultdict(lambda: {
+        "overall": make_bucket(),
+        "priorities": defaultdict(make_bucket)
+    })
+    
     # Análise temporal - carga de trabalho (criação)
     created_by_weekday = defaultdict(int)  # 0=Segunda, 6=Domingo
     created_by_hour = defaultdict(int)     # 0-23h
@@ -788,6 +776,60 @@ def main():
     log(f"RESUMO: {tickets_with_changes} tickets com trocas, {total_state_changes_found} trocas registradas")
     log(f"DEBUG: agent_state_changes = {dict(agent_state_changes)}")
     
+    # Calcular tempo em estado ativo por agente
+    log("Calculando tempo em estado ativo por agente...")
+    
+    # Estados considerados "ativos" (onde o agente está trabalhando)
+    active_states = {"open", "new"}
+    
+    for t in all_tickets_for_history:
+        owner_id = t.get("owner_id")
+        if not owner_id or owner_id not in AGENT_IDS:
+            continue
+            
+        agent_name = AGENT_NAME_OVERRIDES.get(owner_id, f"Agente_{owner_id}")
+        state_id = t.get("state_id")
+        state_name = state_by_id.get(state_id, "").lower() if state_id else ""
+        
+        # Verificar se o ticket está em estado ativo
+        if state_name not in active_states:
+            continue
+            
+        created_at = t.get("created_at")
+        if not created_at:
+            continue
+            
+        try:
+            dt_created = iso_date(created_at)
+            day_created = dt_created.date().isoformat()
+            
+            if day_created < FROM_DATE:
+                continue
+            
+            # Calcular tempo desde criação até agora (para tickets abertos)
+            # ou até o fechamento (para tickets fechados)
+            close_at = t.get("close_at")
+            if close_at:
+                dt_end = iso_date(close_at)
+            else:
+                dt_end = datetime.now(timezone.utc)
+            
+            # Calcular tempo em horas
+            active_time_hours = (dt_end - dt_created).total_seconds() / 3600.0
+            
+            # Obter prioridade
+            priority_id = t.get("priority_id")
+            priority_name = t.get("priority") or priority_by_id.get(priority_id) or (f"priority_{priority_id}" if priority_id else "unknown")
+            
+            # Registrar tempo ativo
+            update_bucket(agent_active_time[agent_name]["overall"], day_created, active_time_hours)
+            update_bucket(agent_active_time[agent_name]["priorities"][priority_name], day_created, active_time_hours)
+            
+        except Exception as e:
+            log(f"Erro ao calcular tempo ativo do ticket {t.get('id')}: {e}")
+    
+    log(f"Tempo ativo calculado para {len(agent_active_time)} agentes")
+    
     # Buscar interações reais dos tickets
     log("Buscando interações reais dos tickets...")
     
@@ -1027,6 +1069,13 @@ def main():
                 "priorities": sort_bucket_map(data["priorities"])
             }
             for agent, data in agent_state_changes.items()
+        },
+        "agent_active_time": {
+            agent: {
+                "overall": format_bucket(data["overall"]),
+                "priorities": sort_bucket_map(data["priorities"])
+            }
+            for agent, data in agent_active_time.items()
         },
         "sla_analysis": {
             "sla_targets": sla_targets,
