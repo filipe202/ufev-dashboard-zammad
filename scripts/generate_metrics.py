@@ -122,6 +122,44 @@ def get_sla_target(priority_name: str, sla_targets: dict) -> dict:
         "first_response_time_hours": 24,
     }
 
+def get_ticket_articles(ticket_id: int) -> list:
+    """Busca todos os artigos de um ticket"""
+    url = f"{BASE_URL}/api/v1/ticket_articles/by_ticket/{ticket_id}"
+    
+    try:
+        r = requests.get(url, headers={"Authorization": f"Token token={TOKEN}"}, timeout=60)
+        r.raise_for_status()
+        
+        response_data = r.json()
+        
+        # A API pode retornar lista diretamente ou com assets
+        if isinstance(response_data, list):
+            articles = response_data
+        else:
+            articles = response_data.get("assets", {}).get("TicketArticle", {})
+            if isinstance(articles, dict):
+                articles = list(articles.values())
+        
+        return articles
+    except Exception as e:
+        print(f"Erro ao buscar artigos do ticket {ticket_id}: {e}")
+        return []
+
+
+def get_first_interaction_time(ticket_id: int) -> str:
+    """Retorna o timestamp da primeira interação (segundo artigo)"""
+    articles = get_ticket_articles(ticket_id)
+    
+    if not articles or len(articles) < 2:
+        return None
+    
+    # Ordenar por data de criação
+    articles.sort(key=lambda x: x.get('created_at', ''))
+    
+    # Retornar o segundo artigo (primeira interação)
+    return articles[1].get('created_at')
+
+
 def check_sla_compliance(ticket: dict, priority_name: str, sla_targets: dict, close_date: str) -> dict:
     """Verifica se o ticket cumpriu o SLA usando dados do Zammad"""
     sla_target = get_sla_target(priority_name, sla_targets)
