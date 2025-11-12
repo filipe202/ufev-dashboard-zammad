@@ -34,7 +34,7 @@ FROM_DATE = "2025-09-30"  # Expandir para início de setembro
 OPEN_STATE_QUERY = "state:new OR state:open OR state:pending reminder OR state:pending close"
 CLOSED_STATES = {"closed"}
 OPEN_STATES = {state.strip().lower() for state in OPEN_STATE_QUERY.replace("state:", "").split("OR")}
-IGNORED_STATES = {"merged"}  # Estados a ignorar completamente
+IGNORED_STATES = {"merged", "removed"}  # Estados a ignorar completamente
 
 
 def format_state_label(raw_state: str | None) -> str:
@@ -564,14 +564,14 @@ def main():
             if state_name in IGNORED_STATES:
                 continue
             
-            # Incluir TODOS os outros tickets, só separar por estado
+            # Separar por estado
             if state_name in CLOSED_STATES:
                 tickets_closed.append(t)
             elif state_name in OPEN_STATES:
                 tickets_open.append(t)
             else:
-                # Incluir outros estados também
-                tickets_open.append(t)
+                # Estados desconhecidos: logar e ignorar
+                log(f"AVISO: Ticket #{t.get('number')} tem estado desconhecido '{state_name}' (ID: {state_id}) - será ignorado")
     
     log(f"Tickets fechados filtrados: {len(tickets_closed)}")
     log(f"Tickets abertos filtrados: {len(tickets_open)}")
