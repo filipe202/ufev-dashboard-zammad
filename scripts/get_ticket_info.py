@@ -166,6 +166,7 @@ def display_ticket_info(ticket: dict):
     print("\n" + "="*80)
     print("INFORMAÇÕES DO TICKET")
     print("="*80)
+    print(ticket)
     
     print(f"\n📋 DADOS BÁSICOS:")
     print(f"   ID: {ticket.get('id')}")

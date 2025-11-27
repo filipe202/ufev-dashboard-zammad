@@ -31,10 +31,9 @@ AGENT_NAME_OVERRIDES = {
 AGENT_IDS = set(AGENT_NAME_OVERRIDES.keys())
 
 FROM_DATE = "2025-09-30"  # Expandir para início de setembro
-OPEN_STATE_QUERY = "state:new OR state:open OR state:pending reminder OR state:pending close"
 CLOSED_STATES = {"closed"}
-OPEN_STATES = {state.strip().lower() for state in OPEN_STATE_QUERY.replace("state:", "").split("OR")}
 IGNORED_STATES = {"merged", "removed"}  # Estados a ignorar completamente
+# Nota: Qualquer estado que não seja closed ou ignored é tratado como "aberto"
 
 
 def format_state_label(raw_state: str | None) -> str:
@@ -564,14 +563,12 @@ def main():
             if state_name in IGNORED_STATES:
                 continue
             
-            # Separar por estado
+            # Separar por estado: closed vs todos os outros (abertos)
             if state_name in CLOSED_STATES:
                 tickets_closed.append(t)
-            elif state_name in OPEN_STATES:
-                tickets_open.append(t)
             else:
-                # Estados desconhecidos: logar e ignorar
-                log(f"AVISO: Ticket #{t.get('number')} tem estado desconhecido '{state_name}' (ID: {state_id}) - será ignorado")
+                # Qualquer estado que não seja closed é tratado como aberto
+                tickets_open.append(t)
     
     log(f"Tickets fechados filtrados: {len(tickets_closed)}")
     log(f"Tickets abertos filtrados: {len(tickets_open)}")
