@@ -2,10 +2,10 @@ name: Deploy to GitHub Pages
 
 on:
   schedule:
-    - cron: '0 8 * * *'  # Diário às 8h UTC
-  workflow_dispatch:     # Manual trigger
+    - cron: "0 8 * * *" # Diário às 8h UTC
+  workflow_dispatch: # Manual trigger
   push:
-    branches: [ master ]
+    branches: [master]
 
 permissions:
   contents: read
@@ -15,45 +15,53 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-          
+
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
-          
+          python-version: "3.11"
+
       - name: Install Python dependencies
         run: pip install requests
-          
-      - name: Generate metrics
+
+      - name: Download metrics cache
+        uses: actions/cache@v4
+        with:
+          path: scripts/closed_tickets_cache.json
+          key: metrics-cache-${{ github.run_id }}
+          restore-keys: |
+            metrics-cache-
+
+      - name: Generate metrics (incremental)
         env:
           ZAMMAD_TOKEN: ${{ secrets.ZAMMAD_TOKEN }}
           ZAMMAD_BASE_URL: ${{ secrets.ZAMMAD_BASE_URL }}
           ZAMMAD_VERIFY_SSL: "false"
-        run: python scripts/generate_metrics.py
-          
+        run: python scripts/generate_metrics_incremental.py
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
-          cache-dependency-path: 'package-lock.json'
-          
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: "package-lock.json"
+
       - name: Build React app
         run: |
           npm ci
           npm run build
-          
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./build
-          
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
