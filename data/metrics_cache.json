@@ -1,5 +1,5 @@
 {
-  "last_run": "2025-12-15T10:10:34.577753+00:00",
+  "last_run": "2025-12-15T10:16:35.842651+00:00",
   "closed_tickets": {
     "30": {
       "ticket_id": 30,
@@ -85536,6 +85536,60 @@
       "interactions_count": 1,
       "internal_articles_count": 0,
       "first_interaction_time": null
+    },
+    "4088": {
+      "ticket_id": 4088,
+      "ticket_number": "354080",
+      "title": "Fatura e Confirmação de Reserva 010241",
+      "owner_id": 18,
+      "agent_name": "Cátia Leal",
+      "customer_id": 314,
+      "customer_label": "cliente_314",
+      "priority_name": "P2",
+      "state_label": "Closed",
+      "created_at": "2025-12-09T14:12:07.133Z",
+      "create_day": "2025-12-09",
+      "closed_at": "2025-12-15T09:59:29.071Z",
+      "close_day": "2025-12-15",
+      "delta_hours": 139.78942722222223,
+      "sla_data": {
+        "sla_target_hours": 4,
+        "actual_time_hours": 0.18,
+        "sla_met": true,
+        "sla_breach_hours": 0,
+        "sla_name": "SLA P2",
+        "first_response_at": "2025-12-09T14:24:06.109Z"
+      },
+      "interactions_count": 6,
+      "internal_articles_count": 1,
+      "first_interaction_time": "2025-12-09T14:24:06.109Z"
+    },
+    "4089": {
+      "ticket_id": 4089,
+      "ticket_number": "354081",
+      "title": "Fatura e Confirmação de Reserva 010242",
+      "owner_id": 18,
+      "agent_name": "Cátia Leal",
+      "customer_id": 314,
+      "customer_label": "cliente_314",
+      "priority_name": "P2",
+      "state_label": "Closed",
+      "created_at": "2025-12-09T14:13:13.930Z",
+      "create_day": "2025-12-09",
+      "closed_at": "2025-12-15T09:58:27.637Z",
+      "close_day": "2025-12-15",
+      "delta_hours": 139.7538075,
+      "sla_data": {
+        "sla_target_hours": 4,
+        "actual_time_hours": 0.18,
+        "sla_met": true,
+        "sla_breach_hours": 0,
+        "sla_name": "SLA P2",
+        "first_response_at": "2025-12-09T14:24:59.989Z"
+      },
+      "interactions_count": 4,
+      "internal_articles_count": 1,
+      "first_interaction_time": "2025-12-09T14:24:59.989Z"
     }
   },
   "version": 1

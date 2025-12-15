@@ -2200,13 +2200,7 @@ export default function App() {
                           </span>
                         </td>
                         <td style={{padding: "8px", textAlign: "center", fontSize: 11}}>
-                          {ticket.created_at ? new Date(ticket.created_at).toLocaleString('pt-PT', {
-                            year: 'numeric',
-                            month: '2-digit',
-                            day: '2-digit',
-                            hour: '2-digit',
-                            minute: '2-digit'
-                          }) : '-'}
+                          {ticket.created_at || '-'}
                         </td>
                         <td style={{padding: "8px", textAlign: "center", fontSize: 11}}>
                           {ticket.first_response_at || '-'}
