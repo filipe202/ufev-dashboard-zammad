@@ -616,6 +616,10 @@ def main():
     tickets_from_cache = []  # Tickets que vêm do cache
     tickets_open = []        # Tickets abertos (sempre processados)
     
+    # IDs de tickets que estão atualmente na API (para limpar cache de tickets reabertos)
+    current_closed_ids = set()
+    current_open_ids = set()
+    
     for t in tickets_raw:
         created_at = t.get("created_at")
         if not created_at or not is_after_from_date(created_at):
@@ -631,6 +635,7 @@ def main():
         ticket_id = str(t.get("id"))
         
         if state_name in CLOSED_STATES:
+            current_closed_ids.add(ticket_id)
             # Ticket fechado - verificar se está em cache
             if ticket_id in cached_closed_tickets:
                 # Usar dados do cache
@@ -639,8 +644,20 @@ def main():
                 # Novo ticket fechado - processar
                 tickets_to_process.append(t)
         else:
+            current_open_ids.add(ticket_id)
             # Ticket aberto - sempre processar
             tickets_open.append(t)
+    
+    # IMPORTANTE: Remover do cache tickets que foram reabertos
+    # (estavam fechados no cache mas agora estão abertos)
+    reopened_tickets = []
+    for ticket_id in list(cached_closed_tickets.keys()):
+        if ticket_id in current_open_ids:
+            reopened_tickets.append(ticket_id)
+            del cached_closed_tickets[ticket_id]
+    
+    if reopened_tickets:
+        log(f"Tickets reabertos (removidos do cache): {len(reopened_tickets)}")
     
     log(f"Tickets fechados em cache (reutilizar): {len(tickets_from_cache)}")
     log(f"Tickets fechados novos (processar): {len(tickets_to_process)}")
