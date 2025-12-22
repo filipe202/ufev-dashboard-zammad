@@ -12,6 +12,7 @@ if not TOKEN:
 # Mapeamento hardcoded de agentes (id -> nome)
 AGENT_NAME_OVERRIDES = {
     21: "Rafaela Lapa",
+    724: "Marta Oliveira",
     20: "Catarina França",
     19: "Paula Candeias",
     18: "Cátia Leal",

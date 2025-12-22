@@ -18,6 +18,7 @@ CA_BUNDLE = os.environ.get("ZAMMAD_CA_BUNDLE")
 VERIFY_SSL = os.environ.get("ZAMMAD_VERIFY_SSL", "false").strip().lower() not in {"0", "false", "no"}
 
 AGENT_NAME_OVERRIDES = {
+    724: "Marta Oliveira",
     21: "Rafaela Lapa",
     20: "Catarina França",
     19: "Paula Candeias",
